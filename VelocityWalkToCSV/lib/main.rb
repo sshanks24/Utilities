@@ -2,9 +2,9 @@
 #
 # v42csv: converts the savedDevice.xml produced by the Velocity Browser to a csv file consisting of three "columns".
 #
-#Column 1 is the Velocity 4 data label of the data point (with accompanying multimodule id and report name where appropriate.
-#Column 2 is the Velocity 4 register.
-#Column 3 is the value of that data point.
+# Column 1 is the Velocity 4 data label of the data point (with accompanying multimodule id and report name where appropriate.
+# Column 2 is the Velocity 4 register.
+# Column 3 is the value of that data point.
 #
 #
 # == Usage
