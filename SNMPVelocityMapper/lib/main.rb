@@ -21,6 +21,7 @@ include REXML
 
 CH1 = "Programatic Name"
 CH2 = "OID Name"
+CH3 = "Index Name"
 
 # Verify arguments
 if ARGV.length != 2
@@ -41,22 +42,26 @@ begin
 
       # Create/Open the output file and write the column headers
       out_file = File.new(path_to_csv, 'w')
-      out_file.puts CH1 << "," << CH2 <<
+      out_file.puts CH1 << "," << CH2 << "," << CH3
 
       # Initialize variables (define scope)
       programmatic_name = ''
       oid_name = ''
       index_name = ''
       
-      p index_name
       config.root.elements.each("GDD_POINT") do |datapoint|
 
         if datapoint.attribute('type').to_s == "DATA"
-          datapoint.each_element_with_attribute("name") do |oid|
+          datapoint.each_element do |oid|
             programmatic_name = datapoint.attribute('name').to_s
             oid_name = oid.attribute('OID').to_s.gsub(/\.hierarchy/,'')
-            index_name = XPath.match(config, "/SNMP/GDD_POINT/SNMP_OID/DataIdentifier/Index").map {|x| x.attribute('descValue').to_s }
+            oid.each_element do |data_id|
+              data_id.each_element do |index|
+              index_name = index.attribute('descValue').to_s
+              end
+            end
           end
+          out_file.puts programmatic_name + "," + oid_name + "," + index_name
         end
         if datapoint.attribute('type').to_s == "DATA"
           #TODO - Need to process alarm points...
