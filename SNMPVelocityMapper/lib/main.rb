@@ -46,12 +46,16 @@ begin
       # Initialize variables (define scope)
       programmatic_name = ''
       oid_name = ''
+      index_name = ''
+      
+      p index_name
       config.root.elements.each("GDD_POINT") do |datapoint|
+
         if datapoint.attribute('type').to_s == "DATA"
           datapoint.each_element_with_attribute("name") do |oid|
             programmatic_name = datapoint.attribute('name').to_s
             oid_name = oid.attribute('OID').to_s.gsub(/\.hierarchy/,'')
-            out_file.puts programmatic_name + "," + oid_name
+            index_name = XPath.match(config, "/SNMP/GDD_POINT/SNMP_OID/DataIdentifier/Index").map {|x| x.attribute('descValue').to_s }
           end
         end
         if datapoint.attribute('type').to_s == "DATA"
