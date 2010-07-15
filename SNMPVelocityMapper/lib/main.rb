@@ -1,6 +1,6 @@
 # == Synopsis
 #
-# snmpXml2csv: converts the SNMP.xml to a csv file consisting of four "columns".
+# snmpXml2csv: converts the SNMP.xml to a csv file consisting of three "columns".
 #
 #Column 1 is the programatic name.
 #
@@ -48,20 +48,23 @@ begin
       programmatic_name = ''
       oid_name = ''
       index_name = ''
-      
+      output = ''
       config.root.elements.each("GDD_POINT") do |datapoint|
 
         if datapoint.attribute('type').to_s == "DATA"
           datapoint.each_element do |oid|
             programmatic_name = datapoint.attribute('name').to_s
             oid_name = oid.attribute('OID').to_s.gsub(/\.hierarchy/,'')
+            if oid.has_elements? then
             oid.each_element do |data_id|
               data_id.each_element do |index|
-              index_name = index.attribute('descValue').to_s
+                index_name = index.attribute('descValue').to_s
+                puts programmatic_name + "," + oid_name + "," + index_name
               end
             end
+            else puts programmatic_name + "," + oid_name
+            end
           end
-          out_file.puts programmatic_name + "," + oid_name + "," + index_name
         end
         if datapoint.attribute('type').to_s == "DATA"
           #TODO - Need to process alarm points...
