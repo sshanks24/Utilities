@@ -59,15 +59,23 @@ begin
             oid.each_element do |data_id|
               data_id.each_element do |index|
                 index_name = index.attribute('descValue').to_s
-                puts programmatic_name + "," + oid_name + "," + index_name
+                out_file.puts programmatic_name + "," + oid_name + "," + index_name
               end
             end
-            else puts programmatic_name + "," + oid_name
+            else out_file.puts programmatic_name + "," + oid_name
             end
           end
         end
-        if datapoint.attribute('type').to_s == "DATA"
-          #TODO - Need to process alarm points...
+        if datapoint.attribute('type').to_s == "ALARM"
+          datapoint.each_element do |oid|
+            programmatic_name = datapoint.attribute('name').to_s
+            oid.each_element do |data_id|
+              data_id.each_element do |index|
+                oid_name = index.attribute('descValueOID').to_s
+                out_file.puts programmatic_name + "," + oid_name
+              end
+            end
+          end
         end
       end
     end
