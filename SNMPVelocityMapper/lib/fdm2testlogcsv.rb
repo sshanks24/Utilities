@@ -35,7 +35,7 @@ path2fdm = ARGV.shift
 path2gdd = ARGV.shift
 path2out = ARGV.shift
 
-def parseFDM(path_to_xml,path2gdd)
+def parse_fdm(path_to_xml,path2gdd)
     if File.exists?(path_to_xml)
     File.open(path_to_xml) do |config_file|
       # Open the document
@@ -53,8 +53,8 @@ def parseFDM(path_to_xml,path2gdd)
         output.pad(32)
         descriptor.elements.each("dataPoint") do |data_point|
         output << 'case' << device_name + '\\' + report_name << '' #This needs to be a GUID
-        output << buildTitle(data_point,path2gdd)
-        output.pad(32) # buildTestCase(path_to_test_case)
+        output << build_title(data_point,path2gdd)
+        output.pad(32) # build_test_case(path_to_test_case)
         end
         end
       end
@@ -64,11 +64,11 @@ def parseFDM(path_to_xml,path2gdd)
   end
 end
 
-def buildTitle(datapoint, path2gdd)
+def build_title(datapoint, path2gdd)
   return 'title'
 end
 
-def buildTestCase(path_to_test_case)
+def build_test_case(path_to_test_case)
   output = Array.new
   return output.pad(32)
 end
@@ -82,7 +82,7 @@ end
 
 begin
 
-  output = parseFDM(path2fdm,path2gdd)
+  output = parse_fdm(path2fdm,path2gdd)
 
   # Create/Open the output file and write the column headers
   out_file = File.new(path2out, 'w')
