@@ -1,11 +1,14 @@
 # == Synopsis
 #
-# snmpXml2csv: converts the SNMP.xml to a csv file consisting of three "columns".
+# snmpXml2csv: converts the SNMP.xml to a csv file consisting of 4 "columns".
 #
 #Column 1 is the programatic name.
 #
-#Column 2 is the OID name.
+#Column 2 is the OID name (text label).
 #
+#Column 3 is the numerical OID
+#
+#Column 4 is the associated index name (for dynamic indices)ls -
 #
 # == Usage
 #
@@ -45,7 +48,7 @@ begin
       out_file = File.new(path_to_csv, 'w')
       out_file.puts CH1 << "," << CH2 << "," << CH3 << "," << CH4
 
-      # Initialize variables (define scope)
+      # Initialize variables (scope is outside of do loops)
       programmatic_name = ''
       oid_name = ''
       oid_num = ''
