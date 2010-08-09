@@ -35,7 +35,7 @@ path2fdm = ARGV.shift
 path2gdd = ARGV.shift
 path2out = ARGV.shift
 
-def parse_fdm(path_to_xml,path2gdd)
+def parse_fdm(path_to_xml,string_id_hash)
     if File.exists?(path_to_xml)
     File.open(path_to_xml) do |config_file|
       # Open the document
@@ -49,11 +49,11 @@ def parse_fdm(path_to_xml,path2gdd)
          # These are the web navigation folders
         if descriptor.attribute('id').to_s.to_i > 256 and descriptor.attribute('privateReport').to_s == 'False'
         report_name = descriptor.attribute('ProgrammaticName').to_s
-        output << 'suite' << device_name + '\\' << report_name << report_name
+        output << 'suite' << device_name << report_name << report_name
         output.pad(32)
         descriptor.elements.each("dataPoint") do |data_point|
         output << 'case' << device_name + '\\' + report_name << '' #This needs to be a GUID
-        output << build_title(data_point,path2gdd)
+        output << build_title(data_point,string_id_hash)
         output.pad(32) # build_test_case(path_to_test_case)
         end
         end
@@ -64,13 +64,46 @@ def parse_fdm(path_to_xml,path2gdd)
   end
 end
 
-def build_title(datapoint, path2gdd)
-  return 'title'
+def build_title(datapoint,string_id_hash)
+  interface = 'WB'
+  data_label = ''
+  id = datapoint.attribute('id').to_s
+  type = datapoint.attribute('type').to_s
+  datapoint.elements.each(type) do |data|
+    data.elements.each('DataLabel/TextID') {|name| data_label = name.text}
+  end
+  puts data_label + ' => ' + string_id_hash.fetch(data_label)
+  title = interface + ' - ' + id + ' - ' + string_id_hash.fetch(data_label)
+  puts title
+  return title
 end
 
 def build_test_case(path_to_test_case)
   output = Array.new
   return output.pad(32)
+end
+
+def build_string_id_hash(path_to_xml)
+  if File.exists?(path_to_xml)
+    File.open(path_to_xml) do |config_file|
+      # Open the document
+      config = REXML::Document.new(config_file)
+      puts 'Parsing gdd file'
+      # Initialize variables (scope is outside of do loops)
+      h = Hash.new
+      config.root.elements.each("/Enp2DataDict/GlobalStringDefinitions/String") do |string|
+        key = string.attribute('Id').to_s
+        if string.text == nil then
+          value = ""
+        else
+          value = string.text
+        end
+        h[key] = value
+      end
+      return h
+    end
+  else raise 'Input XML file(GDD) not found!'
+  end
 end
 
 class Array
@@ -82,7 +115,11 @@ end
 
 begin
 
-  output = parse_fdm(path2fdm,path2gdd)
+  string_id_hash = Hash.new
+  string_id_hash.default('key not found')
+  string_id_hash = build_string_id_hash(path2gdd)
+  
+  output = parse_fdm(path2fdm,string_id_hash)
 
   # Create/Open the output file and write the column headers
   out_file = File.new(path2out, 'w')
