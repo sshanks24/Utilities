@@ -70,17 +70,17 @@ def parseFDM(path_to_xml)
           end
           datapoint.elements.each(type + '/UnitsOfMeasure') do |uom|
             #puts uom.text
-            output << uom.text
+            output << $strings.fetch(uom.text)
           end
           output << "" #Blank field for Enumeration
         end
         if type =~ /enum/i
+          value = Array.new
           datapoint.elements.each(type + '/EnumStateDefnID') do |enum|
             output << "" << "" << "" #Blank fields for min, max, and units of measure
-            #puts enum.text
-            #output << translate_enum(enum.text,$path2gdd)
-            output << enum.text
+            value.push($enums.fetch(enum.text.to_i))
           end
+          output << value
         end
       end
       return output
@@ -99,9 +99,9 @@ def create_enum_hash(path_to_xml, xpath_to_def='/Enp2DataDict/EnumStateDefn')
 
       config.root.elements.each(xpath_to_def) do |enum|
         key = enum.attribute('Id').to_s.to_i
-        value = ''
+        value = Array.new
         enum.elements.each('EnumState') do |state|
-          value << state.text
+          value.push(state.text)
         end
         h.store(key,value)
       end
@@ -118,34 +118,49 @@ def create_string_hash(path_to_xml, xpath_to_def='/Enp2DataDict/GlobalStringDefi
       config = REXML::Document.new(config_file)
       # Initialize variables (scope is outside of do loops)
       h = Hash.new
-
+      puts "Parsing #{path_to_xml} for data labels."
       config.root.elements.each(xpath_to_def) do |string|
-        #Special case for nil text
-        if string.attribute('xsi:nil').to_s == true then
-          h.store(string.attribute('Id').to_s.to_i,'')
-          next
+        key = string.attribute('Id').to_s
+        if string.text == nil then
+          value = ""
+        else
+          value = string.text
         end
-        key = string.attribute('Id').to_s.to_i
-        value = string.text
-        h.store(key,value)
+        h[key] = value
       end
       return h
     end
-  else raise 'Input XML file not found!'
+  else raise 'Input XML file(GDD) not found!'
   end
 end
 
 begin
 
-  enums = Hash.new
-  enums = create_enum_hash($path2gdd)
+  #global_enums = Hash.new
+  global_enums = create_enum_hash($path2gdd)
 
-  enums.each {|key, value| puts "#{key} is #{value}" }
+  #local_enums = Hash.new
+  local_enums = create_enum_hash(path2fdm,'/DataModel/LocalEnumDefinitions/EnumStateDefn')
 
-  strings = Hash.new
-  strings = create_string_hash($path2gdd)
+  $enums = global_enums.merge(local_enums)
+  $enums.default('unknown')
+  
+#  $enums.each do |key,value|
+#    puts "Looking up #{key}...#{$enums.fetch(key)}"
+#  end
 
-  strings.each {|key, value| puts "#{key} is #{value}" }
+  #global_strings = Hash.new
+  global_strings = create_string_hash($path2gdd)
+
+  #local_strings = Hash.new
+  local_strings = create_string_hash(path2fdm,'/DataModel/LocalStringDefinitions/String')
+
+  $strings = global_strings.merge(local_strings)
+  $strings.default('unknown')
+
+#   $strings.each do |key,value|
+#    puts "Looking up #{key}...#{$strings.fetch(key)}"
+#  end
 
   output = parseFDM(path2fdm)
   
