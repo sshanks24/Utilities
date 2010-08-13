@@ -48,7 +48,8 @@ def parse_fdm(path_to_xml,path_to_test_case) #TODO Need to handle Multi-module t
       output = Array.new
       device_name = config.root.attribute('ProgrammaticName').to_s
 
-      config.root.elements.each("/DataModel/ReportDescriptor") do |descriptor|
+      #TODO This is sometimes /DataModel instead of /DevModel need to figure out
+      config.root.elements.each("/DevModel/ReportDescriptor") do |descriptor|
         # These are the web navigation folders
         if descriptor.attribute('id').to_s.to_i > 256 and descriptor.attribute('privateReport').to_s == 'False'
           report_name = descriptor.attribute('ProgrammaticName').to_s
@@ -60,7 +61,9 @@ def parse_fdm(path_to_xml,path_to_test_case) #TODO Need to handle Multi-module t
             output.push(build_test_case(path_to_test_case))
           end
         end
-        #TODO Need to inject the parsed test case XML here
+        # Need logic for Control Test cases - /dataPoint/TYPE/AccessDefn = RW
+        # Need logic for Events - /dataPoint/TYPE =~ /event/i
+        # Need logic/input for SNMP/Modbus inputs
       end
       return output
     end
@@ -77,12 +80,9 @@ def build_title(datapoint)
     data.elements.each('DataLabel/TextID') {|name| data_label = name.text}
   end
 
-  if $global_strings.has_key?(data_label)
-    data_label = $global_strings.fetch(data_label)
-  else if $local_strings.has_key?(data_label)
-      data_label = $local_strings.fetch(data_label)
-    else data_label = 'UNKNOWN STRING ID'
-    end
+  if $strings.has_key?(data_label)
+    data_label = $strings.fetch(data_label)
+  else data_label = "UNKNOWN STRING ID: #{data_label}"
   end
   title = interface + ' - ' + id + ' - ' + data_label
   puts title
@@ -98,10 +98,14 @@ def build_test_case(path_to_xml)
 
     counter = 1
     config.root.elements.each() do |element|
+      if element.inspect.to_s =~ /history_entry/
+        counter += 1
+        next
+      end
       if counter > 2 #Skip the firt two elements
         if element.text != nil
           output << element.text
-        else output << ""
+          else output << ""
         end
       end
       counter += 1
@@ -142,10 +146,13 @@ end
 
 begin
 
-  $global_strings = Hash.new
-  $global_strings = build_string_id_hash(path2gdd, '/Enp2DataDict/GlobalStringDefinitions/String')
-  $local_strings = Hash.new
-  $local_strings = build_string_id_hash(path2fdm, '/DataModel/LocalStringDefinitions/String')
+  global_strings = Hash.new
+  global_strings = build_string_id_hash(path2gdd, '/Enp2DataDict/GlobalStringDefinitions/String')
+  local_strings = Hash.new
+  local_strings = build_string_id_hash(path2fdm, '/DevModel/LocalStringDefinitions/String')
+
+  $strings = global_strings.merge(local_strings)
+  $strings.default('UNKNOWN STRING ID')
   output = parse_fdm(path2fdm,path2testcase)
 
   # Create/Open the output file and write the column headers
@@ -157,9 +164,9 @@ begin
   end
 
   for i in 1..output.size do
-    if i == 1 then out_file.print output[i-1] + ","; next; end;
-    if i % CH.size != 0 then out_file.print output[i-1] + ","
-    else out_file.puts output[i-1]
+    if i == 1 then out_file.print output[i-1].to_s + ","; next; end;
+    if i % CH.size != 0 then out_file.print output[i-1].to_s + ","
+    else out_file.puts output[i-1].to_s
     end
   end
 

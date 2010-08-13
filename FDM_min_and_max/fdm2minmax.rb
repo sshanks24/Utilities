@@ -78,7 +78,8 @@ def parseFDM(path_to_xml)
           value = Array.new
           datapoint.elements.each(type + '/EnumStateDefnID') do |enum|
             output << "" << "" << "" #Blank fields for min, max, and units of measure
-            value.push($enums.fetch(enum.text.to_i))
+            puts "Attempting to fetch #{$enums.fetch(enum.text.to_i)}"
+            value.push($strings.fetch($enums.fetch(enum.text.to_i)))
           end
           output << value
         end
