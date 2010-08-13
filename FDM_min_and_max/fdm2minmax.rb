@@ -174,8 +174,20 @@ begin
 
   for i in 1..output.size do
     if i == 1 then out_file.print output[i-1] + ","; next; end;
-    if i % CH.size != 0 then out_file.print output[i-1] + ","
-    else out_file.puts output[i-1]
+    if output[i-1].class.to_s == 'Array' then 
+      output[i-1].flatten.each do |enum|
+	if output[i-1].flatten.index(enum).to_i == 0 then
+          out_file.print '"' + enum.to_s + ','
+	else if output[i-1].flatten.index(enum).to_i == output[i-1].flatten.size-1 then
+	  out_file.puts enum.to_s + '"' + "\n"
+	else
+          out_file.print enum.to_s + ','
+	end
+	end
+      end
+    end
+    if i % CH.size != 0 and output[i-1].class.to_s != 'Array' then out_file.print output[i-1] + ","
+    else out_file.puts output[i-1] unless output[i-1].class.to_s == 'Array'
     end
   end
 
