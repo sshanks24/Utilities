@@ -78,8 +78,9 @@ def parseFDM(path_to_xml)
           value = Array.new
           datapoint.elements.each(type + '/EnumStateDefnID') do |enum|
             output << "" << "" << "" #Blank fields for min, max, and units of measure
-            puts "Attempting to fetch #{$enums.fetch(enum.text.to_i)}"
-            value.push($strings.fetch($enums.fetch(enum.text.to_i)))
+            $enums.fetch(enum.text.to_i).each do |e|
+              value.push($strings.fetch(e))
+            end
           end
           output << value
         end
@@ -177,14 +178,14 @@ begin
     if i == 1 then out_file.print output[i-1] + ","; next; end;
     if output[i-1].class.to_s == 'Array' then 
       output[i-1].flatten.each do |enum|
-	if output[i-1].flatten.index(enum).to_i == 0 then
+        if output[i-1].flatten.index(enum).to_i == 0 then
           out_file.print '"' + enum.to_s + ','
-	else if output[i-1].flatten.index(enum).to_i == output[i-1].flatten.size-1 then
-	  out_file.puts enum.to_s + '"' + "\n"
-	else
-          out_file.print enum.to_s + ','
-	end
-	end
+        else if output[i-1].flatten.index(enum).to_i == output[i-1].flatten.size-1 then
+            out_file.puts enum.to_s + '"' + "\n"
+          else
+            out_file.print enum.to_s + ','
+          end
+        end
       end
     end
     if i % CH.size != 0 and output[i-1].class.to_s != 'Array' then out_file.print output[i-1] + ","
