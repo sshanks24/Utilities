@@ -37,42 +37,125 @@ path2gdd = ARGV.shift
 path2testcase = ARGV.shift
 path2out = ARGV.shift
 
-
 def parse_fdm(path_to_xml,path_to_test_case) #TODO Need to handle Multi-module test cases...
   if File.exists?(path_to_xml)
-    File.open(path_to_xml) do |config_file|
+    File.open(path_to_xml) do |file|
       # Open the document
-      config = REXML::Document.new(config_file)
+      fdm = REXML::Document.new(file)
 
       # Initialize variables (scope is outside of do loops)
       output = Array.new
-      device_name = config.root.attribute('ProgrammaticName').to_s
+      device_name = fdm.root.attribute('ProgrammaticName').to_s
 
-      #TODO This is sometimes /DataModel instead of /DevModel need to figure out
-      config.root.elements.each("/DevModel/ReportDescriptor") do |descriptor|
+      fdm.root.elements.each("/*/ReportDescriptor") do |descriptor|
         # These are the web navigation folders
+        mm_index = descriptor.attribute('index').to_s.to_i
+        if mm_index == 0 then mm_index = 1; end
         if descriptor.attribute('id').to_s.to_i > 256 and descriptor.attribute('privateReport').to_s == 'False'
-          report_name = descriptor.attribute('ProgrammaticName').to_s
-          output << 'suite' << device_name << report_name << report_name
-          output.pad(32)
+          report_name = $strings.fetch(descriptor.attribute('labelId').to_s)
+          output << 'suite' << device_name + '\\Monitor\\' + report_name << report_name
+          output.pad(33)
+          i = 1
           descriptor.elements.each("dataPoint") do |data_point|
-            output << 'case' << device_name + '\\' + report_name << '' #This needs to be a GUID
-            output << build_title(data_point)
-            output.push(build_test_case(path_to_test_case))
+            if mm_index == 1
+              output << 'case' << device_name + '\\Monitor\\' + report_name << '' #This needs to be a GUID
+              output << build_title(data_point, 'WB')
+              output.push(build_test_case(path_to_test_case))
+            else
+              while i <= mm_index
+                output << 'case' << device_name + '\\Monitor\\' + report_name << '' #This needs to be a GUID
+                output << build_title(data_point, 'WB') + " [#{report_name} [#{i}]]"
+                output.push(build_test_case(path_to_test_case))
+                i += 1
+              end
+            end
           end
         end
-        # Need logic for Control Test cases - /dataPoint/TYPE/AccessDefn = RW
-        # Need logic for Events - /dataPoint/TYPE =~ /event/i
-        # Need logic/input for SNMP/Modbus inputs
       end
+
+      fdm.root.elements.each("/*/ReportDescriptor") do |descriptor|
+        # These are the web navigation folders
+        mm_index = descriptor.attribute('index').to_s.to_i
+        if mm_index == 0 then mm_index = 1; end
+        if descriptor.attribute('id').to_s.to_i > 256 and descriptor.attribute('privateReport').to_s == 'False'
+          report_name = $strings.fetch(descriptor.attribute('labelId').to_s)
+          output << 'suite' << device_name + '\\Control\\' + report_name << report_name
+          output.pad(33)
+          i = 1
+          descriptor.elements.each("dataPoint") do |data_point|
+            data_point.elements.each("*/AccessDefn") do |node|
+              if node.text == 'RW'
+                if mm_index == 1
+                  output << 'case' << device_name + '\\Control\\' + report_name << '' #This needs to be a GUID
+                  output << build_title(data_point, 'WB')
+                  output.push(build_test_case(path_to_test_case))
+                else
+                  while i <= mm_index
+                    output << 'case' << device_name + '\\Control\\' + report_name << '' #This needs to be a GUID
+                    output << build_title(data_point, 'WB') + " [#{report_name} [#{i}]]"
+                    output.push(build_test_case(path_to_test_case))
+                    i += 1
+                  end
+                end
+              end
+            end
+          end
+        end
+      end
+
+      fdm.root.elements.each("/*/ReportDescriptor") do |descriptor|
+        # These are the web navigation folders
+        mm_index = descriptor.attribute('index').to_s.to_i
+        if mm_index == 0 then mm_index = 1; end
+        if descriptor.attribute('id').to_s.to_i > 256 and descriptor.attribute('privateReport').to_s == 'False'
+          report_name = $strings.fetch(descriptor.attribute('labelId').to_s)
+          output << 'suite' << device_name + '\\Events\\' + report_name << report_name
+          output.pad(33)
+          i = 1
+          descriptor.elements.each("dataPoint") do |data_point|
+            data_point.elements.each("DataEvent16") do |event|
+              if mm_index == 1
+                output << 'case' << device_name + '\\Events\\' + report_name << '' #This needs to be a GUID
+                output << build_title(data_point, 'WB')
+                output.push(build_test_case(path_to_test_case))
+              else
+                while i <= mm_index
+                  output << 'case' << device_name + '\\Events\\' + report_name << '' #This needs to be a GUID
+                  output << build_title(data_point, 'WB') + " [#{report_name} [#{i}]]"
+                  output.push(build_test_case(path_to_test_case))
+                  i += 1
+                end
+              end
+            end
+          end
+        end
+      end
+
+#      fdm.root.elements.each("/*/ReportDescriptor") do |descriptor|
+#        # These are the web navigation folders
+#        if descriptor.attribute('id').to_s.to_i > 256 and descriptor.attribute('privateReport').to_s == 'False'
+#          report_name = $strings.fetch(descriptor.attribute('labelId').to_s)
+#          output << 'suite' << device_name + '\\Events\\' + report_name << report_name
+#          output.pad(33)
+#          descriptor.elements.each('dataPoint') do |data_point|
+#            data_point.elements.each('DataEvent16') do |event|
+#              output << 'case' << device_name + '\\Events\\' + report_name << '' #This needs to be a GUID
+#              output << build_title(data_point, 'WB')
+#              output.push(build_test_case(path_to_test_case))
+#            end
+#          end
+#        end
+#      end
+
+     # Need logic/input for SNMP/Modbus inputs
+      
       return output
     end
   else raise 'Input XML file not found!'
   end
 end
 
-def build_title(datapoint)
-  interface = 'WB'
+def build_title(datapoint, interface)
   data_label = ''
   id = datapoint.attribute('id').to_s
   type = datapoint.attribute('type').to_s
@@ -85,7 +168,6 @@ def build_title(datapoint)
   else data_label = "UNKNOWN STRING ID: #{data_label}"
   end
   title = interface + ' - ' + id + ' - ' + data_label
-  puts title
   return title
 end
 
@@ -149,7 +231,7 @@ begin
   global_strings = Hash.new
   global_strings = build_string_id_hash(path2gdd, '/Enp2DataDict/GlobalStringDefinitions/String')
   local_strings = Hash.new
-  local_strings = build_string_id_hash(path2fdm, '/DevModel/LocalStringDefinitions/String')
+  local_strings = build_string_id_hash(path2fdm, '/*/LocalStringDefinitions/String')
 
   $strings = global_strings.merge(local_strings)
   $strings.default('UNKNOWN STRING ID')
