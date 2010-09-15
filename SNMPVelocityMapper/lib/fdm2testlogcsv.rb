@@ -7,7 +7,7 @@
 #
 # == Usage
 #
-# fdm2testlogcsv.rb path2fdm.xml path2gdd.xml path2testcase.xml path2out.csv
+# fdm2testlogcsv.rb path2fdm.xml path2gdd.xml path2webtestcase.xml path2snmp.xml path2snmptestcase.xml path2out.csv
 #
 
 require 'rdoc/usage'
@@ -26,7 +26,7 @@ CH = ["Type","Test Suite","ID","Title","Hours Expected","Type","Phase",
   "Link","Priority"]
 
 # Verify arguments
-if ARGV.length != 4
+if ARGV.length != 6
   RDoc::usage
 end
 
@@ -34,7 +34,9 @@ end
 #TODO Check if these files exist in the beginning
 path2fdm = ARGV.shift
 path2gdd = ARGV.shift
-path2testcase = ARGV.shift
+path2webtestcase = ARGV.shift
+path2snmp = ARGV.shift
+path2snmptestcase = ARGV.shift
 path2out = ARGV.shift
 
 def parse_fdm(path_to_xml,path_to_test_case) #TODO Need to handle Multi-module test cases...
@@ -235,7 +237,7 @@ begin
 
   $strings = global_strings.merge(local_strings)
   $strings.default('UNKNOWN STRING ID')
-  output = parse_fdm(path2fdm,path2testcase)
+  output = parse_fdm(path2fdm,path2webtestcase)
 
   # Create/Open the output file and write the column headers
   out_file = File.new(path2out, 'w')

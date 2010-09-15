@@ -38,7 +38,7 @@ path2fdm = ARGV.shift
 $path2gdd = ARGV.shift
 path2out = ARGV.shift
 
-def parseFDM(path_to_xml)
+def parse_fdm(path_to_xml)
     if File.exists?(path_to_xml)
     File.open(path_to_xml) do |config_file|
       # Open the document
@@ -47,7 +47,7 @@ def parseFDM(path_to_xml)
       # Initialize variables (scope is outside of do loops)
       output = Array.new
 
-      config.root.elements.each("/DataModel/ReportDescriptor/dataPoint") do |datapoint|
+      config.root.elements.each("/*/ReportDescriptor/dataPoint") do |datapoint|
         type = datapoint.attribute('type').to_s
         # Skip over event,text, and time data types
         if type =~ /(event)|(text)|(time)/i then next; end;
@@ -142,7 +142,7 @@ begin
   global_enums = create_enum_hash($path2gdd)
 
   #local_enums = Hash.new
-  local_enums = create_enum_hash(path2fdm,'/DataModel/LocalEnumDefinitions/EnumStateDefn')
+  local_enums = create_enum_hash(path2fdm,'/*/LocalEnumDefinitions/EnumStateDefn')
 
   $enums = global_enums.merge(local_enums)
   $enums.default('unknown')
@@ -155,7 +155,7 @@ begin
   global_strings = create_string_hash($path2gdd)
 
   #local_strings = Hash.new
-  local_strings = create_string_hash(path2fdm,'/DataModel/LocalStringDefinitions/String')
+  local_strings = create_string_hash(path2fdm,'/*/LocalStringDefinitions/String')
 
   $strings = global_strings.merge(local_strings)
   $strings.default('unknown')
@@ -164,7 +164,7 @@ begin
 #    puts "Looking up #{key}...#{$strings.fetch(key)}"
 #  end
 
-  output = parseFDM(path2fdm)
+  output = parse_fdm(path2fdm)
   
   # Create/Open the output file and write the column headers
   out_file = File.new(path2out, 'w')
