@@ -141,24 +141,21 @@ end
 def parse_input_file
   case @input_type
   when 'xls' then
-    # = %(#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy})
+    #format_string = %(#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy})
+    titles = Array.new
     ss = WIN32OLE::new('excel.Application')
     wb = ss.Workbooks.Open(@input_file)
     ws = wb.Worksheets(1)
     data = ws.UsedRange.Value
-    data.inspect
     for i in 1..data.size-1
       data_id = data[i][2].split('_')[1].split('-')[0]
-      data_label = @data_ids.fetch(@strings.fetch(data_id))
+      data_label = @strings.fetch(@data_ids.fetch(data_id))
       object_id = data[i][1]
       mm_index = data[i][2].split('_')[1].split('-')[1]
       hierarchy = data[i][2].split('_')[1].split('-')[2]
-      puts "Data ID: #{data_id}
-            Data Label: #{data_label}
-            Object ID: #{object_id}
-            mm_index: #{mm_index}
-            hierarchy: #{hierarchy}"
+      titles << "#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy}"
     end
+    return titles
   when 'xml' then
     #TODO
   when 'web' then
@@ -168,37 +165,46 @@ def parse_input_file
 end
 
 def generate() #TODO Need to handle Multi-module test cases...
-  File.open(@path_to_fdm) do |file|
-    # Open the document
-    fdm = REXML::Document.new(file)
-    # Initialize variables (scope is outside of do loops)
-    device_name = fdm.root.attribute('ProgrammaticName').to_s
-    fdm.root.elements.each("/*/ReportDescriptor") do |descriptor|
-      # These are the web navigation folders
-      mm_index = descriptor.attribute('index').to_s.to_i
-      if mm_index == 0 then mm_index = 1; end
-      if descriptor.attribute('id').to_s.to_i >= 256 and descriptor.attribute('privateReport').to_s == 'False'
-        report_name = @strings.fetch(descriptor.attribute('labelId').to_s)
-        @output << 'suite' << device_name + "\\#{@type}\\" + report_name << report_name
-        @output.pad(33)
-        i = 1
-        descriptor.elements.each("dataPoint") do |data_point|
-          if mm_index == 1
-            @output << 'case' << device_name + "\\#{@type}\\" + report_name << build_id(data_point)
-            @output << build_title(data_point)
-            @output.push(build_test_case(@test_case))
-          else
-            while i <= mm_index
+  if @input_type == 'xls' then
+    puts "push test cases out to the @output array here"
+    test_cases = parse_input_file
+    test_cases.each do |title|
+      @output << 'case' << device_name + "\\#{@type}\\" + report_name << '' << title
+      @output.push(build_test_case(@test_case))
+    end
+  else
+    File.open(@path_to_fdm) do |file|
+      # Open the document
+      fdm = REXML::Document.new(file)
+      # Initialize variables (scope is outside of do loops)
+      device_name = fdm.root.attribute('ProgrammaticName').to_s
+      fdm.root.elements.each("/*/ReportDescriptor") do |descriptor|
+        # These are the web navigation folders
+        mm_index = descriptor.attribute('index').to_s.to_i
+        if mm_index == 0 then mm_index = 1; end
+        if descriptor.attribute('id').to_s.to_i >= 256 and descriptor.attribute('privateReport').to_s == 'False'
+          report_name = @strings.fetch(descriptor.attribute('labelId').to_s)
+          @output << 'suite' << device_name + "\\#{@type}\\" + report_name << report_name
+          @output.pad(33)
+          i = 1
+          descriptor.elements.each("dataPoint") do |data_point|
+            if mm_index == 1
               @output << 'case' << device_name + "\\#{@type}\\" + report_name << build_id(data_point)
-              @output << build_title(data_point) + " [#{report_name} [#{i}]]"
+              @output << build_title(data_point)
               @output.push(build_test_case(@test_case))
-              i += 1
+            else
+              while i <= mm_index
+                @output << 'case' << device_name + "\\#{@type}\\" + report_name << build_id(data_point)
+                @output << build_title(data_point) + " [#{report_name} [#{i}]]"
+                @output.push(build_test_case(@test_case))
+                i += 1
+              end
             end
           end
         end
       end
+      return @output
     end
-    return @output
   end
 end
 
@@ -290,23 +296,13 @@ def build_data_id_hash(path_to_xml,path_to_data_dict_entry)
       # Initialize variables (scope is outside of do loops)
       h = Hash.new
       puts "Parsing #{path_to_xml} for data ids."
-      data_ids = XPath.match( doc, "path_to_data_dict_entry" + '/DataId' )
-      data_labels = XPath.match( doc, "path_to_data_dict_entry" + '/LabelTextId' )
+      data_ids = XPath.match( doc, path_to_data_dict_entry + '/DataId' )
+      data_labels = XPath.match( doc, path_to_data_dict_entry + '/LabelTextId' )
       for i in 0..data_ids.size-1
-        key = data_ids[i]
-        value = data_labels[i]
+        key = data_ids[i].text
+        value = data_labels[i].text
         h[key] = value
       end
-#        value = data_dict.element('LabelTextId').to_s
-#        puts "value: #{value}"
-#        data_id.elements.each('//DataLabel/TextID') do |text_id|
-#          if text_id.text == nil then
-#            value = ""
-#          else
-#            value = text_id.text
-#          end
-#          h[key] = value
-#        end
       return h
     end
   else raise 'Input XML file(GDD) not found!'

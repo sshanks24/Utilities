@@ -34,11 +34,8 @@ end
 begin
   
 generator = TestCaseGenerator.new
-generator.parse_input_file
-
-  
-#generator.generate
-#generator.output_to_csv('output.csv')
+generator.generate
+generator.output_to_csv('output.csv')
 
 rescue => e
   puts "Error occured: #{e}"
