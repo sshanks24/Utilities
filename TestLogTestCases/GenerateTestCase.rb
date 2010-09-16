@@ -35,6 +35,7 @@ begin
   
 generator = TestCaseGenerator.new
 generator.generate
+puts "#{generator.size} test cases created."
 generator.output_to_csv('output.csv')
 
 rescue => e

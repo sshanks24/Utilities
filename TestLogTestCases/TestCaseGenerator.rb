@@ -38,26 +38,33 @@ PROMPT = '>'
 PROTOCOLS = ["BN", "MB", "SP", "WB"]
 TEST_TYPES = ["Control", "Events", "Monitor"]
 INPUT_TYPES = ["web", "xls", "xml"]
+DEVICES = ['APM','BDSU','Challenger','CRV','Deluxe','DS','HPC','HPM','Jumbo','Pex','PSI-700','XDC','XDP','XDPW','XP_Cray']
+CARDS = ['IS-WEBCARD','IS-WEBX','IS-WEBL','IS-WEBS','IS-485X','IS-485L','IS-485S','IS-IPBMX','IS-IPBML','IS-IPBMS']
 
 attr_accessor :path_to_fdm, :path_to_gdd, :protocol, :type
 
 def initialize()
-#  @path_to_fdm = get_path("FDM")
-#  @path_to_gdd = get_path("GDD")
-#  @protocol = get_protocol
-#  @type = get_test_type
-#  @test_case = get_path("Test Case")
-#  @input_type = get_input_type
+  @path_to_fdm = get_path("FDM")
+  @path_to_gdd = get_path("GDD")
+  @protocol = get_protocol
+  @test_type = get_test_type
+  @test_case = get_path("Test Case")
+  @input_type = get_input_type
+  @device_name = get_device_name
+  @card_name = get_card_name
 
-  @path_to_fdm = 'C:\LMG_Test\ruby\Utilities\TestLogTestCases\iCOM_CR.xml'
-  @path_to_gdd = 'C:\Documents and Settings\shanksstemp\Desktop\BDSU\Testlog\XSLT\enp2dd.xml'
-  @protocol = 'BN'
-  @type = 'Monitor'
-  @test_case = 'C:\LMG_Test\ruby\Utilities\TestLogTestCases\BN - Monitor Template.tlg'
-  @input_type = 'xls' 
+#  @path_to_fdm = 'C:\LMG_Test\ruby\Utilities\TestLogTestCases\iCOM_CR.xml'
+#  @path_to_gdd = 'C:\Documents and Settings\shanksstemp\Desktop\BDSU\Testlog\XSLT\enp2dd.xml'
+#  @protocol = 'BN'
+#  @test_type = 'Monitor'
+#  @test_case = 'C:\LMG_Test\ruby\Utilities\TestLogTestCases\BN - Monitor Template.tlg'
+#  @input_type = 'xls'
+#  @device_name = 'CR'
 
   case @input_type
-  when 'xls' then @input_file = get_input_file
+  when 'xls' then 
+    @input_file = get_input_file
+    @test_suite = get_test_suite
   when 'xml' then @input_file = get_input_file
   when 'web' then @ip_address = ''
   else puts "#{input_type} not supported"; raise "Invalid input";
@@ -75,6 +82,10 @@ def initialize()
   @data_ids.default('UNKNOWN STRING ID')
 
   @output = Array.new
+end
+
+def size
+  return @output.size / CH.size
 end
 
 def get_path(object)
@@ -117,17 +128,16 @@ def get_input_type()
   print "\nPlease enter the type of input provided to generate test cases\n#{INPUT_TYPES.inspect}\n\n#{PROMPT}"
   input_type = gets
   input_type.chomp!
-  TEST_TYPES.each do |input|
+  INPUT_TYPES.each do |input|
     if input_type.casecmp(input) == 0
-      @input_file = get_input_file
-      return input_type.down_case
+      return input_type.downcase
     end
   end
   get_input_type
 end
 
 def get_input_file
-  print "\nPlease enter the path to the #{@input_type} file\n\n#{PROMPT}"
+  print "\nPlease enter the path to the #{@input_type} input file\n\n#{PROMPT}"
   path = gets
   if path == "" then path = Dir.pwd + "//input//" + ".#{@input_type}"; end;
   if File.exists?(path.chomp!)
@@ -138,40 +148,95 @@ def get_input_file
   end
 end
 
+def get_test_suite
+  print "\nPlease enter a test suite for these test cases\n\n#{PROMPT}"
+  test_suite = gets.chomp
+  if test_suite == "" then get_report; end;
+  return test_suite
+end
+
+def get_device_name
+  print "\nPlease enter the device name for these test cases\n#{DEVICES.inspect}\n\n#{PROMPT}"
+  device_name = gets.chomp
+  if device_name == "" then get_device_name; end;
+  return device_name
+end
+
+def get_card_name
+  print "\nPlease enter the card name for these test cases\n#{CARDS.inspect}\n\n#{PROMPT}"
+  card_name = gets.chomp
+  if card_name == "" then get_card_name; end;
+  return card_name
+end
+
 def parse_input_file
-  case @input_type
-  when 'xls' then
-    #format_string = %(#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy})
-    titles = Array.new
-    ss = WIN32OLE::new('excel.Application')
-    wb = ss.Workbooks.Open(@input_file)
-    ws = wb.Worksheets(1)
-    data = ws.UsedRange.Value
-    for i in 1..data.size-1
-      data_id = data[i][2].split('_')[1].split('-')[0]
-      data_label = @strings.fetch(@data_ids.fetch(data_id))
-      object_id = data[i][1]
-      mm_index = data[i][2].split('_')[1].split('-')[1]
-      hierarchy = data[i][2].split('_')[1].split('-')[2]
-      titles << "#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy}"
+  begin
+    case @input_type
+    when 'xls' then
+      case @protocol
+      when 'BN' then
+        #format_string = %(#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy})
+        titles = Array.new
+        ss = WIN32OLE::new('excel.Application')
+        wb = ss.Workbooks.Open(@input_file)
+        ws = wb.Worksheets(1)
+        data = ws.UsedRange.Value
+        for i in 1..data.size-1
+          data_id = data[i][2].split('_')[1].split('-')[0]
+          data_label = @strings.fetch(@data_ids.fetch(data_id))
+          object_id = data[i][1]
+          mm_index = data[i][2].split('_')[1].split('-')[1]
+          hierarchy = data[i][2].split('_')[1].split('-')[2]
+          titles << "#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy}"
+        end
+        return titles
+      when 'MB' then
+        #format_string = %(#{@protocol} - #{data_id} - #{register}(#{size}) - #{data_label} - #{units}-#{scale}-#{access})
+        titles = Array.new
+        ss = WIN32OLE::new('excel.Application')
+        wb = ss.Workbooks.Open(@input_file)
+        ws = wb.Worksheets(1)
+        data = ws.UsedRange.Value
+        for i in 1..data.size-1
+          data_id = data[i][2].split('_')[1].split('-')[0]
+          data_label = @strings.fetch(@data_ids.fetch(data_id))
+          object_id = data[i][1]
+          mm_index = data[i][2].split('_')[1].split('-')[1]
+          hierarchy = data[i][2].split('_')[1].split('-')[2]
+          titles << "#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy}"
+        end
+        return titles
+      when 'SP'
+      when 'WB'
+      else
+      end
+    when 'xml' then
+      #TODO
+    when 'web' then
+      #TODO
+    else puts "#{input_type} not supported"; raise "Invalid input";
     end
-    return titles
-  when 'xml' then
-    #TODO
-  when 'web' then
-    #TODO
-  else puts "#{input_type} not supported"; raise "Invalid input";
+  rescue
   end
 end
 
 def generate() #TODO Need to handle Multi-module test cases...
   if @input_type == 'xls' then
-    puts "push test cases out to the @output array here"
+    mm_index = ''
     test_cases = parse_input_file
     test_cases.each do |title|
-      @output << 'case' << device_name + "\\#{@type}\\" + report_name << '' << title
-      @output.push(build_test_case(@test_case))
+      data_id = title.split('-')[1].strip
+      case @protocol
+      when 'BN' then mm_index = title.split('-')[title.split('-').size - 2].strip
+      when 'MB' then #TODO Implement this case - Modbus
+      when 'SP' then #TODO Implement this case - SNMP
+      when 'WB' then #TODO Implement this case - Web
+      else mm_index = 1
+      end
+      @output << 'case' << @device_name + "\\#{@test_type}\\" + @test_suite << data_id + '-' + mm_index + '-' + @protocol << title
+      build_test_case(@test_case)
     end
+
   else
     File.open(@path_to_fdm) do |file|
       # Open the document
@@ -184,19 +249,19 @@ def generate() #TODO Need to handle Multi-module test cases...
         if mm_index == 0 then mm_index = 1; end
         if descriptor.attribute('id').to_s.to_i >= 256 and descriptor.attribute('privateReport').to_s == 'False'
           report_name = @strings.fetch(descriptor.attribute('labelId').to_s)
-          @output << 'suite' << device_name + "\\#{@type}\\" + report_name << report_name
+          @output << 'suite' << device_name + "\\#{@test_type}\\" + report_name << report_name
           @output.pad(33)
           i = 1
           descriptor.elements.each("dataPoint") do |data_point|
             if mm_index == 1
-              @output << 'case' << device_name + "\\#{@type}\\" + report_name << build_id(data_point)
+              @output << 'case' << device_name + "\\#{@test_type}\\" + report_name << build_id(data_point)
               @output << build_title(data_point)
-              @output.push(build_test_case(@test_case))
+              build_test_case(@test_case)
             else
               while i <= mm_index
-                @output << 'case' << device_name + "\\#{@type}\\" + report_name << build_id(data_point)
+                @output << 'case' << device_name + "\\#{@test_type}\\" + report_name << build_id(data_point)
                 @output << build_title(data_point) + " [#{report_name} [#{i}]]"
-                @output.push(build_test_case(@test_case))
+                build_test_case(@test_case)
                 i += 1
               end
             end
@@ -241,8 +306,6 @@ def build_title(datapoint)
 end
 
 def build_test_case(path_to_xml)
-  # Initialize variables (scope is outside of do loops)
-  output = Array.new
   File.open(path_to_xml) do |config_file|
     # Open the document
     config = REXML::Document.new(config_file)
@@ -255,14 +318,14 @@ def build_test_case(path_to_xml)
       end
       if counter > 2 #Skip the firt two elements
         if element.text != nil
-          output << element.text
-        else output << ""
+          @output << element.text
+        else @output << ""
         end
       end
       counter += 1
     end
   end
-  return output
+  return @output
 end
 
 def build_string_id_hash(path_to_xml,path_to_string)
