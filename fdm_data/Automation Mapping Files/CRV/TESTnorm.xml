@@ -1,0 +1,1955 @@
+<TEST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DATA_POINT name="standardVersion" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="stdCompliance" type="enum">
+		<STATE_VALUES>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="errorCompliance" type="enum">
+		<STATE_VALUES>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_serverClass" type="enum">
+		<STATE_VALUES>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>4</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="serverState" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="serverTimeout" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="oid1" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="oid2" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="bps2400" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="bps4800" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="bps9600" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="bps19200" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="bps38400" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="bps57600" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="bps115200" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="endSession" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="register" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="multicast" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="changeOfValuePace" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="commBps" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="commTimeOut" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_airSupply" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_temp_inletAir" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_dewPntRet" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_ext_tmp_remSnsrMin" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_ext_tmp_remSnsrMax" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_ext_tmp_remSnsrAvg" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_airSetPt" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_airCoolingPropBand" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_airHeatingPropBand" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_airDeadBand" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_tmpSnsrAirControl" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_tmpRemSnsrCalc" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_airSupplyOverThrshld" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_tmpAirSupplyOver" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_airSupplyUnderThrshld" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_tmpAirSupplyUnder" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tmp_airRetOverThrshld" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_tmpAirRetOver" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_snsrSupplyAirIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_snsrRetAirIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_rh_airSupply" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_rh_airRet" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_rh_setPt" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_rh_hmdPropBand" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_rh_dhmdPropBand" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_rh_deadBand" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_rh_airRetOverThrshld" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_rh_airRetUnderThrshld" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_rhAirRetOver" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_rhAirRetUnder" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_hmd_hrsExceeded" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_dhmd_hrsExceeded" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_hmd_ecUnder" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_hmd_ecOver" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_hmd_waterLevelLow" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_hmd_cylinderWorn" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_hmd_issue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_hmdLockout" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_hmdCtrlBdNotDetected" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_rh_outOfPropBand" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_dhmd_disabled" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_dhmd_lockOut12Hr" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_dhmd_enabled" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_hmd_disabled" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_hmd_enabled" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_fan_controlMode" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_fan_tmp_propBand" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_fan_pct_manSetPt" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_fan_pct_maxSetPt" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_fan_pct_minSetPt" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_fan_snsrSpeedControl" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_fan_tmp_setPtDelta" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_ctrlCoupledMode" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_flowLossAir" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_fan_hrsExceeded" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_fan_issueTop" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_fan_issueBottom" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_ext_remSnsrName" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_remSnsrFunc" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_ext_tmp_remSnsr" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_remSnsrIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_prsHigh1A" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_prsLow1" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_hrsExceeded1" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_tmpSnsrDigScroll_1" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_tmpDigScrollOver1" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_lowPrsXdcrIssue1" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_highPrsXdcrIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_compLockout" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_shortCycle1A" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_pumpDownIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_comp_capReduction" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_heat_tmpOver" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_heat_hrsExceeded1" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_reheatLockout" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_cndsr_issue1" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_cndsr_vfdIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_cndsr_tvssIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_clng_tmp_supCW" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_clng_tmp_supCWOverThrshld" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_clng_tmpSupCWOver" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_valv_CWPosition" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_clng_flowLossSupplyCW" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_status" type="enum">
+		<STATE_VALUES>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+			<VALUE>8</VALUE>
+			<VALUE>16</VALUE>
+			<VALUE>32</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_sys_modelNumber" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_sys_name" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_operating" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_controlMode" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_operatingReason" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>4</VALUE>
+			<VALUE>5</VALUE>
+			<VALUE>6</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_unitStatus" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>4</VALUE>
+			<VALUE>5</VALUE>
+			<VALUE>6</VALUE>
+			<VALUE>7</VALUE>
+			<VALUE>8</VALUE>
+			<VALUE>9</VALUE>
+			<VALUE>10</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>12</VALUE>
+			<VALUE>13</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_teamworkMode" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_teamworkMode1Basis" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_ext_tm_bmsTimeout" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tm_autoRestart" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_pct_opEff" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_fan_pct_speed" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_comp_pct_utlztn" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_dhmd_pct_utlztn" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_heat_pct_utlztn" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_hmd_pct_utlztn" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tm_nextMaintMonth" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>65409</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tm_nextMaintYear" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_pct_maintenanceRamp" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_onOffCtrl" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_eventAckReset" type="enum">
+		<STATE_VALUES>
+			<VALUE>2</VALUE>
+			<VALUE>4</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_tmpHmdEventsEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_smokeDetectedEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_smokeDetectedType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_waterUnderFloorEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_waterUnderFloorType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_inpContactEnable01" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_inpContactType01" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_inpContactEnable02" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_inpContactType02" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_inpContactEnable03" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_inpContactType03" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_inpContactEnable04" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_inpContactType04" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_serviceReqEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_serviceReqType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_shutdownPwrLossEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_sys_shutdownPwrLossType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_flowLossEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_flowLossType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_reheatLockoutEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_reheatLockoutType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_hmdLockoutEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_hmdLockoutType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_compLockoutEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_compLockoutType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_overTempEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_ext_overTempType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_cndsr_vfdIssueEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_cndsr_vfdIssueType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_cndsr_tvssIssueEnable" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_cndsr_tvssIssueType" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_cndsr_issueEnable1" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_cndsr_issueType1" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+			<VALUE>2</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_inpContact01" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_inpContact02" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_inpContact03" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_inpContact04" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_smokeDetected" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_waterUnderFloor" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_serviceReq" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_shutdownPwrLoss" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_overTemp" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_flowLoss" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_cndsrPumpHighWater" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_stdbyGlycolPumpOn" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_fireDetect" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_unitOn" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_unitOff" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_unitStandby" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_partialShutdown" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_shutdown" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_snsrWaterLeakDetectIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_ext_bmsCommTimeout" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_maintDue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_maintCompleted" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_cloggedAirFilter" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_ramBatteryIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_lowMemory" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_masterCommLost" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_sys_highPwrShutdown" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="evt_clng_snsrSupFluIssue" type="alarm">
+		<STATE_VALUES>
+			<VALUE>19</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>3</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>11</VALUE>
+			<VALUE>0</VALUE>
+			<VALUE>27</VALUE>
+			<VALUE>0</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_pct_coolingCap" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_comp_prs_digScrollHP1" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_comp_tmp_calcHP" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_comp_prs_digScrollLP1" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_comp_tmp_calcLP" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_heat_status1" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_comp_prs_digScrollLowOf3" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_comp_prs_digScrollLowOf1" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>21845</VALUE>
+				<VALUE>43690</VALUE>
+				<VALUE>65535</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_mbv_prs_op1" type="status">
+			<STATE_VALUES>
+				<VALUE>-32768</VALUE>
+				<VALUE>-10923</VALUE>
+				<VALUE>10923</VALUE>
+				<VALUE>32767</VALUE>
+				<VALUE>32768</VALUE>
+				<VALUE>32769</VALUE>
+				<VALUE>32770</VALUE>
+				<VALUE>32771</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_dhmd_status" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="st_hmd_status" type="enum">
+		<STATE_VALUES>
+			<VALUE>0</VALUE>
+			<VALUE>1</VALUE>
+		</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_sw_applicationVer" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_sys_hwPlatform" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_sw_bootLoaderVer" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_sw_kernelVer" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_sw_rootFSVer" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="str_sw_frameWorkVer" type="status">
+			<STATE_VALUES>
+				<VALUE>10</VALUE>
+				<VALUE>20</VALUE>
+				<VALUE>30</VALUE>
+				<VALUE>40</VALUE>
+				<VALUE>50</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+	<DATA_POINT name="val_sys_tm_dateTime" type="status">
+			<STATE_VALUES>
+				<VALUE>0</VALUE>
+				<VALUE>858993459</VALUE>
+				<VALUE>1717986918</VALUE>
+				<VALUE>2147483647</VALUE>
+			</STATE_VALUES>
+	</DATA_POINT>
+</TEST>

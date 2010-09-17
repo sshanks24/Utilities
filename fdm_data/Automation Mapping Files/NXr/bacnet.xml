@@ -1,0 +1,324 @@
+<BACNET>
+    <DATAPOINT name="evt_bat_autoTest.1">
+        <MAP bType="BINARY" oType="VALUE" instance="1" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_equalize.1">
+        <MAP bType="BINARY" oType="VALUE" instance="2" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_chargeInhibit.1">
+        <MAP bType="BINARY" oType="VALUE" instance="3" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_inpOnGenerator.1">
+        <MAP bType="BINARY" oType="VALUE" instance="4" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_inpNotQualified.1">
+        <MAP bType="BINARY" oType="VALUE" instance="15" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_rct_failure.1">
+        <MAP bType="BINARY" oType="VALUE" instance="16" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_inv_failure.1">
+        <MAP bType="BINARY" oType="VALUE" instance="17" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_byp_unavail.1">
+        <MAP bType="BINARY" oType="VALUE" instance="18" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_low.1">
+        <MAP bType="BINARY" oType="VALUE" instance="19" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_lbsInhibit.1">
+        <MAP bType="BINARY" oType="VALUE" instance="20" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_fanFailure.1">
+        <MAP bType="BINARY" oType="VALUE" instance="21" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_overTemperature.1">
+        <MAP bType="BINARY" oType="VALUE" instance="22" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_outEPO.1">
+        <MAP bType="BINARY" oType="VALUE" instance="23" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_byp_sbsUnavail.1">
+        <MAP bType="BINARY" oType="VALUE" instance="24" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_byp_excessAutoReXfr.1">
+        <MAP bType="BINARY" oType="VALUE" instance="25" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_mms_parCommWarn.1">
+        <MAP bType="BINARY" oType="VALUE" instance="26" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_powerSupplyFailure.1">
+        <MAP bType="BINARY" oType="VALUE" instance="27" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_tempOver.1">
+        <MAP bType="BINARY" oType="VALUE" instance="28" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_inpPhsRotation.1">
+        <MAP bType="BINARY" oType="VALUE" instance="29" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_fuseFailure.1">
+        <MAP bType="BINARY" oType="VALUE" instance="30" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_inv_overloadPhsA.1">
+        <MAP bType="BINARY" oType="VALUE" instance="31" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_inv_overloadPhsB.1">
+        <MAP bType="BINARY" oType="VALUE" instance="32" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_inv_overloadPhsC.1">
+        <MAP bType="BINARY" oType="VALUE" instance="33" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_mms_systemOverload.1">
+        <MAP bType="BINARY" oType="VALUE" instance="34" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_inv_shutdownOverload.1">
+        <MAP bType="BINARY" oType="VALUE" instance="35" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_outFault.1">
+        <MAP bType="BINARY" oType="VALUE" instance="36" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_internalCommFailure.1">
+        <MAP bType="BINARY" oType="VALUE" instance="37" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_chargeError.1">
+        <MAP bType="BINARY" oType="VALUE" instance="38" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_inpCurrentImbal.1">
+        <MAP bType="BINARY" oType="VALUE" instance="39" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_mainDisconnectOpen.1">
+        <MAP bType="BINARY" oType="VALUE" instance="40" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_inv_ssSCRShort.1">
+        <MAP bType="BINARY" oType="VALUE" instance="41" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_notQualified.1">
+        <MAP bType="BINARY" oType="VALUE" instance="42" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_reverse.1">
+        <MAP bType="BINARY" oType="VALUE" instance="43" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_converterFail.1">
+        <MAP bType="BINARY" oType="VALUE" instance="44" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_inv_ssSCROpen.1">
+        <MAP bType="BINARY" oType="VALUE" instance="45" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_load_sharingFault.1">
+        <MAP bType="BINARY" oType="VALUE" instance="46" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_dcb_ep_abnormal.1">
+        <MAP bType="BINARY" oType="VALUE" instance="47" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_inpNeutralLost.1">
+        <MAP bType="BINARY" oType="VALUE" instance="48" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_loadImpactTransfer.1">
+        <MAP bType="BINARY" oType="VALUE" instance="49" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_userOperationInvalid.1">
+        <MAP bType="BINARY" oType="VALUE" instance="50" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_power_sub_module_fault.1">
+        <MAP bType="BINARY" oType="VALUE" instance="51" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_discharging.1">
+        <MAP bType="BINARY" oType="VALUE" instance="52" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_loadOnBypass.1">
+        <MAP bType="BINARY" oType="VALUE" instance="53" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_loadOnMaintBypass.1">
+        <MAP bType="BINARY" oType="VALUE" instance="54" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_bat_capacityLow.1">
+        <MAP bType="BINARY" oType="VALUE" instance="55" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_mms_onBatt.1">
+        <MAP bType="BINARY" oType="VALUE" instance="56" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_inpRmsPhsAB.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="1" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_inpRmsPhsBC.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="2" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_inpRmsPhsCA.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="3" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_inpRmsPhsA.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="4" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_inpRmsPhsB.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="5" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_inpRmsPhsC.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="6" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_freq_inp.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="7" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_inpRmsPhsAN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="8" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_inpRmsPhsBN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="9" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_inpRmsPhsCN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="10" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_na_inpPwrFactPhsA.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="11" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_na_inpPwrFactPhsB.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="12" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_na_inpPwrFactPhsC.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="13" />
+    </DATAPOINT>
+    <DATAPOINT name="val_byp_ep_inpRmsPhsAN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="24" />
+    </DATAPOINT>
+    <DATAPOINT name="val_byp_ep_inpRmsPhsBN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="25" />
+    </DATAPOINT>
+    <DATAPOINT name="val_byp_ep_inpRmsPhsCN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="26" />
+    </DATAPOINT>
+    <DATAPOINT name="val_byp_freq_inp.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="27" />
+    </DATAPOINT>
+    <DATAPOINT name="val_bat_tm_remaining.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="38" />
+    </DATAPOINT>
+    <DATAPOINT name="val_bat_ep_cabinet.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="39" />
+    </DATAPOINT>
+    <DATAPOINT name="val_bat_temp_cabinet.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="40" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_temp_inletAir.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="41" />
+    </DATAPOINT>
+    <DATAPOINT name="val_dcb_ec_dcBus.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="42" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_outRmsPhsAN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="53" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_outRmsPhsBN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="54" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_outRmsPhsCN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="55" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_outRmsPhsA.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="56" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_outRmsPhsB.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="57" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_outRmsPhsC.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="58" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_freq_out.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="59" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_outRmsPhsAB.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="60" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_outRmsPhsBC.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="61" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ep_outRmsPhsCA.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="62" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_na_outPwrFactPhsA.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="63" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_na_outPwrFactPhsB.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="64" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_na_outPwrFactPhsC.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="65" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_pct_outPwrPhsAN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="66" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_pct_outPwrPhsBN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="67" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_pct_outPwrPhsCN.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="68" />
+    </DATAPOINT>
+    <DATAPOINT name="val_mms_ap_out.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="69" />
+    </DATAPOINT>
+    <DATAPOINT name="val_mms_pwr_out.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="70" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ap_out.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="71" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_pwr_out.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="72" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_outCreFactPhsA.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="73" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_outCreFactPhsB.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="74" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_ec_outCreFactPhsC.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="75" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tm_dateTime.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="86" />
+    </DATAPOINT>
+    <DATAPOINT name="st_bat_upsBattStatus.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="1" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="1" bacnet="1" />
+            <EQUIVALENCE velocity="2" bacnet="2" />
+            <EQUIVALENCE velocity="3" bacnet="3" />
+            <EQUIVALENCE velocity="4" bacnet="4" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_inv_opState.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="12" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_mbs_bypBrkr.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="13" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_upsOutputSource.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="14" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="1" bacnet="1" />
+            <EQUIVALENCE velocity="2" bacnet="2" />
+            <EQUIVALENCE velocity="3" bacnet="3" />
+            <EQUIVALENCE velocity="4" bacnet="4" />
+            <EQUIVALENCE velocity="5" bacnet="5" />
+            <EQUIVALENCE velocity="6" bacnet="6" />
+            <EQUIVALENCE velocity="7" bacnet="7" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_status.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="15" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="1" bacnet="1" />
+            <EQUIVALENCE velocity="2" bacnet="2" />
+            <EQUIVALENCE velocity="8" bacnet="3" />
+            <EQUIVALENCE velocity="16" bacnet="4" />
+            <EQUIVALENCE velocity="32" bacnet="5" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+</BACNET>

@@ -1,0 +1,707 @@
+<MODBUS deviceType="UPS" deviceFamily="NXr" deviceModel="NXr" fdmVersion="860" dateGenerated="2010-05-14 8:33:34 AM">
+    <!--Alarms-->
+    <!---->
+    <DATA_POINT name="evt_bat_autoTest.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10001</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_equalize.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10002</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_chargeInhibit.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10003</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_inpOnGenerator.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10004</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_inpNotQualified.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10015</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_rct_failure.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10016</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_inv_failure.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10017</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_byp_unavail.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10018</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_low.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10019</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_lbsInhibit.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10020</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_fanFailure.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10021</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_overTemperature.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10022</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_outEPO.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10023</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_byp_sbsUnavail.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10024</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_byp_excessAutoReXfr.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10025</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_mms_parCommWarn.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10026</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_powerSupplyFailure.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10027</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_tempOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10028</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_inpPhsRotation.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10029</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_fuseFailure.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10030</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_inv_overloadPhsA.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10031</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_inv_overloadPhsB.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10032</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_inv_overloadPhsC.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10033</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_mms_systemOverload.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10034</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_inv_shutdownOverload.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10035</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_outFault.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10036</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_internalCommFailure.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10037</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_chargeError.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10038</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_inpCurrentImbal.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10039</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_mainDisconnectOpen.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10040</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_inv_ssSCRShort.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10041</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_notQualified.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10042</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_reverse.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10043</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_converterFail.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10044</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_inv_ssSCROpen.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10045</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_load_sharingFault.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10046</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_dcb_ep_abnormal.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10047</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_inpNeutralLost.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10048</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_loadImpactTransfer.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10049</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_userOperationInvalid.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10050</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_power_sub_module_fault.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10051</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_discharging.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10052</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_loadOnBypass.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10053</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_loadOnMaintBypass.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10054</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_bat_capacityLow.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10055</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_mms_onBatt.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10056</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--NonAlarms-->
+    <!--System Input RMS A-B-->
+    <DATA_POINT name="val_sys_ep_inpRmsPhsAB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30385</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input RMS B-C-->
+    <DATA_POINT name="val_sys_ep_inpRmsPhsBC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30386</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input RMS C-A-->
+    <DATA_POINT name="val_sys_ep_inpRmsPhsCA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30387</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input RMS Current Phase A-->
+    <DATA_POINT name="val_sys_ec_inpRmsPhsA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30388</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input RMS Current Phase B-->
+    <DATA_POINT name="val_sys_ec_inpRmsPhsB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30389</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input RMS Current Phase C-->
+    <DATA_POINT name="val_sys_ec_inpRmsPhsC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30390</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input Frequency-->
+    <DATA_POINT name="val_sys_freq_inp.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30391</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input RMS A-N-->
+    <DATA_POINT name="val_sys_ep_inpRmsPhsAN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30392</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input RMS B-N-->
+    <DATA_POINT name="val_sys_ep_inpRmsPhsBN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30393</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input RMS C-N-->
+    <DATA_POINT name="val_sys_ep_inpRmsPhsCN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30394</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input Power Factor Phs A-->
+    <DATA_POINT name="val_sys_na_inpPwrFactPhsA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30395</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input Power Factor Phs B-->
+    <DATA_POINT name="val_sys_na_inpPwrFactPhsB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30396</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Input Power Factor Phs C-->
+    <DATA_POINT name="val_sys_na_inpPwrFactPhsC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30397</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Bypass Input Voltage RMS A-N-->
+    <DATA_POINT name="val_byp_ep_inpRmsPhsAN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30401</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Bypass Input Voltage RMS B-N-->
+    <DATA_POINT name="val_byp_ep_inpRmsPhsBN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30402</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Bypass Input Voltage RMS C-N-->
+    <DATA_POINT name="val_byp_ep_inpRmsPhsCN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30403</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Bypass Input Frequency-->
+    <DATA_POINT name="val_byp_freq_inp.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30404</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Battery Time Remaining-->
+    <DATA_POINT name="val_bat_tm_remaining.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30408</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Battery Volts for Cabinet-->
+    <DATA_POINT name="val_bat_ep_cabinet.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30409</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Battery Temperature for Cabinet-->
+    <DATA_POINT name="val_bat_temp_cabinet.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30410</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Battery Temperature for Cabinet in Deg F-->
+    <DATA_POINT name="val_bat_temp_cabinet.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30411</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Inlet Air Temperature-->
+    <DATA_POINT name="val_sys_temp_inletAir.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30412</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Inlet Air Temperature in Deg F-->
+    <DATA_POINT name="val_sys_temp_inletAir.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30413</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--DC Bus Current-->
+    <DATA_POINT name="val_dcb_ec_dcBus.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30414</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--UPS battery1 status-->
+    <DATA_POINT name="st_bat_upsBattStatus.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30415</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Voltage RMS A-N-->
+    <DATA_POINT name="val_sys_ep_outRmsPhsAN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30419</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Voltage RMS B-N-->
+    <DATA_POINT name="val_sys_ep_outRmsPhsBN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30420</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Voltage RMS C-N-->
+    <DATA_POINT name="val_sys_ep_outRmsPhsCN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30421</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output RMS Current Phs A-->
+    <DATA_POINT name="val_sys_ec_outRmsPhsA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30422</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output RMS Current Phs B-->
+    <DATA_POINT name="val_sys_ec_outRmsPhsB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30423</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output RMS Current Phs C-->
+    <DATA_POINT name="val_sys_ec_outRmsPhsC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30424</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Frequency-->
+    <DATA_POINT name="val_sys_freq_out.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30425</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Voltage RMS A-B-->
+    <DATA_POINT name="val_sys_ep_outRmsPhsAB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30426</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Voltage RMS B-C-->
+    <DATA_POINT name="val_sys_ep_outRmsPhsBC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30427</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Voltage RMS C-A-->
+    <DATA_POINT name="val_sys_ep_outRmsPhsCA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30428</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Power Factor Phs A-->
+    <DATA_POINT name="val_sys_na_outPwrFactPhsA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30429</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Power Factor Phs B-->
+    <DATA_POINT name="val_sys_na_outPwrFactPhsB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30430</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Power Factor Phs C-->
+    <DATA_POINT name="val_sys_na_outPwrFactPhsC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30431</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Pct Power Phase A-->
+    <DATA_POINT name="val_sys_pct_outPwrPhsAN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30432</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Pct Power Phase B-->
+    <DATA_POINT name="val_sys_pct_outPwrPhsBN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30433</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Pct Power Phase C-->
+    <DATA_POINT name="val_sys_pct_outPwrPhsCN.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30434</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--MMS Output Apparent Power-->
+    <DATA_POINT name="val_mms_ap_out.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30435</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--MMS Output Power-->
+    <DATA_POINT name="val_mms_pwr_out.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30436</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Apparent Power-->
+    <DATA_POINT name="val_sys_ap_out.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30437</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Output Power-->
+    <DATA_POINT name="val_sys_pwr_out.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30438</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Output Current Crest Factor Phs A-->
+    <DATA_POINT name="val_sys_ec_outCreFactPhsA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30439</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Output Current Crest Factor Phs B-->
+    <DATA_POINT name="val_sys_ec_outCreFactPhsB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30440</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Output Current Crest Factor Phs C-->
+    <DATA_POINT name="val_sys_ec_outCreFactPhsC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30441</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Inverter On/Off State-->
+    <DATA_POINT name="st_inv_opState.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30445</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Maintenance Bypass Breaker (MBB)-->
+    <DATA_POINT name="st_mbs_bypBrkr.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30446</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--UPS Output Source-->
+    <DATA_POINT name="st_sys_upsOutputSource.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30447</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Status-->
+    <DATA_POINT name="st_sys_status.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30448</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Date and Time-->
+    <DATA_POINT name="val_sys_tm_dateTime.1.0">
+        <ADDRESS>
+            <REGISTER numReg="2">
+                <INPUT>39998</INPUT>
+                <HOLDING>49998</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+</MODBUS>

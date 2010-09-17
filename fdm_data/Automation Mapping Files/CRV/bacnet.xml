@@ -1,0 +1,790 @@
+<BACNET>
+    <DATAPOINT name="evt_sys_tmpAirSupplyOver.1">
+        <MAP bType="BINARY" oType="VALUE" instance="1" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_tmpAirSupplyUnder.1">
+        <MAP bType="BINARY" oType="VALUE" instance="2" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_tmpAirRetOver.1">
+        <MAP bType="BINARY" oType="VALUE" instance="3" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_snsrSupplyAirIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="4" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_snsrRetAirIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="5" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_rhAirRetOver.1">
+        <MAP bType="BINARY" oType="VALUE" instance="16" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_rhAirRetUnder.1">
+        <MAP bType="BINARY" oType="VALUE" instance="17" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_hmd_hrsExceeded.1">
+        <MAP bType="BINARY" oType="VALUE" instance="18" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_dhmd_hrsExceeded.1">
+        <MAP bType="BINARY" oType="VALUE" instance="19" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_hmd_ecUnder.1">
+        <MAP bType="BINARY" oType="VALUE" instance="20" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_hmd_ecOver.1">
+        <MAP bType="BINARY" oType="VALUE" instance="21" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_hmd_waterLevelLow.1">
+        <MAP bType="BINARY" oType="VALUE" instance="22" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_hmd_cylinderWorn.1">
+        <MAP bType="BINARY" oType="VALUE" instance="23" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_hmd_issue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="24" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_hmdLockout.1">
+        <MAP bType="BINARY" oType="VALUE" instance="25" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_hmdCtrlBdNotDetected.1">
+        <MAP bType="BINARY" oType="VALUE" instance="26" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_rh_outOfPropBand.1">
+        <MAP bType="BINARY" oType="VALUE" instance="27" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_flowLossAir.1">
+        <MAP bType="BINARY" oType="VALUE" instance="38" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_fan_hrsExceeded.1">
+        <MAP bType="BINARY" oType="VALUE" instance="39" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_fan_issueTop.1">
+        <MAP bType="BINARY" oType="VALUE" instance="40" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_fan_issueBottom.1">
+        <MAP bType="BINARY" oType="VALUE" instance="41" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="52" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.2">
+        <MAP bType="BINARY" oType="VALUE" instance="63" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.3">
+        <MAP bType="BINARY" oType="VALUE" instance="74" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.4">
+        <MAP bType="BINARY" oType="VALUE" instance="85" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.5">
+        <MAP bType="BINARY" oType="VALUE" instance="96" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.6">
+        <MAP bType="BINARY" oType="VALUE" instance="107" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.7">
+        <MAP bType="BINARY" oType="VALUE" instance="118" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.8">
+        <MAP bType="BINARY" oType="VALUE" instance="129" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.9">
+        <MAP bType="BINARY" oType="VALUE" instance="140" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_remSnsrIssue.10">
+        <MAP bType="BINARY" oType="VALUE" instance="151" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_prsHigh1A.1">
+        <MAP bType="BINARY" oType="VALUE" instance="162" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_prsLow1.1">
+        <MAP bType="BINARY" oType="VALUE" instance="163" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_hrsExceeded1.1">
+        <MAP bType="BINARY" oType="VALUE" instance="164" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_tmpSnsrDigScroll_1.1">
+        <MAP bType="BINARY" oType="VALUE" instance="165" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_tmpDigScrollOver1.1">
+        <MAP bType="BINARY" oType="VALUE" instance="166" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_lowPrsXdcrIssue1.1">
+        <MAP bType="BINARY" oType="VALUE" instance="167" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_highPrsXdcrIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="168" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_compLockout.1">
+        <MAP bType="BINARY" oType="VALUE" instance="169" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_shortCycle1A.1">
+        <MAP bType="BINARY" oType="VALUE" instance="170" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_comp_pumpDownIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="171" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_heat_tmpOver.1">
+        <MAP bType="BINARY" oType="VALUE" instance="182" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_heat_hrsExceeded1.1">
+        <MAP bType="BINARY" oType="VALUE" instance="183" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_reheatLockout.1">
+        <MAP bType="BINARY" oType="VALUE" instance="184" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_cndsr_issue1.1">
+        <MAP bType="BINARY" oType="VALUE" instance="195" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_cndsr_vfdIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="196" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_cndsr_tvssIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="197" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_clng_tmpSupCWOver.1">
+        <MAP bType="BINARY" oType="VALUE" instance="208" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_valv_CWPosition.1">
+        <MAP bType="BINARY" oType="VALUE" instance="209" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_clng_flowLossSupplyCW.1">
+        <MAP bType="BINARY" oType="VALUE" instance="210" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_inpContact01.1">
+        <MAP bType="BINARY" oType="VALUE" instance="221" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_inpContact02.1">
+        <MAP bType="BINARY" oType="VALUE" instance="222" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_inpContact03.1">
+        <MAP bType="BINARY" oType="VALUE" instance="223" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_inpContact04.1">
+        <MAP bType="BINARY" oType="VALUE" instance="224" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_smokeDetected.1">
+        <MAP bType="BINARY" oType="VALUE" instance="225" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_waterUnderFloor.1">
+        <MAP bType="BINARY" oType="VALUE" instance="226" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_serviceReq.1">
+        <MAP bType="BINARY" oType="VALUE" instance="227" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_shutdownPwrLoss.1">
+        <MAP bType="BINARY" oType="VALUE" instance="228" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_overTemp.1">
+        <MAP bType="BINARY" oType="VALUE" instance="229" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_flowLoss.1">
+        <MAP bType="BINARY" oType="VALUE" instance="230" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_cndsrPumpHighWater.1">
+        <MAP bType="BINARY" oType="VALUE" instance="231" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_stdbyGlycolPumpOn.1">
+        <MAP bType="BINARY" oType="VALUE" instance="232" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_fireDetect.1">
+        <MAP bType="BINARY" oType="VALUE" instance="233" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_unitOn.1">
+        <MAP bType="BINARY" oType="VALUE" instance="234" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_unitOff.1">
+        <MAP bType="BINARY" oType="VALUE" instance="235" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_unitStandby.1">
+        <MAP bType="BINARY" oType="VALUE" instance="236" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_partialShutdown.1">
+        <MAP bType="BINARY" oType="VALUE" instance="237" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_shutdown.1">
+        <MAP bType="BINARY" oType="VALUE" instance="238" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_snsrWaterLeakDetectIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="239" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_ext_bmsCommTimeout.1">
+        <MAP bType="BINARY" oType="VALUE" instance="240" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_maintDue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="241" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_maintCompleted.1">
+        <MAP bType="BINARY" oType="VALUE" instance="242" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_cloggedAirFilter.1">
+        <MAP bType="BINARY" oType="VALUE" instance="243" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_ramBatteryIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="244" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_masterCommLost.1">
+        <MAP bType="BINARY" oType="VALUE" instance="245" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_sys_highPwrShutdown.1">
+        <MAP bType="BINARY" oType="VALUE" instance="246" />
+    </DATAPOINT>
+    <DATAPOINT name="evt_clng_snsrSupFluIssue.1">
+        <MAP bType="BINARY" oType="VALUE" instance="247" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_airSupply.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="1" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_temp_inletAir.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="2" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_dewPntRet.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="3" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsrMin.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="4" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsrMax.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="5" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsrAvg.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="6" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_airSetPt.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="7" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_airCoolingPropBand.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="8" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_airHeatingPropBand.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="9" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_airDeadBand.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="10" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_airSupplyOverThrshld.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="11" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_airSupplyUnderThrshld.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="12" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tmp_airRetOverThrshld.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="13" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_rh_airSupply.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="24" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_rh_airRet.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="25" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_rh_setPt.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="26" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_rh_hmdPropBand.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="27" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_rh_dhmdPropBand.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="28" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_rh_deadBand.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="29" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_rh_airRetOverThrshld.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="30" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_rh_airRetUnderThrshld.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="31" />
+    </DATAPOINT>
+    <DATAPOINT name="val_fan_tmp_propBand.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="42" />
+    </DATAPOINT>
+    <DATAPOINT name="val_fan_pct_manSetPt.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="43" />
+    </DATAPOINT>
+    <DATAPOINT name="val_fan_pct_maxSetPt.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="44" />
+    </DATAPOINT>
+    <DATAPOINT name="val_fan_pct_minSetPt.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="45" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="56" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.2">
+        <MAP bType="ANALOG" oType="VALUE" instance="67" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.3">
+        <MAP bType="ANALOG" oType="VALUE" instance="78" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.4">
+        <MAP bType="ANALOG" oType="VALUE" instance="89" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.5">
+        <MAP bType="ANALOG" oType="VALUE" instance="100" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.6">
+        <MAP bType="ANALOG" oType="VALUE" instance="111" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.7">
+        <MAP bType="ANALOG" oType="VALUE" instance="122" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.8">
+        <MAP bType="ANALOG" oType="VALUE" instance="133" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.9">
+        <MAP bType="ANALOG" oType="VALUE" instance="144" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tmp_remSnsr.10">
+        <MAP bType="ANALOG" oType="VALUE" instance="155" />
+    </DATAPOINT>
+    <DATAPOINT name="val_clng_tmp_supCW.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="166" />
+    </DATAPOINT>
+    <DATAPOINT name="val_clng_tmp_supCWOverThrshld.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="167" />
+    </DATAPOINT>
+    <DATAPOINT name="val_ext_tm_bmsTimeout.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="178" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tm_autoRestart.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="179" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_pct_opEff.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="190" />
+    </DATAPOINT>
+    <DATAPOINT name="val_fan_pct_speed.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="191" />
+    </DATAPOINT>
+    <DATAPOINT name="val_comp_pct_utlztn.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="192" />
+    </DATAPOINT>
+    <DATAPOINT name="val_dhmd_pct_utlztn.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="193" />
+    </DATAPOINT>
+    <DATAPOINT name="val_heat_pct_utlztn.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="194" />
+    </DATAPOINT>
+    <DATAPOINT name="val_hmd_pct_utlztn.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="195" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tm_nextMaintMonth.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="196" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tm_nextMaintYear.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="197" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_pct_maintenanceRamp.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="198" />
+    </DATAPOINT>
+    <DATAPOINT name="val_sys_tm_dateTime.1">
+        <MAP bType="ANALOG" oType="VALUE" instance="209" />
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_serverClass.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="1" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="1" bacnet="1" />
+            <EQUIVALENCE velocity="2" bacnet="2" />
+            <EQUIVALENCE velocity="3" bacnet="3" />
+            <EQUIVALENCE velocity="4" bacnet="4" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_tmpSnsrAirControl.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="12" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_tmpRemSnsrCalc.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="13" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_fan_controlMode.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="24" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_fan_snsrSpeedControl.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="25" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="36" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.2">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="47" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.3">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="58" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.4">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="69" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.5">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="80" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.6">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="91" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.7">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="102" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.8">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="113" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.9">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="124" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_remSnsrFunc.10">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="135" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_status.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="146" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="1" bacnet="1" />
+            <EQUIVALENCE velocity="2" bacnet="2" />
+            <EQUIVALENCE velocity="8" bacnet="3" />
+            <EQUIVALENCE velocity="16" bacnet="4" />
+            <EQUIVALENCE velocity="32" bacnet="5" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_operating.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="147" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_controlMode.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="148" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_operatingReason.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="149" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+            <EQUIVALENCE velocity="3" bacnet="4" />
+            <EQUIVALENCE velocity="4" bacnet="5" />
+            <EQUIVALENCE velocity="5" bacnet="6" />
+            <EQUIVALENCE velocity="6" bacnet="7" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_onOffCtrl.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="160" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_eventAckReset.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="171" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="2" bacnet="1" />
+            <EQUIVALENCE velocity="4" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_smokeDetectedEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="172" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_smokeDetectedType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="173" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_waterUnderFloorEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="174" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_waterUnderFloorType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="175" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_inpContactEnable01.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="176" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_inpContactType01.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="177" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_inpContactEnable02.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="178" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_inpContactType02.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="179" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_inpContactEnable03.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="180" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_inpContactType03.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="181" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_inpContactEnable04.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="182" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_inpContactType04.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="183" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_serviceReqEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="184" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_serviceReqType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="185" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_shutdownPwrLossEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="186" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_sys_shutdownPwrLossType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="187" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_flowLossEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="188" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_flowLossType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="189" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_reheatLockoutEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="190" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_reheatLockoutType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="191" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_hmdLockoutEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="192" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_hmdLockoutType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="193" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_compLockoutEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="194" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_compLockoutType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="195" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_overTempEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="196" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_ext_overTempType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="197" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_cndsr_vfdIssueEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="198" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_cndsr_vfdIssueType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="199" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_cndsr_tvssIssueEnable.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="200" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_cndsr_tvssIssueType.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="201" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_cndsr_issueEnable1.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="202" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+    <DATAPOINT name="st_cndsr_issueType1.1">
+        <MAP bType="MULTISTATE" oType="VALUE" instance="203" />
+        <EQUIVALENCES>
+            <EQUIVALENCE velocity="0" bacnet="1" />
+            <EQUIVALENCE velocity="1" bacnet="2" />
+            <EQUIVALENCE velocity="2" bacnet="3" />
+        </EQUIVALENCES>
+    </DATAPOINT>
+</BACNET>
