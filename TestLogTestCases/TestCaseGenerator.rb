@@ -41,9 +41,27 @@ INPUT_TYPES = ["web", "xls", "xml"]
 DEVICES = ['APM','BDSU','Challenger','CRV','Deluxe','DS','HPC','HPM','Jumbo','Pex','PSI-700','XDC','XDP','XDPW','XP_Cray']
 CARDS = ['IS-WEBCARD','IS-WEBX','IS-WEBL','IS-WEBS','IS-485X','IS-485L','IS-485S','IS-IPBMX','IS-IPBML','IS-IPBMS']
 
-attr_accessor :path_to_fdm, :path_to_gdd, :protocol, :type
+attr_accessor :path_to_fdm, :path_to_gdd , :protocol,:test_type,:test_case,
+  :input_type,:device_name,:card_name,:test_suite,:input_file,:ip_address,
+  :out_file,:strings,:data_ids
 
-def initialize()
+def initialize
+  @path_to_fdm = ''
+  @path_to_gdd = ''
+  @protocol = ''
+  @test_type = ''
+  @test_case = ''
+  @input_type = ''
+  @device_name = ''
+  @card_name = ''
+  @test_suite = ''
+  @input_file = ''
+  @ip_address = ''
+  @out_file = ''
+  @output = Array.new
+end
+
+def configure_from_user()
   @path_to_fdm = get_path("FDM")
   @path_to_gdd = get_path("GDD")
   @protocol = get_protocol
@@ -53,35 +71,25 @@ def initialize()
   @device_name = get_device_name
   @card_name = get_card_name
 
-#  @path_to_fdm = 'C:\LMG_Test\ruby\Utilities\TestLogTestCases\iCOM_CR.xml'
-#  @path_to_gdd = 'C:\Documents and Settings\shanksstemp\Desktop\BDSU\Testlog\XSLT\enp2dd.xml'
-#  @protocol = 'BN'
-#  @test_type = 'Monitor'
-#  @test_case = 'C:\LMG_Test\ruby\Utilities\TestLogTestCases\BN - Monitor Template.tlg'
-#  @input_type = 'xls'
-#  @device_name = 'CR'
-
-  case @input_type
+ case @input_type
   when 'xls' then 
     @input_file = get_input_file
     @test_suite = get_test_suite
   when 'xml' then @input_file = get_input_file
   when 'web' then @ip_address = ''
   else puts "#{input_type} not supported"; raise "Invalid input";
-  end
-  
+  end  
   puts "\nConfiguration Succesful!"
   
-  global_strings = build_string_id_hash(@path_to_gdd,'/Enp2DataDict/GlobalStringDefinitions/String')
-  local_strings = build_string_id_hash(@path_to_fdm,'/*/LocalStringDefinitions/String')
-
-  @strings = global_strings.merge(local_strings)
-  @strings.default('UNKNOWN STRING ID')
-
-  @data_ids = build_data_id_hash(@path_to_gdd,'//DataDictEntry')
-  @data_ids.default('UNKNOWN STRING ID')
-
-  @output = Array.new
+  build_hashes
+#  global_strings = build_string_id_hash(@path_to_gdd,'/Enp2DataDict/GlobalStringDefinitions/String')
+#  local_strings = build_string_id_hash(@path_to_fdm,'/*/LocalStringDefinitions/String')
+#
+#  @strings = global_strings.merge(local_strings)
+#  @strings.default('UNKNOWN STRING ID')
+#
+#  @data_ids = build_data_id_hash(@path_to_gdd,'//DataDictEntry')
+#  @data_ids.default('UNKNOWN STRING ID')
 end
 
 def size
@@ -198,17 +206,16 @@ def parse_input_file
         ws = wb.Worksheets(1)
         data = ws.UsedRange.Value
         for i in 1..data.size-1
-          data_id = @data_ids.index(@strings.index(data[i][2]))
+          data_label = data[i][2].split('(')[0].strip # Strip Multi-module index from label to lookup data id
+          data_id = @data_ids.index(@strings.index(data[i][2].split('(')[0].strip))
           register = data[i][1].split('(')[0]
           size = data[i][1].split('(')[1].sub(')','')
-          data_label = data[i][2].split('(')[0].strip
+          data_label = data[i][2] # Put the index back into the label
           units = data[i][3]
           scale = data[i][4]
           access = data[i][5]
           title = "#{@protocol} - #{data_id} - #{register}(#{size}) - #{data_label} - #{units} - #{scale} - #{access}"
-          title.sub!('- -','-')
-          title.sub!('- -','')
-          title.strip
+          #TODO Clean up title
           titles << title
         end
         return titles
@@ -227,6 +234,7 @@ def parse_input_file
 end
 
 def generate() #TODO Need to handle Multi-module test cases...
+  build_hashes
   if @input_type == 'xls' then
     mm_index = ''
     test_cases = parse_input_file
@@ -235,12 +243,12 @@ def generate() #TODO Need to handle Multi-module test cases...
       case @protocol
       when 'BN' then
         mm_index = title.split('-')[title.split('-').size - 2].strip
-        @output << 'case' << @device_name + "\\#{@test_type}\\" + @test_suite << data_id + '-' + mm_index + '-' + @protocol << title
+        @output << 'case' << @device_name + "\\#{@test_type}\\" + @test_suite << data_id + '-' + mm_index.to_s + '-' + @protocol + '-' + test_cases.index(title).to_s << title
       build_test_case(@test_case)
       when 'MB' then
         mm_index = 1
-        if mm_index =~ /\[/ then mm_index = title.split('[')[1].split(']')[0].strip; end
-        @output << 'case' << @device_name + "\\#{@test_type}\\" + @test_suite << data_id + '-' + mm_index.to_s + '-' + @protocol << title
+        if title =~ /\[/ then mm_index = title.split('[')[1].split(']')[0].strip; end
+        @output << 'case' << @device_name + "\\#{@test_type}\\" + @test_suite << data_id + '-' + mm_index.to_s + '-' + @protocol + '-' + test_cases.index(title).to_s << title
         build_test_case(@test_case)
       when 'SP' then #TODO Implement this case - SNMP
       when 'WB' then #TODO Implement this case - Web
@@ -339,6 +347,21 @@ def build_test_case(path_to_xml)
   return @output
 end
 
+def build_hashes
+  puts "\nBuilding data hashes\n"
+  global_strings = build_string_id_hash(@path_to_gdd,'/Enp2DataDict/GlobalStringDefinitions/String')
+  local_strings = build_string_id_hash(@path_to_fdm,'/*/LocalStringDefinitions/String')
+
+  @strings = global_strings.merge(local_strings)
+  @strings.default('UNKNOWN STRING ID')
+
+  global_data_ids = build_data_id_hash(@path_to_gdd,'//DataDictEntry/DataId','//DataDictEntry/LabelTextId')
+  local_data_ids = build_data_id_hash(@path_to_fdm,'///DataIdentifier','///DataLabel/TextID')
+
+  @data_ids = global_data_ids.merge(local_data_ids)
+  @data_ids.default('UNKNOWN DATA ID')
+end
+
 def build_string_id_hash(path_to_xml,path_to_string)
   if File.exists?(path_to_xml)
     File.open(path_to_xml) do |config_file|
@@ -362,7 +385,7 @@ def build_string_id_hash(path_to_xml,path_to_string)
   end
 end
 
-def build_data_id_hash(path_to_xml,path_to_data_dict_entry)
+def build_data_id_hash(path_to_xml,path_to_data_id,path_to_label_text_id)
   if File.exists?(path_to_xml)
     File.open(path_to_xml) do |config_file|
       # Open the document
@@ -370,8 +393,8 @@ def build_data_id_hash(path_to_xml,path_to_data_dict_entry)
       # Initialize variables (scope is outside of do loops)
       h = Hash.new
       puts "Parsing #{path_to_xml} for data ids."
-      data_ids = XPath.match( doc, path_to_data_dict_entry + '/DataId' )
-      data_labels = XPath.match( doc, path_to_data_dict_entry + '/LabelTextId' )
+      data_ids = XPath.match( doc, path_to_data_id)
+      data_labels = XPath.match( doc, path_to_label_text_id)
       for i in 0..data_ids.size-1
         key = data_ids[i].text
         value = data_labels[i].text
@@ -383,19 +406,21 @@ def build_data_id_hash(path_to_xml,path_to_data_dict_entry)
   end
 end
 
-def output_to_csv(path2out)
+def output_header(path2out)
   # Create/Open the output file and write the column headers
-  out_file = File.new(path2out, 'w')
+  @out_file = File.new(path2out, 'w')
   for i in 0..CH.size-1 do
     if i < CH.size-1 then out_file.print CH[i] + ","
     else out_file.puts CH[i]
     end
   end
+end
 
+def output_to_csv()
   for i in 1..@output.size do
-    if i == 1 then out_file.print @output[i-1].to_s + ","; next; end;
-    if i % CH.size != 0 then out_file.print @output[i-1].to_s + ","
-    else out_file.puts @output[i-1].to_s
+    if i == 1 then @out_file.print @output[i-1].to_s + ","; next; end;
+    if i % CH.size != 0 then @out_file.print @output[i-1].to_s + ","
+    else @out_file.puts @output[i-1].to_s
     end
   end
 end
