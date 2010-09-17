@@ -198,16 +198,22 @@ def parse_input_file
         ws = wb.Worksheets(1)
         data = ws.UsedRange.Value
         for i in 1..data.size-1
-          data_id = data[i][2].split('_')[1].split('-')[0]
-          data_label = @strings.fetch(@data_ids.fetch(data_id))
-          object_id = data[i][1]
-          mm_index = data[i][2].split('_')[1].split('-')[1]
-          hierarchy = data[i][2].split('_')[1].split('-')[2]
-          titles << "#{@protocol} - #{data_id} - #{data_label} - #{object_id}-#{mm_index}-#{hierarchy}"
+          data_id = @data_ids.index(@strings.index(data[i][2]))
+          register = data[i][1].split('(')[0]
+          size = data[i][1].split('(')[1].sub(')','')
+          data_label = data[i][2].split('(')[0].strip
+          units = data[i][3]
+          scale = data[i][4]
+          access = data[i][5]
+          title = "#{@protocol} - #{data_id} - #{register}(#{size}) - #{data_label} - #{units} - #{scale} - #{access}"
+          title.sub!('- -','-')
+          title.sub!('- -','')
+          title.strip
+          titles << title
         end
         return titles
-      when 'SP'
-      when 'WB'
+      when 'SP' #TODO
+      when 'WB' #TODO
       else
       end
     when 'xml' then
@@ -227,14 +233,19 @@ def generate() #TODO Need to handle Multi-module test cases...
     test_cases.each do |title|
       data_id = title.split('-')[1].strip
       case @protocol
-      when 'BN' then mm_index = title.split('-')[title.split('-').size - 2].strip
-      when 'MB' then #TODO Implement this case - Modbus
+      when 'BN' then
+        mm_index = title.split('-')[title.split('-').size - 2].strip
+        @output << 'case' << @device_name + "\\#{@test_type}\\" + @test_suite << data_id + '-' + mm_index + '-' + @protocol << title
+      build_test_case(@test_case)
+      when 'MB' then
+        mm_index = 1
+        if mm_index =~ /\[/ then mm_index = title.split('[')[1].split(']')[0].strip; end
+        @output << 'case' << @device_name + "\\#{@test_type}\\" + @test_suite << data_id + '-' + mm_index.to_s + '-' + @protocol << title
+        build_test_case(@test_case)
       when 'SP' then #TODO Implement this case - SNMP
       when 'WB' then #TODO Implement this case - Web
       else mm_index = 1
       end
-      @output << 'case' << @device_name + "\\#{@test_type}\\" + @test_suite << data_id + '-' + mm_index + '-' + @protocol << title
-      build_test_case(@test_case)
     end
 
   else
