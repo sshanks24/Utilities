@@ -43,7 +43,7 @@ CARDS = ['IS-WEBCARD','IS-WEBX','IS-WEBL','IS-WEBS','IS-485X','IS-485L','IS-485S
 
 attr_accessor :path_to_fdm, :path_to_gdd , :protocol,:test_type,:test_case,
   :input_type,:device_name,:card_name,:test_suite,:input_file,:ip_address,
-  :out_file,:strings,:data_ids
+  :out_file,:strings,:data_ids,:dataID2string
 
 def initialize
   @path_to_fdm = ''
@@ -207,7 +207,7 @@ def parse_input_file
         data = ws.UsedRange.Value
         for i in 1..data.size-1
           data_label = data[i][2].split('(')[0].strip # Strip Multi-module index from label to lookup data id
-          data_id = @data_ids.index(@strings.index(data[i][2].split('(')[0].strip))
+          data_id = @dataID2string.index(data_label)
           register = data[i][1].split('(')[0]
           size = data[i][1].split('(')[1].sub(')','')
           data_label = data[i][2] # Put the index back into the label
@@ -215,7 +215,8 @@ def parse_input_file
           scale = data[i][4]
           access = data[i][5]
           title = "#{@protocol} - #{data_id} - #{register}(#{size}) - #{data_label} - #{units} - #{scale} - #{access}"
-          #TODO Clean up title
+          title.gsub!(' -  -  - ','')
+          title.gsub!('-  -','')
           titles << title
         end
         return titles
@@ -360,6 +361,13 @@ def build_hashes
 
   @data_ids = global_data_ids.merge(local_data_ids)
   @data_ids.default('UNKNOWN DATA ID')
+
+  @dataID2string = Hash.new
+  @data_ids.each_key do |key|
+    value = @strings.fetch(@data_ids.fetch(key))
+    @dataID2string[key] = value
+  end
+  puts "Finished building hashes"
 end
 
 def build_string_id_hash(path_to_xml,path_to_string)
