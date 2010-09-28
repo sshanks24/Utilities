@@ -19,8 +19,11 @@ class DataComparison
     else
     @@gdd = Gdd.new(gdd)
     end
-    @@fdm = ''
+    @@fdm = Fdm.new(fdm)
+
+    @@gdd.merge_hashes_with_fdm(@@fdm)
     @protocol_under_test = GatheredData.new(protocol, gathered_data)
+
     # @velocity = GatheredData.new('v4',v4_device_xml)
   end
 
