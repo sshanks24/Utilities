@@ -1,6 +1,8 @@
 
 class LiebertXML
 
+  attr_accessor :strings, :units, :data
+  
   def initialize(gdd_file)
     File.open(gdd_file) do |config_file|
       @xml = REXML::Document.new(config_file)
@@ -53,6 +55,16 @@ class LiebertXML
       key = data.elements["DataId"].text
       value = data.elements["LabelTextId"].text
       h[key] = value
+    end
+    return h
+  end
+
+  def build_hash(xpath_to_key,xpath_to_value)
+    h = Hash.new
+    keys = @xml.elements.to_a(xpath_to_key)
+    values = @xml.elements.to_a(xpath_to_value)
+    for i in 0..keys.size-1
+      h[keys[i].text] = values[i].text
     end
     return h
   end
