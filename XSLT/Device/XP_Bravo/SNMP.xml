@@ -1,0 +1,595 @@
+<SNMP>
+  <GDD_POINT name="val_sys_tmp_dewPnt" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4867.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4867.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_airMinSetPt" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4709.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4709.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_airA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4594.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4594.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_pct_hmdtyAirA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4595.hierarchy" units="relativeHumidity" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_dewPntA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4596.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4596.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_airB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4597.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4597.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_pct_hmdtyAirB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4598.hierarchy" units="relativeHumidity" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_dewPntB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4599.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4599.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_airOverThrshld" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4600.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4600.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_tmpAirOverA" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4601.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpAirOverEnableA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4602.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpAirOverTypeA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4603.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_tmpAirOverB" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4604.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpAirOverEnableB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4605.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpAirOverTypeB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4606.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_airUnderThrshld" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4607.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4607.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_tmpAirUnderA" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4608.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpAirUnderEnableA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4609.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpAirUnderTypeA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4610.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_tmpAirUnderB" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4611.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpAirUnderEnableB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4612.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpAirUnderTypeB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4613.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_dewPntOverThrshld" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4614.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4614.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_tmpDewPntOver" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4615.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpDewPntOverEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4616.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_tmpDewPntOverType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4617.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_snsrAirIssueA" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4618.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_snsrAirIssueEnableA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4619.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_snsrAirIssueTypeA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4620.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_snsrAirIssueB" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4621.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_snsrAirIssueEnableB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4622.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_snsrAirIssueTypeB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4623.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_clng_tmp_supCW" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4624.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4624.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_clng_tmp_supCWOverThrshld" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4625.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4625.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_clng_tmpSupCWOver" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4626.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupCWOverEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4627.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupCWOverType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4628.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_clng_snsrSupCWIssue" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4629.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_snsrSupCWIssueEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4630.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_snsrSupCWIssueType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4631.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_valv_CWPosition" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4703.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_valv_CWPositionEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4704.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_valv_CWPositionType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4705.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_clng_tmp_supRfg" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4632.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4632.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_clng_tmp_supRfgOverThrshld" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4633.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4633.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_clng_tmpSupRfgOver" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4634.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupRfgOverEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4635.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupRfgOverType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4636.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_clng_tmpSupRfgUnder" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4637.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupRfgUnderEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4638.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupRfgUnderType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4639.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_clng_snsrSupRfgIssue" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4640.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_snsrSupRfgIssueEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4641.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_snsrSupRfgIssueType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4642.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_clng_tmp_supFlu" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4643.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4643.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_clng_tmp_supFluOverThrshld" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4644.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.4644.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_clng_tmpSupFluOver" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4645.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupFluOverEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4646.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupFluOverType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4647.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_clng_tmpSupFluUnder" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4648.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupFluUnderEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4649.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_tmpSupFluUnderType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4650.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_clng_snsrSupFluIssue" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4651.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_snsrSupFluIssueEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4652.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_clng_snsrSupFluIssueType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4653.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_pump_op1" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4654.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_pump_op2" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4655.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_pump_flowLoss1" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4656.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_pump_flowLossEnable1" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4657.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_pump_flowLossType1" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4658.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_pump_flowLoss2" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4659.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_pump_flowLossEnable2" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4660.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_pump_flowLossType2" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4661.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_pump_shortCycle" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4662.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_pump_shortCycleEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4663.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_pump_shortCycleType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4664.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_pump_tm_op" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5298.hierarchy" units="hours" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_pump_tm_opThreshold" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5299.hierarchy" units="hours" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_pump_hrsExceeded" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5300.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_op1A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4665.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_op1B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4666.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_op2A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4667.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_op2B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4668.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_prsHigh1A" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4669.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsHighEnable1A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4670.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsHighType1A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4671.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_prsHigh1B" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4672.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsHighEnable1B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4673.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsHighType1B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4674.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_prsHigh2A" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4675.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsHighEnable2A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4676.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsHighType2A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4677.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_prsHigh2B" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4678.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsHighEnable2B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4679.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsHighType2B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4680.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_shortCycle1A" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4681.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_shortCycleEnable1A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4682.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_shortCycleType1A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4683.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_shortCycle1B" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4684.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_shortCycleEnable1B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4685.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_shortCycleType1B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4686.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_shortCycle2A" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4687.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_shortCycleEnable2A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4688.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_shortCycleType2A" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4689.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_shortCycle2B" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4690.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_shortCycleEnable2B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4691.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_shortCycleType2B" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4692.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_prsTandemLow1" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4693.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsTandemLowEnable1" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4694.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsTandemLowType1" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4695.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_comp_prsTandemLow2" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4696.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsTandemLowEnable2" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4697.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_comp_prsTandemLowType2" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4698.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_valv_pct_posHotGas1" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4699.hierarchy" units="percent" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_valv_pct_posHotGas2" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4700.hierarchy" units="percent" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_valv_posHotGasSolenoid1" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4701.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_valv_posHotGasSolenoid2" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4702.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_remCommStatus" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5486.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_fan_onOffCtrl" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5487.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_fan_opStateGroupA" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5509.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_btnCtrlFan" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5488.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_visualIdCtrl" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5489.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_sys_pct_coolCapacity" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5490.hierarchy" units="percent" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_sys_pwr_coolCapacity" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5491.hierarchy" units="kiloWatts" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_condensDetect" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5492.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_condensDetectEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5493.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_condensDetectType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5494.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_fanIssue" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5495.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_fanIssueEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5496.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_fanIssueType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5497.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_remSnsrIssue" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5060.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_remSnsrIssueEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5498.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_remSnsrIssueType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5499.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_remShutdown" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5500.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_remShutdownEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5501.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_remShutdownType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5502.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_overThrshldAisleHot" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5503.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.5503.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_underThrshldAisleHot" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5504.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.5504.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_tmpRangeAisleHot" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5505.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_overThrshldAisleCold" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5506.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.5506.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_underThrshldAisleCold" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5507.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.5507.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_tmpRangeAisleCold" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5508.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_ext_tmp_remSnsr" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5059.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.5059.hierarchy" units="tempC" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_fan_opStateGroupB" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5510.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_fan_modeEconomy" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5511.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_status" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4123.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_modelNumber" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4240.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_name" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4329.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_operating" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4706.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_controlMode" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4707.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_operatingReason" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5074.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="val_sys_tm_autoRestart" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4710.hierarchy" units="seconds" scale="1" mibType="Integer32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_sys_pct_maintenanceRamp" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4870.hierarchy" units="percent" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_sys_tm_nextMaintMonth" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4868.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_sys_tm_nextMaintYear" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4869.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_onOffCtrl" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.5143.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_inpContactEnable01" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4718.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_ext_inpContactType01" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4719.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_condensDetectEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4712.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_condensDetectType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4713.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_shutdownPwrLossEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4715.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_shutdownPwrLossType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4716.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_smokeDetectedEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4721.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_smokeDetectedType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4722.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_waterUnderFloorEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4724.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_waterUnderFloorType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4725.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_serviceReqEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4727.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_serviceReqType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4728.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_fan_issueEnable" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4730.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_fan_issueType" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4731.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_eventAckReset" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4717.hierarchy" units="" scale="1" mibType="Enumeration" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_ext_inpContact01" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4270.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_condensDetect" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4711.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_shutdownPwrLoss" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4714.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_smokeDetected" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4720.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_waterUnderFloor" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4723.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_serviceReq" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4726.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_fan_issue" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.4729.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_unitCommLost" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5419.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_ramBatteryIssue" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5119.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_masterCommLost" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5120.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_remShutdown" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5512.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_missingUnitCode" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5418.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_unitOn" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5109.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_unitOff" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5110.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_unitStandby" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5111.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_partialShutdown" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5112.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_shutdown" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5113.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_maintDue" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5116.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_sys_maintCompleted" type="ALARM">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.7.1.5117.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+  <GDD_POINT name="val_sys_tm_dateTime" type="DATA">
+    <SNMP_OID name="LIEBERT-GP-FLEXIBLE-MIB" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.1.4293.hierarchy" units="" scale="1" mibType="Unsigned32" />
+  </GDD_POINT>
+</SNMP>

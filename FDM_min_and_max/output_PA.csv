@@ -1,0 +1,149 @@
+dataID,programmaticName,MaxValue,MinValue,Units,Enumeration
+1,standardVersion,15,15,,
+2,stdCompliance,,,,"Level 2,Level 1"
+3,errorCompliance,,,,"Level 2,Level 1"
+4553,st_sys_serverClass,,,,"UPS,AIR,PMP,PDU"
+5,serverState,,,,"Normal,Soft Reset"
+6,serverTimeout,100,1,,
+7,oid1,65535,1,,
+8,oid2,65535,1,,
+17,endSession,32767,-32768,,
+25,changeOfValuePace,65535,0,,
+20,commBps,32767,-32768,,
+21,commTimeOut,4200,30,,
+5008,val_sys_tmp_airSetPt,400,50,kWH,
+5324,st_sys_tmpAirCtrlType,,,,"Proportional,Prop+Integral,Intelligent"
+5325,val_sys_tmp_airPropBand,300,20,AH,
+5011,val_sys_tmp_airDeadBand,200,0,AH,
+5326,val_sys_tm_tmpAirCtrlIntegral,15,0,off,
+5327,val_ext_tmp_airDailyHigh,500,0,kWH,
+5329,val_ext_tmp_airDailyLow,500,0,kWH,
+5028,val_sys_rh_airRet,65535,0,deg C,
+5029,val_sys_rh_setPt,80,20,deg C,
+5339,val_sys_rh_retSetPt,80,20,deg C,
+5340,st_sys_hmdPropCtrlType,,,,"Relative,Compensated,Predictive"
+5341,val_sys_rh_propBand,20,1,deg C,
+5032,val_sys_rh_deadBand,50,0,deg C,
+5342,val_sys_tm_hmdPropCtrlIntegral,25,0,off,
+5033,val_sys_rh_airRetOverThrshld,990,10,deg C,
+5035,val_sys_rh_airRetUnderThrshld,990,10,deg C,
+5343,val_ext_pct_hmdDailyHigh,100,0,deg C,
+5345,val_ext_pct_hmdDailyLow,100,0,deg C,
+5302,st_sys_statusFC,,,,"off,on,No Support"
+5356,val_sys_tmp_FCFluidAirDeltaInt,200,0,AH,
+5357,st_sys_controlModeFCInt,,,,"Disabled,Contact,Value"
+5358,val_clng_tmp_fluidFC,450,-150,kWH,
+5359,st_clng_tmpCWMinSetPtEnable,,,,"disabled,enabled"
+5360,val_clng_tmp_cWMinSetPt,200,0,kWH,
+5304,val_valv_tm_opFC,32000,0,true,
+5305,val_valv_tm_opThresholdFC,32000,0,true,
+5363,val_valv_tm_opHWHG,32000,0,true,
+5364,val_valv_tm_opThresholdHWHG,32000,0,true,
+5369,val_hmd_tm_op,32000,0,true,
+5370,val_hmd_tm_opThrshld,32000,0,true,
+5445,val_hmd_pct_infraredFlush,500,110,WH,
+5371,val_dhmd_tm_op,32000,0,true,
+5372,val_dhmd_tm_opThrshld,32000,0,true,
+5373,st_fan_controlModeExp,,,,"Auto,Manual,Economy,Delta"
+5050,val_fan_pct_maxSetPt,100,0,WH,
+5374,val_fan_tm_op,32000,0,true,
+5375,val_fan_tm_opThreshold,32000,0,true,
+5378,val_inp_na_analog,32767,-32768,,
+4123,st_sys_status,,,,"Normal Operation,StartUp,Normal with Warning,Normal with Alarm,Abnormal Operation"
+4706,st_sys_operating,,,,"off,on,standby"
+4707,st_sys_controlMode,,,,"Internal (Auto),External (Manual)"
+5074,st_sys_operatingReason,,,,"Reason Unknown,Network Display,Alarm,Schedule,Remote System,External Input,Local Display"
+123,st_sys_teamworkMode,,,,"No Teamwork Mode,Teamwork Mode 1,Teamwork Mode 2"
+5075,val_ext_tm_bmsTimeout,120,0,off,
+4710,val_sys_tm_autoRestart,999,0,on,
+5077,val_fan_pct_speed,100,0,WH,
+5078,val_comp_pct_utlztn,100,0,WH,
+5379,val_valv_pct_FC,100,0,WH,
+4870,val_sys_pct_maintenanceRamp,100,0,WH,
+5380,val_valv_pct_HWHG,100,0,WH,
+5080,val_heat_pct_utlztn,100,0,WH,
+5081,val_hmd_pct_utlztn,100,0,WH,
+5079,val_dhmd_pct_utlztn,100,0,WH,
+5381,st_fan_opState,,,,"off,on"
+5382,st_sys_opStateCooling,,,,"off,on"
+5383,st_sys_opStateFC,,,,"off,on"
+5384,st_sys_opStateMaintTrack,,,,"off,on"
+5385,st_heat_opStateHWHG,,,,"off,on"
+5386,st_heat_opStateElectric,,,,"off,on"
+5387,st_dhmd_opState,,,,"off,on"
+5388,st_hmd_opState,,,,"off,on"
+5143,st_sys_onOffCtrl,,,,"off,on"
+4718,st_ext_inpContactEnable01,,,,"disabled,enabled"
+4719,st_ext_inpContactType01,,,,"Message,Warning,Alarm"
+5098,st_ext_inpContactEnable02,,,,"disabled,enabled"
+5099,st_ext_inpContactType02,,,,"Message,Warning,Alarm"
+5100,st_ext_inpContactEnable03,,,,"disabled,enabled"
+5101,st_ext_inpContactType03,,,,"Message,Warning,Alarm"
+5102,st_ext_inpContactEnable04,,,,"disabled,enabled"
+5103,st_ext_inpContactType04,,,,"Message,Warning,Alarm"
+5389,st_ext_FCLockoutEnable,,,,"disabled,enabled"
+5390,st_ext_FCLockoutType,,,,"Message,Warning,Alarm"
+5122,st_ext_cndsrPumpHighWaterEnable,,,,"disabled,enabled"
+5123,st_ext_cndsrPumpHighWaterType,,,,"Message,Warning,Alarm"
+5129,st_ext_stdbyGlycolPumpOnEnable,,,,"disabled,enabled"
+5130,st_ext_stdbyGlycolPumpOnType,,,,"Message,Warning,Alarm"
+5391,st_ext_stdbyUnitOnEnable,,,,"disabled,enabled"
+5392,st_ext_stdbyUnitOnType,,,,"Message,Warning,Alarm"
+5086,st_ext_hmdLockoutEnable,,,,"disabled,enabled"
+5087,st_ext_hmdLockoutType,,,,"Message,Warning,Alarm"
+5082,st_ext_flowLossEnable,,,,"disabled,enabled"
+5083,st_ext_flowLossType,,,,"Message,Warning,Alarm"
+5090,st_ext_overTempEnable,,,,"disabled,enabled"
+5091,st_ext_overTempType,,,,"Message,Warning,Alarm"
+5084,st_ext_reheatLockoutEnable,,,,"disabled,enabled"
+5085,st_ext_reheatLockoutType,,,,"Message,Warning,Alarm"
+5141,st_sys_highPwrShutdownEnable,,,,"disabled,enabled"
+5142,st_sys_highPwrShutdownType,,,,"Message,Warning,Alarm"
+5131,st_hmd_issueEnable,,,,"disabled,enabled"
+5132,st_hmd_issueType,,,,"Message,Warning,Alarm"
+5133,st_sys_masterCommLostEnable,,,,"disabled,enabled"
+5134,st_sys_masterCommLostType,,,,"Message,Warning,Alarm"
+4727,st_sys_serviceReqEnable,,,,"disabled,enabled"
+4728,st_sys_serviceReqType,,,,"Message,Warning,Alarm"
+4715,st_sys_shutdownPwrLossEnable,,,,"disabled,enabled"
+4716,st_sys_shutdownPwrLossType,,,,"Message,Warning,Alarm"
+4721,st_sys_smokeDetectedEnable,,,,"disabled,enabled"
+4722,st_sys_smokeDetectedType,,,,"Message,Warning,Alarm"
+4724,st_sys_waterUnderFloorEnable,,,,"disabled,enabled"
+4725,st_sys_waterUnderFloorType,,,,"Message,Warning,Alarm"
+5088,st_ext_compLockoutEnable,,,,"disabled,enabled"
+5089,st_ext_compLockoutType,,,,"Message,Warning,Alarm"
+5135,st_sys_cloggedAirFilterEnable,,,,"disabled,enabled"
+5136,st_sys_cloggedAirFilterType,,,,"Message,Warning,Alarm"
+5393,st_ext_airBlowerLossEnable,,,,"disabled,enabled"
+5394,st_ext_airBlowerLossType,,,,"Message,Warning,Alarm"
+4717,st_sys_eventAckReset,,,,"Reset,Acknowledge"
+16,val_ext_tmp_outdoor,32767,-32768,kWH,
+26,val_sys_pct_airflow,65535,0,WH,
+27,val_sys_pct_pTempDev,65535,0,WH,
+28,val_sys_pct_pHmdDev,65535,0,WH,
+29,val_sys_pct_piTempDev,65535,0,WH,
+30,val_sys_pct_piHmdDev,65535,0,WH,
+34,val_sys_pct_scrReq,100,0,WH,
+35,st_sys_motorStatus,,,,"off,on"
+37,st_dhmd_output,,,,"off,on"
+38,st_hmd_fillStatus,,,,"off,on"
+39,st_hmd_status,,,,"off,on"
+40,st_hmd_drain,,,,"off,on"
+41,val_hmd_ec_current,65535,0,VAC,
+42,st_sys_alarmRelay,,,,"off,on"
+43,st_sys_k11Relay,,,,"off,on"
+44,st_sys_3PHalfActOpen,,,,"off,on"
+45,st_sys_3PHalfActClose,,,,"off,on"
+46,st_sys_statusRemoteShutdown,,,,"off,on"
+47,st_sys_statusAirflowLoss,,,,"0,1"
+48,st_sys_statusMotorOverload,,,,"0,1"
+49,st_sys_statusFilter,,,,"0,1"
+51,st_heat_statusSafety,,,,"0,1"
+55,st_hmd_statusFail,,,,"0,1"
+56,st_sys_statusDT1,,,,"0,1"
+57,st_sys_statusDT2,,,,"0,1"
+58,st_sys_statusDT3,,,,"0,1"
+59,st_sys_statusMinCW,,,,"0,1"
+60,val_sys_pct_lwd,65535,0,WH,
+61,st_sys_statusLSI,,,,"off,on"

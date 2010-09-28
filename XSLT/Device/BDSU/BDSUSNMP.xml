@@ -1,0 +1,545 @@
+<SNMP>
+  <GDD_POINT name="str_sys_siteIdentifier" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4247.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstName" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4875.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstStreetAddress" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4876.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstCity" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4877.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstState" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4878.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstZipCode" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4879.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstContactPerson" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4880.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstPhoneNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4881.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstPhoneExtension" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4882.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstCellPhoneNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4883.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstFaxNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4884.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_cstEMailAddress" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4885.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locName" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4886.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locStreetAddress" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4887.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locCity" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4888.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locState" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4889.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locZipCode" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4890.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locContactPerson" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4891.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locPhoneNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4892.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locPhoneExtension" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4893.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locCellPhoneNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4894.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locFaxNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4895.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_locEMailAddress" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4896.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="st_sys_status" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4123.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bat_tm_remaining" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4150.hierarchy" units="seconds" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4150.hierarchy" units="seconds" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bat_tm_discharge" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4151.hierarchy" units="seconds" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4151.hierarchy" units="seconds" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_bat_discharging" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionBatteryDischarging" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4168.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="str_bat_batteryName" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4897.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bat_batteryRating" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4898.hierarchy" units="ampDcHours" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4898.hierarchy" units="ampDcHours" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tmp_ambientTemperature" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4899.hierarchy" units="tempC" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4899.hierarchy" units="tempF" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4899.hierarchy" units="tempC" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4899.hierarchy" units="tempF" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ep_overallVoltage" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4900.hierarchy" units="voltsDc" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4900.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ec_stringCurrent" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4901.hierarchy" units="ampsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4901.hierarchy" units="ampsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ec_floatCurrent" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4902.hierarchy" units="milliAmpsDc" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4902.hierarchy" units="milliAmpsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ec_rippleCurrent" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4903.hierarchy" units="ampsAcRms" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4903.hierarchy" units="ampsAcRms" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="st_bstg_resetAckAlarmsOnString" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5435.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_totalActiveAlarmsOnString" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4904.hierarchy" units="" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4904.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_highAmbientTemperature" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighAmbientTemperature" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4907.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_lowAmbientTemperature" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionLowAmbientTemperature" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4906.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_lowAmbientTemperature2" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionLowAmbientTemperatureProbeTwo" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.5436.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_highAmbientTemperature2" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighAmbientTemperatureProbeTwo" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.5437.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_lowOverallVoltage" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionLowOverallVoltage" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4908.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_highOverallVoltage" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighOverallVoltage" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4909.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_highStringCurrent" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighBatteryStringCurrent" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4910.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_lowFloatCurrent" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionLowBatteryStringFloatCurrent" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4911.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_highFloatCurrent" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighBatteryStringFloatCurrent" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4912.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_highRippleCurrent" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighBatteryStringRippleCurrent" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4913.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_dischargeDetected" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionBatteryStringDischargeDetected" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4914.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_dischargeMaxTimeExceeded" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionMaximumDischargeTimeExceeded" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4915.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_dischargeLowOverallVoltage" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionDischargeLowOverallVoltage" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4916.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_dischargeLowCellVoltage" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionDischargeLowCellVoltage" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4917.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_DischargeHighStringCurrent" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionDischargeHighBatteryStringCurrent" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4918.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_maxCellToCellTemperatureDeviationExceeded" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionExcessiveCelltoCellTemperatureDeviation" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4919.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_maxCellToAmbientTemperatureDeviationExceeded" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionExcessiveCelltoAmbientTemperatureDeviation" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4920.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_thermalRunawayDetected" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionThermalRunawayDetected" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.5438.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_equalizeMode" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionBatteryStringEqualize" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.5439.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_bstg_offlineMode" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionBatteryStringOffline" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.5440.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="st_bstg_dischargeStatus" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4944.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tm_stringTimeToGo" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4945.hierarchy" units="minutes" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4945.hierarchy" units="minutes" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ampHoursRemainingOnString" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4946.hierarchy" units="ampDcHours" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4946.hierarchy" units="ampDcHours" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tm_discharge" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4947.hierarchy" units="seconds" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4947.hierarchy" units="seconds" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tmp_ambientTemperatureLowGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4921.hierarchy" units="tempC" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4921.hierarchy" units="tempF" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4921.hierarchy" units="tempC" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4921.hierarchy" units="tempF" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tmp_ambientTemperatureHighGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4922.hierarchy" units="tempC" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4922.hierarchy" units="tempF" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4922.hierarchy" units="tempC" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4922.hierarchy" units="tempF" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ep_overallVoltageLowThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4923.hierarchy" units="voltsDc" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4923.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ep_overallVoltageHighThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4924.hierarchy" units="voltsDc" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4924.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ec_stringCurrentHighThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4925.hierarchy" units="ampsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4925.hierarchy" units="ampsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ec_floatCurrentLowThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4926.hierarchy" units="milliAmpsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4926.hierarchy" units="milliAmpsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ec_floatCurrentHighThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4927.hierarchy" units="milliAmpsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4927.hierarchy" units="milliAmpsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ec_rippleCurrentHighThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4928.hierarchy" units="ampsAcRms" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4928.hierarchy" units="ampsAcRms" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ep_cellVoltageLowGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4929.hierarchy" units="voltsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4929.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ep_cellVoltageHighGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4930.hierarchy" units="voltsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4930.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tmp_cellTemperatureLowGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4931.hierarchy" units="tempC" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4931.hierarchy" units="tempF" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4931.hierarchy" units="tempC" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4931.hierarchy" units="tempF" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tmp_cellTemperatureHighGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4932.hierarchy" units="tempC" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4932.hierarchy" units="tempF" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4932.hierarchy" units="tempC" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4932.hierarchy" units="tempF" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_internalResistanceLowGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4933.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4933.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_internalResistanceHighGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4934.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4934.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_interCellResistanceHighGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4935.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4935.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_interTierResistanceHighGlobalThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4936.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4936.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tmp_maxCellToCellTemperatureDeviationThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4937.hierarchy" units="tempCDelta" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4937.hierarchy" units="tempFDelta" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4937.hierarchy" units="tempCDelta" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4937.hierarchy" units="tempFDelta" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tmp_maxCellToAmbientTemperatureDeviationThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4938.hierarchy" units="tempCDelta" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4938.hierarchy" units="tempFDelta" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4938.hierarchy" units="tempCDelta" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4938.hierarchy" units="tempFDelta" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_stringName" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4939.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tm_installationDate" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4940.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_cellMonoblocModelNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4941.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_cellMonoblocManufacturer" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4942.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_cellMonoblocRating" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4943.hierarchy" units="ampDcHours" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4943.hierarchy" units="ampDcHours" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ep_lowCellVoltageDuringDischargeThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4948.hierarchy" units="voltsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4948.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ep_lowOverallVoltageDuringDischargeThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4949.hierarchy" units="voltsDc" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4949.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_ec_stringCurrentHighDuringDischargeThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4950.hierarchy" units="ampsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4950.hierarchy" units="ampsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tm_maxDischargeTimeAllowedThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4951.hierarchy" units="minutes" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4951.hierarchy" units="minutes" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startupEngineerName" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4952.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startupCompanyName" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4953.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startupCompanyStreetAddress" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4954.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startupCompanyCity" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4955.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startupCompanyState" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4956.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startupCompanyZipCode" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4957.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startupEngineerPhoneNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4958.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startEngineerEMailAddress" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4959.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_bstg_startupPOnumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4960.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_bstg_tm_startupDate" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4961.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="st_bstg_commissionedStatus" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5441.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_ep_cellVoltage" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4962.hierarchy" units="voltsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4962.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_tmp_cellTemperature" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4963.hierarchy" units="tempC" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4963.hierarchy" units="tempF" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4963.hierarchy" units="tempC" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4963.hierarchy" units="tempF" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="evt_cell_lowCellVoltage" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionLowCellVoltage" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4964.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_cell_highCellVoltage" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighCellVoltage" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4965.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_cell_lowCellTemperature" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionLowCellTemperature" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4966.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_cell_highCellTemperature" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighCellTemperature" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4967.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_cell_lowInternalCellResistance" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionLowInternalResistance" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4968.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_cell_highInternalCellResistance" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighInternalResistance" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4969.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_cell_highInterCellResistance" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionHighIntercellResistance" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.4970.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="evt_cell_dischargeLowCellVoltage" type="ALARM">
+    <SNMP_OID name="lgpConditionCurrentState" OID="1.3.6.1.4.1.476.1.42.3.2.3.1.12" table="lgpConditionsTable" tableOID="1.3.6.1.4.1.476.1.42.3.2.3">
+      <DataIdentifier>
+        <Index type="dynamic" descColumn="lgpConditionDescr" descColumnOID="1.3.6.1.4.1.476.1.42.3.2.3.1.2" descValueType="OID" descValue="lgpFlexConditionDischargeLowCellVoltage" descValueOID=".1.3.6.1.4.1.476.1.42.3.2.7.1.5442.hierarchy" />
+      </DataIdentifier>
+    </SNMP_OID>
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_internalResistance" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.5443.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5443.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_interCellResistance" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.5444.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.5444.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_ep_cellVoltageLowThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4971.hierarchy" units="voltsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4971.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_ep_cellVoltageHighThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.10.1.2.1.4972.hierarchy" units="voltsDc" scale="1" mibType="Integer32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4972.hierarchy" units="voltsDc" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_tmp_cellTemperatureLowThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4973.hierarchy" units="tempC" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4973.hierarchy" units="tempF" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4973.hierarchy" units="tempC" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4973.hierarchy" units="tempF" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_tmp_cellTemperatureHighThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4974.hierarchy" units="tempC" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.2.4974.hierarchy" units="tempF" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4974.hierarchy" units="tempC" scale="1" mibType="OctetString" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.2.4974.hierarchy" units="tempF" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_internalResistanceLowThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4975.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4975.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_internalResistanceHighThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4976.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4976.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_cell_interCellResistanceHighThreshold" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4977.hierarchy" units="microOhm" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4977.hierarchy" units="microOhm" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="st_grp_summaryStatus" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4124.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="val_sys_tm_dateTime" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryUnsignedIntegerValue" OID=".1.3.6.1.4.1.476.1.42.3.9.30.1.20.1.2.1.4293.hierarchy" units="" scale="1" mibType="Unsigned32" />
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4293.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+  <GDD_POINT name="str_sys_modelNumber" type="DATA">
+    <SNMP_OID name="lgpFlexibleEntryReadableValue" OID=".1.3.6.1.4.1.476.1.42.3.9.20.1.20.1.2.1.4240.hierarchy" units="" scale="1" mibType="OctetString" />
+  </GDD_POINT>
+</SNMP>

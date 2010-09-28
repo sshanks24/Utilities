@@ -1,0 +1,1343 @@
+
+
+	
+
+		Protocol
+
+		Standard Version
+
+		Standard Compliance
+
+		Error Compliance
+
+		Server Class
+
+		Server Reset State
+
+		Server Timeout
+
+		Object Identifier 1
+
+		Object Identifier 2
+
+		Communication 2400 BAUD
+
+		Communication 4800 BAUD
+
+		Communication 9600 BAUD
+
+		Communication 19200 BAUD
+
+		Communication 38400 BAUD
+
+		Communication 57600 BAUD
+
+		Communication 115200 BAUD
+
+		End Session
+
+		Server Settings
+
+		Communications BAUD Rate
+
+		Communications Time Out
+
+		Server Contact
+
+		Server Phone Number
+
+		Level 1
+
+		Level 2
+
+		UPS
+
+		AIR
+
+		PMP
+
+		Normal
+
+		Soft Reset
+
+		None
+
+		All
+
+		Unsupported
+
+		Supported
+
+		Change-of-Value Register
+
+		Change-of-Value Multi-cast
+
+		Basic Commands
+
+		Alarm Silence
+
+		Battery Test
+
+		Cancel
+
+		Output On Delay
+
+		Output Off Delay
+
+		Output Off Mode
+
+		Permanent
+
+		Reboot
+
+		Load Key
+
+		PDU
+
+		The general classification for this system
+
+		Air Temperature
+
+		Supply Air Temperature
+
+		Air temperature measured at the outlet of the unit.
+
+		Air Temperature Set Point
+
+		Desired air temperature.
+
+		Cooling Proportional Band
+
+		Temperature control band above [Air Temperature Set Point].  If measured air temperature is within this band, cooling operations are proportionally controlled.
+
+		Air Temperature Dead Band
+
+		Value that is divided evenly to form a temperature range above and below [Air Temperature Set Point].  If measured air temperature is within this range, no heating or cooling will occur.
+
+		Supply Air Over Temp Threshold
+
+		Threshold value used in the [Supply Air Over Temperature] event.
+
+		Supply Air Over Temperature
+
+		[Supply Air Temperature] has exceeded [Supply Air Over Temp Threshold].
+
+		Supply Air Over Temperature - Event Control
+
+		Enable/disable the activation of the [Supply Air Over Temperature] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Supply Air Over Temperature - Event Type
+
+		The event type for the [Supply Air Over Temperature] event.
+
+		Message
+
+		Warning
+
+		Alarm
+
+		Supply Air Under Temp Threshold
+
+		Threshold value used in the [Supply Air Under Temperature] event.
+
+		Supply Air Under Temperature
+
+		[Supply Air Temperature] has dropped below [Supply Air Under Temp Threshold].
+
+		Supply Air Under Temperature - Event Control
+
+		Enable/disable the activation of the [Supply Air Under Temperature] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Supply Air Under Temperature - Event Type
+
+		The event type for the [Supply Air Under Temperature] event.
+
+		Supply Air Sensor Issue
+
+		The air sensor at the outlet of the unit is disconnected or the signal is out of range.
+
+		Return Air
+
+		Return Air Temperature
+
+		Air temperature measured at the inlet of the unit.
+
+		Humidity
+
+		Return Humidity
+
+		Relative humidity measured at the inlet of the unit.
+
+		Humidity Set Point
+
+		Desired relative humidity.
+
+		Humidification  Proportional Band
+
+		Humidity control band below [Humidity Set Point].  If measured humidity is within this band, humidification operations are proportionally controlled.
+
+		Humidity Dead Band
+
+		Value that is divided evenly to form a range above and below [Humidity Set Point].  If measured humidity is within this range, no humidification or dehumidification will occur.
+
+		High Return Humidity Threshold
+
+		Threshold value used in the [High Return Humidity] event.
+
+		High Return Humidity
+
+		[Return Humidity] has exceeded [High Return Humidity Threshold].
+
+		High Return Humidity - Event Control
+
+		Enable/disable the activation of the [High Return Humidity] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		High Return Humidity - Event Type
+
+		The event type for the [High Return Humidity] event.
+
+		Low Return Humidity Threshold
+
+		Threshold value used in the [Low Return Humidity] event.
+
+		Low Return Humidity
+
+		[Return Humidity] has dropped below [Low Return Humidity Threshold].
+
+		Low Return Humidity - Event Control
+
+		Enable/disable the activation of the [Low Return Humidity] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Low Return Humidity - Event Type
+
+		The event type for the [Low Return Humidity] event.
+
+		Customer Input
+
+		External Reheat Lockout
+
+		The reheater is shut down and disabled by an external input signal.
+
+		Ext Reheat Lockout - Event Control
+
+		Enable/disable the activation of the [Ext Reheat Lockout] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Ext Reheat Lockout - Event Type
+
+		The event type for the [Ext Reheat Lockout] event.
+
+		External Humidifier Lockout
+
+		The humidifier is shut down and disabled by an external input signal.
+
+		Ext Humidifier Lockout - Event Control
+
+		Enable/disable the activation of the [Ext Humidifier Lockout] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Ext Humidifier Lockout - Event Type
+
+		The event type for the [Ext Humidifier Lockout] event.
+
+		External Compressor Lockout
+
+		The compressor is shut down and disabled by an external input signal. 
+
+		Ext Compressor Lockout - Event Control
+
+		Enable/disable the activation of the [Ext Compressor Lockout] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Ext Compressor Lockout - Event Type
+
+		The event type for the [Ext Compressor Lockout] event.
+
+		Customer Input 1
+
+		Customer Input 1.
+
+		Customer Input 1 - Event Control
+
+		Enable/disable the activation of the [Customer Input 1] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Customer Input 1 - Event Type
+
+		The event type for the [Customer Input 1] event.
+
+		Ext Over Temperature
+
+		A temperature has exceeded its threshold, as indicated by an external input signal.  
+
+		Ext Over Temperature - Event Control
+
+		Enable/disable the activation of the [Ext Over Temperature] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Ext Over Temperature - Event Type
+
+		The event type for the [Ext Over Temperature] event.
+
+		External Air Blower Issue
+
+		Air blower is not operating within its operational parameters, as indicated by an external input signal.
+
+		External Air Blower Issue - Event Control
+
+		Enable/disable the activation of the [External Air Blower Issue] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		External Air Blower Issue - Event Type
+
+		The event type for the [External Air Blower Issue] event.
+
+		Ext Loss of Flow
+
+		Loss of flow is detected, as indicated by an external input signal.
+
+		Ext Loss of Flow - Event Control
+
+		Enable/disable the activation of the [Ext Loss of Flow] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Ext Loss of Flow - Event Type
+
+		The event type for the [Ext Loss of Flow] event.
+
+		Condenser VFD Issue
+
+		The condenser fan Variable Frequency Drive is offline.
+
+		Condenser VFD Issue - Event Control
+
+		Enable/disable the activation of the [Condenser VFD Issue] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Condenser VFD Issue - Event Type
+
+		The event type for the [Condenser VFD Issue] event.
+
+		Condenser TVSS Issue
+
+		The condenser Transient Voltage Surge Suppressor device has failed.
+
+		Condenser TVSS Issue - Event Control
+
+		Enable/disable the activation of the [Condenser TVSS Issue] event (Transient Voltage Surge Suppressor).  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Condenser TVSS Issue - Event Type
+
+		The event type for the [Condenser TVSS Issue] event (Transient Voltage Surge Suppressor).
+
+		Ext Condenser Pump High Water
+
+		High water is detected in the condenser, as indicated by an external input signal.
+
+		Ext Standby Glycol Pump On
+
+		The standby glycol pump is on, as indicated by an external input signal.
+
+		External Standby Unit On
+
+		A standby unit is on, as indicated by an external input signal.
+
+		Compressor
+
+		Compressor 1 High Head Pressure
+
+		Compressor 1 high head pressure.
+
+		Compressor 1 Low Suction Pressure
+
+		Compressor 1 low suction pressure.
+
+		Dig Scroll Comp 1 Temp Sensor Issue
+
+		Digital scroll compressor 1 temperature sensor is disconnected or the signal is out of range.
+
+		Dig Scroll Comp 1 Over Temp
+
+		Digital scroll compressor 1 shut off because its head temperature has exceeded the upper threshold.
+
+		Compressor 1 Hours Exceeded
+
+		Operating hours for compressor 1 have exceeded the threshold.
+
+		Compressor 1 Short Cycle
+
+		Compressor 1 short cycle.  A short cycle is defined as turning on and off a number of times over a set time period.
+
+		Compressor 1 Short Cycle - Event Control
+
+		Enable/disable the activation of the [Compressor 1 Short Cycle] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Compressor 1 Short Cycle - Event Type
+
+		The event type for the [Compressor 1 Short Cycle] event.
+
+		Compressor 1 Low Pressure Transducer Issue
+
+		Compressor 1 low pressure transducer is disconnected or the signal is out of range.
+
+		Humidifier_Dehumidifier
+
+		Humidifier Under Current
+
+		The electrical current to the humidifier has dropped below its lower threshold.
+
+		Humidifier Over Current
+
+		The electrical current to the humidifier has exceeded its upper threshold.
+
+		Humidifier Low Water
+
+		The water level in the humidifier has dropped below its threshold.
+
+		Humidifier Cylinder Worn
+
+		Humidifier cylinder is not operating properly and needs to be replaced.
+
+		Humidifier Hours Exceeded
+
+		Operating hours for the humidifier have exceeded the threshold.
+
+		Dehumidifier Hours Exceeded
+
+		Operating hours for the dehumidifier have exceeded the threshold.
+
+		Fans
+
+		Fan Control Mode
+
+		Fan control mode.
+
+		Fan Speed Manual Set Point
+
+		Manual fan speed.
+
+		Fan Speed Minimum Set Point
+
+		Minimum fan speed.
+
+		Clogged Air Filter
+
+		Air filter is dirty and needs to be (cleaned or) replaced.
+
+		Loss of Air Flow
+
+		No air flow through the unit due to failure of all fans.
+
+		Remote Sensor Temperature
+
+		Air temperature as measured by remote sensor.
+
+		Remote Sensor Issue
+
+		Remote sensor is disconnected or the signal is out of range.
+
+		Remote Sensors
+
+		Reheater
+
+		Electric Reheater 1 Hours Exceeded
+
+		Operating hours for electric reheater 1 have exceeded the threshold.
+
+		Reheater Over Temperature
+
+		The temperature of the reheater has exceeded its threshold.
+
+		Condenser
+
+		Condenser 1 Issue
+
+		Condenser 1 is not operating within its normal parameters.
+
+		Condenser 1 Issue - Event Control
+
+		Enable/disable the activation of the [Condenser 1 Issue] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Condenser 1 Issue - Event Type
+
+		The event type for the [Condenser 1 Issue] event.
+
+		System Info
+
+		Fan Speed
+
+		Fan speed expressed as a percentage of the maximum rated speed.
+
+		Compressor Utilization
+
+		Present compressor utilization expressed as a percentage of the maximum rated capacity.
+
+		Dehumidifier Utilization
+
+		Present dehumidifier utilization expressed as a percentage of the maximum rated capacity.
+
+		Reheat Utilization
+
+		Present reheating utilization expressed as a percentage of the maximum rated capacity.
+
+		Humidifier Utilization
+
+		Present humidifier utilization expressed as a percentage of the maximum rated capacity.
+
+		High Power Shutdown
+
+		Supply to high power components has been shutdown.  
+
+		High Power Shutdown - Event Control
+
+		Enable/disable the activation of the [High Power Shutdown] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		High Power Shutdown - Event Type
+
+		The event type for the [High Power Shutdown] event.
+
+		Water Leakage Detector Sensor Issue
+
+		The water leakage detector sensor is disconnected or the signal is out of range.
+
+		Unit Partial Shutdown
+
+		An event has occurred requiring some system components to be shutdown and disabled.
+
+		Unit Shutdown
+
+		An event has occurred requiring the unit to be shutdown and disabled to prevent damage to the system.
+
+		Supply Chilled Water Loss of Flow
+
+		Supply chilled water flow is too low.
+
+		Chilled Water
+
+		External Fire Detected
+
+		Fire detected, as indicated by an external input signal.
+
+		Calculated Next Maintenance Month
+
+		Calculated month of the next scheduled maintenance.  Used in conjunction with [Calculated Next Maintenance Year].
+
+		Calculated Next Maintenance Year
+
+		Calculated year of the next scheduled maintenance.  Used in conjunction with [Calculated Next Maintenance Month].
+
+		Unit Off
+
+		Unit was turned off.
+
+		Unit was turned off.
+
+		Unit On
+
+		Unit was turned on.
+
+		Unit Standby
+
+		Unit was placed in standby mode.
+
+		Fan Hours Exceeded
+
+		Operating hours for the unit blower fan have exceeded the threshold.
+
+		BMS Communications Timeout
+
+		Building Management System (or external monitoring system) has not communicated with the system within the expected timeframe.
+
+		Maintenance Due
+
+		The calculated maintenance date has been reached.
+
+		Maintenance Completed
+
+		Maintenance has been completed on the unit.
+
+		System Operating State Reason
+
+		The reason the system is in the current operating state.
+
+		Reason Unknown
+
+		Network Display
+
+		Alarm
+
+		Schedule
+
+		Remote System
+
+		External Input
+
+		Local Display
+
+		External Air Blower 1 Issue
+
+		Air blower 1 is not operating within its operational parameters, as indicated by an external input signal.
+
+		External Air Blower 1 - Event Control
+
+		Enable/disable the activation of the [External Air Blower 1 Issue] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		External Air Blower 1 - Event Type
+
+		The event type for the [External Air Blower 1 Issue] event.
+
+		Supply Air Temperature Control Type
+
+		Supply air temperature control program type.
+
+		Supply
+
+		Remote
+
+		Return
+
+		Intelligent
+
+		Customer Input 1
+
+		Event associated with an active customer input 1 signal.
+
+		Smoke Detected
+
+		Water Under Floor
+
+		Average
+
+		Maximum
+
+		Reheat Lockout
+
+		Humidifier Lockout
+
+		Reheat+Humidifier Lockout
+
+		Compressor Lockout
+
+		Service Required
+
+		Over Temperature
+
+		Air Blower 1 Loss
+
+		Condenser VFD
+
+		Condenser TVSS
+
+		High Power Shutdown
+
+		Condenser 1 Fail
+
+		Humidifier Problem or Cylinder Worn
+
+		Calculated Next Maintenance
+
+		Return Air Over Temperature
+
+		[Return Air Temperature] has exceeded [Return Air Over Temp Threshold].
+
+		Return Air Over Temp Threshold
+
+		Threshold value used in the [Return Air Over Temperature] event.
+
+		Return Air Over Temp - Event Control
+
+		Enable/disable the activation of the [Return Air Over Temperature] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Return Air Over Temp - Event Type
+
+		The event type for the [Return Air Over Temperature] event.
+
+		Water Under Floor + Hmdfr Lockout
+
+		Water Under Floor + Unit Shutdown
+
+		Cndsr Pump High Water
+
+		Cndsr Pump High Water + Hmdfr Lockout
+
+		Cndsr Pump High Water + Unit Shutdown
+
+		Fire Detected
+
+		Asset Management
+
+		Kernel Version
+
+		Kernel version.
+
+		Hardware Platform
+
+		Hardware platform.
+
+		Bootloader Version
+
+		Bootloader version.
+
+		Root File System Version
+
+		Root file system version.
+
+		iCOM Software Framework Version
+
+		iCOM software framework version.
+
+		Software Application Version
+
+		Software application version.
+
+		Engineering
+
+		Current LP Pressure
+
+		Digital scroll compressor suction pressure (Low Pressure side).
+
+		Current HP Pressure
+
+		Digital scroll compressor discharge pressure (High Pressure side).
+
+		Return Dew Point
+
+		Dew point temperature measured at the inlet of the unit.
+
+		Remote Sensor Minimum Temperature
+
+		Minimum value of remote sensor temperature measurements.
+
+		Remote Sensor Maximum Temperature
+
+		Maximum value of remote sensor temperature measurements.
+
+		Remote Sensor Average Temperature
+
+		Average value of remote sensor temperature measurements.
+
+		Heating Proportional Band
+
+		Temperature control band below [Air Temperature Set Point].  If measured air temperature is within this band, heating operations are proportionally controlled.
+
+		Air Temperature Control Sensor
+
+		Sensor from which air temperature measurements will be used for cooling and heating control. 
+
+		Remote Sensor Temperature Calculation
+
+		Calculation method applied to temperature readings from the remote sensors to determine a single temperature measurement value for cooling and heating control.
+
+		Supply Humidity
+
+		Relative humidity at the outlet of the unit.
+
+		Dehumidification  Proportional Band
+
+		Humidity control band above [Humidity Set Point].  If measured humidity is within this band, dehumidification operations are proportionally controlled.
+
+		Humidifier Issue
+
+		Humidifier issue detected, causing it to be locked out.
+
+		Ext Humidifier Lockout
+
+		The humidifier is shut down and disabled by an external input signal.
+
+		Humidifier Control Board Not Detected
+
+		Humidifier control board is required to be connected, but no signal is detected.
+
+		Fan Speed Proportional Band
+
+		Temperature control band above the temperature set point calculated for proportional fan speed control.  If measured air temperature is within this band, fan speed operations are proportionally controlled.
+
+		Fan Speed Maximum Set Point
+
+		Maximum fan speed.
+
+		Fan Control Sensor
+
+		Sensor from which air temperature measurements will be used for fan speed control.
+
+		Fan Temperature Set Point Delta
+
+		Value added to [Air Temperature Set Point] to calculate the temperature set point for proportional fan speed control.  This value is only used when [Fan Control Sensor] is not equal to [Air Temperature Control Sensor].
+
+		Control Coupled Mode
+
+		Control coupled mode.
+
+		Decoupled
+
+		Coupled
+
+		Return Humidity Out Of Proportional Band
+
+		[Return Humidity] has exceeded the upper limit of [Dehumidification  Proportional Band], or has dropped below the lower limit of [Humidification  Proportional Band] ], for an extended period of time.
+
+		Remote Sensor Name
+
+		Name assigned to remote sensor.
+
+		Remote Sensor Function
+
+		Function assigned to remote sensor.
+
+		Control
+
+		Reference
+
+		Disable
+
+		Ext Reheat Lockout
+
+		The reheater is shut down and disabled by an external input signal.
+
+		Ext Compressor Lockout
+
+		The compressor is shut down and disabled by an external input signal.
+
+		System Operations
+
+		Maintenance Ramp
+
+		The ratio of operations performed to the calculated operations available between maintenance intervals.
+
+		Event Configuration
+
+		Temperature/Humidity Events Control
+
+		Enable/disable the activation of all temperature and humidity related events.  If set to 'disabled', the events will not be annunciated.  This implies that the events will not be placed in any active event list or in any event history list.
+
+		System Events
+
+		Unit Status
+
+		Current status of unit.
+
+		Alarm Off
+
+		Manual
+
+		Local Off
+
+		System Off
+
+		Alarm Standby
+
+		Standby
+
+		Timer Off
+
+		System On
+
+		Warning On
+
+		Alarm On
+
+		Timer On
+
+		Teamwork Mode
+
+		Teamwork mode.  Provides the ability to group multiple networked units for the purpose of operating based on shared system parameters.
+
+		No Teamwork Mode
+
+		Teamwork Mode 1
+
+		Teamwork Mode 2
+
+		Teamwork Mode 1 Basis
+
+		Calculation method applied to temperature and humidity readings from all networked units operating in teamwork mode 1.
+
+		Maximum
+
+		Average
+
+		BMS Timeout Period
+
+		Timeframe within which the Building Management System (or external monitoring system) must communicate with the system to avoid a timeout.
+
+		RAM Battery Issue
+
+		RAM or RAM backup battery is not operating correctly.  
+
+		Low Memory
+
+		Free memory has dropped below a critical threshold.
+
+		Master Unit Communication Lost
+
+		Communication with master unit has been lost.
+
+		Calculated Cooling Capacity
+
+		Calculated cooling capacity.
+
+		Calculated HP Temperature
+
+		Calculated HP temperature.
+
+		Calculated LP Temperature
+
+		Calculated LP temperature.
+
+		Calculated Ratio Rough
+
+		Calculated ratio rough.
+
+		Calculated Ratio Output
+
+		Calculated ratio output.
+
+		LP Value A (lowest of 3)
+
+		Lowest digital scroll compressor suction pressure reading of the last 3 cycles.
+
+		LP Value B (lowest of 1)
+
+		Lowest digital scroll compressor suction pressure reading of the current cycle.
+
+		Calculated Supply Humidity
+
+		Calculated supply humidity.
+
+		PA Data
+
+		Ext Condenser Pump High Water - Event Control
+
+		Enable/disable the activation of the [Ext Condenser Pump High Water] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Ext Condenser Pump High Water - Event Type
+
+		The event type for the [Ext Condenser Pump High Water] event.
+
+		Dig Scroll Comp 1 Over Temp - Event Control
+
+		Enable/disable the activation of the [Dig Scroll Comp 1 Over Temp] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Dig Scroll Comp 1 Over Temp - Event Type
+
+		The event type for the [Dig Scroll Comp 1 Over Temp] event.
+
+		Dig Scroll Comp 2 Over Temp
+
+		Digital scroll compressor 2 shut off because its head temperature has exceeded the upper threshold.
+
+		Dig Scroll Comp 2 Over Temp - Event Control
+
+		Enable/disable the activation of the [Dig Scroll Comp 2 Over Temp] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Dig Scroll Comp 2 Over Temp - Event Type
+
+		The event type for the [Dig Scroll Comp 2 Over Temp] event.
+
+		Ext Standby Glycol Pump On - Event Control
+
+		Enable/disable the activation of the [Ext Standby Glycol Pump On] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Ext Standby Glycol Pump On - Event Type
+
+		The event type for the [Ext Standby Glycol Pump On] event.
+
+		Humidifier Issue - Event Control
+
+		Enable/disable the activation of the [Humidifier Issue] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Humidifier Issue - Event Type
+
+		The event type for the [Humidifier Issue] event.
+
+		Master Unit Communication Lost - Event Control
+
+		Enable/disable the activation of the [Master Unit Communication Lost] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Master Unit Communication Lost - Event Type
+
+		The event type for the [Master Unit Communication Lost] event.
+
+		Operating Efficiency
+
+		The ratio of cooling energy provided to the amount of total energy being used.
+
+		Top Fan Issue
+
+		The top fan is not operating within its normal parameters.
+
+		Bottom Fan Issue
+
+		The bottom fan is not operating within its normal parameters.
+
+		Customer Input 2
+
+		Customer input 2.
+
+		Customer Input 3
+
+		Customer input 3.
+
+		Customer Input 4
+
+		Customer input 4.
+
+		Input Contact 02 - Event Control
+
+		Enable/disable the activation of the [Input Contact 02] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Input Contact 02 - Event Type
+
+		The event type for the [Input Contact 02] event.
+
+		Input Contact 03 - Event Control
+
+		Enable/disable the activation of the [Input Contact 03] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Input Contact 03 - Event Type
+
+		The event type for the [Input Contact 03] event.
+
+		Input Contact 04 - Event Control
+
+		Enable/disable the activation of the [Input Contact 04] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Input Contact 04 - Event Type
+
+		The event type for the [Input Contact 04] event.
+
+		Clogged Air Filter - Event Control
+
+		Enable/disable the activation of the [Clogged Air Filter] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Clogged Air Filter - Event Type
+
+		The event type for the [Clogged Air Filter] event.
+
+		High Return Humidity - Event Control
+
+		Enable/disable the activation of the [High Return Humidity] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		High Return Humidity - Event Type
+
+		The event type for the [High Return Humidity] event.
+
+		Low Return Humidity - Event Control
+
+		Enable/disable the activation of the [Low Return Humidity] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Low Return Humidity - Event Type
+
+		The event type for the [Low Return Humidity] event.
+
+		High Power Shutdown
+
+		Supply to high power components has been shutdown.
+
+		High Power Shutdown - Event Control
+
+		Enable/disable the activation of the [High Power Shutdown] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		High Power Shutdown - Event Type
+
+		The event type for the [High Power Shutdown] event.
+
+		Compressor 1 Short Cycle
+
+		Compressor 1 short cycle.  A short cycle is defined as turning on and off a number of times over a set time period.
+
+		Time
+
+		Customer Input 2 - Event Control
+
+		Customer Input 2 - Event Type
+
+		Customer Input 3 - Event Control
+
+		Customer Input 4 - Event Control
+
+		Customer Input 3 - Event Type
+
+		Customer Input 4 - Event Type
+
+		The event type for the [Customer Input 2] event.
+
+		The event type for the [Customer Input 3] event.
+
+		The event type for the [Customer Input 4] event.
+
+		Enable/disable the activation of the [Customer Input 2] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Enable/disable the activation of the [Customer Input 3] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		Enable/disable the activation of the [Customer Input 4] event.  If set to 'disabled', the event will not be annunciated.  This implies that the event will not be placed in any active event list or in any event history list.
+
+		MBV Op Pressure
+
+		Motorized ball valve 1 reading interval pressure.
+
+		Dehumidification Status
+
+		Dehumidification status.
+
+		Humidification Status
+
+		Humidification status.
+
+		Compressor 1 High Pressure Transducer Issue
+
+		Compressor 1 high pressure transducer is disconnected or the signal is out of range.
+
+		Compressor 1 Pump Down Issue
+
+		Unable to pump down suction-side pressure during compressor 1 shutdown.
+
+		Electric Reheater Hours Exceeded
+
+		Operating hours for electric reheater have exceeded the threshold.
+
+		Electric Reheater 1 Status
+
+		Electric reheater 1 status.
+
+		Remote Off
+
+		BMS Off
+
+		Restart Delay
+
+		Dehumidifier Disabled
+
+		Dehumidifier disabled due to expiration of timer.
+
+		Dehumidifier 12 Hour Lock Out
+
+		Dehumidifier locked out for the next 12 hours.
+
+		Dehumidifier Enabled
+
+		Dehumidifier operations have resumed after having been previously disabled.
+
+		Humidifier Disabled
+
+		Humidifier disabled due to low supply air temperature.
+
+		Humidifier Enabled
+
+		Humidifier operations have resumed after having been previously disabled.
+
+		Compressor Capacity Reduced
+
+		Compressor capacity has been reduced due to high head pressure.
+
+	
+
+	
+
+		
+
+			24
+
+			23
+
+		
+
+		
+
+			24
+
+			23
+
+		
+
+		
+
+			25
+
+			26
+
+			27
+
+			46
+
+		
+
+		
+
+			28
+
+			29
+
+		
+
+		
+
+			30
+
+			31
+
+		
+
+		
+
+			32
+
+			33
+
+		
+
+		
+
+			30
+
+		
+
+		
+
+			43
+
+			44
+
+		
+
+		
+
+			65
+
+			66
+
+			67
+
+		
+
+		
+
+			380
+
+			381
+
+		
+
+		
+
+			404
+
+			405
+
+			406
+
+			407
+
+			408
+
+			409
+
+			410
+
+			411
+
+			412
+
+			413
+
+			414
+
+			546
+
+			547
+
+			548
+
+		
+
+		
+
+			417
+
+			418
+
+			419
+
+		
+
+		
+
+			422
+
+			423
+
+		
+
+	
+
+	
+
+	
+
+	
+
+		
+
+			4098
+
+			4099
+
+			4100
+
+			4097
+
+		
+
+		
+
+			4098
+
+			4098
+
+			4098
+
+			4097
+
+		
+
+		
+
+			4098
+
+			4097
+
+		
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	Engineering,
+    
+
+	
+
+	
+

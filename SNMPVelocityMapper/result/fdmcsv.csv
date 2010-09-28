@@ -1,0 +1,2945 @@
+textID,text
+0,
+4096,unknown
+4097,on
+4098,off
+4099,true
+4100,false
+4101,enabled
+4102,disabled
+4103,ms
+4104,sec
+4105,min
+4106,hr
+4108,VAC
+4109,mV AC
+4110,VDC
+4111,mV DC
+4112,V peak
+4113,V peak-to-peak
+4114,A AC
+4115,mA AC
+4116,A DC
+4117,mA DC
+4118,VA
+4119,kVA
+4120,VAR
+4121,kVAR
+4122,W
+4123,kW
+4124,WH
+4125,kWH
+4126,AH
+4127,Hz
+4128,mHz
+4129,kHz
+4130,MHz
+4131,GHz
+4132,deg C
+4133,deg F
+4134,deg C
+4135,deg F
+4136,%
+4137,psi
+4138,Pa
+4139,atm
+4140,% RH
+4141,psia
+4142,% THD
+4143,Battery time remaining
+4144,System Input RMS A-N
+4145,The System Input RMS Voltage between Phase A and Neutral
+4146,System Input RMS A-B
+4147,The System Input RMS Voltage between Phase A and Phase B
+4148,System Input RMS B-N
+4149,The System Input RMS Voltage between Phase B and Neutral
+4150,System Input RMS B-C
+4151,The System Input RMS Voltage between Phase B and Phase C
+4152,System Input RMS C-N
+4153,The System Input RMS Voltage between Phase C and Neutral
+4154,System Input RMS C-A
+4155,The System Input RMS Voltage between Phase C and Phase A
+4156,System Input Nominal Voltage
+4157,The nominal (or rated) system input voltage
+4158,System Input Nominal Frequency
+4159,The nominal (or rated) system input frequency
+4160,System Input Nominal Current
+4161,The nominal (or rated) system input current
+4162,System Input Frequency
+4163,The system input frequency
+4164,System Input Max Voltage A-N
+4165,The maximum system input voltage measurement for Phase A-N since the last reset
+4166,System Input Min Voltage A-N
+4167,The minimum system input voltage measurement for Phase A-N since the last reset
+4168,System Input Max Voltage B-N
+4169,The maximum system input voltage measurement for Phase B-N since the last reset
+4170,System Input Min Voltage B-N
+4171,The minimum system input voltage measurement for Phase B-N since the last reset
+4172,System Input Max Voltage C-N
+4173,The maximum system input voltage measurement for Phase C-N since the last reset
+4174,System Input Min Voltage C-N
+4175,The minimum system input voltage measurement for Phase C-N since the last reset
+4176,System Input Phase Count
+4177,The number of phases for the system input
+4178,System Input RMS Current Phase A
+4179,The system input RMS current for Phase A
+4180,System Input RMS Current Phase B
+4181,The system input RMS current for Phase B
+4182,System Input RMS Current Phase C
+4183,The system input RMS current for Phase C
+4184,System Input Power Factor Phs A
+4185,The system input power factor for Phase A
+4186,System Input Power Factor Phs B
+4187,The system input power factor for Phase B
+4188,System Input Power Factor Phs C
+4189,The system input power factor for Phase C
+4190,System Input Brown Out Count
+4191,The number of occurrences, since the last reset, where the system input voltage has fallen below a pre-determined threshold for a specified amount of time
+4192,System Input Black Out Count
+4193,The number of occurrences, since the last reset, where the input was not qualified to provide power to the system
+4194,System Input Transient Count
+4195,The number of occurrences, since the last reset, where the absolute value of the system input voltage deviated from the expected values
+4196,System Input Power Problem
+4197,The input is not qualified to provide power to the system
+4198,day
+4199,deg
+4200,System Status
+4201,The operating status for the system
+4202,Group Status
+4203,The summary status of the grouped systems
+4204,Normal Operation
+4205,StartUp
+4206,Unknown - No System Support for System Status
+4207,Normal with Warning
+4208,Normal with Alarm
+4209,Abnormal Operation
+4210,Unknown - Communication Failure
+4211,Bypass Input Voltage RMS A-B
+4212,The bypass input RMS voltage between phases A and B
+4213,Bypass Input Voltage RMS B-C
+4214,The bypass input RMS voltage between phases B and C
+4215,Bypass Input Voltage RMS C-A
+4216,The bypass input RMS voltage between phases C and A
+4217,Bypass Input Voltage RMS A-N
+4218,The bypass input RMS voltage between phase A and Neutral
+4219,Bypass Input Voltage RMS B-N
+4220,The bypass input RMS voltage between phase B and Neutral
+4221,Bypass Input Voltage RMS C-N
+4222,The bypass input RMS voltage between phase C and Neutral
+4223,Bypass Input Frequency
+4224,The bypass input frequency
+4225,Bypass Overload Phase A
+4226,An overload exists on output phase A while operating on the bypass
+4227,Bypass Overload Phase B
+4228,An overload exists on output phase B while operating on the bypass
+4229,Bypass Overload Phase C
+4230,An overload exists on output phase C while operating on the bypass
+4231,Bypass Not Available
+4232,A problem associated with the bypass has been detected
+4233,Bypass Sync Phase Difference
+4234,The phase angle difference between the inverter output and bypass source
+4235,Bypass Auto Retransfer Primed
+4236,Automatic retransfer from bypass to inverter is possible
+4237,Bypass Auto Retransfer Failed
+4238,After performing a recoverable transfer to bypass, an attempt to auto retransfer from bypass to inverter failed
+4239,Bypass - Excess Auto Retransfers
+4240,The number of auto retransfers, from bypass to inverter, has exceeded the maximum for a specified time interval
+4241,Bypass Restart Inhibit - External
+4242,Restart of the bypass is inhibited by the state of an external signal
+4243,Bypass Breaker Closed
+4244,The bypass breaker is closed
+4245,Bypass Static Switch Overload
+4246,Bypass off due to static switch overload
+4247,Bypass Static Switch Unavailable
+4248,The static bypass switch is off, and unable to operate
+4249,Bypass Excessive Pulse Parallel
+4250,The system has performed too many pulse parallel operations within a specified time interval
+4251,Bypass Auto Transfer Failed
+4252,An automatic transfer to static bypass failed
+4253,System Input Phs Rotation Error
+4254,The power conductors on the input line are not wired to the UPS in the sequence preferred for the rectifier (A-B-C)
+4255,System Input Current Limit
+4256,The RMS input current has reached the input current limit threshold
+4257,DC Bus Voltage
+4258,The voltage between the positive and negative terminals of the DC bus at the battery input
+4259,DC Bus Current
+4260,The current at the battery input terminals. In charging mode, the current will be a positive value. In discharging mode, the current will be a negative value
+4261,Battery Time Remaining
+4262,The calculated available time on battery
+4263,Battery Discharge Time
+4264,The time on battery operation for this discharge
+4265,No Support
+4266,Unavailable
+4267,Overflow
+4268,Underflow
+4269,Battery Total Discharge Time
+4270,The cumulative battery discharge time
+4271,The percentage of battery charge
+4272,Battery Percentage Charge
+4273,The voltage between the positive and the negative battery terminals of the common battery disconnect
+4274,Battery Volts at Main Disconnect
+4275,The voltage between the positive and negative battery terminals of a battery cabinet
+4276,Battery Volts for Cabinet
+4277,The battery temperature for a cabinet
+4278,Battery Temperature for Cabinet
+4279,The calculated time remaining before bypass static switch shutdown due to the present overload condition
+4280,Bypass SS Overload Time Remain
+4281,Cumulative battery amp-hours withdrawn over the life of the battery
+4282,Battery Amp-Hours Consumed
+4283,Instantaneous battery power while discharging
+4284,Battery Discharge Power
+4285,Date and time when battery placed into service
+4286,Battery Commission Date
+4287,The date and time of the last battery discharge
+4288,Battery Last Discharge Date
+4289,The calculated battery time remaining has reached the low battery threshold
+4290,Battery Low
+4291,Output turned off due to battery reaching end-of-discharge
+4292,Output Off - End-of-Discharge
+4293,The battery is not charging properly
+4294,Battery Charging Error
+4295,Using a reduced battery charging algorithm due to an external signal
+4296,Battery Charging Reduced-Extrnl
+4297,Battery capacity is low
+4298,Battery Capacity Low
+4299,Output is off
+4300,Output Off
+4301,The battery is discharging
+4302,Battery Discharging
+4303,Excessive temperature differences between battery sensors detected
+4304,Battery Temperature Imbalance
+4305,The rectifier output voltage is increased to equalize the battery voltage level.
+4306,Battery Equalize
+4307,Manual battery test is in progress
+4308,Battery Manual Test In Progress
+4309,Automatic battery test is in progress
+4310,Battery Auto Test In Progress
+4311,Main battery disconnect is open
+4312,Main Battery Disconnect Open
+4313,A battery temperature sensor fault has been detected
+4314,Battery Temperature Sensor Fault
+4315,The bypass frequency is outside the inverter synchronization limits
+4316,Bypass Frequency Error
+4317,Battery circuit breaker 1 is open
+4318,Battery Circuit Breaker 1 Open
+4319,Battery circuit breaker 1 failed to open
+4320,Battery Breaker 1 Open Failure
+4321,Battery circuit breaker 1 failed to close
+4322,Battery Breaker 1 Close Failure
+4323,Battery circuit breaker 2 is open
+4324,Battery Circuit Breaker 2 Open
+4325,Battery circuit breaker 2 failed to open
+4326,Battery Breaker 2 Open Failure
+4327,Battery circuit breaker 2 failed to close
+4328,Battery Breaker 2 Close Failure
+4329,Battery circuit breaker 3 is open
+4330,Battery Circuit Breaker 3 Open
+4331,Battery circuit breaker 3 failed to open
+4332,Battery Breaker 3 Open Failure
+4333,Battery circuit breaker 3 failed to close
+4334,Battery Breaker 3 Close Failure
+4335,Battery circuit breaker 4 is open
+4336,Battery Circuit Breaker 4 Open
+4337,Battery circuit breaker 4 failed to open
+4338,Battery Breaker 4 Open Failure
+4339,Battery circuit breaker 4 failed to close
+4340,Battery Breaker 4 Close Failure
+4341,Battery circuit breaker 5 is open
+4342,Battery Circuit Breaker 5 Open
+4343,Battery circuit breaker 5 failed to open
+4344,Battery Breaker 5 Open Failure
+4345,Battery circuit breaker 5 failed to close
+4346,Battery Breaker 5 Close Failure
+4347,Battery circuit breaker 6 is open
+4348,Battery Circuit Breaker 6 Open
+4349,Battery circuit breaker 6 failed to open
+4350,Battery Breaker 6 Open Failure
+4351,Battery circuit breaker 6 failed to close
+4352,Battery Breaker 6 Close Failure
+4353,Battery circuit breaker 7 is open
+4354,Battery Circuit Breaker 7 Open
+4355,Battery circuit breaker 7 failed to open
+4356,Battery Breaker 7 Open Failure
+4357,Battery circuit breaker 7 failed to close
+4358,Battery Breaker 7 Close Failure
+4359,Battery circuit breaker 8 is open
+4360,Battery Circuit Breaker 8 Open
+4361,Battery circuit breaker 8 failed to open
+4362,Battery Breaker 8 Open Failure
+4363,Battery circuit breaker 8 failed to close
+4364,Battery Breaker 8 Close Failure
+4365,Battery charging is inhibited due to an external inhibit signal
+4366,Battery Charging Inhibited
+4367,The system output RMS voltage between phases A and B
+4368,System Output Voltage RMS A-B
+4369,The system output RMS voltage between phases B and C
+4370,System Output Voltage RMS B-C
+4371,The system output RMS voltage between phases C and A
+4372,System Output Voltage RMS C-A
+4373,The system output RMS current for Phase A
+4374,System Output RMS Current Phs A
+4375,The system output RMS current for Phase B
+4376,System Output RMS Current Phs B
+4377,The system output RMS current for Phase C
+4378,System Output RMS Current Phs C
+4379,The system output frequency
+4380,System Output Frequency
+4381,The sum total power of all system output phases
+4382,System Output Power
+4383,The sum total apparent power of all system output phases
+4384,System Output Apparent Power
+4385,The system output power factor of phase A
+4386,System Output Power Factor Phs A
+4387,The system output power factor of phase B
+4388,System Output Power Factor Phs B
+4389,The system output power factor of phase C
+4390,System Output Power Factor Phs C
+4391,System shutdown due to Emergency Power Off (EPO)
+4392,System Shutdown - EPO
+4393,System shutdown due to Remote Emergency Power Off (REPO)
+4394,System Shutdown - REPO
+4395,The system output is off
+4396,System Output Off
+4397,The system detected a voltage on the bypass when none was expected
+4398,Bypass Backfeed Detected
+4399,Manual transfer from inverter to bypass is inhibited - bypass not qualified.
+4400,Bypass - Manual Xfr Inhibited
+4401,Manual transfer from bypass to inverter is inhibited - inverter output not qualified.
+4402,Bypass - Manual Rexfr Inhibited
+4403,A battery temperature sensor is reporting a value above a threshold
+4404,Battery Over Temperature
+4405,External battery monitor 1 - battery maintenance required
+4406,Battery - External Monitor 1
+4407,External battery monitor 2 - battery maintenance required
+4408,Battery - External Monitor 2
+4409,Battery system ground fault amperage exceeds the threshold
+4410,Battery Ground Fault
+4411,The system output power on phase A as a percentage of the rated capacity
+4412,System Output Pct Power Phase A
+4413,The system output power on phase B as a percentage of the rated capacity
+4414,System Output Pct Power Phase B
+4415,The system output power on phase C as a percentage of the rated capacity
+4416,System Output Pct Power Phase C
+4417,The system output apparent power on phase A as a percentage of the rated capacity
+4418,System Output Pct Pwr (VA) Phs A
+4419,The system output apparent power on phase B as a percentage of the rated capacity
+4420,System Output Pct Pwr (VA) Phs B
+4421,The system output apparent power on phase C as a percentage of the rated capacity
+4422,System Output Pct Pwr (VA) Phs C
+4423,Emergency Power Off - Latched
+4424,System output is off - 'Emergency Power Off (EPO) - latched' requires manual reset
+4425,System Output Low Power Factor
+4426,The system output power factor is low, resulting in reduced output capacity
+4427,Output Current Exceeds Threshold
+4428,Output current for one or more phases exceeds a threshold
+4429,Inverter Overload Time Remaining
+4430,The calculated time remaining before inverter shutdown
+4431,Inverter Failure
+4432,Inverter failure - inverter output is off
+4433,Inverter Overload Phase A
+4434,Inverter is operating with an overload on phase A
+4435,Inverter Overload Phase B
+4436,Inverter is operating with an overload on phase B
+4437,Inverter Overload Phase C
+4438,Inverter is operating with an overload on phase C
+4439,Inverter Out Breaker Open Fail
+4440,Inverter output breaker failed to open
+4441,Inverter Out Breaker Close Fail
+4442,Inverter output breaker failed to close
+4443,Restart of the inverter is inhibited by an external signal
+4444,Inverter Inhibit - External
+4445,System model identifier
+4446,System Model Number
+4447,Maintenance bypass model identifier
+4448,Maintenance Bypass Model Number
+4449,Battery cabinet model identifier
+4450,Battery Cabinet Model Number
+4451,System parallel cabinet model identifier
+4452,Sys Parallel Cabinet Model Num
+4453,System serial number
+4454,System Serial Number
+4455,Maintenance bypass serial number
+4456,Maintenance Bypass Serial Number
+4457,System parallel cabinet serial number
+4458,Sys Parallel Cabinet Serial Num
+4459,Site identifier
+4460,Site Identifier
+4461,Site equipment tag number
+4462,Site Equipment Tag Number
+4463,Battery cabinet 1 serial number
+4464,Battery Cabinet 1 Serial Number
+4465,Battery cabinet 2 serial number
+4466,Battery Cabinet 2 Serial Number
+4467,Battery cabinet 3 serial number
+4468,Battery Cabinet 3 Serial Number
+4469,Battery cabinet 4 serial number
+4470,Battery Cabinet 4 Serial Number
+4471,Battery cabinet 5 serial number
+4472,Battery Cabinet 5 Serial Number
+4473,Battery cabinet 6 serial number
+4474,Battery Cabinet 6 Serial Number
+4475,Battery cabinet 7 serial number
+4476,Battery Cabinet 7 Serial Number
+4477,Battery cabinet 8 serial number
+4478,Battery Cabinet 8 Serial Number
+4479,UPS configuration description
+4480,UPS Configuration Description
+4481,Rectifier description
+4482,Rectifier Description
+4483,Bypass nominal (or rated) voltage
+4484,Bypass Nominal Voltage
+4485,The nominal (or rated) system output voltage
+4486,System Output Nominal Voltage
+4487,The nominal (or rated) system output frequency
+4488,System Output Nominal Frequency
+4489,Battery cell count - lead acid
+4490,Battery Cell Count - Lead Acid
+4491,Battery cell count - nickel cadmium
+4492,Battery Cell Count-Nickel Cadmium
+4493,Output apparent power rating
+4494,Output Apparent Power Rating
+4495,Output real power rating
+4496,Output Real Power Rating
+4497,Input isolation transformer
+4498,Input Isolation Transformer
+4499,Not Installed
+4500,Installed
+4501,System output maximum amperage rating
+4502,System Output Maximum Amp Rating
+4503,Number of UPS modules in the system
+4504,System UPS Module Count
+4505,Number of redundant UPS modules in the system
+4506,System Redundant UPS Modules
+4507,6 Pulse
+4508,12 Pulse
+4509,18 Pulse
+4510,24 Pulse
+4511,Single Module System
+4512,Module (1 + 1)
+4513,Module (1 + N)
+4514,Module (N + 1)
+4515,System Control Cabinet
+4516,Main Static Switch
+4517,Two Wire (single phase + return)
+4518,Two Wire (2 phase, no neutral)
+4519,Three Wire (2 phase + neutral)
+4520,Three Wire (3 phase, no neutral)
+4521,Four Wire (3 phases + neutral)
+4522,Not Applicable
+4523,Continuous Duty
+4524,Momentary Duty
+4525,None
+4526,Inverter
+4527,Bypass
+4528,Maintenance Bypass
+4529,None
+4530,Utility (mains)
+4531,Generator
+4532,UPS
+4533,The external input contact 1
+4534,Input Contact 01
+4535,The external input contact 2
+4536,Input Contact 02
+4537,The external input contact 3
+4538,Input Contact 03
+4539,The external input contact 4
+4540,Input Contact 04
+4541,The external input contact 5
+4542,Input Contact 05
+4543,The external input contact 6
+4544,Input Contact 06
+4545,The external input contact 7
+4546,Input Contact 07
+4547,The external input contact 8
+4548,Input Contact 08
+4549,The external input contact 9
+4550,Input Contact 09
+4551,The external input contact 10
+4552,Input Contact 10
+4553,The external input contact 11
+4554,Input Contact 11
+4555,The external input contact 12
+4556,Input Contact 12
+4557,The external input contact 13
+4558,Input Contact 13
+4559,The external input contact 14
+4560,Input Contact 14
+4561,The external input contact 15
+4562,Input Contact 15
+4563,The external input contact 16
+4564,Input Contact 16
+4565,The phase A output has exceeded the user amperage threshold
+4566,Output Amp Over User Limit-Phs A
+4567,The phase B output has exceeded the user amperage threshold
+4568,Output Amp Over User Limit-Phs B
+4569,The phase C output has exceeded the user amperage threshold
+4570,Output Amp Over User Limit-Phs C
+4571,Transfer of critical bus source to inverter is inhibited by an external signal
+4572,Inverter Transfer Inhibit - Ext
+4573,The inverter has shutdown due to a sustained overload
+4574,Inverter Shutdown - Overload
+4575,The temperature of the inlet air
+4576,Inlet Air Temperature
+4577,The cumulative operation time of the unit
+4578,Total System Operating Time
+4579,The system date and time
+4580,System Date and Time
+4581,The inlet air exceeds the maximum temperature threshold
+4582,Inlet Air Over Temperature
+4583,Rectifier failure - rectifier is off
+4584,Rectifier Failure
+4585,The operation of the rectifier is inhibited by an external signal
+4586,Rectifier Operation Inhibit-Ext
+4587,The output power is supplied by the inverter
+4588,UPS Output on Inverter
+4589,The output power is supplied by the bypass
+4590,UPS Output on Bypass
+4591,The output power is supplied by the maintenance bypass
+4592,Output Load on Maint. Bypass
+4593,The control has detected a communication failure of a component on the internal communication bus
+4594,Internal Communications Failure
+4595,Rectifier pulse count per cycle configuration
+4596,Rectifier Pulse Count
+4597,Rectifier input passive filter configuration
+4598,Rectifier Input Passive Filter
+4599,Rectifier input passive filter switch configuration
+4600,Rectifier Passive Filter Switch
+4601,Rectifier input active filter configuration
+4602,Rectifier Active Filter
+4603,UPS module type
+4604,UPS Module Type
+4605,Bypass input wire configuration
+4606,Bypass Input Wire Configuration
+4607,Output wire configuration
+4608,Output Wire Configuration
+4609,Static switch type configuration
+4610,Static Switch Type
+4611,The UPS's output power source
+4612,UPS Output Source
+4613,A ground fault has been detected on the positive DC Bus link
+4614,DC Bus Ground Fault - Positive
+4615,A ground fault has been detected on the negative DC Bus link
+4616,DC Bus Ground Fault - Negative
+4617,Equipment over temperature summary event
+4618,Equipment Over Temperature
+4619,System fan failure - one or more fans have failed
+4620,System Fan Failure
+4621,System multiple fan failure - remaining fans no longer able to provide adequate heat management capability
+4622,System Multiple Fan Failure
+4623,Password changed
+4624,Password Changed
+4625,Power supply failure
+4626,Power Supply Failure
+4627,A generator is supplying the power to the system
+4628,On Generator
+4629,Auto restart is in progress
+4630,Auto Restart In Progress
+4631,Auto restart inhibited due to an external signal
+4632,Auto Restart Inhibited - Ext
+4633,System input power source
+4634,System Input Power Source
+4635,Load Off
+4636,Load Power Source
+4637,Load power source
+4638,User initiated manual transfer to bypass
+4639,Initiated Transfer to Bypass
+4640,User initiated manual transfer to inverter
+4641,Initiated Transfer to Inverter
+4642,Battery test passed
+4643,Battery Test Passed
+4644,Battery test failed
+4645,Battery Test Failed
+4646,The battery test was manually stopped prior to completion
+4647,Battery Test Manually Stopped
+4648,The backfeed breaker is in the open position
+4649,Backfeed Breaker Open
+4650,System fan status
+4651,System Fan Status
+4652,System fan redundant status
+4653,System Fan Redundant Status
+4654,System fan capacity status
+4655,System Fan Capacity Status
+4656,Unknown
+4657,Normal
+4658,Failure
+4659,Unknown
+4660,Redundancy Available
+4661,Loss of Redundancy
+4662,Unknown
+4663,Adequate
+4664,Inadequate
+4665,System Name
+4666,End user assigned name for the system
+4667,System Description
+4668,End user assigned description for the system
+4669,System Location
+4670,End user assigned location of the system
+4671,Contact Information
+4672,End user assigned contact information for the system
+4673,Manufacturer
+4674,Manufacturer of the system
+4675,Manufacture Date
+4676,Manufacturing date of the system
+4677,Firmware Version
+4678,Firmware version identifier
+4679,MS/TP 485 stack output buffer high water mark, in number of messages
+4680,MS/TP 485 Stack Out Buffer Peak
+4681,The total number of header CRC errors for all MS/TP 485 stacks in the system since boot
+4682,MS/TP 485 Header CRC Errors
+4683,The total number of data CRC errors for all MS/TP 485 stacks in the system since boot
+4684,MS/TP 485 Data CRC Errors
+4685,The number of messages rejected by Velocity due to authentication failures
+4686,Velocity Authentication Failures
+4687,Notification of a message rejected by Velocity due to an authentication failure
+4688,Velocity Authentication Failure
+4689,MS/TP 485 stack output buffer size in number of messages
+4690,MS/TP 485 Stack Out Buffer Size
+4691,The number of router cache lookups that resulted in a miss
+4692,Router Cache Miss Count
+4693,The network address
+4694,Network Address
+4695,The network gateway address
+4696,Gateway Address
+4697,The network mask
+4698,Network Mask
+4699,Domain name server 1 address
+4700,DNS 1
+4701,Domain name server 2 address
+4702,DNS 2
+4703,This is the label assigned to the receptacle at runtime by the system. The value is independent of any user assigned label or asset tag.
+4704,System Assigned Position Label
+4705,20 Amp (NEMA 5-20R)
+4706,10 Amp (IEC C13 sheet F)
+4707,16 Amp (IEC C19 sheet J)
+4708,Receptacle type (form factor and amperage rating)
+4709,Receptacle Type
+4710,L1-N
+4711,L2-N
+4712,L3-N
+4713,L1-L2
+4714,L2-L3
+4715,L3-L1
+4716,This is the receptacle power source line configuration (for example, L1-to-N or L1-to-L2)
+4717,Receptacle Line Source
+4718,No optional capabilities
+4719,Measurement Capability
+4720,Control Capability
+4721,Receptacle capabilities indicates the measurement and/or control capability, etc. These capabilities are associated with the receptacle
+4722,Receptacle Capabilities
+4723,Voltage (RMS) measured at the receptacle
+4724,Receptacle Voltage
+4725,Current (RMS) being delivered to the load attached to the receptacle
+4726,Receptacle Current
+4727,Power (watts) measured at the receptacle
+4728,Receptacle Power
+4729,Apparent Power (volt-amps) measured at the receptacle
+4730,Receptacle Apparent Power
+4731,Receptacle Power Factor (ratio of real power to apparent power)
+4732,Receptacle Power Factor
+4733,The line frequency measured at the receptacle
+4734,Receptacle Line Frequency
+4735,Total accumulated energy, measured at the receptacle, since the last energy reset. Writing a value of 0 (zero) to this causes the accumulated energy to be reset
+4736,Receptacle Accumulated Energy
+4737,Receptacle label - user assigned
+4738,Receptacle Label
+4739,The user assigned receptacle name
+4740,Receptacle User Assigned Label
+4741,The system has detected a receptacle over current condition
+4742,Receptacle Over Current
+4743,The system has detected a receptacle under current condition
+4744,Receptacle Under Current
+4745,Receptacle Power State - indicates the availability of power to the receptacle
+4746,Receptacle Power State
+4747,Unknown
+4748,Off
+4749,On
+4750,Off - On is pending time delay
+4751,User assigned receptacle asset tag
+4752,Receptacle Asset Tag 01
+4753,User assigned receptacle asset tag
+4754,Receptacle Asset Tag 02
+4755,Receptacle Power Control (OFF, ON, Cycle, etc)
+4756,Receptacle Power Control
+4757,Off
+4758,On
+4759,Cycle Power
+4760,The receptacle control lock state. User control of the receptacle power state is inhibited while LOCKED
+4761,Receptacle Control Lock State
+4762,Unlocked
+4763,Locked
+4764,If the receptacle current is below this threshold, an alarm is activated
+4765,Under Current Alarm Threshold
+4766,If the receptacle current is above this threshold, a warning is activated
+4767,Over Current Warning Threshold
+4768,If the receptacle current is above this threshold, an alarm is activated
+4769,Over Current Alarm Threshold
+4770,Receptacle power on delay after a boot event
+4771,Receptacle Power On Delay
+4772,This is the label assigned to the Branch Receptacle Module at runtime by the system. The value is independent of any user assigned label or asset tag.
+4773,System Assigned Label
+4774,The Branch Receptacle Module (BRM) model designation
+4775,BRM Model
+4776,The form factor and amperage rating of the receptacles in the module
+4777,Branch Receptacle Type
+4778,Branch Receptacle Module capabilities indicates the measurement and/or control capability, etc. This applies to the Branch Receptacle Module and its associated receptacles
+4779,Branch Capabilities
+4780,This is the Branch Receptacle Module power source line configuration (for example, L1-to-N or L1-to-L2)
+4781,Branch Line Source
+4782,The number of receptacles in this module
+4783,Module Receptacle Count
+4784,Rated line voltage for the module
+4785,Branch Rated Line Voltage
+4786,This is the rated input line current for the module
+4787,Branch Rated Line Current
+4788,Rated line frequency for the module and its associated receptacles
+4789,Branch Rated Line Frequency
+4790,Total accumulated energy, measured at the Branch Receptacle Module input, since the last energy reset. Writing a value of 0 (zero) to this causes the accumulated energy to be reset
+4791,Branch Accumulated Energy
+4792,System Input Currents are Imbalanced
+4793,System Input Current Imbalance
+4794,Bypass static switch is off due to the state of an external signal
+4795,Bypass Static Switch Off Extrnl
+4796,Battery disconnect due to end-of-discharge
+4797,Battery EoD - Disconnect
+4798,The system output RMS voltage between phases A and Neutral
+4799,System Output Voltage RMS A-N
+4800,The system output RMS voltage between phases B and Neutral
+4801,System Output Voltage RMS B-N
+4802,The system output RMS voltage between phases C and Neutral
+4803,System Output Voltage RMS C-N
+4804,A fault has been detected in the system output
+4805,System Output Fault
+4806,Inverter is off (operation is inhibited) due to external signal state
+4807,Inverter Off - External
+4808,The system has detected a short across one or more inverter static switch Silicon Controlled Rectifiers (SCR)
+4809,Inverter Static Switch SCR Short
+4810,One or more temperature sensors cannot provide a valid temperature reading (i.e. sensor failure, wiring failure, sense circuit failure, etc)
+4811,Temperature Sensor Error
+4812,This is the label assigned to the Power Distribution Unit at runtime by the system. The value is independent of any user assigned label or asset tag.
+4813,System Assigned Position Label
+4814,The Branch's globally unique serial number assigned at the time of manufacture
+4815,Branch Serial Number
+4816,This is a one-based value that indicates the strip's relative position within the rack
+4817,PDU Relative Position
+4818,This is a one-based value that indicates the modules relative position within the strip
+4819,Module's Relative Position
+4820,A one-based number indicating the position of this receptacle within a module
+4821,Receptacle Position
+4822,The Branch Receptacle Module is installed in the Power Distribution Unit (PDU) identified by this Serial Number (S/N)
+4823,PDU Module S/N
+4824,The receptacle is installed in the Branch Receptacle Module identified by this Serial Number (S/N)
+4825,Branch Receptacle Module S/N
+4826,Module Firmware Version Identifier
+4827,Firmware Version
+4828,Module's measured input line-to-neutral voltage
+4829,Branch Voltage
+4830,Module's measured total input line-to-neutral current
+4831,Branch Current
+4832,Module's measured total input line-to-neutral real power
+4833,Branch Power
+4834,Module's measured total input line-to-neutral apparent power
+4835,Branch Apparent Power
+4836,Module's measured total input line-to-neutral power factor
+4837,Branch Power Factor
+4838,The system has detected a module over current condition
+4839,Branch Over Current
+4840,The system has detected a module under current condition
+4841,Branch Under Current
+4842,If the module current is below this threshold, an under current alarm is activated
+4843,Under Current Alarm Threshold
+4844,If the module current is above this threshold, an over current warning is activated
+4845,Over Current Warning Threshold
+4846,If the module current is above this threshold, an over current alarm is activated
+4847,Over Current Alarm Threshold
+4848,Module's measured input line-to-line voltage
+4849,Branch Voltage
+4850,Module's measured input line-to-line current
+4851,Branch Current
+4852,Module's measured input line-to-line real power
+4853,Branch Power
+4854,Module's measured input line-to-line apparent power
+4855,Branch Apparent Power
+4856,Module's measured input line-to-line power factor
+4857,Branch Power Factor
+4858,The system has detected a module over current condition
+4859,Branch Over Current
+4860,The system has detected a module under current condition
+4861,Branch Under Current
+4862,If the module current is below this threshold, an under current alarm is activated
+4863,Under Current Alarm Threshold
+4864,If the module current is above this threshold, an over current warning is activated
+4865,Over Current Warning Threshold
+4866,If the module current is above this threshold, an over current alarm is activated
+4867,Over Current Alarm Threshold
+4868,One or more conditions indicate a Branch Receptacle Module failure, service is required
+4869,Branch Failure
+4870,This is the label assigned to the Power Entry Module at runtime by the system. The value is independent of any user assigned label or asset tag.
+4871,System Assigned Position Label
+4872,The Power Entry Module model designation
+4873,PEM Model
+4874,1-Phase / 3-Wire (L1, N, PE)
+4875,2-Phase / 3-Wire (L1, L2, PE)
+4876,3-Phase / 4-Wire (L1, L2, L3, PE)
+4877,3-Phase / 5-Wire (L1, L2, L3, N, PE)
+4878,The PDU input wiring type
+4879,PDU Input Wiring Type
+4880,Rated input line voltage for the module
+4881,Rated Input Line Voltage
+4882,Rated input line current for the module
+4883,Rated Input Line Current
+4884,Rated input line frequency for the module
+4885,Rated Input Line Frequency
+4886,Total accumulated energy, measured at the module input, since the last energy reset. Writing a value of 0 (zero) to this causes the accumulated energy to be reset
+4887,PDU Accumulated Energy
+4888,The PEM's globally unique serial number assigned at the time of manufacture
+4889,PEM Serial Number
+4890,Module Firmware Version Identifier
+4891,Firmware Version
+4892,Module's measured input line-to-neutral voltage
+4893,PDU Voltage
+4894,Module's measured total input line-to-neutral current
+4895,PDU Current
+4896,Module's measured total input line-to-neutral real power
+4897,PDU Power
+4898,Module's measured total input line-to-neutral apparent power
+4899,PDU Apparent Power
+4900,Module's measured total input line-to-neutral power factor
+4901,PDU Power Factor
+4902,The system has detected a module over current condition
+4903,PDU Over Current
+4904,The system has detected a module under current condition
+4905,PDU Under Current
+4906,Excessive temperature rise internal to the system (i.e. difference between the output versus input temperature is too large)
+4907,System Internal Temperature Rise
+4908,Automatic restart failed
+4909,Automatic Restart Failed
+4910,A summary event indicating one or more fuse failures
+4911,Fuse Failure
+4912,System controller internal error
+4913,System Controller Error
+4914,One or more breakers in the system failed to open
+4915,System Breaker(s) Open Failure
+4916,Module's measured input voltage
+4917,PDU Voltage
+4918,Module's measured total input current
+4919,PDU Current
+4920,Module's measured total input line-to-line real power
+4921,PDU Power
+4922,Module's measured total input apparent power
+4923,PDU Apparent Power
+4924,Module's measured total input power factor
+4925,PDU Power Factor
+4926,The system has detected a module over current condition
+4927,PDU Over Current
+4928,The system has detected a module under current condition
+4929,PDU Under Current
+4930,Module's measured input line-to-line voltage (L1-L2)
+4931,PDU Voltage L1-L2
+4932,Module's measured input line-to-line voltage (L2-L3)
+4933,PDU Voltage L2-L3
+4934,Module's measured input line-to-line voltage (L3-L1)
+4935,PDU Voltage L3-L1
+4936,Module's measured input line-to-neutral voltage (L1-N)
+4937,PDU Voltage L1-N
+4938,Module's measured input line-to-neutral voltage (L2-N)
+4939,PDU Voltage L2-N
+4940,Module's measured input line-to-neutral voltage (L3-N)
+4941,PDU Voltage L3-N
+4942,Module's measured total input current line 1
+4943,PDU Current L1
+4944,Module's measured total input current line 2
+4945,PDU Current L2
+4946,Module's measured total input current line 3
+4947,PDU Current L3
+4948,Module's measured total input power line 1
+4949,PDU Power L1
+4950,Module's measured total input power line 2
+4951,PDU Power L2
+4952,Module's measured total input power line 3
+4953,PDU Power L3
+4954,Module's measured total input apparent power line 1
+4955,PDU Apparent Pwr L1
+4956,Module's measured total input apparent power line 2
+4957,PDU Apparent Pwr L2
+4958,Module's measured total input apparent power line 3
+4959,PDU Apparent Pwr L3
+4960,Module's measured total input power factor line 1
+4961,PDU Power Factor L1
+4962,Module's measured total input power factor line 2
+4963,PDU Power Factor L2
+4964,Module's measured total input power factor line 3
+4965,PDU Power Factor L3
+4966,The system has detected a module over current condition on line 1
+4967,PDU Over Current L1
+4968,The system has detected a module over current condition on line 2
+4969,PDU Over Current L2
+4970,The system has detected a module over current condition on line 3
+4971,PDU Over Current L3
+4972,The system has detected a module under current condition on line 1
+4973,PDU Under Current L1
+4974,The system has detected a module under current condition on line 2
+4975,PDU Under Current L2
+4976,The system has detected a module under current condition on line 3
+4977,PDU Under Current L3
+4978,If the module current is below this threshold, an under current alarm is activated
+4979,Under Current Alarm Threshold
+4980,If the module current is above this threshold, an over current warning is activated
+4981,Over Current Warning Threshold
+4982,If the module current is above this threshold, an over current alarm is activated
+4983,Over Current Alarm Threshold
+4984,If the module current is below this threshold, an under current alarm is activated
+4985,Under Current Alarm Threshold
+4986,If the module current is above this threshold, an over current warning is activated
+4987,Over Current Warning Threshold
+4988,If the module current is above this threshold, an over current alarm is activated
+4989,Over Current Alarm Threshold
+4990,If the module's line 1 current is below this threshold, an under current alarm is activated
+4991,Under Current Alarm Threshold L1
+4992,If the module's line 2 current is below this threshold, an under current alarm is activated
+4993,Under Current Alarm Threshold L2
+4994,If the module's line 3 current is below this threshold, an under current alarm is activated
+4995,Under Current Alarm Threshold L3
+4996,If the module's line 1 current is above this threshold, an over current warning is activated
+4997,Over Current Warn Threshold L1
+4998,If the module's line 2 current is above this threshold, an over current warning is activated
+4999,Over Current Warn Threshold L2
+5000,If the module's line 3 current is above this threshold, an over current warning is activated
+5001,Over Current Warn Threshold L3
+5002,If the module's line 1 current is above this threshold, an over current alarm is activated
+5003,Over Current Alarm Threshold L1
+5004,If the module's line 2 current is above this threshold, an over current alarm is activated
+5005,Over Current Alarm Threshold L2
+5006,If the module's line 3 current is above this threshold, an over current alarm is activated
+5007,Over Current Alarm Threshold L3
+5008,The user assigned PDU label
+5009,PDU User Assigned Label
+5010,User assigned PDU asset tag
+5011,PDU Asset Tag 01
+5012,User assigned PDU asset tag
+5013,PDU Asset Tag 02
+5014,The receptacle power state changed to the ON state
+5015,Receptacle Power State - On
+5016,The receptacle power state changed to the OFF state
+5017,Receptacle Power State - Off
+5018,The Branch Receptacle Module's input breaker is open
+5019,Branch Breaker Open
+5020,Device Configuration Change
+5021,Device Configuration Change
+5022,Basic Display Module Removed
+5023,Basic Display Module Removed
+5024,Basic Display Module Discovered
+5025,Basic Display Module Discovered
+5026,The PDU's globally unique serial number assigned at the time of manufacture
+5027,PDU Serial Number
+5028,The Power Module is installed in the Power Distribution Unit (PDU) identified by this Serial Number (S/N)
+5029,PDU Module S/N
+5030,The system has detected a power module over current condition
+5031,PDU Over Current
+5032,The system has detected a power module under current condition
+5033,PDU Under Current
+5034,One or more conditions indicate a power module failure, service is required
+5035,PDU Failure
+5036,Internal communications failure with the Power Module
+5037,PDU Communication Fail
+5038,Branch Receptacle Module Removed
+5039,Branch Removed
+5040,Branch Receptacle Module Discovered
+5041,Branch Discovered
+5042,The system has detected a Branch Receptacle Module over current condition
+5043,Branch Over Current
+5044,The system has detected a Branch Receptacle Module under current condition
+5045,Branch Current
+5046,The receptacle's load stopped drawing power
+5047,Receptacle Load Removed
+5048,The receptacle's load started to draw power
+5049,Receptacle Load Added
+5050,A runtime assigned receptacle identification number
+5051,Receptacle Identifier
+5052,A runtime assigned Branch Receptacle Module identification number
+5053,Branch Identifier
+5054,A runtime assigned power module identification number
+5055,Power Module Identifier
+5056,A runtime assigned advanced power strip identification number
+5057,Power Distribution Unit ID
+5058,PDU's Total Input Power (sum of power for all phases).
+5059,PDU Total Input Power
+5060,Total accumulated energy, measured at the module input line 1, since the last energy reset. Writing a value of 0 (zero) to this causes the accumulated energy to be reset for line 1
+5061,PDU Total Input Power via L1
+5062,Total accumulated energy, measured at the module input line 2, since the last energy reset. Writing a value of 0 (zero) to this causes the accumulated energy to be reset for line 2
+5063,PDU Total Input Power via L2
+5064,Total accumulated energy, measured at the module input line 3, since the last energy reset. Writing a value of 0 (zero) to this causes the accumulated energy to be reset for line 3
+5065,PDU Total Input Power via L3
+5066,Branch Receptacle Module label - user assigned
+5067,Branch User Assigned Label
+5068,User assigned Branch Receptacle Module asset tag
+5069,Branch Asset Tag 01
+5070,User assigned Branch Receptacle Module asset tag
+5071,Branch Asset Tag 02
+5072,Module Serial Number
+5073,Module Serial Number
+5074,PEM
+5075,Branch Receptacle Module
+5076,Basic Display Module
+5077,Communications Module
+5078,Power Rail Chassis
+5079,Module Removed
+5080,Module Removed
+5081,Module Added
+5082,Module Added
+5083,Power Distribution Unit module type
+5084,PDU Module Type
+5085,If the receptacle current is below this percentage of the full scale rated value, an alarm is activated
+5086,Under Current Alarm Threshold
+5087,If the receptacle current is above this percentage of the full scale rated value, a warning is activated
+5088,Over Current Warning Threshold
+5089,If the receptacle current is above this percentage of the full scale rated value, an alarm is activated
+5090,Over Current Alarm Threshold
+5091,If the module current is below this percentage of the full scale rated value, an under current alarm is activated
+5092,Under Current Alarm Threshold
+5093,If the module current is above this percentage of the full scale rated value, an over current warning is activated
+5094,Over Current Warning Threshold
+5095,If the module current is above this percentage of the full scale rated value, an over current alarm is activated
+5096,Over Current Alarm Threshold
+5097,If the module current is below this percentage of the full scale rated value, an under current alarm is activated
+5098,Under Current Alarm Threshold
+5099,If the module current is above this percentage of the full scale rated value, an over current warning is activated
+5100,Over Current Warning Threshold
+5101,If the module current is above this percentage of the full scale rated value, an over current alarm is activated
+5102,Over Current Alarm Threshold
+5103,If the module's line 1 current is below this percentage of the full scale rated value, an under current alarm is activated
+5104,Under Current Alarm Threshold L1
+5105,If the module's line 2 current is below this percentage of the full scale rated value, an under current alarm is activated
+5106,Under Current Alarm Threshold L2
+5107,If the module's line 3 current is below this percentage of the full scale rated value, an under current alarm is activated
+5108,Under Current Alarm Threshold L3
+5109,If the module's line 1 current is above this percentage of the full scale rated value, an over current warning is activated
+5110,Over Current Warn Threshold L1
+5111,If the module's line 2 current is above this percentage of the full scale rated value, an over current warning is activated
+5112,Over Current Warn Threshold L2
+5113,If the module's line 3 current is above this percentage of the full scale rated value, an over current warning is activated
+5114,Over Current Warn Threshold L3
+5115,If the module's line 1 current is above this percentage of the full scale rated value, an over current alarm is activated
+5116,Over Current Alarm Threshold L1
+5117,If the module's line 2 current is above this percentage of the full scale rated value, an over current alarm is activated
+5118,Over Current Alarm Threshold L2
+5119,If the module's line 3 current is above this percentage of the full scale rated value, an over current alarm is activated
+5120,Over Current Alarm Threshold L3
+5121,If the module current is below this percentage of the full scale rated value, an under current alarm is activated
+5122,Under Current Alarm Threshold
+5123,If the module current is above this percentage of the full scale rated value, an over current warning is activated
+5124,Over Current Warning Threshold
+5125,If the module current is above this percentage of the full scale rated value, an over current alarm is activated
+5126,Over Current Alarm Threshold
+5127,If the module current is below this percentage of the full scale rated value, an under current alarm is activated
+5128,Under Current Alarm Threshold
+5129,If the module current is above this percentage of the full scale rated value, an over current warning is activated
+5130,Over Current Warning Threshold
+5131,If the module current is above this percentage of the full scale rated value, an over current alarm is activated
+5132,Over Current Alarm Threshold
+5133,Reset to factory defaults
+5134,No action
+5135,Reset the system to the factory default settings
+5136,Reset System to Factory Defaults
+5137,Module compatibility error requires a system firmware update to resolve
+5138,Firmware Update Required
+5139,A generic test event designed to evaluate system handling of events
+5140,Generic Test Event
+5141,Defines the number of devices contained in the system
+5142,System Device Count
+5143,microOhm
+5144,milliOhm
+5145,ohm
+5146,kiloOhm
+5147,megaOhm
+5148,Server Class
+5149,The general classification for this system
+5150,UPS
+5151,AIR
+5152,PMP
+5153,PDU
+5154,PDU Available Current Until Alarm
+5155,The amount of current increase allowed before the over current alarm occurs.
+5156,PDU Percent Current Utilization
+5157,The percent of current utilization relative to over current alarm threshold.
+5158,Branch Available Current Until Alarm
+5159,Branch Percent Current Utilization
+5160,Receptacle Available Current Until Alarm
+5161,Receptacle Percent Current Utilization
+5162,PDU Available L1 Current Until Alarm
+5163,PDU Available L2 Current Until Alarm
+5164,PDU Available L3 Current Until Alarm
+5165,PDU Percent L1 Current Utilization
+5166,PDU Percent L2 Current Utilization
+5167,PDU Percent L3 Current Utilization
+5168,Auxiliary Sensor Identifier
+5169,System assigned auxiliary sensor identification number
+5170,System Assigned Label
+5171,Label assigned to the Auxiliary Sensor at runtime by the system. The value is independent of any user assigned label or asset tag.
+5172,Auxiliary Sensor's Relative Position
+5173,Auxiliary sensor relative position. This is a one-based value that indicates the sensor's position relative to the sensor string connector.
+5174,PDU Module S/N
+5175,The Auxiliary Sensor is installed in the Power Distribution Unit (PDU) identified by this Serial Number (S/N)
+5176,Auxiliary Sensor Measurement Type
+5177,Auxiliary Sensor Measurement Type
+5178,Temperature
+5179,Relative Humidity
+5180,Auxiliary Sensor User Assigned Label
+5181,User assigned auxiliary sensor label.
+5182,Auxiliary Sensor Asset Tag 01
+5183,User assigned auxiliary sensor asset tag 01
+5184,Auxiliary Sensor Asset Tag 02
+5185,User assigned auxiliary sensor asset tag 02
+5186,Temperature Sensor Serial Number
+5187,The Temperature Sensor's globally unique serial number assigned at the time of manufacture
+5188,Temperature measured at the temperature sensor
+5189,Over Temperature
+5190,An over temperature condition was detected.
+5191,Under Temperature
+5192,An under temperature condition was detected
+5193,Over Temperature Warning Threshold
+5194,Over temperature warning threshold.
+5195,Over Temperature Alarm Threshold
+5196,Over temperature alarm threshold.
+5197,Under Temperature Warning Threshold
+5198,Under temperature warning threshold.
+5199,Under Temperature Alarm Threshold
+5200,Under temperature alarm threshold.
+5201,Humidity Sensor Serial Number
+5202,The Humidity Sensor's globally unique serial number assigned at the time of manufacture
+5203,Relative Humidity
+5204,Relative Humidity measured at the humidity sensor
+5205,Over Relative Humidity
+5206,An over relative humidity condition was detected
+5207,Under Relative Humidity
+5208,An under relative humidity condition was detected
+5209,Over Relative Humidity Warning Threshold
+5210,Over relative humidity warning threshold.
+5211,Over Relative Humidity Alarm Threshold
+5212,Over relative humidity alarm threshold.
+5213,Under Relative Humidity Warning Threshold
+5214,Under relative humidity warning threshold.
+5215,Under Relative Humidity Alarm Threshold
+5216,Under relative humidity alarm threshold.
+5217,Auxiliary Sensor String
+5218,Ext Air Sensor A Temperature
+5219,Air temperature as measured by external air sensor A.
+5220,Ext Air Sensor A Humidity
+5221,Relative humidity as measured by external air sensor A.
+5222,Ext Air Sensor A Dew Point Temp
+5223,Dew point temperature as measured by external air sensor A.
+5224,Ext Air Sensor B Temperature
+5225,Air temperature as measured by external air sensor B.
+5226,Ext Air Sensor B Humidity
+5227,Relative humidity as measured by external air sensor B.
+5228,Ext Air Sensor B Dew Point Temp
+5229,Dew point temperature as measured by external air sensor B.
+5230,External Air Over Temp Threshold
+5231,Threshold value used in the ([External Air Sensor A Over Temperature], [External Air Sensor B Over Temperature]...) events.
+5232,External Air Sensor A Over Temperature
+5233,[Ext Air Sensor A Temperature] has exceeded [External Air Over Temp Threshold].
+5234,Ext Air Sensor A Over Temp - Event Control
+5235,Enable/disable the activation of the [External Air Sensor A Over Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5236,Ext Air Sensor A Over Temp - Event Type
+5237,The event type for the [External Air Sensor A Over Temperature] event.
+5238,Message
+5239,Warning
+5240,Alarm
+5241,External Air Sensor B Over Temperature
+5242,[Ext Air Sensor B Temperature] has exceeded [External Air Over Temp Threshold].
+5243,Ext Air Sensor B Over Temp - Event Control
+5244,Enable/disable the activation of the [External Air Sensor B Over Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5245,Ext Air Sensor B Over Temp - Event Type
+5246,The event type for the [External Air Sensor B Over Temperature] event.
+5247,Ext Air Under Temp Threshold
+5248,Threshold value used in the ([Ext Air Sensor A Under Temperature], [Ext Air Sensor B Under Temperature]...) events.
+5249,Ext Air Sensor A Under Temperature
+5250,[Ext Air Sensor A Temperature] has dropped below [Ext Air Under Temp Threshold].
+5251,Ext Air Sensor A Under Temp - Event Control
+5252,Enable/disable the activation of the [Ext Air Sensor A Under Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5253,Ext Air Sensor A Under Temp - Event Type
+5254,The event type for the [Ext Air Sensor A Under Temperature] event.
+5255,Ext Air Sensor B Under Temperature
+5256,[Ext Air Sensor B Temperature] has dropped below [Ext Air Under Temp Threshold].
+5257,Ext Air Sensor B Under Temp - Event Control
+5258,Enable/disable the activation of the [Ext Air Sensor B Under Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5259,Ext Air Sensor B Under Temp - Event Type
+5260,The event type for the [Ext Air Sensor B Under Temperature] event.
+5261,Ext Dew Point Over Temp Threshold
+5262,Threshold value used in the [Ext Dew Point Over Temperature] event.
+5263,Ext Dew Point Over Temperature
+5264,At least one dew point temperature reading ([Ext Air Sensor A Dew Point Temp], [Ext Air Sensor B Dew Point Temp]...) has exceeded [Ext Dew Point Over Temp Threshold].
+5265,Ext Dew Point Over Temp - Event Control
+5266,Enable/disable the activation of the [Ext Dew Point Over Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5267,Ext Dew Point Over Temp - Event Type
+5268,The event type for the [Ext Dew Point Over Temperature] event.
+5269,External Air Sensor A Issue
+5270,The external air sensor A is disconnected or the signal is out of range.
+5271,Ext Air Sensor A Issue - Event Control
+5272,Enable/disable the activation of the [External Air Sensor A Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5273,External Air Sensor A Issue - Event Type
+5274,The event type for the [External Air Sensor A Issue] event.
+5275,External Air Sensor B Issue
+5276,The external air sensor B is disconnected or the signal is out of range.
+5277,Ext Air Sensor B Issue - Event Control
+5278,Enable/disable the activation of the [External Air Sensor B Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5279,External Air Sensor B Issue - Event Type
+5280,The event type for the [External Air Sensor B Issue] event.
+5281,Supply Chilled Water Temperature
+5282,Supply chilled water temperature.
+5283,Supply Chilled Water Over Temp Threshold
+5284,Threshold value used in the [Supply Chilled Water Over Temp] event.
+5285,Supply Chilled Water Over Temp
+5286,[Supply Chilled Water Temperature] has exceeded [Supply Chilled Water Over Temp Threshold].
+5287,Supply CW Over Temp - Event Control
+5288,Enable/disable the activation of the [Supply Chilled Water Over Temp] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5289,Supply CW Over Temp - Event Type
+5290,The event type for the [Supply Chilled Water Over Temp] event.
+5291,Supply Chilled Water Temp Sensor Issue
+5292,The supply chilled water temperature sensor is disconnected or the signal is out of range.
+5293,Supply CW Temp Sensor Issue - Event Control
+5294,Enable/disable the activation of the [Supply Chilled Water Temp Sensor Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5295,Supply CW Temp Sensor Issue - Event Type
+5296,The event type for the [Supply Chilled Water Temp Sensor Issue] event.
+5297,Supply Refrigerant Temperature
+5298,Supply refrigerant temperature.
+5299,Supply Refrig Over Temp Threshold
+5300,Threshold value used in the [Supply Refrigerant Over Temp] event.
+5301,Supply Refrigerant Over Temp
+5302,Event that is activated when [Supply Refrigerant Temperature] exceeds [Supply Refrig Over Temp Threshold]. The event is deactivated when the temperature drops below the threshold.
+5303,Supply Refrig Over Temp - Event Control
+5304,Enable/disable the activation of the [Supply Refrigerant Over Temp] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5305,Supply Refrig Over Temp - Event Type
+5306,The event type for the [Supply Refrigerant Over Temp] event.
+5307,Supply Refrigerant Under Temp
+5308,[Supply Refrigerant Temperature] has dropped below a specified threshold.
+5309,Supply Refrig Under Temp - Event Control
+5310,Enable/disable the activation of the [Supply Refrigerant Under Temp] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5311,Supply Refrig Under Temp - Event Type
+5312,The event type for the [Supply Refrigerant Under Temp] event.
+5313,Supply Refrigerant Temp Sensor Issue
+5314,The supply refrigeramt temperature sensor is disconnected or the signal is out of range.
+5315,Supply Refrig Temp Sensor Issue - Event Control
+5316,Enable/disable the activation of the [Supply Refrigerant Temp Sensor Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5317,Supply Refrig Temp Sensor Issue - Event Type
+5318,The event type for the [Supply Refrigerant Temp Sensor Issue] event.
+5319,Supply Fluid Temperature
+5320,Supply fluid temperature.
+5321,Supply Fluid Over Temp Threshold
+5322,Threshold value used in the [Supply Fluid Over Temp] event.
+5323,Supply Fluid Over Temp
+5324,[Supply Fluid Temperature] has exceeded [Supply Fluid Over Temp Threshold].
+5325,Supply Fluid Over Temp - Event Control
+5326,Enable/disable the activation of the [Supply Fluid Over Temp] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5327,Supply Fluid Over Temp - Event Type
+5328,The event type for the [Supply Fluid Over Temp] event.
+5329,Supply Fluid Under Temp
+5330,[Supply Fluid Temperature] has dropped below a specified threshold.
+5331,Supply Fluid Under Temp - Event Control
+5332,Enable/disable the activation of the [Supply Fluid Under Temp] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5333,Supply Fluid Under Temp - Event Type
+5334,The event type for the [Supply Fluid Under Temp] event.
+5335,Supply Fluid Temp Sensor Issue
+5336,The supply fluid temperature sensor is disconnected or the signal is out of range.
+5337,Supply Fluid Temp Sensor Issue - Event Control
+5338,Enable/disable the activation of the [Supply Fluid Temp Sensor Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5339,Supply Fluid Temp Sensor Issue - Event Type
+5340,The event type for the [Supply Fluid Temp Sensor Issue] event.
+5341,Pump 1 State
+5342,Pump 1 operational state.
+5343,Pump 2 State
+5344,Pump 2 operational state.
+5345,Pump 1 Loss of Flow
+5346,Loss of flow is detected in pump 1. The loss of flow condition occurs when no differential pressure is detected across the pump.
+5347,Pump 1 Loss of Flow - Event Control
+5348,Enable/disable the activation of the [Pump 1 Loss of Flow] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5349,Pump 1 Loss of Flow - Event Type
+5350,The event type for the [Pump 1 Loss of Flow] event.
+5351,Pump 2 Loss of Flow
+5352,Loss of flow is detected in pump 2. The loss of flow condition occurs when no differential pressure is detected across the pump.
+5353,Pump 2 Loss of Flow - Event Control
+5354,Enable/disable the activation of the [Pump 2 Loss of Flow] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5355,Pump 2 Loss of Flow - Event Type
+5356,The event type for the [Pump 2 Loss of Flow] event.
+5357,Pump Short Cycle
+5358,Pumps have short cycled. A short cycle is defined as turning on and off a number of times over a set time period.
+5359,Pump Short Cycle - Event Control
+5360,Enable/disable the activation of the [Pump Short Cycle] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5361,Pump Short Cycle - Event Type
+5362,The event type for the [Pump Short Cycle] event.
+5363,Compressor 1A State
+5364,Compressor 1A operational state.
+5365,Compressor 1B State
+5366,Compressor 1B operational state.
+5367,Compressor 2A State
+5368,Compressor 2A operational state.
+5369,Compressor 2B State
+5370,Compressor 2B operational state.
+5371,Compressor 1A High Head Pressure
+5372,Compressor 1A high head pressure.
+5373,Compressor 1A High Head Pressure - Event Control
+5374,Enable/disable the activation of the [Compressor 1A High Head Pressure] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5375,Compressor 1A High Head Pressure - Event Type
+5376,The event type for the [Compressor 1A High Head Pressure] event.
+5377,Compressor 1B High Head Pressure
+5378,Compressor 1B high head pressure.
+5379,Compressor 1B High Head Pressure - Event Control
+5380,Enable/disable the activation of the [Compressor 1B High Head Pressure] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5381,Compressor 1B High Head Pressure - Event Type
+5382,The event type for the [Compressor 1B High Head Pressure] event.
+5383,Compressor 2A High Head Pressure
+5384,Compressor 2A high head pressure.
+5385,Compressor 2A High Head Pressure - Event Control
+5386,Enable/disable the activation of the [Compressor 2A High Head Pressure] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5387,Compressor 2A High Head Pressure - Event Type
+5388,The event type for the [Compressor 2A High Head Pressure] event.
+5389,Compressor 2B High Head Pressure
+5390,Compressor 2B high head pressure.
+5391,Compressor 2B High Head Pressure - Event Control
+5392,Enable/disable the activation of the [Compressor 2B High Head Pressure] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5393,Compressor 2B High Head Pressure - Event Type
+5394,The event type for the [Compressor 2B High Head Pressure] event.
+5395,Compressor 1A Short Cycle
+5396,Compressor 1A short cycle. A short cycle is defined as turning on and off a number of times over a set time period.
+5397,Compressor 1A Short Cycle - Event Control
+5398,Enable/disable the activation of the [Compressor 1A Short Cycle] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5399,Compressor 1A Short Cycle - Event Type
+5400,The event type for the [Compressor 1A Short Cycle] event.
+5401,Compressor 1B Short Cycle
+5402,Compressor 1B short cycle. A short cycle is defined as turning on and off a number of times over a set time period.
+5403,Compressor 1B Short Cycle - Event Control
+5404,Enable/disable the activation of the [Compressor 1B Short Cycle] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5405,Compressor 1B Short Cycle - Event Type
+5406,The event type for the [Compressor 1B Short Cycle] event.
+5407,Compressor 2A Short Cycle
+5408,Compressor 2A short cycle. A short cycle is defined as turning on and off a number of times over a set time period.
+5409,Compressor 2A Short Cycle - Event Control
+5410,Enable/disable the activation of the [Compressor 2A Short Cycle] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5411,Compressor 2A Short Cycle - Event Type
+5412,The event type for the [Compressor 2A Short Cycle] event.
+5413,Compressor 2B Short Cycle
+5414,Compressor 2B short cycle. A short cycle is defined as turning on and off a number of times over a set time period.
+5415,Compressor 2B Short Cycle - Event Control
+5416,Enable/disable the activation of the [Compressor 2B Short Cycle] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5417,Compressor 2B Short Cycle - Event Type
+5418,The event type for the [Compressor 2B Short Cycle] event.
+5419,Tandem 1 Low Suction Pressure
+5420,'Tandem compressors' 1 low suction pressure.
+5421,Tandem 1 Low Suction Pressure - Event Control
+5422,Enable/disable the activation of the [Tandem 1 Low Suction Pressure] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5423,Tandem 1 Low Suction Pressure - Event Type
+5424,The event type for the [Tandem 1 Low Suction Pressure] event.
+5425,Tandem 2 Low Suction Pressure
+5426,'Tandem compressors' 2 low suction pressure.
+5427,Tandem 2 Low Suction Pressure - Event Control
+5428,Enable/disable the activation of the [Tandem 2 Low Suction Pressure] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5429,Tandem 2 Low Suction Pressure - Event Type
+5430,The event type for the [Tandem 2 Low Suction Pressure] event.
+5431,Hot Gas Valve 1 Open Position
+5432,Hot gas valve 1 open position.
+5433,Hot Gas Valve 2 Open Position
+5434,Hot gas valve 2 open position.
+5435,Hot Gas Solenoid Valve 1 Position
+5436,Hot gas solenoid valve 1 position.
+5437,closed
+5438,open
+5439,Hot Gas Solenoid Valve 2 Position
+5440,Hot gas solenoid valve 2 position
+5441,Chilled Water Control Valve Position
+5442,Chilled water valve out of position. Chilled water control valve position does not match expected value.
+5443,Chilled Water Cntrl Valve Pos - Event Control
+5444,Enable/disable the activation of the [Chilled Water Control Valve Position] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5445,Chilled Water Cntrl Valve Pos - Event Type
+5446,The event type for the [Chilled Water Control Valve Position] event.
+5447,System Operating State
+5448,Current operating state of the system.
+5449,off
+5450,on
+5451,standby
+5452,System Control Mode
+5453,System control mode.
+5454,Internal (Auto)
+5455,External (Manual)
+5456,Cooling Output
+5457,Amount of cooling being applied relative to the unit's cooling capacity.
+5458,Minimum Room Temperature Set Point
+5459,Minimum desired room air temperature. If the room air temperature falls below this set point, the unit will reduce the cooling.
+5460,Auto Restart Delay
+5461,If power is lost, the control will delay this amount of time after power is restored before restarting the unit.
+5462,System Condensation Detected
+5463,System condensation detected.
+5464,System Condensation Detected - Event Control
+5465,Enable/disable the activation of the [System Condensation Detected] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5466,System Condensation Detected - Event Type
+5467,The event type for the [System Condensation Detected] event.
+5468,Shutdown - Loss Of Power
+5469,System lost power. This event becomes active when the unit is powered on following an unexpected loss of power.
+5470,Shutdown - Loss Of Power - Event Control
+5471,Enable/disable the activation of the [Shutdown - Loss Of Power] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5472,Shutdown - Loss Of Power - Event Type
+5473,The event type for the [Shutdown - Loss Of Power] event.
+5474,System Event Acknowledge/Reset
+5475,Reset and/or acknowledge all events.
+5476,Reset
+5477,Acknowledge
+5478,Failure
+5479,Input Contact 01 - Event Control
+5480,Enable/disable the activation of the [Input Contact 01] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5481,Input Contact 01 - Event Type
+5482,The event type for the [Input Contact 01] event.
+5483,Smoke Detected
+5484,Smoke detected.
+5485,Smoke Detected - Event Control
+5486,Enable/disable the activation of the [Smoke Detected] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5487,Smoke Detected - Event Type
+5488,The event type for the [Smoke Detected] event.
+5489,Water Under Floor
+5490,Water under the floor is detected.
+5491,Water Under Floor - Event Control
+5492,Enable/disable the activation of the [Water Under Floor] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5493,Water Under Floor - Event Type
+5494,The event type for the [Water Under Floor] event.
+5495,Service Required
+5496,Unit requires servicing.
+5497,Service Required - Event Control
+5498,Enable/disable the activation of the [Service Required] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5499,Service Required - Event Type
+5500,The event type for the [Service Required] event.
+5501,Fan Issue
+5502,One or more fans are not operating within their operational parameters.
+5503,Fan Issue - Event Control
+5504,Enable/disable the activation of the [Fan Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+5505,Fan Issue - Event Type
+5506,The event type for the [Fan Issue] event.
+5507,Receptacle Load Dropped
+5508,The receptacle's load is not drawing power
+5509,Temperature Offset
+5510,Temperature Offset. This value is added to the temperature sensor measurement to calibrate the sensor.
+5511,Relative Humidity Offset
+5512,Relative Humidity Offset. This value is added to the humidity sensor measurement to calibrate the sensor.
+5513,Input Qualification Status
+5514,input qualification status
+5515,Fail
+5516,Marginal Low
+5517,Normal
+5518,Marginal High
+5519,Static Bypass Switch
+5520,Static Bypass Switch state - On/Off
+5521,Bypass Qualification Status
+5522,bypass qualification status
+5523,Bypass Retransfer Time Remaining
+5524,Time remaining before an inverter overload or inverter fault can be cleared and auto retransfer from the bypass to the inverter can take place
+5525,Battery Amp-Hours Consumed This Discharge
+5526,Battery amp-hours withdrawn this discharge.
+5527,Battery Automatic Test Inhibited
+5528,Automatic (scheduled) battery tests are inhibited
+5529,Battery Self Test
+5530,Battery self test is in progress
+5531,Battery Low Shutdown
+5532,Battery disconnect due to end-of-discharge.
+5533,DC Bus Qualification Status
+5534,dc bus qualification status
+5535,Output Qualification Status
+5536,output qualification status
+5537,Inverter Output Qualification Status
+5538,inverter output qualification status
+5539,Inverter On/Off State
+5540,inverter on/off state
+5541,Equipment Temperature Sensor Fail
+5542,One or more temperature sensors report a temperature outside of the range of expected operation.
+5543,Rectifier Status
+5544,rectifier status
+5545,System Fan Failure - Redundant
+5546,Redundant system fan failure
+5547,Multiple Fan Failure
+5548,Multiple fan failure
+5549,Configuration Description
+5550,Configuration description
+5551,Single Module System 33
+5552,Single Module System 34
+5553,Single Module System 44
+5554,1+1 33
+5555,1+1 34
+5556,1+1 44
+5557,1+N 33
+5558,1+N 34
+5559,1+N 44
+5560,N+1 33
+5561,N+1 34
+5562,N+1 44
+5563,SCC w/Continuous Duty SS 33
+5564,SCC w/Continuous Duty SS 44
+5565,SCC w/Momentary Duty SS
+5566,Main Static Switch
+5567,UPS System Output Source
+5568,The UPS system's output power source
+5569,Off
+5570,Normal
+5571,Bypass
+5572,Maintenance Bypass
+5573,Main Controller Fault
+5574,A Main Controller fault has been detected.
+5575,System Breaker(s) Close Failure
+5576,One or more breakers in the system failed to close
+5577,Input Filter Cycle Lock
+5578,The input filter disconnect is open due to exceeding the maximum number of cycles.
+5579,Service Code Active
+5580,Service code is running
+5581,LBS Active
+5582,The Load Bus Sync option is active
+5583,LBS Inhibited
+5584,The system has detected that conditions to perform Load Bus Sync are not satisfied
+5585,Leading Power Factor
+5586,The leading output Power Factor has fallen below a specified value
+5587,Controls Reset Required
+5588,A controls reset is required due to one or more critical settings changing
+5589,Sales Order Line 1
+5590,Customer Sales Order line 1
+5591,Sales Order Line 2
+5592,Customer Sales Order line 2
+5593,Service Phone Number
+5594,Authorized Service contact Phone Number
+5595,Backfeed Breaker
+5596,Backfeed breaker
+5597,Open
+5598,Close
+5599,Not Installed
+5600,SBS Load Disconnect
+5601,SBS load disconnect
+5602,Input Breaker (CB1)
+5603,Input breaker (CB1)
+5604,Trap Filter Disconnect
+5605,Trap filter disconnect
+5606,Output Breaker (CB2)
+5607,Output breaker (CB2)
+5608,Internal Bypass Breaker (CB3)
+5609,Internal bypass breaker (CB3)
+5610,Bypass Isolation Breaker (BIB)
+5611,Bypass isolation breaker (BIB)
+5612,Rectifier Isolation Breaker (RIB)
+5613,Rectifier isolation breaker (RIB)
+5614,Maintenance Bypass Breaker (MBB)
+5615,Maintenance bypass breaker (MBB)
+5616,Maintenance Isolation Breaker (MIB)
+5617,Maintenance isolation breaker (MIB)
+5618,Output Series Static Switch
+5619,output series static switch
+5620,Off
+5621,On
+5622,Not Installed
+5623,Module Output Breaker (MOB)
+5624,Module output breaker (MOB)
+5625,PDU Percent Current Utilization
+5626,The percent of PDU line-to-neutral electrical current utilization relative to the PDU's current rating.
+5627,PDU Percent Current Utilization
+5628,The percent of PDU line-to-line electrical current utilization relative to the PDU's current rating.
+5629,PDU Percent L1 Current Utilization
+5630,The percent of PDU line 1 electrical current utilization relative to the PDU's current rating.
+5631,PDU Percent L2 Current Utilization
+5632,The percent of PDU line 2 electrical current utilization relative to the PDU's current rating.
+5633,PDU Percent L3 Current Utilization
+5634,The percent of PDU line 3 electrical current utilization relative to the PDU's current rating.
+5635,Branch Percent Current Utilization
+5636,The percent of BRM line-to-neutral current utilization relative to the BRM's current rating.
+5637,Branch Percent Current Utilization
+5638,The percent of BRM line-to-line current utilization relative to the BRM's current rating.
+5639,Receptacle Percent Current Utilization
+5640,The percent of receptacle electrical current utilization relative to the receptacle's current rating.
+5641,User Label for Input Contact 1
+5642,User programmable string for external input contact 1
+5643,User Label for Input Contact 2
+5644,User programmable string for external input contact 2
+5645,User Label for Input Contact 3
+5646,User programmable string for external input contact 3
+5647,User Label for Input Contact 4
+5648,User programmable string for external input contact 4
+5649,User Label for Input Contact 5
+5650,User programmable string for external input contact 5
+5651,User Label for Input Contact 6
+5652,User programmable string for external input contact 6
+5653,User Label for Input Contact 7
+5654,User programmable string for external input contact 7
+5655,User Label for Input Contact 8
+5656,User programmable string for external input contact 8
+5657,User Label for Input Contact 9
+5658,User programmable string for external input contact 9
+5659,User Label for Input Contact 10
+5660,User programmable string for external input contact 10
+5661,User Label for Input Contact 11
+5662,User programmable string for external input contact 11
+5663,User Label for Input Contact 12
+5664,User programmable string for external input contact 12
+5665,User Label for Input Contact 13
+5666,User programmable string for external input contact 13
+5667,User Label for Input Contact 14
+5668,User programmable string for external input contact 14
+5669,User Label for Input Contact 15
+5670,User programmable string for external input contact 15
+5671,User Label for Input Contact 16
+5672,User programmable string for external input contact 16
+5673,Multi-module System Output Voltage RMS A-B
+5674,Multi-module system output RMS voltage between phases A and B
+5675,Multi-module System Output Voltage RMS B-C
+5676,Multi-module system output RMS voltage between phases B and C
+5677,Multi-module System Output Voltage RMS C-A
+5678,Multi-module system output RMS voltage between phases C and A
+5679,Multi-module System Output Voltage RMS A-N
+5680,Multi-module system output RMS voltage between phase B and Neutral
+5681,Multi-module System Output Voltage RMS B-N
+5682,Multi-module System Output Voltage RMS C-N
+5683,Multi-module system output RMS voltage between phase C and Neutral
+5684,Sum of MMS Output RMS Currents for Phase A
+5685,The sum of the multi-module system output RMS currents for phase A
+5686,Sum of MMS Output RMS Currents for Phase B
+5687,The sum of the multi-module system output RMS currents for phase B
+5688,Sum of MMS Output RMS Currents for Phase C
+5689,The sum of the multi-module system output RMS currents for phase C
+5690,MMS Output Frequency
+5691,The multi-module system output frequency
+5692,MMS Output Power
+5693,The sum total power of all system output modules
+5694,MMS Output Apparent Power
+5695,The sum total apparent power of all system output modules
+5696,MMS Output Power Factor Phase A
+5697,The multi-module system output power factor for phase A
+5698,MMS Output Power Factor Phase B
+5699,The multi-module system output power factor for phase B
+5700,MMS Output Power Factor Phase C
+5701,The multi-module system output power factor for phase C
+5702,MMS Output Pct Power Phase A
+5703,The multi-module system output power on phase A as a percentage of the rated capacity
+5704,MMS Output Pct Power Phase B
+5705,The multi-module system output power on phase B as a percentage of the rated capacity
+5706,MMS Output Pct Power Phase C
+5707,The multi-module system output power on phase C as a percentage of the rated capacity
+5708,MMS Output Pct Apparent Pwr (kVA) Phase A
+5709,The multi-module system output apparent power on phase A as a percentage of the rated capacity
+5710,MMS Output Pct Apparent Pwr (kVA) Phase B
+5711,The multi-module system output apparent power on phase B as a percentage of the rated capacity
+5712,MMS Output Pct Apparent Pwr (kVA) Phase C
+5713,The multi-module system output apparent power on phase C as a percentage of the rated capacity
+5714,Number of Redundant Modules
+5715,The number of redundant modules in a multi-module collective.
+5716,Parallel Comm Warning
+5717,Parallel communication bus warning
+5718,System Comm Fail
+5719,Failure of a device on the multi-module system communication bus
+5720,Loss of Redundancy
+5721,The multi-module collection doesn't have enough modules to redundantly support the load
+5722,BPSS Startup Inhibit
+5723,The Bypass Static Switch startup is inhibited
+5724,MMS Transfer Inhibit
+5725,The critical load can not be manually transferred from inverter to bypass
+5726,MMS Retransfer Inhibit
+5727,The critical load can not be manually retransferred from bypass to inverter
+5728,MMS Module Number
+5729,MMS module number
+5730,MMS Loss of Sync Pulse
+5731,Multi-module system loss of sync pulse
+5732,MMS Overload
+5733,Multi-module system overload
+5734,MMS SCC Monitoring Card Access URL
+5735,URL for the monitoring card of the SCC in a multi-module system.
+5736,Number of Modules in a MMS
+5737,The number of modules in a multi-module system
+5738,MMS On Battery
+5739,The multi-module system is on battery
+5740,MMS Low Battery Warning
+5741,Multi-module system low battery warning
+5742,Module Output Breaker for Module 1 (MOB1)
+5743,Module output breaker for module 1 (MOB1)
+5744,Module Output Breaker for Module 2 (MOB2)
+5745,Module output breaker for module 2 (MOB2)
+5746,Module Output Breaker for Module 3 (MOB3)
+5747,Module output breaker for module 3 (MOB3)
+5748,Module Output Breaker for Module 4 (MOB4)
+5749,Module output breaker for module 4 (MOB4)
+5750,Module Output Breaker for Module 5 (MOB5)
+5751,Module output breaker for module 5 (MOB5)
+5752,Module Output Breaker for Module 6 (MOB6)
+5753,Module output breaker for module 6 (MOB6)
+5754,Module Output Breaker for Module 7 (MOB7)
+5755,Module output breaker for module 7 (MOB7)
+5756,Module Output Breaker for Module 8 (MOB8)
+5757,Module output breaker for module 8 (MOB8)
+5758,Bypass Isolation Breaker for Module 1 (BIB1)
+5759,Bypass isolation breaker for module 1 (BIB1)
+5760,Bypass Isolation Breaker for Module 2 (BIB2)
+5761,Bypass isolation breaker for module 2 (BIB2)
+5762,Bypass Isolation Breaker for Module 3 (BIB3)
+5763,Bypass isolation breaker for module 3 (BIB3)
+5764,Bypass Isolation Breaker for Module 4 (BIB4)
+5765,Bypass isolation breaker for module 4 (BIB4)
+5766,Bypass Isolation Breaker for Module 5 (BIB5)
+5767,Bypass isolation breaker for module 5 (BIB5)
+5768,Bypass Isolation Breaker for Module 6 (BIB6)
+5769,Bypass isolation breaker for module 6 (BIB6)
+5770,Bypass Isolation Breaker for Module 7 (BIB7)
+5771,Bypass isolation breaker for module 7 (BIB7)
+5772,Bypass Isolation Breaker for Module 8 (BIB8)
+5773,Bypass isolation breaker for module 8 (BIB8)
+5774,System Output Breaker (UOB)
+5775,System output breaker (UOB)
+5776,System Load Bank Breaker (LBB)
+5777,System load bank breaker (LBB)
+5778,System Isolation Output Breaker (IOB)
+5779,System isolation output breaker (IOB)
+5780,SCC Event Summary
+5781,Summary of any active user alarms or faults on the SCC
+5782,None
+5783,Alarm
+5784,Fault
+5785,MMS Inter-Module Comm Status
+5786,Inter-module communication status of this module in a multi-module system
+5787,Failed
+5788,Normal
+5789,MMS Event Summary
+5790,Summary of any active user alarm or fault of this module in a multi-module system
+5791,MMS Module Inverter Status
+5792,Multi-module inverter status of this module (on/off)
+5793,MMS Module Output Voltage Status
+5794,Output voltage status of this module in multi-module system
+5795,MMS Module Output Source
+5796,Module output source in a multi-module system (normal/bypass/maintenance bypass/off)
+5797,MMS Module Total kW Output
+5798,Total kW output of this module in a multi-module system
+5799,MMS Module Total kVA Output
+5800,Total kVA output of this module in a multi-module system
+5801,MMS Module DC Bus Voltage
+5802,DC bus voltage of this module in a multi-module system
+5803,MMS Module Battery Current
+5804,Battery current of this module in a multi-module system
+5805,MMS Module Battery Time Remaining
+5806,Battery time remaining for this module in a multi-module system
+5807,MMS Module URL Address
+5808,URL for the monitoring card of this module in a multi-module system.
+5809,bar
+5810,Dew Point Temperature
+5811,Dew point temperature, using the highest reading from all sensors.
+5812,Calculated Next Maintenance Month
+5813,Calculated month of the next scheduled maintenance. Used in conjunction with [Calculated Next Maintenance Year].
+5814,Calculated Next Maintenance Year
+5815,Calculated year of the next scheduled maintenance. Used in conjunction with [Calculated Next Maintenance Month].
+5816,Maintenance Ramp
+5817,The ratio of operations performed to the calculated operations available between maintenance intervals.
+5818,UPS Battery Status
+5819,UPS battery status
+5820,Unknown
+5821,Normal
+5822,Low
+5823,Depleted
+5824,UPS Output Source
+5825,UPS output source
+5826,Other
+5827,Off
+5828,Normal
+5829,Bypass
+5830,Battery
+5831,Booster
+5832,Reducer
+5833,MMS UPS Battery Status
+5834,Multi-module UPS battery status
+5835,MMS UPS Output Source
+5836,Multi-module UPS output source
+5837,Customer's Name
+5838,The name of the customer the device belongs to.
+5839,Customer's Street Address
+5840,The street address where the customer is located.
+5841,Customer's City
+5842,The city where the customer is located.
+5843,Customer's State
+5844,The state where the customer is located.
+5845,Customer's ZIP Code
+5846,The ZIP code where the customer is located.
+5847,Customer's Contact Person
+5848,The contact person for the customer.
+5849,Customer's Phone Number
+5850,The phone number of the customer's contact person.
+5851,Customer's Phone Extension
+5852,The phone number extension of the customer's contact person, if applicable.
+5853,Customer's Cell Phone Number
+5854,The cell phone number of the customer's contact person.
+5855,Customer's FAX Number
+5856,The FAX number of the customer's contact person.
+5857,Customer's E-mail Address
+5858,The e-mail address of the customer's contact person.
+5859,Location Name
+5860,Name of the site where the unit is located.
+5861,Location Street Address
+5862,Street address where the unit resides.
+5863,Location City
+5864,City where the unit resides.
+5865,Location State
+5866,State where the unit resides.
+5867,Location ZIP Code
+5868,ZIP code where the unit resides.
+5869,Location Contact Person
+5870,Contact person at the location where the unit resides.
+5871,Location Phone Number
+5872,Phone number of contact person at the location where the unit resides.
+5873,Location Phone Extension
+5874,Phone extension of the contact person at the location where the unit resides.
+5875,Location Cell Phone Number
+5876,Cell phone number of the contact person at the location where the unit resides.
+5877,Location FAX Number
+5878,FAX number of the contact person at the location where the unit resides.
+5879,Location E-mail Address
+5880,E-mail address of the contact person at the location where the unit resides.
+5881,Battery Name
+5882,A name string providing a meaningful reference to the battery.
+5883,Battery Rating
+5884,Total rating of all parallel strings in the battery.
+5885,String Ambient Temperature
+5886,Ambient temperature reading(s) for the battery string.
+5887,String Overall Voltage
+5888,Overall voltage of a battery string.
+5889,String Current
+5890,Discharge(-) or charge(+) current of a battery string.
+5891,Float Current
+5892,The current drawn by a battery string that is being float charged.
+5893,Ripple Current
+5894,Ripple current on a string.
+5895,Total Active Alarms on a Battery String
+5896,The number of active alarms (maintenance or critical) on a battery string.
+5897,Battery String Alarm Reset
+5898,Initiates a reset/clear of all latched alarms on a battery string.
+5899,Low Ambient Temperature
+5900,The system has detected a low ambient temperature condition.
+5901,High Ambient Temperature
+5902,The system has detected a high ambient temperature condition.
+5903,Low Overall Voltage
+5904,The system has detected a low battery string overall voltage condition.
+5905,High Overall Voltage
+5906,The system has detected a high battery string overall voltage condition.
+5907,High Battery String Current
+5908,The system has detected a high battery string current condition.
+5909,Low Battery String Float Current
+5910,The system has detected a low battery string float current condition.
+5911,High Battery String Float Current
+5912,The system has detected a high battery string float current condition.
+5913,High Battery String Ripple Current
+5914,The system has detected a high battery string ripple current condition.
+5915,Battery String Discharge Detected
+5916,The system has detected a battery string discharge condition.
+5917,Maximum Discharge Time Exceeded
+5918,The system has detected an excessive discharge time condition.
+5919,Discharge Low Overall Voltage
+5920,The system has detected a low battery string overall voltage condition during a discharge.
+5921,Discharge Low Cell Voltage
+5922,The system has detected a low cell voltage condition during a discharge.
+5923,Discharge High Battery String Current
+5924,The system has detected a high battery string current condition during a discharge.
+5925,Excessive Cell to Cell Temperature Deviation
+5926,The system has detected an excessive cell to cell temperature deviation condition.
+5927,Excessive Cell to Ambient Temperature Deviation
+5928,The system has detected an excessive cell to ambient temperature deviation condition.
+5929,Low Ambient Temperature Global Threshold
+5930,If the battery string ambient temperature is below this global threshold a low ambient temperature event is triggered.
+5931,High Ambient Temperature Global Threshold
+5932,If the battery string ambient temperature is above this global threshold a high ambient temperature event is triggered
+5933,Battery String Overall Voltage Low Threshold
+5934,If the battery string overall voltage is below this value a low overall voltage event is triggered
+5935,Battery String Overall Voltage High Threshold
+5936,If the battery string overall voltage is above this value a high overall voltage event is triggered.
+5937,Battery String Current High Threshold
+5938,If the battery string current is above this value a high string current event is triggered.
+5939,Battery String Float Current Low Threshold
+5940,If the battery string float current is below this value a low float current event is triggered.
+5941,Battery String Float Current High Threshold
+5942,If the battery string float current is above this value a high float current event is triggered.
+5943,Battery String Ripple Current High Threshold
+5944,If the battery string ripple current is above this value a high ripple current event is triggered.
+5945,Cell Voltage Low Global Threshold
+5946,If the cell voltage is below this global threshold a low cell voltage event is triggered.
+5947,Cell Voltage High Global Threshold
+5948,If the cell voltage is above this global threshold a high cell voltage event is triggered.
+5949,Cell Temperature Low Global Threshold
+5950,If the cell temperature is below this global threshold a low cell temperature event is triggered.
+5951,Cell Temperature High Global Threshold
+5952,If the cell temperature is above this global threshold a high cell temperature event is triggered.
+5953,Internal Resistance Low Global Threshold
+5954,If the internal cell resistance is below this global threshold a low internal cell resistance event is triggered.
+5955,Internal Resistance High Global Threshold
+5956,If the internal cell resistance is above this global threshold a high internal cell resistance event is triggered.
+5957,Intercell Resistance High Global Threshold
+5958,If the intercell resistance is above this global threshold a high intercell resistance event is triggered.
+5959,Intertier Resistance High Global Threshold
+5960,If the intertier resistance is above this global threshold a high intertier resistance event is triggered.
+5961,Cell to Cell Temperature Deviation Threshold
+5962,If the cell to cell temperature difference is above this value an excessive cell to cell temperature deviation event is triggered.
+5963,Cell to Ambient Temperature Deviation Threshold
+5964,If the cell to ambient temperature difference is above this value an excessive cell to ambient temperature deviation event is triggered
+5965,Battery String Name
+5966,A name to uniquely identify the battery string.
+5967,Installation Date
+5968,Installation date of battery string
+5969,Cell/Monobloc Model Number
+5970,Model Number of the Cell/Monobloc
+5971,Cell/Monobloc Manufacturer
+5972,Manufacturer of the Cell/Monobloc.
+5973,Cell/Monobloc Rating
+5974,Name plate capacity rating of the Cell/Monobloc.
+5975,Discharge State
+5976,Current discharge state of battery string.
+5977,Not In Progress
+5978,In Progress
+5979,Battery String Time-To-Go
+5980,Time remaining (time-to-go) of battery string during a discharge.
+5981,Amp-Hours Remaining in Battery String
+5982,Capacity (Amp-Hours) remaining in battery string.
+5983,Battery String Discharge Time
+5984,Total time the battery string is in discharge.
+5985,Discharge Low Cell Voltage Threshold
+5986,If the cell voltage is below this value during a discharge a low cell voltage during discharge event is triggered.
+5987,Discharge Low Overall Voltage Threshold
+5988,If the battery string overall voltage is below this value during a discharge a low battery string overall voltage during discharge event is triggered.
+5989,Discharge Battery String Current High Threshold
+5990,If the battery string current is above this value during a discharge a high battery string current during discharge event is triggered.
+5991,Discharge Maximum Time
+5992,If the battery string is in discharge for a time greater than this value an excessive discharge time event is triggered.
+5993,Startup Engineer's Name
+5994,The name of the engineer responsible for startup of the battery monitoring system.
+5995,Startup Company's Name
+5996,The name of the company responsible for startup of the battery monitoring system.
+5997,Startup Company's Street Address
+5998,The street address of the company responsible for startup.
+5999,Startup Company's City
+6000,The city where the company responsible for startup of the battery monitoring system is located.
+6001,Startup Company's State
+6002,The state where the company responsible for startup of the battery monitoring system is located.
+6003,Startup Company's ZIP Code
+6004,The ZIP code of the company responsible for startup of the battery monitoring system.
+6005,Startup Engineer's Phone Number
+6006,Telephone number of the engineer responsible for startup of the battery monitoring system.
+6007,Startup Engineer's E-mail Address
+6008,E-mail address of the engineer responsible for startup of the battery monitoring system.
+6009,Startup Purchase Order
+6010,Reference Purchase Order/Ticket Number for the battery monitoring system startup work.
+6011,Startup Date
+6012,Startup date of monitoring system for this battery string.
+6013,Cell Voltage
+6014,Voltage reading of a Cell within a BAM device.
+6015,Cell Temperature
+6016,Temperature reading of a Cell within a BAM device.
+6017,Low Cell Voltage
+6018,The system has detected a low cell voltage condition.
+6019,High Cell Voltage
+6020,The system has detected a high cell voltage condition.
+6021,Low Cell Temperature
+6022,The system has detected a low cell temperature condition.
+6023,High Cell Temperature
+6024,The system has detected a high cell temperature condition.
+6025,Low Internal Resistance
+6026,The system has detected a low internal resistance condition.
+6027,High Internal Resistance
+6028,The system has detected a high internal resistance condition.
+6029,High Intercell Resistance
+6030,The system has detected a high intercell resistance condition.
+6031,Cell Voltage Low Threshold
+6032,If the cell voltage is below this value a low cell voltage event is triggered
+6033,Cell Voltage High Threshold
+6034,If the cell voltage is above this value a high cell voltage event is triggered
+6035,Cell Temperature Low Threshold
+6036,If the cell temperature is below this value a low cell temperature event is triggered.
+6037,Cell Temperature High Threshold
+6038,If the cell temperature is above this value a high cell temperature event is triggered.
+6039,Internal Resistance Low Threshold
+6040,If the internal cell resistance is below this value a low internal cell resistance event is triggered.
+6041,Internal Resistance High Threshold
+6042,If the internal cell resistance is above this value a high internal cell resistance event is triggered.
+6043,Intercell Resistance High Threshold
+6044,If the intercell resistance is above this value a high intercell resistance event is triggered.
+6045,Intertier Resistance High
+6046,The system has detected a high intertier resistance condition.
+6047,Intertier Resistance High Threshold
+6048,If the intertier resistance is above this value a high intertier resistance event is triggered.
+6049,Supply Chilled Water Loss of Flow
+6050,Supply chilled water flow is too low.
+6051,Supply Refrig Temp Set Point
+6052,Desired supply refrigerant temperature.
+6053,Supply Refrig Temp Band 1
+6054,Value that is divided evenly to form an upper and lower threshold around [Supply Refrig Temp Set Point].
+6055,Supply Refrig Over Temp Band 1
+6056,[Supply Refrigerant Temperature] is above the upper threshold specified by [Supply Refrig Temp Band 1].
+6057,Supply Refrig Over Temp Band 1 - Event Control
+6058,Enable/disable the activation of the [Supply Refrig Over Temp Band 1] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6059,Supply Refrig Over Temp Band 1 - Event Type
+6060,The event type for the [Supply Refrig Over Temp Band 1] event.
+6061,Supply Refrig Under Temp Band 1
+6062,[Supply Refrigerant Temperature] is below the lower threshold specified by [Supply Refrig Temp Band 1].
+6063,Supply Refrig Under Temp Band 1 - Event Control
+6064,Enable/disable the activation of the [Supply Refrig Under Temp Band 1] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6065,Supply Refrig Under Temp Band 1 - Event Type
+6066,The event type for the [Supply Refrig Under Temp Band 1] event.
+6067,Supply Refrig Temp Band 2
+6068,Value that is divided evenly to form an upper and lower threshold around [Supply Refrig Temp Set Point].
+6069,Supply Refrig Over Temp Band 2
+6070,[Supply Refrigerant Temperature] is above the upper threshold specified by [Supply Refrig Temp Band 2].
+6071,Supply Refrig Over Temp Band 2 - Event Control
+6072,Enable/disable the activation of the [Supply Refrig Over Temp Band 2] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6073,Supply Refrig Over Temp Band 2 - Event Type
+6074,The event type for the [Supply Refrig Over Temp Band 2] event.
+6075,Supply Refrig Under Temp Band 2
+6076,[Supply Refrigerant Temperature] is below the lower threshold specified by [Supply Refrig Temp Band 2].
+6077,Supply Refrig Under Temp Band 2 - Event Control
+6078,Enable/disable the activation of the [Supply Refrig Under Temp Band 2] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6079,Supply Refrig Under Temp Band 2 - Event Type
+6080,The event type for the [Supply Refrig Under Temp Band 2] event.
+6081,Inverter 1 Short Cycle
+6082,Inverter for pump 1 has short cycled and is temporarily locked out from further operation to protect from thermal overload. A short cycle is defined as powering on and off a number of times over a set time period.
+6083,Inverter 1 Short Cycle - Event Control
+6084,Enable/disable the activation of the [Inverter 1 Short Cycle] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6085,Inverter 1 Short Cycle - Event Type
+6086,The event type for the [Inverter 1 Short Cycle] event.
+6087,Inverter 2 Short Cycle
+6088,Inverter for pump 2 has short cycled and is temporarily locked out from further operation to protect from thermal overload. A short cycle is defined as powering on and off a number of times over a set time period.
+6089,Inverter 2 Short Cycle - Event Control
+6090,Enable/disable the activation of the [Inverter 2 Short Cycle] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6091,Inverter 2 Short Cycle - Event Type
+6092,The event type for the [Inverter 2 Short Cycle] event.
+6093,Supply Air Temperature
+6094,Air temperature measured at the outlet of the unit.
+6095,Return Air Temperature
+6096,Air temperature measured at the inlet of the unit.
+6097,Return Dew Point
+6098,Dew point temperature measured at the inlet of the unit.
+6099,Remote Sensor Minimum Temperature
+6100,Minimum value of remote sensor temperature measurements.
+6101,Remote Sensor Maximum Temperature
+6102,Maximum value of remote sensor temperature measurements.
+6103,Remote Sensor Average Temperature
+6104,Average value of remote sensor temperature measurements.
+6105,Air Temperature Set Point
+6106,Desired air temperature.
+6107,Cooling Proportional Band
+6108,Temperature control band above [Air Temperature Set Point]. If measured air temperature is within this band, cooling operations are proportionally controlled.
+6109,Heating Proportional Band
+6110,Temperature control band below [Air Temperature Set Point]. If measured air temperature is within this band, heating operations are proportionally controlled.
+6111,Air Temperature Dead Band
+6112,Value that is divided evenly to form a temperature range above and below [Air Temperature Set Point]. If measured air temperature is within this range, no heating or cooling will occur.
+6113,Air Temperature Control Sensor
+6114,Sensor from which air temperature measurements will be used for cooling and heating control.
+6115,Supply
+6116,Remote
+6117,Return
+6118,Remote Sensor Temperature Calculation
+6119,Calculation method applied to temperature readings from the remote sensors to determine a single temperature measurement value for cooling and heating control.
+6120,Average
+6121,Maximum
+6122,Supply Air Over Temp Threshold
+6123,Threshold value used in the [Supply Air Over Temperature] event.
+6124,Supply Air Over Temperature
+6125,[Supply Air Temperature] has exceeded [Supply Air Over Temp Threshold].
+6126,Supply Air Over Temperature - Event Control
+6127,Enable/disable the activation of the [Supply Air Over Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6128,Supply Air Over Temperature - Event Type
+6129,The event type for the [Supply Air Over Temperature] event.
+6130,Supply Air Under Temp Threshold
+6131,Threshold value used in the [Supply Air Under Temperature] event.
+6132,Supply Air Under Temperature
+6133,[Supply Air Temperature] has dropped below [Supply Air Under Temp Threshold].
+6134,Supply Air Under Temperature - Event Control
+6135,Enable/disable the activation of the [Supply Air Under Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6136,Supply Air Under Temperature - Event Type
+6137,The event type for the [Supply Air Under Temperature] event.
+6138,Return Air Over Temp Threshold
+6139,Threshold value used in the [Return Air Over Temperature] event.
+6140,Return Air Over Temperature
+6141,[Return Air Temperature] has exceeded [Return Air Over Temp Threshold].
+6142,Return Air Over Temp - Event Control
+6143,Enable/disable the activation of the [Return Air Over Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6144,Return Air Over Temp - Event Type
+6145,The event type for the [Return Air Over Temperature] event.
+6146,Supply Air Sensor Issue
+6147,The air sensor at the outlet of the unit is disconnected or the signal is out of range.
+6148,Supply Humidity
+6149,Relative humidity at the outlet of the unit.
+6150,Return Humidity
+6151,Relative humidity measured at the inlet of the unit.
+6152,Humidity Set Point
+6153,Desired relative humidity.
+6154,Humidification Proportional Band
+6155,Humidity control band below [Humidity Set Point]. If measured humidity is within this band, humidification operations are proportionally controlled.
+6156,Dehumidification Proportional Band
+6157,Humidity control band above [Humidity Set Point]. If measured humidity is within this band, dehumidification operations are proportionally controlled.
+6158,Humidity Dead Band
+6159,Value that is divided evenly to form a range above and below [Humidity Set Point]. If measured humidity is within this range, no humidification or dehumidification will occur.
+6160,High Return Humidity Threshold
+6161,Threshold value used in the [High Return Humidity] event.
+6162,High Return Humidity
+6163,[Return Humidity] has exceeded [High Return Humidity Threshold].
+6164,Low Return Humidity Threshold
+6165,Threshold value used in the [Low Return Humidity] event.
+6166,Low Return Humidity
+6167,[Return Humidity] has dropped below [Low Return Humidity Threshold].
+6168,Humidifier Hours Exceeded
+6169,Operating hours for the humidifier have exceeded the threshold.
+6170,Dehumidifier Hours Exceeded
+6171,Operating hours for the dehumidifier have exceeded the threshold.
+6172,Humidifier Under Current
+6173,The electrical current to the humidifier has dropped below its lower threshold.
+6174,Humidifier Over Current
+6175,The electrical current to the humidifier has exceeded its upper threshold.
+6176,Humidifier Low Water
+6177,The water level in the humidifier has dropped below its threshold.
+6178,Humidifier Cylinder Worn
+6179,Humidifier cylinder is not operating properly and needs to be replaced.
+6180,Humidifier Issue
+6181,Humidifier issue detected, causing it to be locked out.
+6182,Ext Humidifier Lockout
+6183,The humidifier is shut down and disabled by an external input signal.
+6184,Humidifier Control Board Not Detected
+6185,Humidifier control board is required to be connected, but no signal is detected.
+6186,Return Humidity Out Of Proportional Band
+6187,[Return Humidity] has exceeded the upper limit of [Dehumidification Proportional Band], or has dropped below the lower limit of [Humidification Proportional Band] ], for an extended period of time.
+6188,Fan Control Mode
+6189,Fan control mode.
+6190,Fan Speed Proportional Band
+6191,Temperature control band above the temperature set point calculated for proportional fan speed control. If measured air temperature is within this band, fan speed operations are proportionally controlled.
+6192,Fan Speed Manual Set Point
+6193,Manual fan speed.
+6194,Fan Speed Maximum Set Point
+6195,Maximum fan speed.
+6196,Fan Speed Minimum Set Point
+6197,Minimum fan speed.
+6198,Fan Control Sensor
+6199,Sensor from which air temperature measurements will be used for fan speed control.
+6200,Loss of Air Flow
+6201,No air flow through the unit due to failure of all fans.
+6202,Fan Hours Exceeded
+6203,Operating hours for the unit blower fan have exceeded the threshold.
+6204,Top Fan Issue
+6205,The top fan is not operating within its normal parameters.
+6206,Bottom Fan Issue
+6207,The bottom fan is not operating within its normal parameters.
+6208,Remote Sensor Name
+6209,Name assigned to remote sensor.
+6210,Remote Sensor Function
+6211,Function assigned to remote sensor.
+6212,Disable
+6213,Reference
+6214,Control
+6215,Remote Sensor Temperature
+6216,Air temperature as measured by remote sensor.
+6217,Remote Sensor Issue
+6218,Remote sensor is disconnected or the signal is out of range.
+6219,Compressor 1 High Head Pressure
+6220,Compressor 1 high head pressure.
+6221,Compressor 1 Low Suction Pressure
+6222,Compressor 1 low suction pressure.
+6223,Compressor 1 Hours Exceeded
+6224,Operating hours for compressor 1 have exceeded the threshold.
+6225,Dig Scroll Comp 1 Temp Sensor Issue
+6226,Digital scroll compressor 1 temperature sensor is disconnected or the signal is out of range.
+6227,Dig Scroll Comp 1 Over Temp
+6228,Digital scroll compressor 1 shut off because its head temperature has exceeded the upper threshold.
+6229,Compressor 1 Low Pressure Transducer Issue
+6230,Compressor 1 low pressure transducer is disconnected or the signal is out of range.
+6231,Ext Compressor Lockout
+6232,The compressor is shut down and disabled by an external input signal.
+6233,Reheater Over Temperature
+6234,The temperature of the reheater has exceeded its threshold.
+6235,Electric Reheater 1 Hours Exceeded
+6236,Operating hours for electric reheater 1 have exceeded the threshold.
+6237,Ext Reheat Lockout
+6238,The reheater is shut down and disabled by an external input signal.
+6239,Condenser 1 Issue
+6240,Condenser 1 is not operating within its normal parameters.
+6241,Condenser VFD Issue
+6242,The condenser fan Variable Frequency Drive is offline.
+6243,Condenser TVSS Issue
+6244,The condenser Transient Voltage Surge Suppressor device has failed.
+6245,System Operating State Reason
+6246,The reason the system is in the current operating state.
+6247,Reason Unknown
+6248,Network Display
+6249,Alarm
+6250,Schedule
+6251,Remote System
+6252,External Input
+6253,Local Display
+6254,BMS Timeout Period
+6255,Timeframe within which the Building Management System (or external monitoring system) must communicate with the system to avoid a timeout.
+6256,Operating Efficiency
+6257,The ratio of cooling energy provided to the amount of total energy being used.
+6258,Fan Speed
+6259,Fan speed expressed as a percentage of the maximum rated speed.
+6260,Compressor Utilization
+6261,Present compressor utilization expressed as a percentage of the maximum rated capacity.
+6262,Dehumidifier Utilization
+6263,Present dehumidifier utilization expressed as a percentage of the maximum rated capacity.
+6264,Reheat Utilization
+6265,Present reheating utilization expressed as a percentage of the maximum rated capacity.
+6266,Humidifier Utilization
+6267,Present humidifier utilization expressed as a percentage of the maximum rated capacity.
+6268,Ext Loss of Flow - Event Control
+6269,Enable/disable the activation of the [Ext Loss of Flow] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6270,Ext Loss of Flow - Event Type
+6271,The event type for the [Ext Loss of Flow] event.
+6272,Ext Reheat Lockout - Event Control
+6273,Enable/disable the activation of the [Ext Reheat Lockout] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6274,Ext Reheat Lockout - Event Type
+6275,The event type for the [Ext Reheat Lockout] event.
+6276,Ext Humidifier Lockout - Event Control
+6277,Enable/disable the activation of the [Ext Humidifier Lockout] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6278,Ext Humidifier Lockout - Event Type
+6279,The event type for the [Ext Humidifier Lockout] event.
+6280,Ext Compressor Lockout - Event Control
+6281,Enable/disable the activation of the [Ext Compressor Lockout] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6282,Ext Compressor Lockout - Event Type
+6283,The event type for the [Ext Compressor Lockout] event.
+6284,Ext Over Temperature - Event Control
+6285,Enable/disable the activation of the [Ext Over Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6286,Ext Over Temperature - Event Type
+6287,The event type for the [Ext Over Temperature] event.
+6288,Condenser VFD Issue - Event Control
+6289,Enable/disable the activation of the [Condenser VFD Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6290,Condenser VFD Issue - Event Type
+6291,The event type for the [Condenser VFD Issue] event.
+6292,Condenser TVSS Issue - Event Control
+6293,Enable/disable the activation of the [Condenser TVSS Issue] event (Transient Voltage Surge Suppressor). If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6294,Condenser TVSS Issue - Event Type
+6295,The event type for the [Condenser TVSS Issue] event (Transient Voltage Surge Suppressor).
+6296,Condenser 1 Issue - Event Control
+6297,Enable/disable the activation of the [Condenser 1 Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6298,Condenser 1 Issue - Event Type
+6299,The event type for the [Condenser 1 Issue] event.
+6300,Input Contact 02 - Event Control
+6301,Enable/disable the activation of the [Input Contact 02] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6302,Input Contact 02 - Event Type
+6303,The event type for the [Input Contact 02] event.
+6304,Input Contact 03 - Event Control
+6305,Enable/disable the activation of the [Input Contact 03] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6306,Input Contact 03 - Event Type
+6307,The event type for the [Input Contact 03] event.
+6308,Input Contact 04 - Event Control
+6309,Enable/disable the activation of the [Input Contact 04] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6310,Input Contact 04 - Event Type
+6311,The event type for the [Input Contact 04] event.
+6312,Ext Over Temperature
+6313,A temperature has exceeded its threshold, as indicated by an external input signal.
+6314,Ext Loss of Flow
+6315,Loss of flow is detected, as indicated by an external input signal.
+6316,Ext Condenser Pump High Water
+6317,High water is detected in the condenser, as indicated by an external input signal.
+6318,Ext Standby Glycol Pump On
+6319,The standby glycol pump is on, as indicated by an external input signal.
+6320,External Fire Detected
+6321,Fire detected, as indicated by an external input signal.
+6322,Unit On
+6323,Unit was turned on.
+6324,Unit Off
+6325,Unit was turned off.
+6326,Unit Standby
+6327,Unit was placed in standby mode.
+6328,Unit Partial Shutdown
+6329,An event has occurred requiring some system components to be shutdown and disabled.
+6330,Unit Shutdown
+6331,An event has occurred requiring the unit to be shutdown and disabled to prevent damage to the system.
+6332,Water Leakage Detector Sensor Issue
+6333,The water leakage detector sensor is disconnected or the signal is out of range.
+6334,BMS Communications Timeout
+6335,Building Management System (or external monitoring system) has not communicated with the system within the expected timeframe.
+6336,Maintenance Due
+6337,The calculated maintenance date has been reached.
+6338,Maintenance Completed
+6339,Maintenance has been completed on the unit.
+6340,Clogged Air Filter
+6341,Air filter is dirty and needs to be (cleaned or) replaced.
+6342,RAM Battery Issue
+6343,RAM or RAM backup battery is not operating correctly.
+6344,Master Unit Communication Lost
+6345,Communication with master unit has been lost.
+6346,High Power Shutdown
+6347,Supply to high power components has been shutdown.
+6348,Ext Condenser Pump High Water - Event Control
+6349,Enable/disable the activation of the [Ext Condenser Pump High Water] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6350,Ext Condenser Pump High Water - Event Type
+6351,The event type for the [Ext Condenser Pump High Water] event.
+6352,Dig Scroll Comp 1 Over Temp - Event Control
+6353,Enable/disable the activation of the [Dig Scroll Comp 1 Over Temp] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6354,Dig Scroll Comp 1 Over Temp - Event Type
+6355,The event type for the [Dig Scroll Comp 1 Over Temp] event.
+6356,Dig Scroll Comp 2 Over Temp
+6357,Digital scroll compressor 2 shut off because its head temperature has exceeded the upper threshold.
+6358,Dig Scroll Comp 2 Over Temp - Event Control
+6359,Enable/disable the activation of the [Dig Scroll Comp 2 Over Temp] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6360,Dig Scroll Comp 2 Over Temp - Event Type
+6361,The event type for the [Dig Scroll Comp 2 Over Temp] event.
+6362,Ext Standby Glycol Pump On - Event Control
+6363,Enable/disable the activation of the [Ext Standby Glycol Pump On] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6364,Ext Standby Glycol Pump On - Event Type
+6365,The event type for the [Ext Standby Glycol Pump On] event.
+6366,Humidifier Issue - Event Control
+6367,Enable/disable the activation of the [Humidifier Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6368,Humidifier Issue - Event Type
+6369,The event type for the [Humidifier Issue] event.
+6370,Master Unit Communication Lost - Event Control
+6371,Enable/disable the activation of the [Master Unit Communication Lost] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6372,Master Unit Communication Lost - Event Type
+6373,The event type for the [Master Unit Communication Lost] event.
+6374,Clogged Air Filter - Event Control
+6375,Enable/disable the activation of the [Clogged Air Filter] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6376,Clogged Air Filter - Event Type
+6377,The event type for the [Clogged Air Filter] event.
+6378,High Return Humidity - Event Control
+6379,Enable/disable the activation of the [High Return Humidity] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6380,High Return Humidity - Event Type
+6381,The event type for the [High Return Humidity] event.
+6382,Low Return Humidity - Event Control
+6383,Enable/disable the activation of the [Low Return Humidity] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6384,Low Return Humidity - Event Type
+6385,The event type for the [Low Return Humidity] event.
+6386,High Power Shutdown - Event Control
+6387,Enable/disable the activation of the [High Power Shutdown] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6388,High Power Shutdown - Event Type
+6389,The event type for the [High Power Shutdown] event.
+6390,System On/Off Control
+6391,Turn system functionality on or off.
+6392,Output Of/Uf
+6393,The output frequency has exceeded a specified range for a specified period of time.
+6394,MMS Module Alarm Active
+6395,Active alarm or fault of any module in a multi-module system
+6396,Compressor Pump Down Issue
+6397,Unable to pump down suction-side pressure during compressor shutdown.
+6398,Return Air Sensor Issue
+6399,The air sensor at the inlet of the unit is disconnected or the signal is out of range.
+6400,Compressor High Pressure Transducer Issue
+6401,Compressor high pressure transducer is disconnected or the signal is out of range.
+6402,Battery Not Qualified
+6403,The UPS battery voltage is not qualified. This event will be detected even in the absence of battery disconnect or when it is open.
+6404,Battery Terminals Reversed
+6405,The measured battery voltage is a negative value due to reverse battery terminal connections.
+6406,Battery Converter Failure
+6407,Battery converter failure. This is a summary event caused by one or more power sub-modules in a UPS module.
+6408,Inverter SCR Open
+6409,The system has detected an open across one or more inverter static switch Silicon Controlled Rectifiers.
+6410,Load Sharing Fault
+6411,Difference between any phase inverter current of unit and the relevant average output current of parallel system is more than a specific percent of nominal current.
+6412,DC Bus Abnormal
+6413,The system has detected an abnormal DC Bus Voltage.
+6414,Mains Input Neutral Lost
+6415,Loss of neutral in the input source is detected.
+6416,Load Impact Transfer
+6417,On bypass as result of load impact.
+6418,User Operation Invalid
+6419,User attempted an invalid operation.
+6420,Power Sub Module Fault
+6421,One or more failures detected in power module, inverter or rectifier.
+6422,Output Current Crest Factor Phs A
+6423,Output current crest factor of Phase A.
+6424,Output Current Crest Factor Phs B
+6425,Output current crest factor of Phase B.
+6426,Output Current Crest Factor Phs C
+6427,Output current crest factor of Phase C.
+6428,Input Source Label
+6429,Identification of the input power source.
+6430,Output Power Label
+6431,Label for output of a multi-output transformer.
+6432,Output Neutral Current
+6433,The system output RMS current for Neutral phase.
+6434,Ground Current
+6435,The RMS Current flowing to Ground
+6436,Branch Accumulated Energy
+6437,Total accumulated energy output, since last energy reset.
+6438,Output Power Factor
+6439,Total power factor, real power/apparent power for all phases combined
+6440,Output Percent Load
+6441,The percentage of the system's total rated output current that is flowing from the system.
+6442,Output Voltage Phs A THD
+6443,The percentage of Total Harmonic Distortion of the voltage for phase A.
+6444,Output Voltage Phs B THD
+6445,The percentage of Total Harmonic Distortion of the voltage for phase B.
+6446,Output Voltage Phs C THD
+6447,The percentage of Total Harmonic Distortion of the voltage for phase C.
+6448,Output Current Phs A THD
+6449,The percentage of Total Harmonic Distortion of the current for phase A.
+6450,Output Current Phs B THD
+6451,The percentage of Total Harmonic Distortion of the current for phase B.
+6452,Output Current Phs C THD
+6453,The percentage of Total Harmonic Distortion of the current for phase C.
+6454,Output Current Phs A K-Factor
+6455,Ratio of the sum of the squares of the first 34 current harmonics, scaled by their harmonic index, divided by the sum of the squares of those harmonics. This is useful as an indicator of transformer heating due to harmonics.
+6456,Output Current Phs B K-Factor
+6457,Output Current Phs C K-Factor
+6458,Output Overvoltage
+6459,One or more of the output phase voltages has exceeded the limit.
+6460,Output Undervoltage
+6461,One or more of the output phase voltages has dropped below the limit.
+6462,Output Overcurrent
+6463,One or more of the phase currents has exceeded the limit.
+6464,Neutral Overcurrent
+6465,The system's neutral current has exceeded the limit.
+6466,Ground Overcurrent
+6467,System ground current has exceeded the limit.
+6468,Output Voltage THD
+6469,The Total Harmonic Distortion of the voltage on one or more of the output phases has exceeded the limit.
+6470,Output Frequency Error
+6471,The output frequency is outside a specified range.
+6472,Transformer Overtemperature
+6473,Indicates a unit transformer overtemperature condition.
+6474,Panel Label
+6475,A configurable label which identifies this panel.
+6476,Panel Main Voltage A-B
+6477,The RMS voltage between phases A and B at this panel.
+6478,Panel Main Voltage B-C
+6479,The RMS voltage between phases B and C at this panel.
+6480,Panel Main Voltage C-A
+6481,The RMS voltage between phases C and A at this panel.
+6482,Panel Main Voltage A-N
+6483,The RMS voltage between Phase A and Neutral at this panel.
+6484,Panel Main Voltage B-N
+6485,The RMS voltage between Phase B and Neutral at this panel.
+6486,Panel Main Voltage C-N
+6487,The RMS voltage between Phase C and Neutral at this panel.
+6488,Panel Main Current Phs A
+6489,The RMS current for phase A of this panel.
+6490,Panel Main Current Phs B
+6491,The RMS current for phase B of this panel.
+6492,Panel Main Current Phs C
+6493,The RMS current for phase C of this panel.
+6494,Panel Main Neutral Current
+6495,The RMS current for the Neutral phase of this panel.
+6496,Panel Main Ground Current
+6497,The RMS Ground current for this panel.
+6498,Panel Main Output Apparent Power
+6499,The total apparent power of all phases in this panel.
+6500,Panel Main Output Real Power
+6501,The total real power of all phases in this panel.
+6502,Panel Main Accumulated Energy
+6503,Total accumulated energy output of this panel, since last energy reset. It is the sum of accumulated energy for all phases.
+6504,Panel Main Output Power Factor
+6505,The power factor, real power/apparent power for all phases combined for this panel.
+6506,Panel Main Output Percent Load
+6507,The percentage of this panel's rated current capacity flowing through this panel.
+6508,Panel Main Voltage Phs A THD
+6509,The percentage of Total Harmonic Distortion of the voltage for phase A of this panel.
+6510,Panel Main Voltage Phs B THD
+6511,The percentage of Total Harmonic Distortion of the voltage for phase B of this panel.
+6512,Panel Main Voltage Phs C THD
+6513,The percentage of Total Harmonic Distortion of the voltage for phase C of this panel.
+6514,Panel Main Current Phs A THD
+6515,The percentage of Total Harmonic Distortion of the current for phase A of this panel.
+6516,Panel Main Current Phs B THD
+6517,The percentage of Total Harmonic Distortion of the current for phase B of this panel.
+6518,Panel Main Current Phs C THD
+6519,The percentage of Total Harmonic Distortion of the current for phase C of this panel.
+6520,Panel Main Current Phs A Crest Factor
+6521,The ratio of the peak current amplitude divided by the RMS amplitude for phase A of this panel.
+6522,Panel Main Current Phs B Crest Factor
+6523,The ratio of the peak current amplitude divided by the RMS amplitude for phase B of this panel
+6524,Panel Main Current Phs C Crest Factor
+6525,The ratio of the peak current amplitude divided by the RMS amplitude for phase C of this panel
+6526,Panel Summary Status
+6527,The status for the panel. Detects and annunciates upon occurrence of any branch or panelboard main breaker active event.
+6528,Panel Overvoltage
+6529,One or more of the phase voltages of this panel has exceeded the limit.
+6530,Panel Undervoltage
+6531,One or more of the phase voltages of this panel is less than the limit.
+6532,Panel Overcurrent
+6533,One or more of the phase currents of this panel has exceeded the limit.
+6534,Panel Neutral Overcurrent
+6535,The Neutral current of this panel has exceeded the limit.
+6536,Panel Ground Overcurrent
+6537,The Ground current of this panel has exceeded the limit.
+6538,Branch Label
+6539,A configurable label which identifies this branch circuit.
+6540,Branch Current Line 1
+6541,The RMS current in Line 1 of this branch.
+6542,Branch Current Line 2
+6543,The RMS current in Line 2 of this branch.
+6544,Branch Current Line 3
+6545,The RMS current in Line 3 of this branch.
+6546,Branch Output Real Power
+6547,The total real power of all phases in this branch.
+6548,Total accumulated energy output of this branch, since last energy reset. It is the sum of accumulated energy for all phases.
+6549,Branch Output Power Factor
+6550,Total power factor, which is real power/apparent power for all phases in this branch combined.
+6551,Branch Output Percent Load
+6552,The percentage of this branch's total rated current capacity flowing through this branch.
+6553,Branch Overcurrent
+6554,The current in one or more phases of this branch exceeds the limit.
+6555,Branch Undercurrent
+6556,The current in one or more phases of this branch is less than the limit.
+6557,Subfeed Label
+6558,A configurable label which identifies this subfeed circuit.
+6559,Subfeed Current Phs A
+6560,Subfeed output RMS current for phase A.
+6561,Subfeed Current Phs B
+6562,Subfeed output RMS current for Phase B.
+6563,Subfeed Current Phs C
+6564,Subfeed output RMS current for Phase C.
+6565,Subfeed Neutral Current
+6566,Subfeed RMS current for Neutral.
+6567,Subfeed Ground Current
+6568,Subfeed RMS current for Ground.
+6569,Subfeed Output Apparent Power
+6570,Total apparent power output by all phases in this subfeed.
+6571,Subfeed Output Real Power
+6572,Total real power output by all phases in this subfeed.
+6573,Subfeed Accumulated Energy
+6574,Total accumulated energy output of this subfeed since last energy reset. It is the sum of accumulated energy for all phases.
+6575,Subfeed Power Factor
+6576,Total power factor, which is real power/apparent power for all subfeed phases combined.
+6577,Subfeed Output Percent Load
+6578,The percentage of the subfeeds total rated output current that is flowing in the subfeed.
+6579,Subfeed Current Phs A THD
+6580,The percentage of Total Harmonic Distortion of the current in phase A of this subfeed.
+6581,Subfeed Current Phs B THD
+6582,The percentage of Total Harmonic Distortion of the current in phase B of this subfeed.
+6583,Subfeed Current Phs C THD
+6584,The percentage of Total Harmonic Distortion of the current in phase C of this subfeed.
+6585,Subfeed Current Phs A Crest Factor
+6586,The ratio of peak current amplitude divided by the RMS amplitude for phase A of this subfeed.
+6587,Subfeed Current Phs B Crest Factor
+6588,The ratio of peak current amplitude divided by the RMS amplitude for phase B of this subfeed.
+6589,Subfeed Current Phs C Crest Factor
+6590,The ratio of peak current amplitude divided by the RMS amplitude for phase C of this subfeed.
+6591,Subfeed Phase Overcurrent
+6592,One or more of the phase currents in this subfeed has exceeded the limit.
+6593,Subfeed Neutral Overcurrent
+6594,The Neutral current in this subfeed has exceeded the limit.
+6595,Subfeed Ground Overcurrent
+6596,The Ground current of this subfeed has exceeded the limit.
+6597,Event Name
+6598,The configurable name for this event.
+6599,Event State
+6600,The present state of this digital event input.
+6601,Output Current Phs A Crest Factor
+6602,The ratio of peak current amplitude divided by the RMS amplitude for phase A.
+6603,Output Current Phs B Crest Factor
+6604,The ratio of peak current amplitude divided by the RMS amplitude for phase B.
+6605,Output Current Phs C Crest Factor
+6606,The ratio of peak current amplitude divided by the RMS amplitude for phase C.
+6607,Branch Receptacle Type
+6608,The form factor of the receptacles in the module.
+6609,unknown
+6610,NEMA 5-15R
+6611,NEMA 5-20R
+6612,NEMA L5-20R
+6613,NEMA L5-30R
+6614,NEMA L6-20R
+6615,NEMA L6-30R
+6616,IEC 60320 Sheet F C13
+6617,IEC 60320 Sheet J C19
+6618,SEV 1011 Type 12 (Swiss)
+6619,SEV 1011 Type 23 (Swiss)
+6620,BS 1363 Type G (British)
+6621,CEE 7 Type F (Schuko)
+6622,CEE 7 Type E (French)
+6623,Branch Current
+6624,Module's total measured line current, which is the total current being supplied to the branch receptacles.
+6625,Branch Available Current Until Alarm
+6626,The amount of current increase allowed before the over current alarm occurs.
+6627,Branch Percent Current Utilization
+6628,The percent of BRM current utilization relative to the BRM's current rating.
+6629,Low Current Alarm Threshold
+6630,If the module current is below this percentage of the full scale rated value, an under current alarm is activated.
+6631,Over Current Warning Threshold
+6632,If the module current is above this percentage of the full scale rated value, an over current warning is activated.
+6633,Over Current Alarm Threshold
+6634,If the module current is above this percentage of the full scale rated value, an over current alarm is activated.
+6635,Receptacle Type
+6636,Receptacle type (form factor).
+6637,Branch Line Source
+6638,Branch Receptacle Module source line configuration (for example, L1-N or L1-L2).
+6639,unknown
+6640,Type L1-N
+6641,Type L2-N
+6642,Type L3-N
+6643,Type L1-L2
+6644,Type L2-L3
+6645,Type L3-L1
+6646,Compressor Shut Down - Ambient Air Low Temp Limit
+6647,When the temperature of ambient air falls below this lower threshold, the compressor will be shut off. Correct condensing pressure cannot be achieved when temperature is too low.
+6648,Compressor Not Stopping
+6649,Compressor commanded to stop, but continues to run.
+6650,Compressor State
+6651,Compressor operational state.
+6652,Compressor Capacity Control State
+6653,Compressor capacity control state. When 'ON', the cooling capacity of the compressor has been reduced.
+6654,Compressor Head Pressure
+6655,Compressor head pressure.
+6656,Compressor Hours
+6657,Operating hours for compressor since last reset of this value.
+6658,Compressor Hours Threshold
+6659,Threshold value used in the [Compressor Hours Exceeded] event.
+6660,Compressor Hours Exceeded
+6661,[Compressor Hours] has exceeded [Compressor Hours Threshold].
+6662,Compressor High Head Pressure
+6663,Compressor is shut down due to high head pressure.
+6664,Compressor Low Suction Pressure
+6665,Compressor is shut down due to low suction pressure.
+6666,Compressor Thermal Overload
+6667,Compressor is shut down due to thermal overload.
+6668,Compressor Low Oil Pressure
+6669,Compressor low oil pressure.
+6670,Compressor Head Pressure Over Threshold
+6671,Compressor head pressure has exceeded an upper threshold.
+6672,Compressor Loss of Differential Pressure
+6673,Compressor is shut down due to low differential pressure.
+6674,Condenser Fan Speed
+6675,Condenser fan speed expressed as a percentage of the maximum rated speed.
+6676,Condenser Fan Issue
+6677,Condenser fan is not operating within its operational parameters.
+6678,Low Condenser Refrigerant Pressure
+6679,Refrigerant pressure in condenser coil is too low.
+6680,Fluid Pressure
+6681,Fluid pressure. This is the pressure within a closed water/glycol circuit.
+6682,Low Fluid Pressure
+6683,[Fluid Pressure] has dropped below a specified threshold.
+6684,Fluid Cooling Proportional Band
+6685,Temperature control band above [Actual Supply Fluid Temp Set Point]. If [Return Fluid Temperature] is within this band, fluid cooling operations are proportionally controlled.
+6686,Actual Supply Fluid Temp Set Point
+6687,The actual set point value being used for the desired fluid temperature at the outlet of the unit.
+6688,Supply Fluid Temp Set Point 1
+6689,Set point 1 of desired fluid temperature at the outlet of the unit.
+6690,Supply Fluid Temp Set Point 2
+6691,Set point 2 of desired fluid temperature at the outlet of the unit.
+6692,Supply Fluid Over Temp Threshold 2
+6693,Second threshold value used in the [Supply Fluid Over Temp] event.
+6694,Supply Fluid Under Temp Threshold
+6695,Threshold value used in the [Supply Fluid Under Temp] event.
+6696,Supply Fluid Under Temp Threshold 2
+6697,Second threshold value used in the [Supply Fluid Under Temp] event.
+6698,Return Fluid Temperature
+6699,Fluid temperature measured at the inlet of the unit.
+6700,Return Fluid Over Temp Threshold
+6701,Threshold value used in the [Return Fluid Over Temp] event.
+6702,Return Fluid Over Temp Threshold 2
+6703,Second threshold value used in the [Return Fluid Over Temp] event.
+6704,Return Fluid Under Temp Threshold
+6705,Threshold value used in the [Return Fluid Under Temp] event.
+6706,Return Fluid Under Temp Threshold 2
+6707,Second threshold value used in the [Return Fluid Under Temp] event.
+6708,Return Fluid Over Temp
+6709,[Return Fluid Temperature] has exceeded a specified threshold.
+6710,Return Fluid Under Temp
+6711,[Return Fluid Temperature] has dropped below a specified threshold.
+6712,Return Fluid Temp Sensor Issue
+6713,The return fluid temperature sensor is disconnected or the signal is out of range.
+6714,Teamwork Return Fluid Temp Sensor Issue
+6715,The return fluid temperature sensors for all Teamwork units are disconnected or the signals are out of range.
+6716,All Pumps Loss of Flow
+6717,System is shut down due to loss of flow in all available pumps.
+6718,Pump Hours
+6719,Operating hours for pump since last reset of this value.
+6720,Pump Hours Threshold
+6721,Threshold value used in the [Pump Hours Exceeded] event.
+6722,Pump Hours Exceeded
+6723,[Pump Hours] has exceeded [Pump Hours Threshold].
+6724,Free Cooling External Temperature Delta
+6725,Minimum temperature delta required between return fluid and external ambient air temperatures in order to enable free cooling.
+6726,Free Cooling Status
+6727,Free cooling status.
+6728,Free Cooling Valve Open Position
+6729,Free cooling valve open position.
+6730,Free Cooling Valve Hours
+6731,Operating hours for free cooling valve since last reset of this value.
+6732,Free Cooling Valve Hours Threshold
+6733,Threshold value used in the [Free Cooling Valve Hours Exceeded] event.
+6734,Free Cooling Valve Hours Exceeded
+6735,[Free Cooling Valve Hours] has exceeded [Free Cooling Valve Hours Threshold].
+6736,Evaporator Return Fluid Temperature
+6737,Fluid temperature measured at the inlet of the evaporator.
+6738,Evaporator Inlet Temp Sensor Issue
+6739,The evaporator inlet temperature sensor is disconnected or the signal is out of range.
+6740,Teamwork Evaporator Inlet Temp Sensor Issue
+6741,The evaporator inlet temperature sensors for all Teamwork units are disconnected or the signals are out of range.
+6742,Evaporator Fluid Freeze - Auto Reset
+6743,Evaporator outlet fluid temperature has dropped below the freeze threshold. Evaporator has been shut down, but will restart when the temperature rises above the threshold.
+6744,Evaporator Fluid Freeze - Manual Reset Required
+6745,Evaporator outlet fluid temperature has dropped below the freeze threshold. Evaporator has been shut down and requires a manual reset.
+6746,Supply Brine Temp Set Point
+6747,Desired brine fluid temperature at the outlet of the unit.
+6748,Supply Heated Water Temp Set Point
+6749,Desired heated water temperature at the outlet of the unit.
+6750,Standby Units
+6751,The number of standby units.
+6752,Subgroup Event Occurred During Communication Loss
+6753,While subgroup unit communication was lost, an event occurred on the subgroup unit. Please check subgroup unit event log.
+6754,Compressor High Head Pressure - Event Control
+6755,Enable/disable the activation of the [Compressor High Head Pressure] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6756,Compressor High Head Pressure - Event Type
+6757,The event type for the [Compressor High Head Pressure] event.
+6758,Compressor Low Suction Pressure - Event Control
+6759,Enable/disable the activation of the [Compressor Low Suction Pressure] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6760,Compressor Low Suction Pressure - Event Type
+6761,The event type for the [Compressor Low Suction Pressure] event.
+6762,Compressor Thermal Overload - Event Control
+6763,Enable/disable the activation of the [Compressor Thermal Overload] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6764,Compressor Thermal Overload - Event Type
+6765,The event type for the [Compressor Thermal Overload] event.
+6766,Branch Capabilities
+6767,Branch Receptacle Module capabilities indicates the measurement and/or control capability.  "Current Measurement Only" and "All Measurements" enumeration values are treated as mutually exclusive values.
+6768,None
+6769,Current Measurement Only
+6770,All Measurements
+6771,Control
+6772,Receptacle Capabilities
+6773,Receptacle capabilities indicates the measurement and/or control capability, etc. Measurement capabilities are defined either as all measurements or only current measurements.
+6774,Air Temperature Control Type
+6775,Type of algorithm used to control the system's output air temperature.
+6776,Proportional
+6777,Prop+Integral
+6778,Intelligent
+6779,Air Temperature Proportional Band
+6780,Value that is divided evenly to form proportional temperature control bands above and below [Air Temperature Set Point].
+6781,Air Temperature Control Integration Time
+6782,Time value used when system is under integral air temperature control.
+6783,Today's High Air Temperature
+6784,The highest external air temperature measured since midnight.
+6785,Today's High Air Temperature Time
+6786,[Today's High Air Temperature] was measured at this time.
+6787,Today's Low Air Temperature
+6788,The lowest external air temperature measured since midnight.
+6789,Today's Low Air Temperature Time
+6790,[Today's Low Air Temperature] was measured at this time.
+6791,Supply Air Temperature Set Point
+6792,Desired supply air temperature.
+6793,Supply Air Temperature Sensor Control
+6794,Control mode to be used with the supply air temperature sensor.
+6795,Disabled
+6796,Limit
+6797,Control
+6798,Temp Only
+6799,Return Air Temperature Set Point
+6800,Desired air temperature at the inlet of the unit.
+6801,Return Air Under Temp Threshold
+6802,Threshold value used in the [Return Air Under Temperature] event.
+6803,Return Air Under Temperature
+6804,[Return Air Temperature] has dropped below [Return Air Under Temp Threshold].
+6805,Ext Air Sensor C Temperature
+6806,Air temperature as measured by external air sensor C.
+6807,Ext Air Sensor A Over Temp Threshold
+6808,Threshold value used in the [External Air Sensor A Over Temperature] event.
+6809,Ext Air Sensor A Under Temp Threshold
+6810,Threshold value used in the [External Air Sensor A Under Temperature] event.
+6811,Return Humidity Set Point
+6812,Desired relative humidity at the inlet of the unit.
+6813,Humidity Proportional Control Type
+6814,Type of algorithm to use for proportional control of output humidity.
+6815,Relative
+6816,Compensated
+6817,Predictive
+6818,Humidity Proportional Band
+6819,Value that is divided evenly to form proportional humidity control bands above and below [Humidity Set Point].
+6820,Humidity Proportional Control Integration Time
+6821,Time value used to add an integral term to proportional humidity control. If set to 0, time will not be a factor in the proportional control algorithm.
+6822,Today's High Humidity
+6823,The highest external humidity measured since midnight.
+6824,Today's High Humidity Time
+6825,[Today's High Humidity] was measured at this time
+6826,Today's Low Humidity
+6827,The lowest external humidity measured since midnight.
+6828,Today's Low Humidity Time
+6829,[Today's Low Humidity] was measured at this time
+6830,Ext Air Sensor C Humidity
+6831,Relative humidity as measured by external air sensor C.
+6832,Ext Air Sensor A High Humidity Threshold
+6833,Threshold value used in the [External Air Sensor A High Humidity] event.
+6834,Ext Air Sensor A High Humidity
+6835,[Ext Air Sensor A Humidity] has exceeded [Ext Air Sensor A High Humidity Threshold].
+6836,Ext Air Sensor A Low Humidity Threshold
+6837,Threshold value used in the [External Air Sensor A Low Humidity] event.
+6838,Ext Air Sensor A Low Humidity
+6839,[Ext Air Sensor A Humidity] has dropped below [Ext Air Sensor A Low Humidity Threshold].
+6840,Compressor Short Cycle
+6841,Compressor short cycle. A short cycle is defined as turning on and off a number of times over a set time period.
+6842,Dig Scroll Comp Discharge Temp
+6843,Digital scroll compressor discharge temperature.
+6844,Dig Scroll Comp Discharge Temp Sensor Issue
+6845,Digital scroll compressor discharge temperature sensor is disconnected or the signal is out of range.
+6846,Dig Scroll Comp Over Temp
+6847,Digital scroll compressor is shut down due to head temperature exceeding an upper threshold.
+6848,Free Cooling Internal Temperature Delta
+6849,Minimum temperature delta required between supply fluid and internal ambient air temperatures in order to enable free cooling.
+6850,Free Cooling Internal Control Mode
+6851,Free cooling internal control mode
+6852,Disabled
+6853,Contact
+6854,Value
+6855,Free Cooling Fluid Temperature
+6856,Free cooling fluid temperature.
+6857,Minimum Chilled Water Temp Set Point Enable
+6858,Enable/disable the activation of [Minimum Chilled Water Temp Set Point].
+6859,Minimum Chilled Water Temp Set Point
+6860,Minimum desired chilled water temperature.
+6861,Ext Free Cooling Lockout
+6862,Free cooling is disabled by an external input signal.
+6863,Free Cooling Temp Sensor Issue
+6864,The free cooling fluid temperature sensor is disconnected or the signal is out of range.
+6865,Hot Water / Hot Gas Valve Hours
+6866,Operating hours for hot water / hot gas valve since last reset of this value.
+6867,Hot Water / Hot Gas Valve Hours Threshold
+6868,Threshold value used in the [Hot Water / Hot Gas Valve Hours Exceeded] event.
+6869,Hot Water / Hot Gas Valve Hours Exceeded
+6870,[Hot Water / Hot Gas Valve Hours] has exceeded [Hot Water / Hot Gas Valve Hours Threshold].
+6871,Electric Reheater Hours
+6872,Operating hours for electric reheater since last reset of this value.
+6873,Electric Reheater Hours Threshold
+6874,Threshold value used in the [Electric Reheater Hours Exceeded] event.
+6875,Electric Reheater Hours Exceeded
+6876,[Electric Reheater Hours] has exceeded [Electric Reheaters Hours Threshold].
+6877,Humidifier Hours
+6878,Operating hours for humidifier since last reset of this value.
+6879,Humidifier Hours Threshold
+6880,Threshold value used in the [Humidifier Hours Exceeded] event.
+6881,Dehumidifier Hours
+6882,Operating hours for dehumidifier since last reset of this value.
+6883,Dehumidifier Hours Threshold
+6884,Threshold value used in the [Dehumidifier Hours Exceeded] event.
+6885,Fan Control Mode
+6886,Fan control mode.
+6887,Auto
+6888,Manual
+6889,Economy
+6890,Delta
+6891,Fan Hours
+6892,Operating hours for fan since last reset of this value.
+6893,Fan Hours Threshold
+6894,Threshold value used in the [Fan Hours Exceeded] event.
+6895,Main Fan Overload
+6896,Main fan is shut down due to thermal overload.
+6897,Condenser
+6898,Condenser is not operating within its operational parameters.
+6899,Analog Input Reading
+6900,Generic analog input reading (unitless).
+6901,Free Cooling Valve Open Position
+6902,Free cooling valve open position.
+6903,Hot Water / Hot Gas Valve Open Position
+6904,Hot water / hot gas valve open position.
+6905,Fan State
+6906,Fan operational state.
+6907,Cooling State
+6908,Cooling operational state.
+6909,Free Cooling State
+6910,Free cooling operational state.
+6911,Maintenance Tracking State
+6912,Maintenance tracking operational state.
+6913,Hot Water / Hot Gas State
+6914,Hot water / hot gas operational state.
+6915,Electric Reheat State
+6916,Electric reheater operational state.
+6917,Dehumidifier State
+6918,Dehumidifier operational state.
+6919,Humidifier State
+6920,Humidifier operational state.
+6921,Ext Free Cooling Lockout - Event Control
+6922,Enable/disable the activation of the [Ext Free Cooling Lockout] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6923,Ext Free Cooling Lockout - Event Type
+6924,The event type for the [Ext Free Cooling Lockout] event.
+6925,Ext Standby Unit On - Event Control
+6926,Enable/disable the activation of the [Ext Standby Unit On] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6927,Ext Standby Unit On - Event Type
+6928,The event type for the [Ext Standby Unit On] event.
+6929,Ext Loss of Air Blower - Event Control
+6930,Enable/disable the activation of the [Ext Loss of Air Blower] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6931,Ext Loss of Air Blower - Event Type
+6932,The event type for the [Ext Loss of Air Blower] event.
+6933,Compressor Pump Down Issue - Event Control
+6934,Enable/disable the activation of the [Compressor Pump Down Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6935,Compressor Pump Down Issue - Event Type
+6936,The event type for the [Compressor Pump Down Issue] event.
+6937,Compressor Short Cycle - Event Control
+6938,Enable/disable the activation of the [Compressor Short Cycle] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6939,Compressor Short Cycle - Event Type
+6940,The event type for the [Compressor Short Cycle] event.
+6941,Dig Scroll Comp Discharge Over Temp - Event Ctrl
+6942,Enable/disable the activation of the [Dig Scroll Comp Discharge Over Temp] event.
+6943,Dig Scroll Comp Discharge Over Temp - Event Type
+6944,The event type for the [Dig Scroll Comp Discharge Over Temp] event.
+6945,Ext Air Sensor A Event Control
+6946,Enable/disable the activation of events related to measurements by the external air sensor A.
+6947,Return Air Sensor Event Control
+6948,Enable/disable the activation of events related to measurements by the return air sensor.
+6949,Ext Air Sensor A High Humidity - Event Control
+6950,Enable/disable the activation of the [Ext Air Sensor A High Humidity] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6951,Ext Air Sensor A High Humidity - Event Type
+6952,The event type for the [Ext Air Sensor A High Humidity] event.
+6953,Ext Air Sensor A Low Humidity - Event Control
+6954,Enable/disable the activation of the [Ext Air Sensor A Low Humidity] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6955,Ext Air Sensor A Low Humidity - Event Type
+6956,The event type for the [Ext Air Sensor A Low Humidity] event.
+6957,Return Air Under Temp - Event Control
+6958,Enable/disable the activation of the [Return Air Under Temperature] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6959,Return Air Under Temp - Event Type
+6960,The event type for the [Return Air Under Temperature] event.
+6961,Fan Hours Exceeded - Event Control
+6962,Enable/disable the activation of the [Fan Hours Exceeded] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6963,Fan Hours Exceeded - Event Type
+6964,The event type for the [Fan Hours Exceeded] event.
+6965,Main Fan Overload - Event Control
+6966,Enable/disable the activation of the [Main Fan Overload] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6967,Main Fan Overload - Event Type
+6968,The event type for the [Main Fan Overload] event.
+6969,Condenser Issue - Event Control
+6970,Enable/disable the activation of the [Condenser Issue] event. If set to 'disabled', the event will not be annunciated. This implies that the event will not be placed in any active event list or in any event history list.
+6971,Condenser Issue - Event Type
+6972,The event type for the [Condenser Issue] event.
+6973,Ext Loss of Air Blower
+6974,Loss of air blower is detected, as indicated by an external input signal.
+6975,Ext Standby Unit On
+6976,Standby unit is on, as indicated by an external input signal.
+6977,Digital Output Board Not Detected
+6978,Digital output board is required to be connected, but no signal is detected.
+6979,Unit Code Missing
+6980,Unit code has not been entered and saved.
+6981,Unit Communication Lost
+6982,Master has lost communication with one or more networked units.
+6983,Distribution Panel Type
+6984,The identifier of the physical layout of the electrical distribution panel.
+6985,1 column 30 pole
+6986,2 column 42 pole
+6987,2 column 54 pole
+6988,2 column 72 pole
+6989,2 column 84 pole
+6990,Breaker position
+6991,The position in the panel of the breaker of a branch. Lowest number if multi-phase.
+6992,Overtemperature Power Off
+6993,Power turned off because equipment over temperature limit
+6994,Too Many Sensors
+6995,The number of sensors connected to the PDU exceeds the allowable limit
+6996,Module Type
+6997,Module Type
+6998,Rack PDU Card
+6999,Auxiliary Sensor
+7000,Sensor Serial Number
+7001,The sensor's globally unique serial number assigned at the time of manufacture
+7002,Temperature Sensor User Assigned Label
+7003,The user assigned temperature sensor label
+7004,Temperature Sensor Asset Tag 01
+7005,User assigned temperature sensor asset tag 01
+7006,Temperature Sensor Asset Tag 02
+7007,User assigned temperature sensor asset tag 02
+7008,Relative Humidity Sensor User Assigned Label
+7009,The user assigned relative humidity sensor label
+7010,Relative Humidity Sensor Asset Tag 01
+7011,User assigned relative humidity sensor asset tag 01
+7012,Relative Humidity Sensor Asset Tag 02
+7013,User assigned relative humidity sensor asset tag 02
+7014,Transformer Overtemperature Power Off
+7015,Output power shutdown due to high transformer temperature
+7016,Transformer temperature has exceeded the limit
+7017,Transformer Temperature Sensor Fail
+7018,Transformer temperature sensor has failed
+7019,Battery String Alarm Reset or Acknowledge
+7020,Initiates a reset/clear or acknowledgement of all alarms on a battery-string and its associated cells.
+7021,Low Ambient Temperature Probe Two
+7022,The system has detected a low ambient temperature condition on temperature probe 2.
+7023,High Ambient Temperature Probe Two
+7024,The system has detected a high ambient temperature condition on temperature probe 2.
+7025,Thermal Runaway Detected
+7026,The system has detected a thermal runaway condition.
+7027,Battery String Equalize
+7028,The system has detected a battery string equalize condition.
+7029,Battery String Offline
+7030,The system has detected the battery string is offline.
+7031,Battery String Commissioned Status
+7032,Current commissioned status of battery string.
+7033,Not Commissioned
+7034,Commissioned
+7035,Discharge Low Cell Voltage
+7036,Internal Resistance Value
+7037,The measured internal resistance of a cell.
+7038,Intercell Resistance Value
+7039,The total resistance of the connection between the terminals of two cells that are electrically connected to each other.

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project_test_case>
+<id>Modbus_static</id>
+<test_title>Modbus_prelim_write</test_title>
+<test_duration>00:01</test_duration>
+<test_type>Functionality</test_type>
+<test_phase>System test</test_phase>
+<rec_test_configs></rec_test_configs>
+<test_resources></test_resources>
+<test_status>Not yet attempted</test_status>
+<test_attempts>0</test_attempts>
+<last_attempt_date>N/A</last_attempt_date>
+<last_attempt_time>N/A</last_attempt_time>
+<actual_duration>00:00</actual_duration>
+<testers></testers>
+<fault_report_id></fault_report_id>
+<change_req_id></change_req_id>
+<results_obtained></results_obtained>
+<version_tested></version_tested>
+<build_tested></build_tested>
+<external_link2></external_link2>
+<result_notes></result_notes>
+<requirement></requirement>
+<create_date>20100412</create_date>
+<create_time>10:38:14</create_time>
+<update_date>20100421</update_date>
+<update_time>10:38:06</update_time>
+<create_user_id>Scott Shanks</create_user_id>
+<update_user_id>Scott Shanks</update_user_id>
+<prerequisites><![CDATA[<DIV>- Modbus Tool is directed to the appropriate (RS-485, TCP/IP) output of the UUT</DIV>]]></prerequisites>
+<test_description><![CDATA[The goal of this Test Case is to validate Modus Register functionality.<br><br><STRONG>Test Steps:</STRONG><DIV><TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN: auto auto auto 4.9pt; BORDER-LEFT: medium none; WIDTH: 925px; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid windowtext .5pt; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext" borderColor=#0000ff cellSpacing=0 cellPadding=5 rules=all width=839 border=1><TBODY><TR><TD vAlign=bottom width=45><P align=center><SPAN>Step #<?xml:namespace prefix = o /><o:p></o:p></SPAN></TD><TD vAlign=bottom width=415><P align=center><SPAN>Action<o:p></o:p></SPAN></TD><TD vAlign=bottom width=379><P align=center><SPAN>Expected Results<o:p></o:p></SPAN></TD></TR><TR><TD><DIV align=center>1</DIV></TD><TD><DIV><SPAN>Verify that the modbus register is in sync with the&nbsp;Velocity data and the&nbsp;HMI display.</SPAN></DIV></TD><TD><DIV><SPAN>Modbus Register, Velocity, and HMI display show the same data.</SPAN></DIV></TD></TR></TBODY></TABLE></DIV>]]></test_description>
+<test_result></test_result>
+<notes1></notes1>
+<notes2><![CDATA[<DIV><TABLE style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext" cellSpacing=0 cellPadding=0 border=1><TBODY><TR><TD vAlign=top width=95><P align=center><STRONG>Date<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></STRONG></TD><TD vAlign=top width=197><P align=center><STRONG>Description<o:p></o:p></STRONG></TD><TD><DIV align=center>&nbsp;<STRONG>Rev</STRONG>&nbsp; </DIV></TD><TD vAlign=top width=126><P align=center><STRONG>Name<o:p></o:p></STRONG></TD></TR><TR><TD vAlign=top width=95>12/21/2009</TD><TD vAlign=top width=197>Initial Document<o:p></o:p></TD><TD><DIV align=center>0</DIV></TD><TD vAlign=top width=126>Darryl Brown</TD></TR><TR><TD><DIV>04/12/2010</DIV></TD><TD><DIV>Added generic wording</DIV></TD><TD><DIV align=center>1</DIV></TD><TD><DIV>Scott Shanks</DIV></TD></TR><TR><TD><DIV>04/21/2010</DIV></TD><TD><DIV>Changed to static test case</DIV></TD><TD><DIV align=center>2</DIV></TD><TD><DIV>Scott Shanks</DIV></TD></TR></TBODY></TABLE></DIV>]]></notes2>
+<external_link></external_link>
+<priority>2</priority>
+<history_entry><time>10:43:57</time><date>12-04-2010</date><type>ET_NEW</type><old_status>Not yet attempted</old_status><new_status>Not yet attempted</new_status><num_tries>0</num_tries><phase>System test</phase><version></version><build></build></history_entry>
+</project_test_case>

@@ -1,0 +1,7 @@
+<testCaseGenerator>
+	<deviceFamily>XP</deviceFamily>
+	<deviceType>XDP</deviceType>
+	<tabName>Monitor</tabName>
+	<idPrefix>812.40.</idPrefix>
+	<hmiFile>XP_HMI.xml</hmiFile>
+</testCaseGenerator>
