@@ -7,7 +7,7 @@
 #
 # modbus_bulk ip_address|comport path_to_spreadsheet
 #
-
+require 'rdoc/usage'
 require 'modbus_poller'
 
 # Verify arguments
