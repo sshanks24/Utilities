@@ -49,7 +49,7 @@ class BacnetObject
     case object_id.split('-')[0]
     when 'AV' then @object_type = 'ANALOG-VALUE'
     when 'BV' then @object_type = 'BINARY-VALUE'
-    when 'MSV' then @object_type = 'MUTLISTATE-VALUE'
+    when 'MSV' then @object_type = 'MULTISTATE-VALUE'
     else @object_type = 'UNKONWN'
     end
   end
