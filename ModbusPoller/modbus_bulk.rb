@@ -11,7 +11,7 @@ require 'rdoc/usage'
 require 'modbus_poller'
 
 # Verify arguments
-if ARGV.length != 3
+if ARGV.length != 2
   RDoc::usage
 end
 
