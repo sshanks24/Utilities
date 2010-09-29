@@ -1,7 +1,11 @@
 == Installing/Using bacnet_bulk
 
-Copy the entire parent folder BACnetPoller to your local drive and call
-bacnet_bulk.exe from the console window
+Copy the entire parent folder BACnetPoller to following directory on
+your local drive:
+
+C:\LMG_Test\ruby\Utilities\
+
+call bacnet_bulk.exe from the console window
 
 == Usage
 
