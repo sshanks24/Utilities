@@ -15,13 +15,13 @@ class DataComparison
   def initialize(protocol, gathered_data,v4_device_xml,fdm,gdd)
     if gdd == '' then
       @@gdd = nil
-      File.open(Dir.pwd + '/hashes',"rb") {|f| @@gdd = Marshal.load(f)}
+      File.open('c:/fdm/hashes',"rb") {|f| @@gdd = Marshal.load(f)}
     else
     @@gdd = Gdd.new(gdd)
-    end
     @@fdm = Fdm.new(fdm)
-
     @@gdd.merge_hashes_with_fdm(@@fdm)
+    end
+
     @protocol_under_test = GatheredData.new(protocol, gathered_data)
 
     # @velocity = GatheredData.new('v4',v4_device_xml)

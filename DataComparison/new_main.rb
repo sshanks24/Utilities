@@ -1,4 +1,3 @@
-
 require 'data_comparison'
 require 'data_point'
 require 'gathered_data'
@@ -10,7 +9,7 @@ comparison = DataComparison.new('http',
                                 'I:\LMG TEST ENGINEERING\Projects\157291 Alber BDSU\Data Mapping\Bravo\1x1x40\09222010\mon_gather_data_points_webx_922161951.xls',
                                 'I:\LMG TEST ENGINEERING\Projects\157291 Alber BDSU\Data Mapping\Bravo\1x1x240\09162010\savedDevice.xml',
                                 'C:\fdm\BDSU.xml',
-                                'C:\fdm\enp2dd.xml')
+                                '')
 
 
 
