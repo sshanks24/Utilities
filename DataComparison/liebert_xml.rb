@@ -1,14 +1,12 @@
 
 class LiebertXML
 
-  attr_accessor :strings, :units, :data
+  attr_accessor :strings, :units, :data, :scales, :resolutions
   
   def initialize(gdd_file)
     File.open(gdd_file) do |config_file|
       @xml = REXML::Document.new(config_file)
     end
-
-    build_hashes
   end
 
   def version
@@ -20,6 +18,8 @@ class LiebertXML
     @strings = build_string_id_hash("////String")
     @units = build_unit_id_hash("//UomDefn")
     @data = build_data_id_hash("//DataDictEntry")
+    @scales = Hash.new
+    @resolutions = Hash.new
     puts "Finished building hashes"
   end
 
@@ -59,6 +59,34 @@ class LiebertXML
     return h
   end
 
+  def build_scale_hash(path_to_data)
+    h = Hash.new
+    @xml.root.elements.each(path_to_data) do |data|
+      key = data.attribute('id').to_s
+      value = data.elements["*/DataScaling"]
+      if value == nil
+        value = ''
+        h[key] = value
+      else h[key] = value.text
+      end
+    end
+    return h
+  end
+
+  def build_resolution_hash(path_to_data)
+    h = Hash.new
+    @xml.root.elements.each(path_to_data) do |data|
+      key = data.attribute('id').to_s
+      value = data.elements["*/Resolution"]
+      if value == nil
+        value = ''
+        h[key] = value
+      else h[key] = value.text
+      end
+    end
+    return h
+  end
+
   def build_hash(xpath_to_key,xpath_to_value)
     h = Hash.new
     keys = @xml.elements.to_a(xpath_to_key)
@@ -87,6 +115,7 @@ class LiebertXML
 
   def unit_text_to_unit_id(unit_text)
     begin
+      if unit_text =~ /°/ then unit_text.sub!('°',"deg "); end;
       return @units.index(@strings.index(unit_text))
     rescue
       return "#{unit_text} is missing from version #{version}"
@@ -98,6 +127,29 @@ class LiebertXML
       return @strings.fetch(@units.fetch(unit_id))
     rescue
       return "#{unit_id} is missing from version #{version}"
+    end
+  end
+
+  def has_data_point?(data_point)
+    if self.data[data_point] != nil
+      return true
+    else return false
+    end
+  end
+  
+  def scale(data_id)
+    begin
+      return @scales[data_id]
+    rescue
+      return "#{data_id} is missing from version #{version}"
+    end
+  end
+
+  def resolution(data_id)
+    begin
+      return @resolutions[data_id]
+    rescue
+      return "#{data_id} is missing from version #{version}"
     end
   end
 

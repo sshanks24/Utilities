@@ -13,7 +13,9 @@ class Fdm < LiebertXML
     @strings = build_string_id_hash("//String")
     @units = build_hash("//UomDefn","//UomDefn/TextId")
     @data = build_hash("//DataIdentifier","//DataLabel/TextID")
+    @scales = build_scale_hash("//dataPoint")
+    @resolutions = build_resolution_hash("//dataPoint")
     puts "Finished building hashes"
   end
+  
 end
-

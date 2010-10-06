@@ -61,5 +61,11 @@ class BacnetObject
     return result.strip
   end
 
-end 
+  def set(value)
+    command = "#{PATH_TO_BACNETCONSOLE} /IP #{@test_site} /P #{@port} /B #{@object_type} /I #{@instance_id} /R #{@property_id} /V #{value.to_i}"
+    puts "#{command}"
+    result = `#{command}`
+    return result.strip
+  end
 
+end

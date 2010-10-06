@@ -1,15 +1,14 @@
 # == Synopsis
 #
-# bacnet_bulk: performs a bulk set of bacnet queries from the supplied
+# bacnet_bulk_write: performs a bulk set of bacnet writes from the supplied
 # spreadsheet and creates a time stamped copy of that spreadsheet with results
 #
 # == Usage
 #
-# bacnet_bulk ip_address path_to_spreadsheet
+# bacnet_bulk_write ip_address path_to_spreadsheet
 #
 require 'rdoc/usage'
 require 'bacnet_poller'
-require 'optparse'
 
 # Verify arguments
 if ARGV.length != 2
@@ -21,4 +20,4 @@ ip_address = ARGV.shift
 path_to_spreadsheet = ARGV.shift
 
 bacnet_bulk = BacnetPoller.new(ip_address, path_to_spreadsheet)
-bacnet_bulk.run
+bacnet_bulk.run_write

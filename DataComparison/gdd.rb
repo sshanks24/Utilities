@@ -14,6 +14,8 @@ class Gdd < LiebertXML
     self.strings.merge!(fdm.strings)
     self.units.merge!(fdm.units)
     self.data.merge!(fdm.data)
+    self.scales.merge!(fdm.scales)
+    self.resolutions.merge!(fdm.resolutions)
   end
   
 end

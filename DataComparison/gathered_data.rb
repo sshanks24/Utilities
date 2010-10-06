@@ -12,14 +12,18 @@ class GatheredData
 
   DATA_WORKSHEET = 3
 
+  attr_reader :protocol
   attr_accessor :data_points
   
   def initialize(protocol,data_source)
+
+    @protocol = protocol
     begin
       if File.exists?(data_source)
         @data_points = Array.new
 
         file_type = data_source.split('.')[data_source.split('.').size-1]
+        puts file_type
         case file_type
         when 'xls'
           ss = WIN32OLE::new('excel.Application')
@@ -39,11 +43,12 @@ class GatheredData
             all_data = ws.UsedRange.Value
 
             for i in 1..all_data.size-1
-              description = description(all_data[i][description_column].to_s.strip)
+              description_from_protocol = all_data[i][description_column].to_s.strip
+              description = description(description_from_protocol)
               value = all_data[i][value_column].to_s.strip
               units = all_data[i][units_column].to_s.strip
-              mm_index = multi_module_index(description).to_s
-              @data_points << DataPoint.new(protocol, description, value, units, mm_index)
+              mm_index = multi_module_index(description_from_protocol)
+              @data_points << DataPoint.new(protocol, description, description_from_protocol, value, units, mm_index)
             end
 
           when /modbus/i
@@ -54,7 +59,14 @@ class GatheredData
 
         when 'xml'
           config_file = File.open(data_source)
-          @xml = REXML::Document.new(config_file)
+          xml = REXML::Document.new(config_file)
+          xml.root.elements.each("//Report") do |report|
+            multi_module_index = report.attribute('mmidx').to_s
+            report.elements.each("datapoint") do |datapoint|
+              @data_points << DataPoint.new(protocol, datapoint.attribute('id').to_s,
+                datapoint.attribute('id').to_s, datapoint.text,'', multi_module_index)
+            end
+          end
         else
           raise "Unknown file type passed as an argument"
           return nil

@@ -47,7 +47,7 @@ def parse_fdm(path_to_xml)
       # Initialize variables (scope is outside of do loops)
       output = Array.new
 
-      config.root.elements.each("/*/ReportDescriptor/dataPoint") do |datapoint|
+      config.root.elements.each("//dataPoint") do |datapoint|
         type = datapoint.attribute('type').to_s
         # Skip over event,text, and time data types
         if type =~ /(event)|(text)|(time)/i then next; end;

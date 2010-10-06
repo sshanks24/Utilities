@@ -1,7 +1,7 @@
 # == Synopsis
 #
 # v42csv: converts the savedDevice.xml produced by the Velocity Browser to a csv file consisting of four "columns".
-# The output style is controlled by the 3rd argument (modbus or bacnet)
+# The output style is controlled by the 3rd argument (modbus, bacnet, or hierarchy)
 #
 # Column 1 is the Velocity 4 data label of the data point (with accompanying multimodule id and report name)
 # Column 2 is the Velocity 4 numeric data identifier.
@@ -11,7 +11,7 @@
 #
 # == Usage
 #
-# v42csv path_to_xml path_to_csv modbus|bacnet
+# v42csv path_to_xml path_to_csv modbus|bacnet|hierarchy
 #
 
 require 'saved_device_xml_parser'
@@ -37,7 +37,7 @@ if File.exists?(path_to_xml) then
 else raise "XML File does not exist!"
 end
 
-if switch_output =~ /(modbus)|(bacnet)/i
+if switch_output =~ /(modbus)|(bacnet)|(hierarchy)/i
   # Do nothing if the arguements are valid
 else RDoc::usage
 end
@@ -53,6 +53,3 @@ rescue => e
     puts "#{$@}"
   end
 end
-
-
-
