@@ -27,7 +27,7 @@ class BacnetPoller < Test
     test_site = @ip_address
     puts "Polling started at: #{@start_time}"
     while (row <= @total_rows)
-      bacnet_object = BacnetObject.new(@ws.Range("b#{row}")['Value'].to_s)
+      bacnet_object = BacnetObject.new(@ws.Range("b#{row}")['Value'].to_s,test_site)
       value = bacnet_object.get
       @ws.Range("#{PRESENT_VALUE}#{row}")['Value'] = value
       puts value

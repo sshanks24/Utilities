@@ -37,9 +37,9 @@ class DataPoint < DataComparison
     string << "%15s: %s\n"%["Label",@data_label]
     string << "%15s: %s\n"%['Data ID',@data_identifier]
     string << "%15s: %s\n"%["Value(#{@protocol})",@value_from_protocol]
-    string << "%15s: %s\n"%["Value",@value]
+    string << "%15s: %s\n"%["Value(normal)",@value]
     string << "%15s: %s\n"%["Units(#{@protocol})",@units_from_protocol]
-    string << "%15s: %s\n"%['Units',@units]
+    string << "%15s: %s\n"%['Units(normal)',@units]
     string << "%15s: %s\n"%['Scale',@scale]
     string << "%15s: %s\n"%['Resolution',@resolution]
     string << "%15s: %s\n"%['MM Index',@multi_module_index]
@@ -76,8 +76,8 @@ class DataPoint < DataComparison
     begin
       if data_id?(@data_identifer) == false
         gdd_data_id = @@gdd.data_text_to_data_id(@data_identifier)
-        if gdd_data_id == nil
-        @data_identifier = gdd_data_id
+        if gdd_data_id != nil
+          @data_identifier = gdd_data_id
         else @data_identifier = @@fdm.data_text_to_data_id(@data_identifier)
         end
       else #data_identifier is already a data id do nothing...
@@ -87,6 +87,7 @@ class DataPoint < DataComparison
       @resolution = @@gdd.resolution(@data_identifier)
       if (has_resolution? and has_scale?)
         @value = @value_from_protocol.to_i * @scale.to_i / 10**@resolution.to_i
+        puts "Has Value and Scale"
       else
         @value = @value_from_protocol
       end
@@ -122,14 +123,16 @@ class DataPoint < DataComparison
   end
   
   def has_resolution?
-    if @resolution != ''
+    if @resolution != nil
+      puts "Resolution: #{@resolution.inspect}"
       return true
     else return false
     end
   end
 
   def has_scale?
-    if @scale != ''
+    if @scale != nil
+      puts "Scale: #{@scale.inspect}"
       return true
     else return false
     end

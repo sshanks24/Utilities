@@ -16,7 +16,7 @@ class Test
   #path_to_base_ss is the file location of such a spreadsheet
   def initialize(path_to_base_ss)
     @base_ss = path_to_base_ss
-    @new_ss = (@base_ss.chomp(".xls")<<'_'<<Time.now.to_a.reverse[5..9].to_s<<(".xls")).gsub('driver','result')
+    @new_ss = (@base_ss.chomp(".xls") + '_'<<Time.now.to_a.reverse[5..9].to_s + (".xls"))
     @start_time = Time.now
     @end_time = ''
     ss = WIN32OLE::new('excel.Application')

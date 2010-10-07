@@ -13,7 +13,7 @@ class LiebertXML
     @xml.root.elements["//Version/LastDictionaryEntry"].text
   end
 
-  def build_hashes
+  def build_gdd_hashes
     puts "\nBuilding data hashes\n\n"
     @strings = build_string_id_hash("////String")
     @units = build_unit_id_hash("//UomDefn")
@@ -23,6 +23,23 @@ class LiebertXML
     puts "Finished building hashes"
   end
 
+  def build_fdm_hashes
+    puts "\nBuilding data hashes\n\n"
+    @strings = build_string_id_hash("//String")
+    @units = build_hash("//UomDefn","//UomDefn/TextId")
+    @data = build_hash("//DataIdentifier","//DataLabel/TextID")
+    @scales = build_scale_hash("//dataPoint")
+    @resolutions = build_resolution_hash("//dataPoint")
+    puts "Finished building hashes"
+  end
+
+  def merge_hashes_with_fdm(fdm)
+    self.strings.merge!(fdm.strings)
+    self.units.merge!(fdm.units)
+    self.data.merge!(fdm.data)
+    self.scales.merge!(fdm.scales)
+    self.resolutions.merge!(fdm.resolutions)
+  end
   # This method builds the hash table that maps text IDs to strings.
   def build_string_id_hash(path_to_string)
     h = Hash.new

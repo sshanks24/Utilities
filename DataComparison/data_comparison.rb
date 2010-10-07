@@ -26,9 +26,9 @@ class DataComparison
       File.open('c:/fdm/fdm_test',"rb") {|f| @@fdm = Marshal.load(f)}
     else
     @@gdd = Gdd.new(gdd)
-    @@gdd.build_hashes
+    @@gdd.build_gdd_hashes
     @@fdm = Fdm.new(fdm)
-    @@fdm.build_hashes
+    @@fdm.build_fdm_hashes
     #@@gdd.merge_hashes_with_fdm(@@fdm)
     end
 
