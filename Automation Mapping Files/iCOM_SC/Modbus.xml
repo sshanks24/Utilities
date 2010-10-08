@@ -1,0 +1,999 @@
+<MODBUS deviceType="Air" deviceFamily="iCOM_SC" deviceModel="HPC" fdmVersion="28" dateGenerated="2010-05-12 1:27:35 PM">
+    <!--Alarms-->
+    <!---->
+    <DATA_POINT name="evt_comp_notStopping.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10001</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_hrsExceeded.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10012</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsHigh.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10013</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsLow.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10014</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_thermOverload.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10015</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsOilLow.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10016</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsOverThrshld.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10017</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsDiffLoss.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10018</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_hrsExceeded.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10029</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsHigh.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10030</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsLow.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10031</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_thermOverload.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10032</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsOilLow.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10033</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsOverThrshld.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10034</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_comp_prsDiffLoss.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10035</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_cndsr_fanIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10046</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_cndsr_prsLowRfg.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10047</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_cndsr_fanIssue.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10058</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_cndsr_prsLowRfg.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10059</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_prsFluidLow.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10070</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_tmpSupFluOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10081</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_tmpSupFluUnder.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10082</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_snsrSupFluIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10083</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_tmpRetFluOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10094</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_tmpRetFluUnder.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10095</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_snsrRetFluIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10096</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_pump_flowLossAll.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10107</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_pump_flowLoss1.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10108</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_pump_flowLoss2.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10109</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_pump_hrsExceeded.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10120</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_pump_hrsExceeded.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10131</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_valv_hrsExceededFC.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10142</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_ext_snsrAirIssueA.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10143</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_evap_snsrInletIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10154</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_evap_tmpFluOutFreezeAutoRst.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10165</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_evap_tmpFluOutFreezeManRst.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10166</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_snsrSupRfgIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10167</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_evap_tmpFluOutFreezeAutoRst.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10178</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_evap_tmpFluOutFreezeManRst.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10179</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_clng_snsrSupRfgIssue.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10180</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_ext_inpContact01.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10191</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_ext_inpContact02.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10192</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_unitOn.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10193</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_unitOff.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10194</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_masterCommLost.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10195</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_subgroupEvtWhileCommLoss.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10196</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!---->
+    <DATA_POINT name="evt_sys_hmdCtrlBdNotDetected.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10197</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--NonAlarms-->
+    <!--Server Class-->
+    <DATA_POINT name="st_sys_serverClass.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30385</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Shut Down - Ambient Air Low Temp Limit-->
+    <DATA_POINT name="val_comp_tmp_airShutDownLoThrshd.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30389</INPUT>
+                <HOLDING>40389</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Shut Down - Ambient Air Low Temp Limit in Deg F-->
+    <DATA_POINT name="val_comp_tmp_airShutDownLoThrshd.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30390</INPUT>
+                <HOLDING>40390</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Compressor State-->
+    <DATA_POINT name="st_comp_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30394</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Capacity Control State-->
+    <DATA_POINT name="st_comp_capacityCtrl.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30395</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Head Pressure-->
+    <DATA_POINT name="val_comp_prs_head.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30396</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours-->
+    <DATA_POINT name="val_comp_tm_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30397</INPUT>
+                <HOLDING>40397</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours Threshold-->
+    <DATA_POINT name="val_comp_tm_opThreshold.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30398</INPUT>
+                <HOLDING>40398</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor State-->
+    <DATA_POINT name="st_comp_op.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30402</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Capacity Control State-->
+    <DATA_POINT name="st_comp_capacityCtrl.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30403</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Head Pressure-->
+    <DATA_POINT name="val_comp_prs_head.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30404</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours-->
+    <DATA_POINT name="val_comp_tm_op.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30405</INPUT>
+                <HOLDING>40405</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours Threshold-->
+    <DATA_POINT name="val_comp_tm_opThreshold.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30406</INPUT>
+                <HOLDING>40406</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Fan Speed-->
+    <DATA_POINT name="val_cndsr_pct_fanSpeed.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30410</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Fan Speed-->
+    <DATA_POINT name="val_cndsr_pct_fanSpeed.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30414</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fluid Pressure-->
+    <DATA_POINT name="val_clng_prs_fluid.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30418</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fluid Cooling Proportional Band-->
+    <DATA_POINT name="val_clng_tmp_fluCoolingPropBand.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30419</INPUT>
+                <HOLDING>40419</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fluid Cooling Proportional Band in Deg F-->
+    <DATA_POINT name="val_clng_tmp_fluCoolingPropBand.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30420</INPUT>
+                <HOLDING>40420</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DELTA_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Fluid Temp Set Point 1-->
+    <DATA_POINT name="val_clng_tmp_supFluSetPt1.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30424</INPUT>
+                <HOLDING>40424</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Fluid Temp Set Point 1 in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supFluSetPt1.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30425</INPUT>
+                <HOLDING>40425</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Fluid Temp Set Point 2-->
+    <DATA_POINT name="val_clng_tmp_supFluSetPt2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30426</INPUT>
+                <HOLDING>40426</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Fluid Temp Set Point 2 in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supFluSetPt2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30427</INPUT>
+                <HOLDING>40427</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Fluid Over Temp Warning Threshold-->
+    <DATA_POINT name="val_clng_tmp_supFluOverThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30428</INPUT>
+                <HOLDING>40428</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Fluid Over Temp Warning Threshold in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supFluOverThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30429</INPUT>
+                <HOLDING>40429</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Fluid Over Temp Alarm Threshold-->
+    <DATA_POINT name="val_clng_tmp_supFluOverThrshld2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30430</INPUT>
+                <HOLDING>40430</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Fluid Over Temp Alarm Threshold in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supFluOverThrshld2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30431</INPUT>
+                <HOLDING>40431</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Fluid Under Temp Warning Threshold-->
+    <DATA_POINT name="val_clng_tmp_supFluUnderThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30432</INPUT>
+                <HOLDING>40432</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Fluid Under Temp Warning Threshold in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supFluUnderThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30433</INPUT>
+                <HOLDING>40433</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Fluid Under Temp Alarm Threshold-->
+    <DATA_POINT name="val_clng_tmp_supFluUnderThrshld2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30434</INPUT>
+                <HOLDING>40434</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Fluid Under Temp Alarm Threshold in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supFluUnderThrshld2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30435</INPUT>
+                <HOLDING>40435</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Return Fluid Over Temp Warning Threshold-->
+    <DATA_POINT name="val_clng_tmp_retFluOverThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30439</INPUT>
+                <HOLDING>40439</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Fluid Over Temp Warning Threshold in Deg F-->
+    <DATA_POINT name="val_clng_tmp_retFluOverThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30440</INPUT>
+                <HOLDING>40440</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Return Fluid Over Temp Alarm Threshold-->
+    <DATA_POINT name="val_clng_tmp_retFluOverThrshld2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30441</INPUT>
+                <HOLDING>40441</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Fluid Over Temp Alarm Threshold in Deg F-->
+    <DATA_POINT name="val_clng_tmp_retFluOverThrshld2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30442</INPUT>
+                <HOLDING>40442</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Return Fluid Under Temp Warning Threshold-->
+    <DATA_POINT name="val_clng_tmp_retFluUnderThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30443</INPUT>
+                <HOLDING>40443</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Fluid Under Temp Warning Threshold in Deg F-->
+    <DATA_POINT name="val_clng_tmp_retFluUnderThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30444</INPUT>
+                <HOLDING>40444</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Return Fluid Under Temp Alarm Threshold-->
+    <DATA_POINT name="val_clng_tmp_retFluUnderThrshld2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30445</INPUT>
+                <HOLDING>40445</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Fluid Under Temp Alarm Threshold in Deg F-->
+    <DATA_POINT name="val_clng_tmp_retFluUnderThrshld2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30446</INPUT>
+                <HOLDING>40446</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Pump Hours-->
+    <DATA_POINT name="val_pump_tm_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30450</INPUT>
+                <HOLDING>40450</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Pump Hours Threshold-->
+    <DATA_POINT name="val_pump_tm_opThreshold.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30451</INPUT>
+                <HOLDING>40451</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Pump Hours-->
+    <DATA_POINT name="val_pump_tm_op.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30455</INPUT>
+                <HOLDING>40455</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Pump Hours Threshold-->
+    <DATA_POINT name="val_pump_tm_opThreshold.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30456</INPUT>
+                <HOLDING>40456</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling External Temperature Delta-->
+    <DATA_POINT name="val_sys_tmp_FCFluidAirDeltaExt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30460</INPUT>
+                <HOLDING>40460</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling External Temperature Delta in Deg F-->
+    <DATA_POINT name="val_sys_tmp_FCFluidAirDeltaExt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30461</INPUT>
+                <HOLDING>40461</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DELTA_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Free Cooling Status-->
+    <DATA_POINT name="st_sys_statusFC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30462</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Valve Open Position-->
+    <DATA_POINT name="val_valv_pct_posFC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30463</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Valve Hours-->
+    <DATA_POINT name="val_valv_tm_opFC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30464</INPUT>
+                <HOLDING>40464</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Valve Hours Threshold-->
+    <DATA_POINT name="val_valv_tm_opThresholdFC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30465</INPUT>
+                <HOLDING>40465</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Evaporator Return Fluid Temperature-->
+    <DATA_POINT name="val_evap_tmp_retFlu.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30469</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Evaporator Return Fluid Temperature in Deg F-->
+    <DATA_POINT name="val_evap_tmp_retFlu.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30470</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Brine Temp Set Point-->
+    <DATA_POINT name="val_clng_tmp_supBrineSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30474</INPUT>
+                <HOLDING>40474</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Brine Temp Set Point in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supBrineSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30475</INPUT>
+                <HOLDING>40475</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Standby Units-->
+    <DATA_POINT name="val_sys_na_standbyUnits.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30479</INPUT>
+                <HOLDING>40479</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Status-->
+    <DATA_POINT name="st_sys_status.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30483</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Operating State-->
+    <DATA_POINT name="st_sys_operating.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30484</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Control Mode-->
+    <DATA_POINT name="st_sys_controlMode.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30485</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Operating State Reason-->
+    <DATA_POINT name="st_sys_operatingReason.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30486</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System On/Off Control-->
+    <DATA_POINT name="st_sys_onOffCtrl.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30487</INPUT>
+                <HOLDING>40487</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Fluid Temperature-->
+    <DATA_POINT name="val_clng_tmp_retFlu.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30491</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Fluid Temperature in Deg F-->
+    <DATA_POINT name="val_clng_tmp_retFlu.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30492</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Fluid Temperature-->
+    <DATA_POINT name="val_clng_tmp_supFlu.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30493</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Fluid Temperature in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supFlu.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30494</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Actual Supply Fluid Temp Set Point-->
+    <DATA_POINT name="val_clng_tmp_supFluSetPtActual.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30495</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Actual Supply Fluid Temp Set Point in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supFluSetPtActual.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30496</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Condenser Inlet Water Temperature-->
+    <DATA_POINT name="val_cndsr_tmp_waterIn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30497</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Inlet Water Temperature in Deg F-->
+    <DATA_POINT name="val_cndsr_tmp_waterIn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30498</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Condenser Outlet Water Temperature-->
+    <DATA_POINT name="val_cndsr_tmp_waterOut.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30499</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Outlet Water Temperature in Deg F-->
+    <DATA_POINT name="val_cndsr_tmp_waterOut.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30500</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Supply Heated Water Temp Set Point-->
+    <DATA_POINT name="val_clng_tmp_supHotWtrSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30501</INPUT>
+                <HOLDING>40501</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Heated Water Temp Set Point in Deg F-->
+    <DATA_POINT name="val_clng_tmp_supHotWtrSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30502</INPUT>
+                <HOLDING>40502</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Free Cooling Utilization-->
+    <DATA_POINT name="val_sys_pct_freeCooling.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30503</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Reheat Utilization-->
+    <DATA_POINT name="val_heat_pct_utlztn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30504</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Utilization-->
+    <DATA_POINT name="val_comp_pct_utlztn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30505</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ambient Air Temperature-->
+    <DATA_POINT name="val_ext_tmp_airA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30506</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ambient Air Temperature in Deg F-->
+    <DATA_POINT name="val_ext_tmp_airA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30507</INPUT>
+            </REGISTER>
+        </ADDRESS>
+        <MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE" />
+    </DATA_POINT>
+    <!--Compressor Economizer Utilization-->
+    <DATA_POINT name="val_sys_pct_compEcoUtlztn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30508</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Adiabatic Cooling Utilization-->
+    <DATA_POINT name="val_sys_pct_cndsrCoolAdiabUtlztn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30509</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Pump 1 State-->
+    <DATA_POINT name="st_pump_op1.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30510</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Pump 2 State-->
+    <DATA_POINT name="st_pump_op2.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30511</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Event Acknowledge/Reset-->
+    <DATA_POINT name="st_sys_eventAckReset.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30515</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Date and Time-->
+    <DATA_POINT name="val_sys_tm_dateTime.1.0">
+        <ADDRESS>
+            <REGISTER numReg="2">
+                <INPUT>39998</INPUT>
+                <HOLDING>49998</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+</MODBUS>

@@ -1,0 +1,2321 @@
+<MODBUS deviceFamily="iCOM_PA" deviceModel="iCOM_PA" fdmVersion="35" dateGenerated="2010-04-26 9:20 AM">
+    <!--Ext Reheat Lockout-->
+    <DATA_POINT name="evt_ext_reheatLockout.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10009</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Humidifier Lockout-->
+    <DATA_POINT name="evt_ext_hmdLockout.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10010</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Minimum Chilled Water Temp Set Point Enable-->
+    <DATA_POINT name="st_clng_tmpCWMinSetPtEnable.0.0">
+        <ADDRESS>
+            <STATUS>10013</STATUS>
+            <COIL>0013</COIL>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Sensor Event Control-->
+    <DATA_POINT name="st_sys_snsrRetAirEventsEnable.0.0">
+        <ADDRESS>
+            <STATUS>10019</STATUS>
+            <COIL>0019</COIL>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Event Control-->
+    <DATA_POINT name="st_ext_snsrAirEventsEnableA.0.0">
+        <ADDRESS>
+            <STATUS>10020</STATUS>
+            <COIL>0020</COIL>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Compressor Lockout-->
+    <DATA_POINT name="evt_ext_compLockout.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10021</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System On/Off Control-->
+    <DATA_POINT name="st_sys_onOffCtrl.0.0">
+        <ADDRESS>
+            <COIL>25</COIL>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan State-->
+    <DATA_POINT name="st_fan_opState.0.0">
+        <ADDRESS>
+            <STATUS>10025</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Cooling State-->
+    <DATA_POINT name="st_sys_opStateCooling.0.0">
+        <ADDRESS>
+            <STATUS>10026</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling State-->
+    <DATA_POINT name="st_sys_opStateFC.0.0">
+        <ADDRESS>
+            <STATUS>10027</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Hot Water / Hot Gas State-->
+    <DATA_POINT name="st_heat_opStateHWHG.0.0">
+        <ADDRESS>
+            <STATUS>10028</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheat State-->
+    <DATA_POINT name="st_heat_opStateElectric.0.0">
+        <ADDRESS>
+            <STATUS>10029</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier State-->
+    <DATA_POINT name="st_hmd_opState.0.0">
+        <ADDRESS>
+            <STATUS>10030</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dehumidifier State-->
+    <DATA_POINT name="st_dhmd_opState.0.0">
+        <ADDRESS>
+            <STATUS>10031</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Main Fan Overload-->
+    <DATA_POINT name="evt_fan_mainOverload.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10034</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Loss of Air Flow-->
+    <DATA_POINT name="evt_sys_flowLossAir.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10035</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Loss of Flow-->
+    <DATA_POINT name="evt_ext_flowLoss.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10036</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor High Head Pressure-->
+    <DATA_POINT name="evt_comp_prsHigh.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10037</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Low Suction Pressure-->
+    <DATA_POINT name="evt_comp_prsLow.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10038</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Thermal Overload-->
+    <DATA_POINT name="evt_comp_thermOverload.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10039</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Pump Down Issue-->
+    <DATA_POINT name="evt_comp_pumpDownIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10040</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor High Head Pressure-->
+    <DATA_POINT name="evt_comp_prsHigh.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10041</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Low Suction Pressure-->
+    <DATA_POINT name="evt_comp_prsLow.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10042</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Thermal Overload-->
+    <DATA_POINT name="evt_comp_thermOverload.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10043</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Pump Down Issue-->
+    <DATA_POINT name="evt_comp_pumpDownIssue.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10044</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Over Temp-->
+    <DATA_POINT name="evt_comp_tmpDigScrollOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10045</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Over Temp-->
+    <DATA_POINT name="evt_comp_tmpDigScrollOver.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10046</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Smoke Detected-->
+    <DATA_POINT name="evt_sys_smokeDetected.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10047</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Water Under Floor-->
+    <DATA_POINT name="evt_sys_waterUnderFloor.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10048</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Issue-->
+    <DATA_POINT name="evt_hmd_issue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10049</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Standby Glycol Pump On-->
+    <DATA_POINT name="evt_ext_stdbyGlycolPumpOn.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10050</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Standby Unit On-->
+    <DATA_POINT name="evt_ext_stdbyUnitOn.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10051</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Condenser Pump High Water-->
+    <DATA_POINT name="evt_ext_cndsrPumpHighWater.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10052</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Sensor Issue-->
+    <DATA_POINT name="evt_sys_snsrRetAirIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10053</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Loss of Air Blower-->
+    <DATA_POINT name="evt_ext_airBlowerLoss.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10055</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Low Water-->
+    <DATA_POINT name="evt_hmd_waterLevelLow.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10058</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Over Current-->
+    <DATA_POINT name="evt_hmd_ecOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10059</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Over Temperature-->
+    <DATA_POINT name="evt_ext_overTemp.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10060</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Shutdown - Loss Of Power-->
+    <DATA_POINT name="evt_sys_shutdownPwrLoss.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10061</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Chilled Water Over Temp-->
+    <DATA_POINT name="evt_clng_tmpSupCWOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10065</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Over Temperature-->
+    <DATA_POINT name="evt_sys_tmpAirRetOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10067</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Under Temperature-->
+    <DATA_POINT name="evt_sys_tmpAirRetUnder.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10068</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--High Return Humidity-->
+    <DATA_POINT name="evt_sys_rhAirRetOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10069</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Low Return Humidity-->
+    <DATA_POINT name="evt_sys_rhAirRetUnder.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10070</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Over Temperature-->
+    <DATA_POINT name="evt_ext_tmpAirOverA.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10071</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Under Temperature-->
+    <DATA_POINT name="evt_ext_tmpAirUnderA.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10072</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A High Humidity-->
+    <DATA_POINT name="evt_ext_rhAirOverA.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10073</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Low Humidity-->
+    <DATA_POINT name="evt_ext_rhAirUnderA.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10074</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Chilled Water Loss of Flow-->
+    <DATA_POINT name="evt_clng_flowLossSupplyCW.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10075</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Clogged Air Filter-->
+    <DATA_POINT name="evt_sys_cloggedAirFilter.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10076</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Air Sensor Issue-->
+    <DATA_POINT name="evt_sys_snsrSupplyAirIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10077</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Temp Sensor Issue-->
+    <DATA_POINT name="evt_clng_snsrFCIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10078</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Issue-->
+    <DATA_POINT name="evt_ext_snsrAirIssueA.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10079</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Hours Exceeded-->
+    <DATA_POINT name="evt_fan_hrsExceeded.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10080</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours Exceeded-->
+    <DATA_POINT name="evt_comp_hrsExceeded.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10081</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours Exceeded-->
+    <DATA_POINT name="evt_comp_hrsExceeded.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10082</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Valve Hours Exceeded-->
+    <DATA_POINT name="evt_valv_hrsExceededFC.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10083</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours Exceeded-->
+    <DATA_POINT name="evt_heat_hrsExceeded.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10084</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours Exceeded-->
+    <DATA_POINT name="evt_heat_hrsExceeded.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10085</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours Exceeded-->
+    <DATA_POINT name="evt_heat_hrsExceeded.2.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10086</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Hot Water / Hot Gas Valve Hours Exceeded-->
+    <DATA_POINT name="evt_valv_hrsExceededHWHG.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10087</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Hours Exceeded-->
+    <DATA_POINT name="evt_hmd_hrsExceeded.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10088</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dehumidifier Hours Exceeded-->
+    <DATA_POINT name="evt_dhmd_hrsExceeded.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10089</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Unit Communication Lost-->
+    <DATA_POINT name="evt_sys_unitCommLost.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10091</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Master Unit Communication Lost-->
+    <DATA_POINT name="evt_sys_masterCommLost.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10092</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Unit Code Missing-->
+    <DATA_POINT name="evt_sys_missingUnitCode.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10094</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Service Required-->
+    <DATA_POINT name="evt_sys_serviceReq.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10098</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Control Board Not Detected-->
+    <DATA_POINT name="evt_sys_hmdCtrlBdNotDetected.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10099</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 1-->
+    <DATA_POINT name="evt_ext_inpContact01.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10104</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 2-->
+    <DATA_POINT name="evt_ext_inpContact02.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10105</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 3-->
+    <DATA_POINT name="evt_ext_inpContact03.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10106</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 4-->
+    <DATA_POINT name="evt_ext_inpContact04.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10107</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Discharge Temp Sensor Issue-->
+    <DATA_POINT name="evt_comp_tmpSnsrDschgDigScr.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10108</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Discharge Temp Sensor Issue-->
+    <DATA_POINT name="evt_comp_tmpSnsrDschgDigScr.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10109</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Air Over Temperature-->
+    <DATA_POINT name="evt_sys_tmpAirSupplyOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10209</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Air Under Temperature-->
+    <DATA_POINT name="evt_sys_tmpAirSupplyUnder.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10210</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ambient Air Sensor Issue-->
+    <DATA_POINT name="evt_ext_remSnsrIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10211</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Short Cycle-->
+    <DATA_POINT name="evt_comp_shortCycle.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10212</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Short Cycle-->
+    <DATA_POINT name="evt_comp_shortCycle.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10213</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Free Cooling Lockout-->
+    <DATA_POINT name="evt_ext_FCLockout.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10214</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Reheater Over Temperature-->
+    <DATA_POINT name="evt_heat_tmpOver.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10215</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Cylinder Worn-->
+    <DATA_POINT name="evt_hmd_cylinderWorn.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10216</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Under Current-->
+    <DATA_POINT name="evt_hmd_ecUnder.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10217</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Issue-->
+    <DATA_POINT name="evt_fan_issue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10218</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser TVSS Issue-->
+    <DATA_POINT name="evt_cndsr_tvssIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10219</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser VFD Issue-->
+    <DATA_POINT name="evt_cndsr_vfdIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10220</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Issue-->
+    <DATA_POINT name="evt_cndsr_issue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10221</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Issue-->
+    <DATA_POINT name="evt_cndsr_issue.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10222</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--BMS Communications Timeout-->
+    <DATA_POINT name="evt_ext_bmsCommTimeout.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10223</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Digital Output Board Not Detected-->
+    <DATA_POINT name="evt_sys_digOutBdNotDetected.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10224</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Digital Output Board Not Detected-->
+    <DATA_POINT name="evt_sys_digOutBdNotDetected.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10225</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Digital Output Board Not Detected-->
+    <DATA_POINT name="evt_sys_digOutBdNotDetected.2.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10226</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--RAM Battery Issue-->
+    <DATA_POINT name="evt_sys_ramBatteryIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10227</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Water Leakage Detector Sensor Issue-->
+    <DATA_POINT name="evt_sys_snsrWaterLeakDetectIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10228</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--External Fire Detected-->
+    <DATA_POINT name="evt_ext_fireDetect.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10229</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Chilled Water Control Valve Position-->
+    <DATA_POINT name="evt_valv_CWPosition.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10230</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Chilled Water Control Valve Position-->
+    <DATA_POINT name="evt_valv_CWPosition.1.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10231</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Unit Off-->
+    <DATA_POINT name="evt_sys_unitOff.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10232</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Unit On-->
+    <DATA_POINT name="evt_sys_unitOn.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10233</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Unit Partial Shutdown-->
+    <DATA_POINT name="evt_sys_partialShutdown.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10234</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Unit Shutdown-->
+    <DATA_POINT name="evt_sys_shutdown.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10235</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--High Power Shutdown-->
+    <DATA_POINT name="evt_sys_highPwrShutdown.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10236</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Unit Standby-->
+    <DATA_POINT name="evt_sys_unitStandby.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10237</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Maintenance Due-->
+    <DATA_POINT name="evt_sys_maintDue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10238</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Maintenance Completed-->
+    <DATA_POINT name="evt_sys_maintCompleted.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10239</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Low Pressure Transducer Issue-->
+    <DATA_POINT name="evt_comp_lowPrsXdcrIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10240</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor High Pressure Transducer Issue-->
+    <DATA_POINT name="evt_comp_highPrsXdcrIssue.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10241</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Capacity Reduced-->
+    <DATA_POINT name="evt_comp_capReduction.0.0">
+        <ADDRESS>
+            <STATUS activeOn="Default">10242</STATUS>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Internal Control Mode-->
+    <DATA_POINT name="st_sys_controlModeFCInt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30017</INPUT>
+                <HOLDING>40017</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidity Proportional Control Type-->
+    <DATA_POINT name="st_sys_hmdPropCtrlType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30018</INPUT>
+                <HOLDING>40018</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Speed Maximum Set Point-->
+    <DATA_POINT name="val_fan_pct_maxSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30019</INPUT>
+                <HOLDING>40019</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Air Temperature Set Point-->
+    <DATA_POINT name="val_sys_tmp_airSupplySetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30020</INPUT>
+                <HOLDING>40020</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Internal Temperature Delta-->
+    <DATA_POINT name="val_sys_tmp_FCFluidAirDeltaInt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30021</INPUT>
+                <HOLDING>40021</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Minimum Chilled Water Temp Set Point-->
+    <DATA_POINT name="val_clng_tmp_cWMinSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30022</INPUT>
+                <HOLDING>40022</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Air Temperature Set Point-->
+    <DATA_POINT name="val_sys_tmp_airSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30023</INPUT>
+                <HOLDING>40023</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Air Temperature Proportional Band-->
+    <DATA_POINT name="val_sys_tmp_airPropBand.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30024</INPUT>
+                <HOLDING>40024</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Air Temperature Dead Band-->
+    <DATA_POINT name="val_sys_tmp_airDeadBand.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30025</INPUT>
+                <HOLDING>40025</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Air Temperature Control Integration Time-->
+    <DATA_POINT name="val_sys_tm_tmpAirCtrlIntegral.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30026</INPUT>
+                <HOLDING>40026</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidity Set Point-->
+    <DATA_POINT name="val_sys_rh_setPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30027</INPUT>
+                <HOLDING>40027</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidity Proportional Band-->
+    <DATA_POINT name="val_sys_rh_propBand.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30028</INPUT>
+                <HOLDING>40028</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidity Proportional Control Integration Time-->
+    <DATA_POINT name="val_sys_tm_hmdPropCtrlIntegral.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30029</INPUT>
+                <HOLDING>40029</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidity Dead Band-->
+    <DATA_POINT name="val_sys_rh_deadBand.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30030</INPUT>
+                <HOLDING>40030</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Auto Restart Delay-->
+    <DATA_POINT name="val_sys_tm_autoRestart.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30031</INPUT>
+                <HOLDING>40031</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Air Temperature Control Type-->
+    <DATA_POINT name="st_sys_tmpAirCtrlType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30033</INPUT>
+                <HOLDING>40033</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--BMS Timeout Period-->
+    <DATA_POINT name="val_ext_tm_bmsTimeout.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30045</INPUT>
+                <HOLDING>40045</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Over Temp Threshold-->
+    <DATA_POINT name="val_sys_tmp_airRetOverThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30050</INPUT>
+                <HOLDING>40050</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Under Temp Threshold-->
+    <DATA_POINT name="val_sys_tmp_airRetUnderThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30051</INPUT>
+                <HOLDING>40051</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Over Temp Threshold-->
+    <DATA_POINT name="val_ext_tmp_airOverThrshldA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30052</INPUT>
+                <HOLDING>40052</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Under Temp Threshold-->
+    <DATA_POINT name="val_ext_tmp_airUnderThrshldA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30053</INPUT>
+                <HOLDING>40053</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--High Return Humidity Threshold-->
+    <DATA_POINT name="val_sys_rh_airRetOverThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30054</INPUT>
+                <HOLDING>40054</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Low Return Humidity Threshold-->
+    <DATA_POINT name="val_sys_rh_airRetUnderThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30055</INPUT>
+                <HOLDING>40055</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A High Humidity Threshold-->
+    <DATA_POINT name="val_ext_rh_airOverThrshldA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30056</INPUT>
+                <HOLDING>40056</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Low Humidity Threshold-->
+    <DATA_POINT name="val_ext_rh_airUnderThrshldA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30057</INPUT>
+                <HOLDING>40057</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Hours Threshold-->
+    <DATA_POINT name="val_fan_tm_opThreshold.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30070</INPUT>
+                <HOLDING>40070</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours Threshold-->
+    <DATA_POINT name="val_comp_tm_opThreshold.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30071</INPUT>
+                <HOLDING>40071</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours Threshold-->
+    <DATA_POINT name="val_comp_tm_opThreshold.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30072</INPUT>
+                <HOLDING>40072</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Hours Threshold-->
+    <DATA_POINT name="val_hmd_tm_opThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30073</INPUT>
+                <HOLDING>40073</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dehumidifier Hours Threshold-->
+    <DATA_POINT name="val_dhmd_tm_opThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30074</INPUT>
+                <HOLDING>40074</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Valve Hours Threshold-->
+    <DATA_POINT name="val_valv_tm_opThresholdFC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30075</INPUT>
+                <HOLDING>40075</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours Threshold-->
+    <DATA_POINT name="val_heat_tm_opThrshld.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30076</INPUT>
+                <HOLDING>40076</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours Threshold-->
+    <DATA_POINT name="val_heat_tm_opThrshld.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30077</INPUT>
+                <HOLDING>40077</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours Threshold-->
+    <DATA_POINT name="val_heat_tm_opThrshld.2.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30078</INPUT>
+                <HOLDING>40078</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Hot Water / Hot Gas Valve Hours Threshold-->
+    <DATA_POINT name="val_valv_tm_opThresholdHWHG.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30079</INPUT>
+                <HOLDING>40079</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Operating State-->
+    <DATA_POINT name="st_sys_operating.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30100</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Status-->
+    <DATA_POINT name="st_sys_status.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30102</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Speed-->
+    <DATA_POINT name="val_fan_pct_speed.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30103</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Utilization-->
+    <DATA_POINT name="val_comp_pct_utlztn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30104</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Valve Open Position-->
+    <DATA_POINT name="val_valv_pct_FC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30105</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Reheat Utilization-->
+    <DATA_POINT name="val_heat_pct_utlztn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30106</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Utilization-->
+    <DATA_POINT name="val_hmd_pct_utlztn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30107</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dehumidifier Utilization-->
+    <DATA_POINT name="val_dhmd_pct_utlztn.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30108</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Status-->
+    <DATA_POINT name="st_sys_statusFC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30109</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Temperature-->
+    <DATA_POINT name="val_sys_temp_inletAir.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30110</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Air Temperature-->
+    <DATA_POINT name="val_sys_tmp_airSupply.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30112</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Air Temperature Set Point-->
+    <DATA_POINT name="val_sys_tmp_airSupplySetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30113</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Fluid Temperature-->
+    <DATA_POINT name="val_clng_tmp_fluidFC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30115</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Temperature-->
+    <DATA_POINT name="val_ext_tmp_airA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30116</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor B Temperature-->
+    <DATA_POINT name="val_ext_tmp_airB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30117</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor C Temperature-->
+    <DATA_POINT name="val_ext_tmp_airC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30118</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Discharge Temp-->
+    <DATA_POINT name="val_comp_tmp_dschgDigScr.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30119</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Discharge Temp-->
+    <DATA_POINT name="val_comp_tmp_dschgDigScr.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30120</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Humidity-->
+    <DATA_POINT name="val_sys_rh_airRet.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30130</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Humidity-->
+    <DATA_POINT name="val_ext_pct_hmdtyAirA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30132</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor B Humidity-->
+    <DATA_POINT name="val_ext_pct_hmdtyAirB.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30133</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor C Humidity-->
+    <DATA_POINT name="val_ext_pct_hmdtyAirC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30134</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Hours-->
+    <DATA_POINT name="val_fan_tm_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30141</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours-->
+    <DATA_POINT name="val_comp_tm_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30142</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Hours-->
+    <DATA_POINT name="val_comp_tm_op.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30143</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Hours-->
+    <DATA_POINT name="val_hmd_tm_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30144</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dehumidifier Hours-->
+    <DATA_POINT name="val_dhmd_tm_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30145</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Free Cooling Valve Hours-->
+    <DATA_POINT name="val_valv_tm_opFC.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30146</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours-->
+    <DATA_POINT name="val_heat_tm_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30147</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours-->
+    <DATA_POINT name="val_heat_tm_op.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30148</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Electric Reheater Hours-->
+    <DATA_POINT name="val_heat_tm_op.2.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30149</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Hot Water / Hot Gas Valve Hours-->
+    <DATA_POINT name="val_valv_tm_opHWHG.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30150</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Today's High Air Temperature-->
+    <DATA_POINT name="val_ext_tmp_airDailyHigh.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30151</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Today's Low Air Temperature-->
+    <DATA_POINT name="val_ext_tmp_airDailyLow.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30153</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Today's High Humidity-->
+    <DATA_POINT name="val_ext_pct_hmdDailyHigh.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30155</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Today's Low Humidity-->
+    <DATA_POINT name="val_ext_pct_hmdDailyLow.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30157</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Server Class-->
+    <DATA_POINT name="st_sys_serverClass.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30257</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Today's High Air Temperature Time-->
+    <DATA_POINT name="val_ext_tm_tmpAirDailyHigh.0.0">
+        <ADDRESS>
+            <REGISTER numReg="2">
+                <INPUT>30258</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Today's Low Air Temperature Time-->
+    <DATA_POINT name="val_ext_tm_tmpAirDailyLow.0.0">
+        <ADDRESS>
+            <REGISTER numReg="2">
+                <INPUT>30260</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Supply Air Temperature Sensor Control-->
+    <DATA_POINT name="st_sys_tmpSnsrSupplyAirControl.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30262</INPUT>
+                <HOLDING>40262</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Temperature Set Point-->
+    <DATA_POINT name="val_sys_tmp_airRetSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30263</INPUT>
+                <HOLDING>40263</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Humidity Set Point-->
+    <DATA_POINT name="val_sys_rh_retSetPt.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30264</INPUT>
+                <HOLDING>40264</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Today's High Humidity Time-->
+    <DATA_POINT name="val_ext_tm_hmdDailyHigh.0.0">
+        <ADDRESS>
+            <REGISTER numReg="2">
+                <INPUT>30265</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Today's Low Humidity Time-->
+    <DATA_POINT name="val_ext_tm_hmdDailyLow.0.0">
+        <ADDRESS>
+            <REGISTER numReg="2">
+                <INPUT>30267</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor State-->
+    <DATA_POINT name="st_comp_op.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30269</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor State-->
+    <DATA_POINT name="st_comp_op.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30270</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Capacity Control State-->
+    <DATA_POINT name="st_comp_capacityCtrl.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30271</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Capacity Control State-->
+    <DATA_POINT name="st_comp_capacityCtrl.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30272</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Infrared Humidifier Flush Rate-->
+    <DATA_POINT name="val_hmd_pct_infraredFlush.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30273</INPUT>
+                <HOLDING>40273</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Control Mode-->
+    <DATA_POINT name="st_fan_controlModeExp.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30274</INPUT>
+                <HOLDING>40274</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Analog Input Reading-->
+    <DATA_POINT name="val_inp_na_analog.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30275</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Analog Input Reading-->
+    <DATA_POINT name="val_inp_na_analog.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30276</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Analog Input Reading-->
+    <DATA_POINT name="val_inp_na_analog.2.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30277</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Analog Input Reading-->
+    <DATA_POINT name="val_inp_na_analog.3.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30278</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Status-->
+    <DATA_POINT name="st_sys_status.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30279</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Control Mode-->
+    <DATA_POINT name="st_sys_controlMode.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30280</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Operating State Reason-->
+    <DATA_POINT name="st_sys_operatingReason.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30281</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Maintenance Ramp-->
+    <DATA_POINT name="val_sys_pct_maintenanceRamp.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30282</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Calculated Next Maintenance Month-->
+    <DATA_POINT name="val_sys_tm_nextMaintMonth.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30283</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Calculated Next Maintenance Year-->
+    <DATA_POINT name="val_sys_tm_nextMaintYear.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30284</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Hot Water / Hot Gas Valve Open Position-->
+    <DATA_POINT name="val_valv_pct_HWHG.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30285</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Maintenance Tracking State-->
+    <DATA_POINT name="st_sys_opStateMaintTrack.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30286</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 1 - Event Control-->
+    <DATA_POINT name="st_ext_inpContactEnable01.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30287</INPUT>
+                <HOLDING>40287</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 1 - Event Type-->
+    <DATA_POINT name="st_ext_inpContactType01.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30288</INPUT>
+                <HOLDING>40288</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 2 - Event Control-->
+    <DATA_POINT name="st_ext_inpContactEnable02.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30289</INPUT>
+                <HOLDING>40289</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 2 - Event Type-->
+    <DATA_POINT name="st_ext_inpContactType02.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30290</INPUT>
+                <HOLDING>40290</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 3 - Event Control-->
+    <DATA_POINT name="st_ext_inpContactEnable03.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30291</INPUT>
+                <HOLDING>40291</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 3 - Event Type-->
+    <DATA_POINT name="st_ext_inpContactType03.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30292</INPUT>
+                <HOLDING>40292</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 4 - Event Control-->
+    <DATA_POINT name="st_ext_inpContactEnable04.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30293</INPUT>
+                <HOLDING>40293</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Customer Input 4 - Event Type-->
+    <DATA_POINT name="st_ext_inpContactType04.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30294</INPUT>
+                <HOLDING>40294</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Free Cooling Lockout - Event Control-->
+    <DATA_POINT name="st_ext_FCLockoutEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30295</INPUT>
+                <HOLDING>40295</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Free Cooling Lockout - Event Type-->
+    <DATA_POINT name="st_ext_FCLockoutType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30296</INPUT>
+                <HOLDING>40296</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Condenser Pump High Water - Event Control-->
+    <DATA_POINT name="st_ext_cndsrPumpHighWaterEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30297</INPUT>
+                <HOLDING>40297</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Condenser Pump High Water - Event Type-->
+    <DATA_POINT name="st_ext_cndsrPumpHighWaterType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30298</INPUT>
+                <HOLDING>40298</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Standby Glycol Pump On - Event Control-->
+    <DATA_POINT name="st_ext_stdbyGlycolPumpOnEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30299</INPUT>
+                <HOLDING>40299</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Standby Glycol Pump On - Event Type-->
+    <DATA_POINT name="st_ext_stdbyGlycolPumpOnType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30300</INPUT>
+                <HOLDING>40300</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Standby Unit On - Event Control-->
+    <DATA_POINT name="st_ext_stdbyUnitOnEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30301</INPUT>
+                <HOLDING>40301</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Standby Unit On - Event Type-->
+    <DATA_POINT name="st_ext_stdbyUnitOnType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30302</INPUT>
+                <HOLDING>40302</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Humidifier Lockout - Event Control-->
+    <DATA_POINT name="st_ext_hmdLockoutEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30303</INPUT>
+                <HOLDING>40303</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Humidifier Lockout - Event Type-->
+    <DATA_POINT name="st_ext_hmdLockoutType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30304</INPUT>
+                <HOLDING>40304</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Loss of Flow - Event Control-->
+    <DATA_POINT name="st_ext_flowLossEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30305</INPUT>
+                <HOLDING>40305</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Loss of Flow - Event Type-->
+    <DATA_POINT name="st_ext_flowLossType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30306</INPUT>
+                <HOLDING>40306</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Over Temperature - Event Control-->
+    <DATA_POINT name="st_ext_overTempEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30307</INPUT>
+                <HOLDING>40307</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Over Temperature - Event Type-->
+    <DATA_POINT name="st_ext_overTempType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30308</INPUT>
+                <HOLDING>40308</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Reheat Lockout - Event Control-->
+    <DATA_POINT name="st_ext_reheatLockoutEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30309</INPUT>
+                <HOLDING>40309</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Reheat Lockout - Event Type-->
+    <DATA_POINT name="st_ext_reheatLockoutType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30310</INPUT>
+                <HOLDING>40310</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--High Power Shutdown - Event Control-->
+    <DATA_POINT name="st_sys_highPwrShutdownEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30311</INPUT>
+                <HOLDING>40311</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--High Power Shutdown - Event Type-->
+    <DATA_POINT name="st_sys_highPwrShutdownType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30312</INPUT>
+                <HOLDING>40312</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Issue - Event Control-->
+    <DATA_POINT name="st_hmd_issueEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30313</INPUT>
+                <HOLDING>40313</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Humidifier Issue - Event Type-->
+    <DATA_POINT name="st_hmd_issueType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30314</INPUT>
+                <HOLDING>40314</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Master Unit Communication Lost - Event Control-->
+    <DATA_POINT name="st_sys_masterCommLostEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30315</INPUT>
+                <HOLDING>40315</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Master Unit Communication Lost - Event Type-->
+    <DATA_POINT name="st_sys_masterCommLostType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30316</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Service Required - Event Control-->
+    <DATA_POINT name="st_sys_serviceReqEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30317</INPUT>
+                <HOLDING>40317</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Service Required - Event Type-->
+    <DATA_POINT name="st_sys_serviceReqType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30318</INPUT>
+                <HOLDING>40318</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Shutdown - Loss Of Power - Event Control-->
+    <DATA_POINT name="st_sys_shutdownPwrLossEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30319</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Shutdown - Loss Of Power - Event Type-->
+    <DATA_POINT name="st_sys_shutdownPwrLossType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30320</INPUT>
+                <HOLDING>40320</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Smoke Detected - Event Control-->
+    <DATA_POINT name="st_sys_smokeDetectedEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30321</INPUT>
+                <HOLDING>40321</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Smoke Detected - Event Type-->
+    <DATA_POINT name="st_sys_smokeDetectedType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30322</INPUT>
+                <HOLDING>40322</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Water Under Floor - Event Control-->
+    <DATA_POINT name="st_sys_waterUnderFloorEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30323</INPUT>
+                <HOLDING>40323</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Water Under Floor - Event Type-->
+    <DATA_POINT name="st_sys_waterUnderFloorType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30324</INPUT>
+                <HOLDING>40324</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Compressor Lockout - Event Control-->
+    <DATA_POINT name="st_ext_compLockoutEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30325</INPUT>
+                <HOLDING>40325</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Compressor Lockout - Event Type-->
+    <DATA_POINT name="st_ext_compLockoutType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30326</INPUT>
+                <HOLDING>40326</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Clogged Air Filter - Event Control-->
+    <DATA_POINT name="st_sys_cloggedAirFilterEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30327</INPUT>
+                <HOLDING>40327</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Clogged Air Filter - Event Type-->
+    <DATA_POINT name="st_sys_cloggedAirFilterType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30328</INPUT>
+                <HOLDING>40328</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Loss of Air Blower - Event Control-->
+    <DATA_POINT name="st_ext_airBlowerLossEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30329</INPUT>
+                <HOLDING>40329</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Loss of Air Blower - Event Type-->
+    <DATA_POINT name="st_ext_airBlowerLossType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30330</INPUT>
+                <HOLDING>40330</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor High Head Pressure - Event Control-->
+    <DATA_POINT name="st_comp_prsHighEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30331</INPUT>
+                <HOLDING>40331</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor High Head Pressure - Event Control-->
+    <DATA_POINT name="st_comp_prsHighEnable.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30332</INPUT>
+                <HOLDING>40332</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor High Head Pressure - Event Type-->
+    <DATA_POINT name="st_comp_prsHighType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30333</INPUT>
+                <HOLDING>40333</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor High Head Pressure - Event Type-->
+    <DATA_POINT name="st_comp_prsHighType.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30334</INPUT>
+                <HOLDING>40334</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Low Suction Pressure - Event Control-->
+    <DATA_POINT name="st_comp_prsLowEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30335</INPUT>
+                <HOLDING>40335</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Low Suction Pressure - Event Control-->
+    <DATA_POINT name="st_comp_prsLowEnable.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30336</INPUT>
+                <HOLDING>40336</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Low Suction Pressure - Event Type-->
+    <DATA_POINT name="st_comp_prsLowType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30337</INPUT>
+                <HOLDING>40337</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Low Suction Pressure - Event Type-->
+    <DATA_POINT name="st_comp_prsLowType.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30338</INPUT>
+                <HOLDING>40338</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Pump Down Issue - Event Control-->
+    <DATA_POINT name="st_comp_pumpDownIssueEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30339</INPUT>
+                <HOLDING>40339</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Pump Down Issue - Event Control-->
+    <DATA_POINT name="st_comp_pumpDownIssueEnable.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30340</INPUT>
+                <HOLDING>40340</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Pump Down Issue - Event Type-->
+    <DATA_POINT name="st_comp_pumpDownIssueType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30341</INPUT>
+                <HOLDING>40341</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Pump Down Issue - Event Type-->
+    <DATA_POINT name="st_comp_pumpDownIssueType.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30342</INPUT>
+                <HOLDING>40342</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Short Cycle - Event Control-->
+    <DATA_POINT name="st_comp_shortCycleEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30343</INPUT>
+                <HOLDING>40343</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Short Cycle - Event Control-->
+    <DATA_POINT name="st_comp_shortCycleEnable.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30344</INPUT>
+                <HOLDING>40344</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Short Cycle - Event Type-->
+    <DATA_POINT name="st_comp_shortCycleType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30345</INPUT>
+                <HOLDING>40345</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Short Cycle - Event Type-->
+    <DATA_POINT name="st_comp_shortCycleType.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30346</INPUT>
+                <HOLDING>40346</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Thermal Overload - Event Control-->
+    <DATA_POINT name="st_comp_thermOverloadEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30347</INPUT>
+                <HOLDING>40347</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Thermal Overload - Event Control-->
+    <DATA_POINT name="st_comp_thermOverloadEnable.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30348</INPUT>
+                <HOLDING>40348</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Thermal Overload - Event Type-->
+    <DATA_POINT name="st_comp_thermOverloadType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30349</INPUT>
+                <HOLDING>40349</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Compressor Thermal Overload - Event Type-->
+    <DATA_POINT name="st_comp_thermOverloadType.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30350</INPUT>
+                <HOLDING>40350</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Discharge Over Temp - Event Ctrl-->
+    <DATA_POINT name="st_comp_tmpDschgDigScrOverEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30351</INPUT>
+                <HOLDING>40351</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Discharge Over Temp - Event Ctrl-->
+    <DATA_POINT name="st_comp_tmpDschgDigScrOverEnable.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30352</INPUT>
+                <HOLDING>40352</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Discharge Over Temp - Event Type-->
+    <DATA_POINT name="st_comp_tmpDschgDigScrOverType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30353</INPUT>
+                <HOLDING>40353</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Dig Scroll Comp Discharge Over Temp - Event Type-->
+    <DATA_POINT name="st_comp_tmpDschgDigScrOverType.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30354</INPUT>
+                <HOLDING>40354</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A High Humidity - Event Control-->
+    <DATA_POINT name="st_ext_rhAirOverEnableA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30355</INPUT>
+                <HOLDING>40355</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A High Humidity - Event Type-->
+    <DATA_POINT name="st_ext_rhAirOverTypeA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30356</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Low Humidity - Event Control-->
+    <DATA_POINT name="st_ext_rhAirUnderEnableA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30357</INPUT>
+                <HOLDING>40357</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Low Humidity - Event Type-->
+    <DATA_POINT name="st_ext_rhAirUnderTypeA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30358</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Over Temp - Event Control-->
+    <DATA_POINT name="st_ext_tmpAirOverEnableA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30359</INPUT>
+                <HOLDING>40359</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Over Temp - Event Type-->
+    <DATA_POINT name="st_ext_tmpAirOverTypeA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30360</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Under Temp - Event Control-->
+    <DATA_POINT name="st_ext_tmpAirUnderEnableA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30361</INPUT>
+                <HOLDING>40361</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Ext Air Sensor A Under Temp - Event Type-->
+    <DATA_POINT name="st_ext_tmpAirUnderTypeA.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30362</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--High Return Humidity - Event Control-->
+    <DATA_POINT name="st_sys_rhAirRetOverEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30363</INPUT>
+                <HOLDING>40363</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--High Return Humidity - Event Type-->
+    <DATA_POINT name="st_sys_rhAirRetOverType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30364</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Low Return Humidity - Event Control-->
+    <DATA_POINT name="st_sys_rhAirRetUnderEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30365</INPUT>
+                <HOLDING>40365</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Low Return Humidity - Event Type-->
+    <DATA_POINT name="st_sys_rhAirRetUnderType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30366</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Over Temp - Event Control-->
+    <DATA_POINT name="st_sys_tmpAirRetOverEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30367</INPUT>
+                <HOLDING>40367</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Over Temp - Event Type-->
+    <DATA_POINT name="st_sys_tmpAirRetOverType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30368</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Under Temp - Event Control-->
+    <DATA_POINT name="st_sys_tmpAirRetUnderEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30369</INPUT>
+                <HOLDING>40369</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Return Air Under Temp - Event Type-->
+    <DATA_POINT name="st_sys_tmpAirRetUnderType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30370</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Hours Exceeded - Event Control-->
+    <DATA_POINT name="st_fan_hrsExceededEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30371</INPUT>
+                <HOLDING>40371</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Hours Exceeded - Event Type-->
+    <DATA_POINT name="st_fan_hrsExceededType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30372</INPUT>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Issue - Event Control-->
+    <DATA_POINT name="st_fan_issueEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30373</INPUT>
+                <HOLDING>40373</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Fan Issue - Event Type-->
+    <DATA_POINT name="st_fan_issueType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30374</INPUT>
+                <HOLDING>40374</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Main Fan Overload - Event Control-->
+    <DATA_POINT name="st_fan_mainOverloadEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30375</INPUT>
+                <HOLDING>40375</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Main Fan Overload - Event Type-->
+    <DATA_POINT name="st_fan_mainOverloadType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30376</INPUT>
+                <HOLDING>40376</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Issue - Event Control-->
+    <DATA_POINT name="st_cndsr_issueEnable.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30377</INPUT>
+                <HOLDING>40377</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Issue - Event Control-->
+    <DATA_POINT name="st_cndsr_issueEnable.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30378</INPUT>
+                <HOLDING>40378</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Issue - Event Type-->
+    <DATA_POINT name="st_cndsr_issueType.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30379</INPUT>
+                <HOLDING>40379</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--Condenser Issue - Event Type-->
+    <DATA_POINT name="st_cndsr_issueType.1.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <INPUT>30380</INPUT>
+                <HOLDING>40380</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Event Acknowledge/Reset-->
+    <DATA_POINT name="st_sys_eventAckReset.0.0">
+        <ADDRESS>
+            <REGISTER numReg="1">
+                <HOLDING>40381</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+    <!--System Date and Time-->
+    <DATA_POINT name="val_sys_tm_dateTime.0.0">
+        <ADDRESS>
+            <REGISTER numReg="2">
+                <INPUT>39998</INPUT>
+                <HOLDING>49998</HOLDING>
+            </REGISTER>
+        </ADDRESS>
+    </DATA_POINT>
+</MODBUS>

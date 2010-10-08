@@ -1,0 +1,2143 @@
+<MODBUS deviceFamily="iCOM_CR" deviceModel="CRV">
+<!-- This area is reserved for SiteScan Modbus Mapping Event data points -->
+
+	<!-- Supply Air Over Temperature -->
+	<DATA_POINT name="evt_sys_tmpAirSupplyOver">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>0</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Air Under Temperature -->
+	<DATA_POINT name="evt_sys_tmpAirSupplyUnder">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>1</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Air Over Temperature -->
+	<DATA_POINT name="evt_sys_tmpAirRetOver">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>2</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Air Sensor Issue -->
+	<DATA_POINT name="evt_sys_snsrSupplyAirIssue">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>3</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- High Return Humidity -->
+	<DATA_POINT name="evt_sys_rhAirRetOver">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>4</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Low Return Humidity -->
+	<DATA_POINT name="evt_sys_rhAirRetUnder">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>5</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Hours Exceeded -->
+	<DATA_POINT name="evt_hmd_hrsExceeded">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>6</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Dehumidifier Hours Exceeded -->
+	<DATA_POINT name="evt_dhmd_hrsExceeded">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>7</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Under Current -->
+	<DATA_POINT name="evt_hmd_ecUnder">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>8</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Over Current -->
+	<DATA_POINT name="evt_hmd_ecOver">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>9</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Low Water -->
+	<DATA_POINT name="evt_hmd_waterLevelLow">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>10</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Cylinder Worn -->
+	<DATA_POINT name="evt_hmd_cylinderWorn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>11</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Issue -->
+	<DATA_POINT name="evt_hmd_issue">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>12</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Humidifier Lockout -->
+	<DATA_POINT name="evt_ext_hmdLockout">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>13</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Control Board Not Detected -->
+	<DATA_POINT name="evt_sys_hmdCtrlBdNotDetected">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>14</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Humidity Out Of Proportional Band -->
+	<DATA_POINT name="evt_sys_rh_outOfPropBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40289</HOLDING>
+				<BITMASK>15</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Loss of Air Flow -->
+	<DATA_POINT name="evt_sys_flowLossAir">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40290</HOLDING>
+				<BITMASK>0</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Fan Hours Exceeded -->
+	<DATA_POINT name="evt_fan_hrsExceeded">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40290</HOLDING>
+				<BITMASK>1</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Top Fan Issue -->
+	<DATA_POINT name="evt_fan_issueTop">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40290</HOLDING>
+				<BITMASK>2</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Bottom Fan Issue -->
+	<DATA_POINT name="evt_fan_issueBottom">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40290</HOLDING>
+				<BITMASK>3</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="evt_ext_remSnsrIssue" mmIdx="10">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40290</HOLDING>
+				<BITMASK>4</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 High Head Pressure -->
+	<DATA_POINT name="evt_comp_prsHigh1A">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40290</HOLDING>
+				<BITMASK>14</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Low Suction Pressure -->
+	<DATA_POINT name="evt_comp_prsLow1">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40290</HOLDING>
+				<BITMASK>15</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Hours Exceeded -->
+	<DATA_POINT name="evt_comp_hrsExceeded1">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>0</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Dig Scroll Comp 1 Temp Sensor Issue -->
+	<DATA_POINT name="evt_comp_tmpSnsrDigScroll_1">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>1</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Dig Scroll Comp 1 Over Temp -->
+	<DATA_POINT name="evt_comp_tmpDigScrollOver1">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>2</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Low Pressure Transducer Issue -->
+	<DATA_POINT name="evt_comp_lowPrsXdcrIssue1">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>3</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Compressor Lockout -->
+	<DATA_POINT name="evt_ext_compLockout">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>4</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Short Cycle -->
+	<DATA_POINT name="evt_comp_shortCycle1A">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>5</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Reheater Over Temperature -->
+	<DATA_POINT name="evt_heat_tmpOver">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>6</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Electric Reheater 1 Hours Exceeded -->
+	<DATA_POINT name="evt_heat_hrsExceeded1">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>7</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Reheat Lockout -->
+	<DATA_POINT name="evt_ext_reheatLockout">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>8</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Condenser 1 Issue -->
+	<DATA_POINT name="evt_cndsr_issue1">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>9</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Condenser VFD Issue -->
+	<DATA_POINT name="evt_cndsr_vfdIssue">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>10</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Condenser TVSS Issue -->
+	<DATA_POINT name="evt_cndsr_tvssIssue">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>11</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Over Temp -->
+	<DATA_POINT name="evt_clng_tmpSupCWOver">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>12</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Chilled Water Control Valve Position -->
+	<DATA_POINT name="evt_valv_CWPosition">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>13</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Loss of Flow -->
+	<DATA_POINT name="evt_clng_flowLossSupplyCW">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>14</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Customer Input 1 -->
+	<DATA_POINT name="evt_ext_inpContact01">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40291</HOLDING>
+				<BITMASK>15</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Customer Input 2 -->
+	<DATA_POINT name="evt_ext_inpContact02">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>0</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Customer Input 3 -->
+	<DATA_POINT name="evt_ext_inpContact03">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>1</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Customer Input 4 -->
+	<DATA_POINT name="evt_ext_inpContact04">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>2</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Smoke Detected -->
+	<DATA_POINT name="evt_sys_smokeDetected">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>3</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Water Under Floor -->
+	<DATA_POINT name="evt_sys_waterUnderFloor">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>4</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Service Required -->
+	<DATA_POINT name="evt_sys_serviceReq">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>5</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Shutdown - Loss Of Power -->
+	<DATA_POINT name="evt_sys_shutdownPwrLoss">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>6</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Over Temperature -->
+	<DATA_POINT name="evt_ext_overTemp">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>7</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Loss of Flow -->
+	<DATA_POINT name="evt_ext_flowLoss">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>8</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Condenser Pump High Water -->
+	<DATA_POINT name="evt_ext_cndsrPumpHighWater">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>9</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Standby Glycol Pump On -->
+	<DATA_POINT name="evt_ext_stdbyGlycolPumpOn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>10</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- External Fire Detected -->
+	<DATA_POINT name="evt_ext_fireDetect">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>11</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit On -->
+	<DATA_POINT name="evt_sys_unitOn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>12</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit Off -->
+	<DATA_POINT name="evt_sys_unitOff">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>13</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit Standby -->
+	<DATA_POINT name="evt_sys_unitStandby">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>14</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit Partial Shutdown -->
+	<DATA_POINT name="evt_sys_partialShutdown">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40292</HOLDING>
+				<BITMASK>15</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit Shutdown -->
+	<DATA_POINT name="evt_sys_shutdown">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>0</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Water Leakage Detector Sensor Issue -->
+	<DATA_POINT name="evt_sys_snsrWaterLeakDetectIssue">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>1</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- BMS Communications Timeout -->
+	<DATA_POINT name="evt_ext_bmsCommTimeout">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>2</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Maintenance Due -->
+	<DATA_POINT name="evt_sys_maintDue">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>3</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Maintenance Completed -->
+	<DATA_POINT name="evt_sys_maintCompleted">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>4</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Clogged Air Filter -->
+	<DATA_POINT name="evt_sys_cloggedAirFilter">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>5</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- RAM Battery Issue -->
+	<DATA_POINT name="evt_sys_ramBatteryIssue">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>6</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Master Unit Communication Lost -->
+	<DATA_POINT name="evt_sys_masterCommLost">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>7</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- High Power Shutdown -->
+	<DATA_POINT name="evt_sys_highPwrShutdown">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40293</HOLDING>
+				<BITMASK>8</BITMASK>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+<!-- END OF This area is reserved for SiteScan Modbus Mapping Event data points -->
+
+<!-- This area is reserved for SiteScan Modbus Mapping Status data points -->
+
+	<!-- Supply Air Temperature -->
+	<DATA_POINT name="val_sys_tmp_airSupply">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40001</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Humidity -->
+	<DATA_POINT name="val_sys_rh_airSupply">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40002</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Air Temperature -->
+	<DATA_POINT name="val_sys_temp_inletAir">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40003</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Humidity -->
+	<DATA_POINT name="val_sys_rh_airRet">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40004</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Dew Point -->
+	<DATA_POINT name="val_sys_tmp_dewPntRet">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40005</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Temperature -->
+	<DATA_POINT name="val_clng_tmp_supCW">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40006</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor Utilization -->
+	<DATA_POINT name="val_comp_pct_utlztn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40007</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Dehumidifier Utilization -->
+	<DATA_POINT name="val_dhmd_pct_utlztn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40008</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Reheat Utilization -->
+	<DATA_POINT name="val_heat_pct_utlztn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40009</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Utilization -->
+	<DATA_POINT name="val_hmd_pct_utlztn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40010</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Operating Efficiency -->
+	<DATA_POINT name="val_sys_pct_opEff">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40013</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Fan Speed -->
+	<DATA_POINT name="val_fan_pct_speed">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40014</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Maintenance Ramp -->
+	<DATA_POINT name="val_sys_pct_maintenanceRamp">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40016</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System Status -->
+	<DATA_POINT name="st_sys_status">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40011</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System Operating State -->
+	<DATA_POINT name="st_sys_operating">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40012</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System Control Mode -->
+	<DATA_POINT name="st_sys_controlMode">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40015</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Air Temperature Set Point -->
+	<DATA_POINT name="val_sys_tmp_airSetPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40017</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Air Temperature Dead Band -->
+	<DATA_POINT name="val_sys_tmp_airDeadBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40018</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Air Over Temp Threshold -->
+	<DATA_POINT name="val_sys_tmp_airSupplyOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40019</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Air Under Temp Threshold -->
+	<DATA_POINT name="val_sys_tmp_airSupplyUnderThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40020</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Air Over Temp Threshold -->
+	<DATA_POINT name="val_sys_tmp_airRetOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40021</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- High Return Humidity Threshold -->
+	<DATA_POINT name="val_sys_rh_airRetOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40022</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Low Return Humidity Threshold -->
+	<DATA_POINT name="val_sys_rh_airRetUnderThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40023</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Over Temp Threshold -->
+	<DATA_POINT name="val_clng_tmp_supCWOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="RD">40024</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+<!-- END OF This area is reserved for SiteScan Modbus Mapping Status data points -->
+
+<!-- This area is reserved for SiteScan Modbus Mapping Control data points -->
+
+	<!-- System On/Off Control -->
+	<DATA_POINT name="st_sys_onOffCtrl">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="WO">40349</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Air Temperature Set Point -->
+	<DATA_POINT name="val_sys_tmp_airSetPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="WO">40350</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidity Set Point -->
+	<DATA_POINT name="val_sys_rh_setPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING access="WO">40351</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+<!-- END OF This area is reserved for SiteScan Modbus Mapping Control data points -->
+
+<!-- This area is reserved for IntelliSlot Modbus Mapping Event data points -->
+
+	<!-- Supply Air Over Temperature -->
+	<DATA_POINT name="evt_sys_tmpAirSupplyOver">
+		<ADDRESS>
+			<STATUS>10001</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Air Under Temperature -->
+	<DATA_POINT name="evt_sys_tmpAirSupplyUnder">
+		<ADDRESS>
+			<STATUS>10002</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Air Over Temperature -->
+	<DATA_POINT name="evt_sys_tmpAirRetOver">
+		<ADDRESS>
+			<STATUS>10003</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Air Sensor Issue -->
+	<DATA_POINT name="evt_sys_snsrSupplyAirIssue">
+		<ADDRESS>
+			<STATUS>10004</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- High Return Humidity -->
+	<DATA_POINT name="evt_sys_rhAirRetOver">
+		<ADDRESS>
+			<STATUS>10005</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Low Return Humidity -->
+	<DATA_POINT name="evt_sys_rhAirRetUnder">
+		<ADDRESS>
+			<STATUS>10006</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Hours Exceeded -->
+	<DATA_POINT name="evt_hmd_hrsExceeded">
+		<ADDRESS>
+			<STATUS>10007</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Dehumidifier Hours Exceeded -->
+	<DATA_POINT name="evt_dhmd_hrsExceeded">
+		<ADDRESS>
+			<STATUS>10008</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Under Current -->
+	<DATA_POINT name="evt_hmd_ecUnder">
+		<ADDRESS>
+			<STATUS>10009</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Over Current -->
+	<DATA_POINT name="evt_hmd_ecOver">
+		<ADDRESS>
+			<STATUS>10010</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Low Water -->
+	<DATA_POINT name="evt_hmd_waterLevelLow">
+		<ADDRESS>
+			<STATUS>10011</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Cylinder Worn -->
+	<DATA_POINT name="evt_hmd_cylinderWorn">
+		<ADDRESS>
+			<STATUS>10012</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Issue -->
+	<DATA_POINT name="evt_hmd_issue">
+		<ADDRESS>
+			<STATUS>10013</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Humidifier Lockout -->
+	<DATA_POINT name="evt_ext_hmdLockout">
+		<ADDRESS>
+			<STATUS>10014</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Humidifier Control Board Not Detected -->
+	<DATA_POINT name="evt_sys_hmdCtrlBdNotDetected">
+		<ADDRESS>
+			<STATUS>10015</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Humidity Out Of Proportional Band -->
+	<DATA_POINT name="evt_sys_rh_outOfPropBand">
+		<ADDRESS>
+			<STATUS>10016</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Loss of Air Flow -->
+	<DATA_POINT name="evt_sys_flowLossAir">
+		<ADDRESS>
+			<STATUS>10017</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Fan Hours Exceeded -->
+	<DATA_POINT name="evt_fan_hrsExceeded">
+		<ADDRESS>
+			<STATUS>10018</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Top Fan Issue -->
+	<DATA_POINT name="evt_fan_issueTop">
+		<ADDRESS>
+			<STATUS>10019</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Bottom Fan Issue -->
+	<DATA_POINT name="evt_fan_issueBottom">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="0">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="1">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="2">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="3">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="4">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="5">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="6">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="7">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="8">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Issue -->
+	<DATA_POINT name="1" MMIdx="9">
+		<ADDRESS>
+			<STATUS>10020</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 High Head Pressure -->
+	<DATA_POINT name="evt_comp_prsHigh1A">
+		<ADDRESS>
+			<STATUS>10031</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Low Suction Pressure -->
+	<DATA_POINT name="evt_comp_prsLow1">
+		<ADDRESS>
+			<STATUS>10032</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Hours Exceeded -->
+	<DATA_POINT name="evt_comp_hrsExceeded1">
+		<ADDRESS>
+			<STATUS>10033</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Dig Scroll Comp 1 Temp Sensor Issue -->
+	<DATA_POINT name="evt_comp_tmpSnsrDigScroll_1">
+		<ADDRESS>
+			<STATUS>10034</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Dig Scroll Comp 1 Over Temp -->
+	<DATA_POINT name="evt_comp_tmpDigScrollOver1">
+		<ADDRESS>
+			<STATUS>10035</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Low Pressure Transducer Issue -->
+	<DATA_POINT name="evt_comp_lowPrsXdcrIssue1">
+		<ADDRESS>
+			<STATUS>10036</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Compressor Lockout -->
+	<DATA_POINT name="evt_ext_compLockout">
+		<ADDRESS>
+			<STATUS>10037</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Short Cycle -->
+	<DATA_POINT name="evt_comp_shortCycle1A">
+		<ADDRESS>
+			<STATUS>10038</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor  1 High Pressure Transducer Issue -->
+	<DATA_POINT name="evt_comp_highPrsXdcrIssue">
+		<ADDRESS>
+			<STATUS>10039</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Compressor 1 Pump Down Issue -->
+	<DATA_POINT name="evt_comp_pumpDownIssue">
+		<ADDRESS>
+			<STATUS>10040</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Reheater Over Temperature -->
+	<DATA_POINT name="evt_heat_tmpOver">
+		<ADDRESS>
+			<STATUS>10041</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Electric Reheater 1 Hours Exceeded -->
+	<DATA_POINT name="evt_heat_hrsExceeded1">
+		<ADDRESS>
+			<STATUS>10042</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Reheat Lockout -->
+	<DATA_POINT name="evt_ext_reheatLockout">
+		<ADDRESS>
+			<STATUS>10043</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Condenser 1 Issue -->
+	<DATA_POINT name="evt_cndsr_issue1">
+		<ADDRESS>
+			<STATUS>10044</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Condenser VFD Issue -->
+	<DATA_POINT name="evt_cndsr_vfdIssue">
+		<ADDRESS>
+			<STATUS>10045</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Condenser TVSS Issue -->
+	<DATA_POINT name="evt_cndsr_tvssIssue">
+		<ADDRESS>
+			<STATUS>10046</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Over Temp -->
+	<DATA_POINT name="evt_clng_tmpSupCWOver">
+		<ADDRESS>
+			<STATUS>10047</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Chilled Water Control Valve Position -->
+	<DATA_POINT name="evt_valv_CWPosition">
+		<ADDRESS>
+			<STATUS>10048</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Loss of Flow -->
+	<DATA_POINT name="evt_clng_flowLossSupplyCW">
+		<ADDRESS>
+			<STATUS>10049</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Supply Fluid Temp Sensor Issue -->
+	<DATA_POINT name="evt_clng_snsrSupFluIssue">
+		<ADDRESS>
+			<STATUS>10050</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Customer Input 1 -->
+	<DATA_POINT name="evt_ext_inpContact01">
+		<ADDRESS>
+			<STATUS>10051</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Customer Input 2 -->
+	<DATA_POINT name="evt_ext_inpContact02">
+		<ADDRESS>
+			<STATUS>10052</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Customer Input 3 -->
+	<DATA_POINT name="evt_ext_inpContact03">
+		<ADDRESS>
+			<STATUS>10053</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Customer Input 4 -->
+	<DATA_POINT name="evt_ext_inpContact04">
+		<ADDRESS>
+			<STATUS>10054</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Smoke Detected -->
+	<DATA_POINT name="evt_sys_smokeDetected">
+		<ADDRESS>
+			<STATUS>10055</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Water Under Floor -->
+	<DATA_POINT name="evt_sys_waterUnderFloor">
+		<ADDRESS>
+			<STATUS>10056</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Service Required -->
+	<DATA_POINT name="evt_sys_serviceReq">
+		<ADDRESS>
+			<STATUS>10057</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Shutdown - Loss Of Power -->
+	<DATA_POINT name="evt_sys_shutdownPwrLoss">
+		<ADDRESS>
+			<STATUS>10058</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Over Temperature -->
+	<DATA_POINT name="evt_ext_overTemp">
+		<ADDRESS>
+			<STATUS>10059</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Loss of Flow -->
+	<DATA_POINT name="evt_ext_flowLoss">
+		<ADDRESS>
+			<STATUS>10060</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Condenser Pump High Water -->
+	<DATA_POINT name="evt_ext_cndsrPumpHighWater">
+		<ADDRESS>
+			<STATUS>10061</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Ext Standby Glycol Pump On -->
+	<DATA_POINT name="evt_ext_stdbyGlycolPumpOn">
+		<ADDRESS>
+			<STATUS>10062</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- External Fire Detected -->
+	<DATA_POINT name="evt_ext_fireDetect">
+		<ADDRESS>
+			<STATUS>10063</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit On -->
+	<DATA_POINT name="evt_sys_unitOn">
+		<ADDRESS>
+			<STATUS>10064</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit Off -->
+	<DATA_POINT name="evt_sys_unitOff">
+		<ADDRESS>
+			<STATUS>10065</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit Standby -->
+	<DATA_POINT name="evt_sys_unitStandby">
+		<ADDRESS>
+			<STATUS>10066</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit Partial Shutdown -->
+	<DATA_POINT name="evt_sys_partialShutdown">
+		<ADDRESS>
+			<STATUS>10067</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Unit Shutdown -->
+	<DATA_POINT name="evt_sys_shutdown">
+		<ADDRESS>
+			<STATUS>10068</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Water Leakage Detector Sensor Issue -->
+	<DATA_POINT name="evt_sys_snsrWaterLeakDetectIssue">
+		<ADDRESS>
+			<STATUS>10069</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- BMS Communications Timeout -->
+	<DATA_POINT name="evt_ext_bmsCommTimeout">
+		<ADDRESS>
+			<STATUS>10070</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Maintenance Due -->
+	<DATA_POINT name="evt_sys_maintDue">
+		<ADDRESS>
+			<STATUS>10071</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Maintenance Completed -->
+	<DATA_POINT name="evt_sys_maintCompleted">
+		<ADDRESS>
+			<STATUS>10072</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Clogged Air Filter -->
+	<DATA_POINT name="evt_sys_cloggedAirFilter">
+		<ADDRESS>
+			<STATUS>10073</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- RAM Battery Issue -->
+	<DATA_POINT name="evt_sys_ramBatteryIssue">
+		<ADDRESS>
+			<STATUS>10074</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Master Unit Communication Lost -->
+	<DATA_POINT name="evt_sys_masterCommLost">
+		<ADDRESS>
+			<STATUS>10075</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- High Power Shutdown -->
+	<DATA_POINT name="evt_sys_highPwrShutdown">
+		<ADDRESS>
+			<STATUS>10076</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Return Air Sensor Issue -->
+	<DATA_POINT name="evt_sys_snsrRetAirIssue">
+		<ADDRESS>
+			<STATUS>10077</STATUS>
+		</ADDRESS>
+	</DATA_POINT>
+
+<!-- END OF This area is reserved for IntelliSlot Modbus Mapping Event data points -->
+
+<!-- This area is reserved for IntelliSlot Modbus Mapping Value data points -->
+
+	<!-- Supply Air Temperature -->
+	<DATA_POINT name="val_sys_tmp_airSupply">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30385</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Air Temperature in Deg F -->
+	<DATA_POINT name="val_sys_tmp_airSupply">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30386</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Return Air Temperature -->
+	<DATA_POINT name="val_sys_temp_inletAir">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30387</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Return Air Temperature in Deg F -->
+	<DATA_POINT name="val_sys_temp_inletAir">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30388</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Return Dew Point -->
+	<DATA_POINT name="val_sys_tmp_dewPntRet">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30389</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Return Dew Point in Deg F -->
+	<DATA_POINT name="val_sys_tmp_dewPntRet">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30390</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Minimum Temperature -->
+	<DATA_POINT name="val_ext_tmp_remSnsrMin">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30391</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Minimum Temperature in Deg F -->
+	<DATA_POINT name="val_ext_tmp_remSnsrMin">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30392</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Maximum Temperature -->
+	<DATA_POINT name="val_ext_tmp_remSnsrMax">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30393</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Maximum Temperature in Deg F -->
+	<DATA_POINT name="val_ext_tmp_remSnsrMax">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30394</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Average Temperature -->
+	<DATA_POINT name="val_ext_tmp_remSnsrAvg">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30395</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Average Temperature in Deg F -->
+	<DATA_POINT name="val_ext_tmp_remSnsrAvg">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30396</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Air Temperature Set Point -->
+	<DATA_POINT name="val_sys_tmp_airSetPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30397</INPUT>
+				<HOLDING>40397</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Air Temperature Set Point in Deg F -->
+	<DATA_POINT name="val_sys_tmp_airSetPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30398</INPUT>
+				<HOLDING>40398</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Cooling Proportional Band -->
+	<DATA_POINT name="val_sys_tmp_airCoolingPropBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30399</INPUT>
+				<HOLDING>40399</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Cooling Proportional Band in Deg F -->
+	<DATA_POINT name="val_sys_tmp_airCoolingPropBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30400</INPUT>
+				<HOLDING>40400</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DELTA_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Heating Proportional Band -->
+	<DATA_POINT name="val_sys_tmp_airHeatingPropBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30401</INPUT>
+				<HOLDING>40401</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Heating Proportional Band in Deg F -->
+	<DATA_POINT name="val_sys_tmp_airHeatingPropBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30402</INPUT>
+				<HOLDING>40402</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DELTA_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Air Temperature Dead Band -->
+	<DATA_POINT name="val_sys_tmp_airDeadBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30403</INPUT>
+				<HOLDING>40403</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Air Temperature Dead Band in Deg F -->
+	<DATA_POINT name="val_sys_tmp_airDeadBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30404</INPUT>
+				<HOLDING>40404</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DELTA_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Air Over Temp Threshold -->
+	<DATA_POINT name="val_sys_tmp_airSupplyOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30405</INPUT>
+				<HOLDING>40405</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Air Over Temp Threshold in Deg F -->
+	<DATA_POINT name="val_sys_tmp_airSupplyOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30406</INPUT>
+				<HOLDING>40406</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Air Under Temp Threshold -->
+	<DATA_POINT name="val_sys_tmp_airSupplyUnderThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30407</INPUT>
+				<HOLDING>40407</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Air Under Temp Threshold in Deg F -->
+	<DATA_POINT name="val_sys_tmp_airSupplyUnderThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30408</INPUT>
+				<HOLDING>40408</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Return Air Over Temp Threshold -->
+	<DATA_POINT name="val_sys_tmp_airRetOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30409</INPUT>
+				<HOLDING>40409</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Return Air Over Temp Threshold in Deg F -->
+	<DATA_POINT name="val_sys_tmp_airRetOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30410</INPUT>
+				<HOLDING>40410</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Humidity -->
+	<DATA_POINT name="val_sys_rh_airSupply">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30411</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%_RH" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Return Humidity -->
+	<DATA_POINT name="val_sys_rh_airRet">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30412</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%_RH" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Humidity Set Point -->
+	<DATA_POINT name="val_sys_rh_setPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30413</INPUT>
+				<HOLDING>40413</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%_RH" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Humidification  Proportional Band -->
+	<DATA_POINT name="val_sys_rh_hmdPropBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30414</INPUT>
+				<HOLDING>40414</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%_RH" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Dehumidification  Proportional Band -->
+	<DATA_POINT name="val_sys_rh_dhmdPropBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30415</INPUT>
+				<HOLDING>40415</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%_RH" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Humidity Dead Band -->
+	<DATA_POINT name="val_sys_rh_deadBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30416</INPUT>
+				<HOLDING>40416</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%_RH" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- High Return Humidity Threshold -->
+	<DATA_POINT name="val_sys_rh_airRetOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30417</INPUT>
+				<HOLDING>40417</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%_RH" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Low Return Humidity Threshold -->
+	<DATA_POINT name="val_sys_rh_airRetUnderThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30418</INPUT>
+				<HOLDING>40418</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%_RH" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Fan Speed Proportional Band -->
+	<DATA_POINT name="val_fan_tmp_propBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30419</INPUT>
+				<HOLDING>40419</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Fan Speed Proportional Band in Deg F -->
+	<DATA_POINT name="val_fan_tmp_propBand">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30420</INPUT>
+				<HOLDING>40420</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DELTA_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Fan Speed Manual Set Point -->
+	<DATA_POINT name="val_fan_pct_manSetPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30421</INPUT>
+				<HOLDING>40421</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Fan Speed Maximum Set Point -->
+	<DATA_POINT name="val_fan_pct_maxSetPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30422</INPUT>
+				<HOLDING>40422</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Fan Speed Minimum Set Point -->
+	<DATA_POINT name="val_fan_pct_minSetPt">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30423</INPUT>
+				<HOLDING>40423</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Temperature -->
+	<DATA_POINT name="val_ext_tmp_remSnsr">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30424</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Temperature in Deg F -->
+	<DATA_POINT name="val_ext_tmp_remSnsr">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30434</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Temperature -->
+	<DATA_POINT name="val_clng_tmp_supCW">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30444</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Temperature in Deg F -->
+	<DATA_POINT name="val_clng_tmp_supCW">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30445</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Over Temp Threshold -->
+	<DATA_POINT name="val_clng_tmp_supCWOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30446</INPUT>
+				<HOLDING>40446</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_C" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Supply Chilled Water Over Temp Threshold in Deg F -->
+	<DATA_POINT name="val_clng_tmp_supCWOverThrshld">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30447</INPUT>
+				<HOLDING>40447</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_DEG_F" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- BMS Timeout Period -->
+	<DATA_POINT name="val_ext_tm_bmsTimeout">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30448</INPUT>
+				<HOLDING>40448</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_MIN" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Auto Restart Delay -->
+	<DATA_POINT name="val_sys_tm_autoRestart">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30449</INPUT>
+				<HOLDING>40449</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_SEC" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Operating Efficiency -->
+	<DATA_POINT name="val_sys_pct_opEff">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30450</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Fan Speed -->
+	<DATA_POINT name="val_fan_pct_speed">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30451</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Compressor Utilization -->
+	<DATA_POINT name="val_comp_pct_utlztn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30452</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Dehumidifier Utilization -->
+	<DATA_POINT name="val_dhmd_pct_utlztn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30453</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Reheat Utilization -->
+	<DATA_POINT name="val_heat_pct_utlztn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30454</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Humidifier Utilization -->
+	<DATA_POINT name="val_hmd_pct_utlztn">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30455</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Calculated Next Maintenance Month -->
+	<DATA_POINT name="val_sys_tm_nextMaintMonth">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30456</INPUT>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Calculated Next Maintenance Year -->
+	<DATA_POINT name="val_sys_tm_nextMaintYear">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30457</INPUT>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Maintenance Ramp -->
+	<DATA_POINT name="val_sys_pct_maintenanceRamp">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30458</INPUT>
+			</REGISTER>
+		</ADDRESS>
+		<MEASUREMENT_UNITS units="LX_MEASURE_%" scale="LX_SCALE_FACTOR_BASE"/>
+	</DATA_POINT>
+
+	<!-- Server Class -->
+	<DATA_POINT name="st_sys_serverClass">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30459</INPUT>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Air Temperature Control Sensor -->
+	<DATA_POINT name="st_sys_tmpSnsrAirControl">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30460</INPUT>
+				<HOLDING>40460</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Temperature Calculation -->
+	<DATA_POINT name="st_ext_tmpRemSnsrCalc">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30461</INPUT>
+				<HOLDING>40461</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Fan Control Mode -->
+	<DATA_POINT name="st_fan_controlMode">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30462</INPUT>
+				<HOLDING>40462</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Fan Control Sensor -->
+	<DATA_POINT name="st_fan_snsrSpeedControl">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30463</INPUT>
+				<HOLDING>40463</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- Remote Sensor Function -->
+	<DATA_POINT name="st_ext_remSnsrFunc">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30464</INPUT>
+				<HOLDING>40464</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System Status -->
+	<DATA_POINT name="st_sys_status">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30474</INPUT>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System Operating State -->
+	<DATA_POINT name="st_sys_operating">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30475</INPUT>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System Control Mode -->
+	<DATA_POINT name="st_sys_controlMode">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30476</INPUT>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System Operating State Reason -->
+	<DATA_POINT name="st_sys_operatingReason">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30477</INPUT>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System On/Off Control -->
+	<DATA_POINT name="st_sys_onOffCtrl">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<INPUT>30478</INPUT>
+				<HOLDING>40478</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+	<!-- System Event Acknowledge/Reset -->
+	<DATA_POINT name="st_sys_eventAckReset">
+		<ADDRESS>
+			<REGISTER numReg="1">
+				<HOLDING>40452</HOLDING>
+			</REGISTER>
+		</ADDRESS>
+	</DATA_POINT>
+
+</MODBUS>
