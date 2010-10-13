@@ -19,13 +19,18 @@ end
 interface = ARGV.shift
 path_to_spreadsheet = ARGV.shift
 
-if interface =~ /\d+\.\d+\.\d+\.\d+/ #Not a perfect regex, but good enough
-  modbus_bulk = ModbusPollerTCP.new(1, interface, path_to_spreadsheet, ModbusPoller::PATH_TO_MODPOLL,'')
-  modbus_bulk.run
-elsif interface =~ /com\d+/i
-  modbus_bulk = ModbusPoller485.new(1, interface, path_to_spreadsheet, ModbusPoller::PATH_TO_MODPOLL)
-  modbus_bulk.run
-else 
-  RDoc::usage
+begin
+  if interface =~ /\d+\.\d+\.\d+\.\d+/ #Not a perfect regex, but good enough
+    modbus_bulk = ModbusPollerTCP.new(1, interface, path_to_spreadsheet, ModbusPoller::PATH_TO_MODPOLL,'')
+    modbus_bulk.run
+  elsif interface =~ /com\d+/i
+    modbus_bulk = ModbusPoller485.new(1, interface, path_to_spreadsheet, ModbusPoller::PATH_TO_MODPOLL)
+    modbus_bulk.run
+  else
+    RDoc::usage
+  end
+
+rescue Exception => e
+  puts"\n\n #{e} \n\n"
 end
 

@@ -80,6 +80,7 @@ class ModbusPoller < Test
 
     #Build and pass the commands to the OS
     if (@row <= @total_rows) then
+    puts "Starting Register #{starting_register}, Type #{type}, Count #{count.to_s}"
     command = @base_cmd + count.to_s + ' -a ' + @slave_addr.to_s + type + ' -r ' + starting_register + ' ' + @target
     puts"command = #{command}"
     modbus_values =''
@@ -94,14 +95,14 @@ class ModbusPoller < Test
   end
   def register_type(register)
     #Determine the type of register.
-
+    register.strip!
     type = case register
     when /^3.*1\)$/ then ' -t 3' #16 bit input register
     when /^3.*2\)$/ then ' -t 3:int -i' #32 bit input register - Date/Time fields need the -i switch (Big Endian)
     when /^3.*20\)$/ then ' -t 3' #16 bit input register
     when /^4.*1\)$/ then ' -t 4' #16 bit holding register
     when /^4.*2\)$/ then ' -t 4:int -i' #32 bit holding register - Date/Time fields need the -i switch (Big Endian)
-    when /^4.*1\).*Bit.*/ then type = ' -t 4'
+    when /^4.*1\).*Bit.*/i then type = ' -t 4'
     when /^1/ then ' -t 1' #Discrete input register
     end
 
@@ -113,7 +114,7 @@ class ModbusPoller < Test
     register_value = register.gsub(/\(.*\)/,'') #Remove the parenthetical portion of the string
     register_value = register_value.gsub(/^./,'') unless type == ' -t 0' #Remove the first character
     register_value = register_value.gsub(/^0+/,'') #Remove any leading zeros
-    register_value = register_value.gsub(/ - Bit.*/,'') #Remove the - Bit specification
+    register_value = register_value.gsub(/ - Bit.*/i,'') #Remove the - Bit specification
 
     #Build an array of register number type and size
 
