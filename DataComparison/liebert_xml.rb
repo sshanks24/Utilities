@@ -1,16 +1,22 @@
+require 'nokogiri'
 
 class LiebertXML
 
   attr_accessor :strings, :units, :data, :scales, :resolutions
   
-  def initialize(gdd_file)
-    File.open(gdd_file) do |config_file|
-      @xml = REXML::Document.new(config_file)
+  def initialize(fdm_file,gdd_file='enp2dd.xml')
+    @fdm_file = fdm_file
+    File.open(@fdm_file) do |config_file|
+      @fdm = Nokogiri::XML(config_file)
+    end
+    @gdd_file = gdd_file
+    File.open(@gdd_file) do |config_file|
+      @gdd = Nokogiri::XML(config_file)
     end
   end
 
   def version
-    @xml.root.elements["//Version/LastDictionaryEntry"].text
+    @fdm.root.xpath["//Version/LastDictionaryEntry"].text
   end
 
   def build_gdd_hashes
@@ -43,7 +49,7 @@ class LiebertXML
   # This method builds the hash table that maps text IDs to strings.
   def build_string_id_hash(path_to_string)
     h = Hash.new
-    @xml.root.elements.each(path_to_string) do |string|
+    @fdm.root.xpath(path_to_string).each do |string|
       key = string.attribute('Id').to_s
       if string.text == nil then
         value = ""
@@ -58,9 +64,9 @@ class LiebertXML
   # This method builds the hash that maps data identifiers to their text IDs.
   def build_unit_id_hash(path_to_unit)
     h = Hash.new
-    @xml.root.elements.each(path_to_unit) do |unit|
+    @fdm.root.xpath(path_to_unit).each do |unit|
       key = unit.attribute('Id').to_s
-      value = unit.elements["TextId"].text
+      value = unit.xpath("TextId").text
       h[key] = value
     end
     return h
@@ -68,9 +74,9 @@ class LiebertXML
 
   def build_data_id_hash(path_to_data)
     h = Hash.new
-    @xml.root.elements.each(path_to_data) do |data|
-      key = data.elements["DataId"].text
-      value = data.elements["LabelTextId"].text
+    @fdm.root.xpath(path_to_data).each do |data|
+      key = data.xpath("DataId").text
+      value = data.xpath("LabelTextId").text
       h[key] = value
     end
     return h
@@ -78,9 +84,9 @@ class LiebertXML
 
   def build_scale_hash(path_to_data)
     h = Hash.new
-    @xml.root.elements.each(path_to_data) do |data|
+    @fdm.root.xpath(path_to_data).each do |data|
       key = data.attribute('id').to_s
-      value = data.elements["*/DataScaling"]
+      value = data.xpath("*/DataScaling")
       if value == nil
         value = ''
         h[key] = value
@@ -92,9 +98,9 @@ class LiebertXML
 
   def build_resolution_hash(path_to_data)
     h = Hash.new
-    @xml.root.elements.each(path_to_data) do |data|
+    @fdm.root.xpath(path_to_data).each do |data|
       key = data.attribute('id').to_s
-      value = data.elements["*/Resolution"]
+      value = data.xpath("*/Resolution")
       if value == nil
         value = ''
         h[key] = value
@@ -106,8 +112,8 @@ class LiebertXML
 
   def build_hash(xpath_to_key,xpath_to_value)
     h = Hash.new
-    keys = @xml.elements.to_a(xpath_to_key)
-    values = @xml.elements.to_a(xpath_to_value)
+    keys = @fdm.xpath(xpath_to_key)
+    values = @fdm.xpath(xpath_to_value)
     for i in 0..keys.size-1
       h[keys[i].text] = values[i].text
     end
@@ -131,12 +137,17 @@ class LiebertXML
   end
 
   def unit_text_to_unit_id(unit_text)
-    begin
-      if unit_text =~ /°/ then unit_text.sub!('°',"deg "); end;
-      return @units.index(@strings.index(unit_text))
-    rescue
-      return "#{unit_text} is missing from version #{version}"
+    match = @gdd.xpath("//UomDefn/TextID[. = '#{unit_text}']")
+    if match.text != ''
+      match = @gdd.xpath("//DataDictEntry/LabelTextId[. = '#{match.attribute('Id')}']")
+      return match.text
     end
+    match = @fdm.xpath("//UomDefn/TextID[. = '#{unit_text}']")
+    if match.text != ''
+      match = @fdm.xpath("//dataPoint/*/DataLabel/TextID[. = '#{match.attribute('Id')}']")
+      return match.xpath("../../DataIdentifier")[0].text
+    end
+    return "#{unit_text} not found!"
   end
 
   def unit_id_to_unit_text(unit_id)
@@ -154,20 +165,69 @@ class LiebertXML
     end
   end
   
-  def scale(data_id)
-    begin
-      return @scales[data_id]
-    rescue
-      return "#{data_id} is missing from version #{version}"
+  def writable?(data_id)
+    data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/AccessDefn")
+    if data_point.text =~ /W/i then
+      return true
+    else return false
     end
   end
 
+  def max_value(data_id)
+    data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/ValueMax")
+    return data_point.text
+  end
+
+  def min_value(data_id)
+    data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/ValueMin")
+    return data_point.text
+  end
+
+  def scale(data_id)
+    data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/DataScaling")
+    return data_point.text
+  end
+
   def resolution(data_id)
-    begin
-      return @resolutions[data_id]
-    rescue
-      return "#{data_id} is missing from version #{version}"
+    data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/Resolution")
+    return data_point.text
+  end
+
+  def type(data_id)
+    data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]")
+    return data_point.attribute('type').text
+  end
+
+  def programmatic_name(data_id)
+    data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/ProgrammaticName")
+    return data_point.text
+  end
+
+  def access(data_id)
+    data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/AccessDefn")
+    return data_point.text
+  end
+
+  def id_to_text(data_id)
+    text_id = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/DataLabel/TextID")
+    data_text = @fdm.xpath("//String[@Id=#{text_id.text}]")
+    return data_text.text unless data_text.text == ''
+    data_text = @gdd.xpath("//String[@Id=#{text_id.text}]")
+    return data_text.text
+  end
+
+  def text_to_id(text)
+    match = @gdd.xpath("//String[. = \"" + text + "\"]")
+    if match.text != ''
+      match = @gdd.xpath("//DataDictEntry/LabelTextId[. = '#{match.attribute('Id')}']")
+      return match.xpath("../DataId").text 
     end
+    match = @fdm.xpath("//String[. = \"" + text + "\"]")
+    if match.text != ''
+      match = @fdm.xpath("//dataPoint/*/DataLabel/TextID[. = '#{match.attribute('Id')}']")
+      return match.xpath("../../DataIdentifier")[0].text
+    end
+    return "#{text} not found!"
   end
 
 end

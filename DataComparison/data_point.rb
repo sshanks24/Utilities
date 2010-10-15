@@ -74,12 +74,8 @@ class DataPoint < DataComparison
   # form for comparison
   def normalize
     begin
-      if data_id?(@data_identifer) == false
-        gdd_data_id = @@gdd.data_text_to_data_id(@data_identifier)
-        if gdd_data_id != nil
-          @data_identifier = gdd_data_id
-        else @data_identifier = @@fdm.data_text_to_data_id(@data_identifier)
-        end
+      if data_id?(@data_identifier) == false
+        @data_identifier = @@fdm.text_to_id(@data_identifier)
       else #data_identifier is already a data id do nothing...
       end
       @data_label = 'v4 data label will be here'
@@ -88,18 +84,14 @@ class DataPoint < DataComparison
       if (has_resolution? and has_scale?)
         @value = @value_from_protocol.to_i * @scale.to_i / 10**@resolution.to_i
         puts "Has Value and Scale"
+        @units = @@gdd.unit_text_to_unit_id(@units_from_protocol)
       else
         @value = @value_from_protocol
       end
       if @protocol == 'v4'
         @units = 'units would go here'
-      else
-      @units = @@gdd.unit_text_to_unit_id(@units_from_protocol)
       end
 
-      if self.has_unit_conversion_problem?
-        puts self.to_s
-      end
       puts self.to_s
       gets
     rescue Exception => e
@@ -123,7 +115,7 @@ class DataPoint < DataComparison
   end
   
   def has_resolution?
-    if @resolution != nil
+    if @resolution != nil and @resolution != ''
       puts "Resolution: #{@resolution.inspect}"
       return true
     else return false
@@ -131,7 +123,7 @@ class DataPoint < DataComparison
   end
 
   def has_scale?
-    if @scale != nil
+    if @scale != nil and @scale != ''
       puts "Scale: #{@scale.inspect}"
       return true
     else return false

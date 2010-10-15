@@ -19,18 +19,8 @@ class DataComparison
   # gathered_data is the output of snmp/http/bacnet/modbus gather scripts
   # v4_device_xml is the output of the deviceBrowsertool
   def initialize(protocol, gathered_data,v4_device_xml,fdm,gdd)
-    if gdd == '' then
-      @@gdd = nil
-      File.open('c:/fdm/gdd',"rb") {|f| @@gdd = Marshal.load(f)}
-      @@fdm = nil
-      File.open('c:/fdm/fdm_test',"rb") {|f| @@fdm = Marshal.load(f)}
-    else
     @@gdd = Gdd.new(gdd)
-    @@gdd.build_gdd_hashes
     @@fdm = Fdm.new(fdm)
-    @@fdm.build_fdm_hashes
-    #@@gdd.merge_hashes_with_fdm(@@fdm)
-    end
 
     @protocol_under_test = GatheredData.new(protocol, gathered_data)
 

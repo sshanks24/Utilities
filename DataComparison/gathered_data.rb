@@ -45,8 +45,8 @@ class GatheredData
             for i in 1..all_data.size-1
               description_from_protocol = all_data[i][description_column].to_s.strip
               description = description(description_from_protocol)
-              value = all_data[i][value_column]
-              units = all_data[i][units_column]
+              value = all_data[i][value_column].to_s
+              units = all_data[i][units_column].to_s
               mm_index = multi_module_index(description_from_protocol)
               @data_points << DataPoint.new(protocol, description, description_from_protocol, value, units, mm_index)
             end

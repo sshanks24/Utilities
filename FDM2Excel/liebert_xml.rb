@@ -3,7 +3,7 @@ require 'nokogiri'
 class LiebertXML
 
   attr_accessor :strings, :units, :data, :scales, :resolutions
-  
+
   def initialize(fdm_file,gdd_file='enp2dd.xml')
     @fdm_file = fdm_file
     File.open(@fdm_file) do |config_file|
@@ -159,7 +159,7 @@ class LiebertXML
     else return false
     end
   end
-  
+
   def writable?(data_id)
     data_point = @fdm.xpath("//dataPoint[@id=#{data_id}]/*/AccessDefn")
     if data_point.text =~ /W/i then
@@ -212,13 +212,13 @@ class LiebertXML
   end
 
   def text_to_id(text)
-    strings = @fdm.xpath("//String")
-    text_id = ''
-    strings.each do |string|
-      if string.text == text then
-        text_id = string.xpath("@Id").text
-      end
+    puts @gdd
+    match = @gdd.xpath("//String[. = '#{text}']")
+    if match != nil
+      match = @gdd.xpath("//DataDictEntry/LabelTextId[. = '#{match.attribute('Id')}']")
+      return match.xpath("../DataId").text unless match2.xpath("../DataId").text
     end
+    puts "Check the FDM"
   end
 
 end
