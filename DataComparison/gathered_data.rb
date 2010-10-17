@@ -37,15 +37,21 @@ class GatheredData
           when /bacnet/i
             raise "#{protocol} not yet supported"
           when /http/i
+            values = Array.new
             value_column = 2
             units_column = 3
             description_column = 1
+            ws.Range('C:C').NumberFormat = "@"
             all_data = ws.UsedRange.Value
+            
+            for j in 2..all_data.size
+              values << ws.Cells(j,value_column+1).Text #Add 1 to value_column because cells are indexed at 0
+            end
 
             for i in 1..all_data.size-1
               description_from_protocol = all_data[i][description_column].to_s.strip
               description = description(description_from_protocol)
-              value = all_data[i][value_column].to_s
+              value = values[i]
               units = all_data[i][units_column].to_s
               mm_index = multi_module_index(description_from_protocol)
               @data_points << DataPoint.new(protocol, description, description_from_protocol, value, units, mm_index)

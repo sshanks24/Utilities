@@ -137,17 +137,23 @@ class LiebertXML
   end
 
   def unit_text_to_unit_id(unit_text)
-    match = @gdd.xpath("//UomDefn/TextID[. = '#{unit_text}']")
+    if unit_text =~ /°/
+      unit_text.sub!(/°/,'deg ')
+    end
+    if unit_text == ''
+      return ''
+    end
+    match = @gdd.xpath("//String[. = \"" + unit_text + "\"]")
     if match.text != ''
-      match = @gdd.xpath("//DataDictEntry/LabelTextId[. = '#{match.attribute('Id')}']")
+      match = @gdd.xpath("//UomDefn/TextId[. = '#{match.attribute('Id')}']")
       return match.text
     end
-    match = @fdm.xpath("//UomDefn/TextID[. = '#{unit_text}']")
+    match = @fdm.xpath("//String[. = \"" + unit_text + "\"]")
     if match.text != ''
       match = @fdm.xpath("//dataPoint/*/DataLabel/TextID[. = '#{match.attribute('Id')}']")
       return match.xpath("../../DataIdentifier")[0].text
     end
-    return "#{unit_text} not found!"
+    return "#{text} not found!"
   end
 
   def unit_id_to_unit_text(unit_id)

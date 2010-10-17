@@ -78,22 +78,29 @@ class DataPoint < DataComparison
         @data_identifier = @@fdm.text_to_id(@data_identifier)
       else #data_identifier is already a data id do nothing...
       end
-      @data_label = 'v4 data label will be here'
-      @scale = @@gdd.scale(@data_identifier)
-      @resolution = @@gdd.resolution(@data_identifier)
-      if (has_resolution? and has_scale?)
-        @value = @value_from_protocol.to_i * @scale.to_i / 10**@resolution.to_i
-        puts "Has Value and Scale"
-        @units = @@gdd.unit_text_to_unit_id(@units_from_protocol)
+      @data_label = @@fdm.id_to_text(@data_identifier)
+      @scale = @@fdm.scale(@data_identifier)
+      @resolution = @@fdm.resolution(@data_identifier)
+
+      if is_numeric?(@value_from_protocol)
+        if is_integer?(@value_from_protocol)
+          @value = @value_from_protocol.to_i * @scale.to_f * 10**@resolution.to_f
+        else
+          @value = @value_from_protocol.to_f * @scale.to_f * 10**@resolution.to_f
+        end
       else
         @value = @value_from_protocol
       end
+
+      @units = @@fdm.unit_text_to_unit_id(@units_from_protocol)
       if @protocol == 'v4'
         @units = 'units would go here'
       end
 
-      puts self.to_s
-      gets
+      if @resolution.to_f > 0
+        puts self.to_s
+      end
+
     rescue Exception => e
       puts" \n\n **********\n\n #{$@ } \n\n #{e} \n\n **********"
     end
@@ -116,7 +123,6 @@ class DataPoint < DataComparison
   
   def has_resolution?
     if @resolution != nil and @resolution != ''
-      puts "Resolution: #{@resolution.inspect}"
       return true
     else return false
     end
@@ -124,10 +130,25 @@ class DataPoint < DataComparison
 
   def has_scale?
     if @scale != nil and @scale != ''
-      puts "Scale: #{@scale.inspect}"
       return true
     else return false
     end
   end
 
+  def is_numeric?(s)
+  begin
+    Float(s)
+  rescue
+    false # not numeric
+  else
+    true # numeric
+  end
 end
+
+  def is_integer?(s)
+    !!(s =~ /^[-+]?[0-9]+$/)
+  end
+
+end
+
+
